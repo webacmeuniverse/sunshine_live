@@ -1,0 +1,232 @@
+{
+  "slider": {
+    "mainTitle": "LAIPNI LŪGTI PROJEKTĀ EUROPA",
+    "subTitle": "Novērojat temperatūras nelīdzsvarotību? Ir pienācis laiks padarīt jūsu māju veselīgāku, ērtāku, drošāku un energoefektīvāku.",
+    "learnMore": "Uzzināt vairāk",
+    "imageTitle": "Vai vēlaties atjaunot savu ēku?",
+    "imageTitle1": "Aizpildiet uzņemšanas anketu!"
+    
+  },
+  "menu": {
+    "RESIDENTS": "IEDZĪVOTĀJI",
+    "HOWITWORKS": "Kā tas darbojas",
+    "FindMyPartner": "ATRAST SAVU PARTNERI",
+    "EESCALCULATOR": "Renovācijas izmaksu kalkulatoru",
+    "SERVICESPROVIDER": "OPERATORI",
+    "MATCHMAKING": "SĀKOTNES",
+    "RESOURCES": "RESURSI",
+    "Assisttomyproject": "Doties uz projektu",
+    "SIMULATIONTOOL":"SIMULĀCIJAS RĪKS",
+    "EESCHECKLIST":"EES KONTROLES SARAKSTS",
+    "BUILDINGCALCULATOR":"ĒKAS KALKULATORS",
+    "EESREFINANCEABILITYCHECKLIST":"EES REFINANSĒŠANAS IESPĒJU KONTROLES SARAKSTS",
+    "Login": "Pieteikšanās",
+    "MyDashboard": "Mans vadības panelis"
+  },
+  "mainTitle": {
+    "title1": "Renovējiet vienkāršāk, labāk un kopā."
+    
+    
+  },
+  "individualPrivate":{
+    "title": "Individuālai/privātai personai",
+    "title1": "Mēs sniedzam digitālo atbalstu un palīdzību, lai nodrošinātu vienkāršu renovācijas procesu",
+    "title2": "Aizpildiet uzņemšanas anketu, lai uzzinātu, vai mēs darbojamies jūsu reģionā.",
+    "LetStart": "Sāksim",
+    "box1": "Vai domājat par ēkas renovēšanu? Sāciet šeit, izmantojot mūsu uzņemšanas anketu!",
+    "box2": "Meklējat renovācijas operatoru? Pārbaudiet Atrast manu partneri, lai atrastu operatorus savā reģionā.",
+    "box3": "Vai jūsu ēka jau tiek renovēta? "
+
+  },
+  "howItWorks":{
+    "mainTitle": "Kā tas darbojas",
+    "subTitle": "Septiņi vienkārši soļi ēkas atjaunošanai",
+    "title1": "Kvalifikācijas uzņemšanas anketa",
+    "description1": "Aizpildiet mūsu ātro uzņemšanas anketu, lai uzzinātu, vai mēs darbojamies mūsu reģionā!",
+    "title2": "Telefona zvans",
+    "description2": "Jūsu OSS (Vienas Pieturas aģentūra) sazināsies ar jums, lai uzzinātu vairāk par šo procesu. Ja jūsu reģionā nav OSS, neuztraucieties! Mēs sazināsimies ar jums, lai saņemtu atbalstu.",
+    "title3": "Energoaudits un profila analīze",
+    "description3": "Izmantojot pieejamos simulācijas rīkus, varat novērtēt projekta enerģijas ietaupījumu un izmaksas.",
+    "title4": "Atrodiet risinājumu",
+    "description4": "Sadarbojoties ar savu OSS, jūs atradīsiet jums piemērotu ēku renovācijas risinājumu.",
+    "title5": "Sekojiet līdzi savas ēkas renovācijai SUNShINE",
+    "description5": "Ēku renovācija atšķiras atkarībā no konteksta, taču jūs varat sekot līdzi visam procesam - līguma parakstīšanai, renovācijas darbiem un uzraudzībai - izmantojot SUNShINE platformu.",
+    "title6": "Renovācijas darbi",
+    "description6": "Pēc tam, kad ir atrasts risinājums un parakstīts līgums, sākas ēkas renovācija!",
+    "title7": "Uzraudzība",
+    "description7": "Uzraugiet savas ēkas enerģijas ietaupījumus un maksājumus SUNShINE platformā!"    
+  },"howMuchRenovationCost":{
+    "title1": "Cik izmaksās ēkas renovācija?",
+    "title2": "Izmēģiniet mūsu EES kalkulatoru un uzziniet, cik izmaksās renovācijas projekts, pamatojoties uz vairākiem kritērijiem.",
+    "title3": "Pārbaudiet to tagad"
+
+  },
+  "SUBSCRIBE":{
+    "title1": "ABONĒT MŪSU JAUNUMUS",
+    "Email": "E-pasts",
+    "Send":"Nosūtīt"
+  },"GetInTouch":{
+    "title1": "Sazinieties ar tuvāko Vienas Pieturas aģentūru jau tagad!",
+    "ContactUs": "Sazināties ar mums",
+    "title2":"Ar ko mēs strādājam?"
+  },"Footer":{
+    "Partners": "Sadarbības partneri",
+    "About": "Par",
+    "Support":"Atbalsts",
+    "FAQ":"Biežāk uzdotie jautājumi",
+    "Contact":"Saziņa",
+    "GoToMyProject":"Doties uz manu projektu",
+    "Privacy":"Konfidencialitāte ",
+    "Terms":"Noteikumi ",
+    "Sitemap":"Lapas karte",
+    "Chatwithus":"Sazinies ar mums",
+    "Title":"© 2022 EUROPA. Visas tiesības aizsargātas."
+  },
+  "EESRefinanceabilitychecklist": {
+    "Description": "EES refinansējamības kontrolsaraksts",
+
+    "Description1": "Tā kā tas ir kontrolsaraksts, tajā nav detalizēti ietverta visa atbilstošā informācija. Sīkāka informācija un papildu skaidrojumi par nepieciešamajiem līguma nosacījumiem EES, kā arī refinansēšanas līgumiem ir atrodami Vadlīnijās “Energoefektivitātes pakalpojumu refinansēšanas standartizētie līguma nosacījumi”, kas ir pieejama, sekojot šai saitei."
+  
+    
+    }, "FindMyPartner": {
+      "Discover": "Atklājiet",
+      "More":"Vairāk",
+      "FilterSort": "Filtrēt un kārtot",
+      "TypeofOrganization":"Organizācijas veids",
+      "TypesofServices":"Pakalpojumu veidi",
+      "OSSApproved":"OSS apstiprināts",
+      "Sort":"Kārtot",
+      "Nearme":"Blakus man",
+      "Services":"Pakalpojumi",
+      "Backtothelist":"Atpakaļ uz sarakstu",
+      "Address":"Adrese",
+      "Phone":"Tālrunis",
+      "title":"Vai esat gatavs atjaunot savu ēku?",
+      "title1":"Organizācijas rezultāts",
+      "TotalScore":"Kopējais rezultāts",
+      "QualityofServices":"Pakalpojumu kvalitāte",
+      "SpeedofServices":"Pakalpojumu sniegšanas ātrums",
+      "Communication":"Komunikācija",
+      "Rating":"Vērtējums",
+      "AddRating":"Pievienot vērtējumu"
+      
+    }
+    , "Resources": {
+      "Learnmore": "Uzzināt vairāk",
+      "title1":"Lietotāja rokasgrāmata",
+      "title2":"Energoefektivitātes abonēšanas vispārīgais regulējums",
+      "title3":"Infografika ieinteresēto pušu informēšanai",
+      "title4":"SUNSHINE rokasgrāmata par dziļu ēku renovāciju",
+      "Resources":"Resursi"
+  
+    
+      
+    }, "MyProjectStatus": {
+      "MyprojectstatusTitle": "Mans projekta statuss",
+      "title": "Lūdzu, izvēlieties atbilstošo opciju, lai pieteiktos savā kontā",
+      "NewUser": "Jauns lietotājs",
+      "Signinwithotp":"Pierakstieties ar otp",
+      "Login":"Pieslēgties",
+      "title1":"Lūdzu ievadiet savu e-pasta adresi",
+      "Welcome":"Laipni lūdzam",
+      "Submit":"Iesniegt",
+      "Back":"Atpakaļ",
+      "CodeValidation":"Koda apstiprināšana!",
+      "title2":"Kods ir nosūtīts uz jūsu e-pastu. Pārbaudiet savu e-pastu un ievadiet verifikācijas kodu.",
+      "Seeyourprojectstatus":"Skatiet sava projekta statusu"
+      
+  
+    
+      
+    },"faqList": {
+      "mainTitle": "Labdien, kā mēs varam jums palīdzēt?",
+      "subTitle": "Par SUNShINE platformu, ko nodrošina EUROPA",
+        "titles1": {
+              "questionTitle":"",
+              "questionList": {
+                "question1": "Ko dara SUNShINE platforma, ko nodrošina EUROPA?",
+                "question2": "Kam ir paredzēta platforma SUNShINE, ko nodrošina EUROPA?",
+                "question3": "Cik izmaksā izmantot SUNShINE platformu, ko nodrošina EUROPA?",
+                "question4": "Kas ir energoefektivitātes abonements?",
+                "question5": "Kā aprēķināt ēkas atjaunošanas izmaksas?"
+              },
+              "answerList":{
+                "answer1": "Platforma SUNhINE, ko nodrošina portāls EUROPA, palīdz visām ieinteresētajām personām piedalīties energoefektivitātes uzlabošanas pasākumos visos projekta posmos: sākot no idejas par ēkas atjaunošanu ierosināšanas līdz pat pasākumu rezultātu uzraudzībai.",
+                "answer2": "Platforma ir paredzēta iedzīvotājiem, mājokļu asociācijām, apsaimniekotājiem, pašvaldībām un visām citām ieinteresētajām pusēm.",
+                "answer2Sub1": "Noklikšķiniet uz pogas 'Vai mēs varam jums palīdzēt?', lai uzzinātu saturu, kas var palīdzēt jūsu biznesam.",
+                "answer3": "Platforma ir bez maksas. Šis lēmums mums bija ļoti svarīgs, jo tas ļaus platformu izmantot dažādām ieinteresētajām pusēm. ",
+                "answer4": "Energoefektivitātes abonements (EES) ir ēkas energoefektivitātes paaugstināšanas pakalpojumu piedāvājums, kas tiek nodrošināts abonēšanas modeļa veidā, kas vienkāršo maksājumu modeli un rada savstarpēju izpratni par notiekošajām procedūrām.",
+                "answer5": "Renovācijas izmaksas un maksājumu plānu var aprēķināt, izmantojot Renovācijas izmaksu kalkulatoru - platformā izstrādātu rīku, kas ļauj modelēt ēkas kopējās izmaksas un iespējamo gada maksājumu plānu.",
+                "answer5Sub1":"Dodieties uz lapu 'Iedzīvotāji', lai uzzinātu, cik izmaksās jūsu ēkas renovācija!"
+              }
+            },
+            "titles2": {
+              "questionTitle":"IEDZĪVOTĀJIEM",
+              "questionList": {
+                "question1": "Kāda veida informāciju pieprasīs platforma?",
+                "question2": "Ko darīt, ja es nezinu kādu konkrētu informāciju par savu ēku vai ja ievadjautājumi neatbilst manai ēkai?",
+                "question3": "Ko darīt, ja manā reģionā nav Vienas pieturas aģentūras?",
+                "question4": "Man ir tehniskas grūtības. Ar ko man vajadzētu sazināties?",
+                "question5": "Kā es varu uzzināt vairāk par savu projektu?",
+                "question6": "Kur es varu apskatīt pakalpojumu sniedzējus, kas atrodas manā reģionā?"
+              },
+              "answerList":{
+                "answer1": "Lai izmantotu platformu, jums būs jānodrošina:",
+                "answer1Sub1": "Vārds",
+                "answer1Sub2": "Uzvārds",
+                "answer1Sub3": "E-pasts",
+                "answer1Sub4": "Tālruņa numurs",
+                "answer1Sub5": "Pilsēta",
+                "answer1Sub6": "Valsts",
+                "answer2": "Tā nav problēma! OSS palīdzēs jums aizpildīt pārējo informāciju pēc pirmā plānotā zvana",
+                "answer3": "Ja jūsu reģionā nav OSS, jūs aizpildīsiet bāzes  anketu, un platformas vadības komanda ar jums sazināsies.",
+                "answer4": "Sazinieties ar platformas vadības komandu pa e-pastu EMAIL",
+                "answer5": "Noklikšķiniet uz pogas 'Doties uz manu projektu' un ievadiet visu nepieciešamo informāciju, lai piekļūtu informācijai par savu projektu.",
+                "answer6": "Visu nepieciešamo informāciju par pakalpojumu sniedzējiem var atrast lapā 'Atrast manu partneri'. Šajā lapā varat vai nu aplūkot visu savā apgabalā esošo pakalpojumu sniedzēju sarakstu, vai arī apskatīt tos kartē. Noklikšķinot uz to logotipa, varat atrast to publisko profilu ar kontaktinformāciju."
+              }
+            },
+            "titles3": {
+              "questionTitle":"MĀJOKĻU ASOCIĀCIJA ",
+              "questionList": {
+                "question1": "Manis pārvaldītās ēkas iedzīvotāji ir ieinteresēti renovēt savu ēku, un es vēlos viņiem sniegt pareizu informāciju. Ko man vajadzētu darīt?",
+                "question2": "Kas man jādara, ja man ir vajadzīgs operators?"              
+              },
+              "answerList":{
+                "answer1": "Visus informatīvos materiālus varat atrast lapā 'Resursi' un dalīties tajos ar iedzīvotājiem!",
+                "answer2": "Visu nepieciešamo informāciju par pakalpojumu sniedzējiem var atrast lapā 'Atrast manu partneri'. Šajā lapā varat vai nu aplūkot visu savā apgabalā esošo operatoru sarakstu, vai arī apskatīt tos kartē. Noklikšķinot uz to logotipa, varat atrast to publisko profilu ar kontaktinformāciju."             
+              }
+            },
+            "titles4": {
+              "questionTitle":"Operatori",
+              "questionList": {
+                "question1": "Es esmu operators, un es gribētu, lai mans uzņēmums būtu redzams sadaļā 'Atrast Atrast manu partneri', vai tas ir iespējams?",
+                "question2": "Kādas problēmas man rodas darbā ievadīšanas procesā, kas man jādara?",
+                "question3": "Kāpēc man ir jāiesniedz sertifikāti?",
+                "question4": "Kas ir EES pārbaudes saraksts?",
+                "question5": "Kas ir refinansēšanas iespēju pārbaudes saraksts?"
+              },
+              "answerList":{
+                "answer1": "Lai jūs būtu redzams sadaļā 'Atrast manu partneri', jums ir jāiziet operatoru uzņemšanas process un jāatbilst OSS noteiktajām prasībām. Pēc OSS apstiprinājuma saņemšanas jūsu organizācijas publiskais profils tiks pievienots sadaļā 'Atrast manu partneri'!",
+                "answer2": "Sazinieties ar platformas superlietotāju, rakstot uz EMAIL",
+                "answer3": "Sertifikāti apliecina jūsu atbildes uz uzņemšanas anketas jautājumiem un palīdz vietējai OSS novērtēt jūsu iespējas sniegt pakalpojumus.",
+                "answer4": "Prasību un standartu kopums, ko nosaka OSS un kas jāievēro projektam un operatoram. Mērķis ir garantēt kvalitāti ēku īpašniekiem un galalietotājiem visā dzīvojamo ēku padziļinātas energoefektivitātes atjaunošanas vērtību ķēdē. Koncepcija tika izstrādāta EUROPA projektā Apvārsnis 2020 ietvaros.",
+                "answer5": "Refinansējamības kalkulators tika izstrādāts, lai nodrošinātu projekta finansējamību, novērtējot noteiktus standartus, kas saistīti ar visiem projekta posmiem. Koncepcija tika izstrādāta projektā REFINE, kas tika īstenots pamatprogrammā Apvārsnis 2020."
+              }
+            },
+            "titles5": {
+              "questionTitle":"OSS (Vienas Pieturas aģentūra)",
+              "questionList": {
+                "question1": "Kas man jādara, ja esmu Vienas Pieturas aģentūra un esmu ieinteresēts izmantot platformu?",
+                "question2": "Kāpēc man vajadzētu izvēlēties SUNShINE platformu, ko nodrošina Europa, lai digitalizētu mūsu darbu kā OSS?",
+                "question3": "Strīdu gadījumā:"
+              },
+              "answerList":{
+                "answer1": "Lūdzu, aizpildiet operatoru uzņemšanas anketu un atzīmējiet, ka esat OSS. Pēc tam platformas vadības komanda ar jums sazināsies!",
+                "answer2": "SUNShINE platforma  nodrošina pieeju digitālajai videi, kurā dažādas ieinteresētās personas var izmantot izstrādātos rīkus. Ņemot vērā katras OSS darba jomas specifiku, rīku kopumu var pielāgot, lai tas atbilstu reģionālajam kontekstam un palielinātu to lietderību. Kopumā SUNShINE platforma, ko nodrošina platforma EUROPA, ir visaptveroša metodoloģija, lai organizētu OSS darbu.",
+                "answer3": "Mēs iesakām sazināties ar platformas vadības komandu EMAIL"
+                
+              }
+            }
+      }
+  }
+  

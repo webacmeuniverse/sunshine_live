@@ -1,0 +1,161 @@
+{
+  "organizations": {
+    "register": "Wenn Sie Ihre Organisation nicht gefunden haben, können Sie sie selbst eintragen.",
+    "publicSearchHint": "Suchen Sie hier nach Ihrer Organisation.",
+    "info": [
+      "Der erste Schritt bei der Teilnahme an der Plattform besteht darin, Mitglied Ihrer Organisation zu werden.",
+      "**Warum müssen wir wissen, zu welcher Organisation Sie gehören?**",
+      "Um sicherzustellen, dass Sie Zugang zu den Informationen auf der Plattform haben.",
+      "Im Bereich **\"Meine Organisationen \"** sehen Sie die Organisationen, denen Sie angehören. Sie können auf jede Organisation klicken, um deren detaillierte Informationen zu sehen. Auf der Seite **\"Alle Organisationen \"** sehen Sie alle Organisationen, die auf der Plattform registriert sind. Sie können jedoch keine Organisationen öffnen, für die Sie keine Berechtigung haben.",
+      "Wenn Sie Teil einer Organisation sein sollen, klicken Sie auf **\"Mitgliedschaft beantragen \"**.",
+      "Wenn Sie Ihre Organisation nicht finden können, können Sie sie selbst registrieren.",
+      "Watch Training Videos [**here**](https://www.youtube.com/watch?v=hkpNvWQK7TA&list=PL8IdmZDX5yMC-UOPQ5TUdI8YwSKWfnp33)"
+    ],
+    "roles": [
+      "Klicken Sie auf den Pfeil, um zu sehen, wer den einzelnen Rollen zugewiesen ist. Wenn Sie dazu berechtigt sind, können Sie dieser Organisation hier Rollen zuweisen.",
+      "**Rollendefinitionen: **",
+      "**Legal Entity Appointed Representative (LEAR):** Die Person, die von einer Organisation mit der Verwaltung ihrer Daten auf der Plattform beauftragt wird. Er muss die Daten der juristischen Person auf dem neuesten Stand halten. Eine Organisation kann nur einen **LEAR** haben.",
+      "**Legal Entity Account Administrator (LEAA):** Unterstützt LEAR bei ihren Aufgaben. Kann keine anderen Kontoverwalter zuweisen. Kann projektbezogene Rollen zuweisen. Jede Organisation kann mehrere **LEAA**s haben.",
+      "**Rechtlicher Unterzeichner (LSIGN):** Person in einer juristischen Organisation, die befugt ist, (im Namen der Organisation) rechtliche Verpflichtungen für Projekte (d. h. Verträge, Vereinbarungen, Änderungen) zu unterzeichnen. Kann sich mit dem **LEAR** überschneiden oder eine andere Person in der Organisation sein. Jede Organisation kann mehrere **LSIGN**s haben.",
+      "**Organisationsmitglied (ORME):** ist Teil der Organisation. Kann seine Daten nicht ändern, kann aber Assets und Projekte für die Organisation erstellen."
+    ],
+    "lear": [
+      "**Tipp für den LEAR**",
+      "Sie können hier keinen neuen LEAR ernennen, da diese Rolle einige zusätzliche Genehmigungen erfordert.",
+      "Der neue LEAR muss in seinem persönlichen Profil beantragen, LEAR Ihrer Organisation zu werden, und dort auch die erforderlichen Dokumente einreichen. Sie erhalten dann eine Benachrichtigung, um zu bestätigen, dass Sie damit einverstanden sind, dass er/sie der neue LEAR werden kann. Die endgültige Genehmigung erfolgt durch den Superuser Ihres Landes, der prüft, ob die eingereichten Unterlagen belegen, dass die neue Person ein LEAR sein kann.  Übersetzt mit www.DeepL.com/Translator (kostenlose Version)",
+      "Sobald der neue LEAR genehmigt ist, sind Sie kein LEAR mehr, da jede Organisation nur einen LEAR haben kann. Sollten Sie in der Organisation mit einer anderen Rolle verbleiben, stellen Sie sicher, dass Sie sich selbst diese Rolle zuweisen, bevor Sie die Genehmigung erteilen, damit Sie den Zugriff auf die Organisation und die damit verbundenen Assets und Projekte nicht verlieren."
+    ]
+  },
+  "assets": {
+    "register": [
+      "**Sehen Sie Ihr Asset nicht? Registrieren Sie es hier.**",
+      "Um sich anmelden zu können, müssen Sie sicherstellen, dass:",
+      "1) Sie verfügen über ein Dokument mit Informationen über die Anlage (Katasternummer, beheizte Fläche, Anzahl der Treppenhäuser usw.).",
+      "2) Sie sind Teil einer Organisation: Alle Assets müssen einer Organisation *\"angehören \"*, und Sie können nur Assets für eine Organisation erstellen, der Sie angehören.",
+      "Wenn Sie nicht über eine oder alle der oben genannten Eigenschaften verfügen, aber dennoch Ihr Asset für die Renovierung hinzufügen möchten, kontaktieren Sie uns unter **sunshinehelp@ekubirojs.lv** und wir werden Sie durch die nächsten Schritte leiten."
+    ],
+    "publicSearchHint": "Zu viele Assets? Suchen Sie hier nach Ihrem. Wenn Sie nach einer Adresse suchen, schreiben Sie sie so, wie Sie es in Ihrer Sprache tun würden. In diesem Feld sind alle Zeichen zulässig.",
+    "info": [
+      "Auf der Seite **\"Meine Assets \"** können Sie die Assets sehen, in denen Sie leben oder die zu Organisationen gehören, in denen Sie eine Rolle spielen. Sie können auf jedes Ihrer Assets klicken, um detaillierte Informationen zu erhalten.",
+      "Auf der Seite **\"Alle Assets \"** sehen Sie alle auf der Plattform registrierten Assets. Sie können ein Asset jedoch nicht öffnen, wenn Sie nicht über die entsprechende Berechtigung verfügen.",
+      "Wenn Sie Ihr Haus gefunden haben, klicken Sie auf die Schaltfläche **\"Ich wohne hier!\"**, um die Informationen über die Anlage zu sehen. Sie müssen alle Dokumente hochladen, die belegen, dass Sie ein Einwohner sind.",
+      "Watch Training Videos [**here**](https://www.youtube.com/watch?v=Q6DlptPaebo&list=PL8IdmZDX5yMDzJoyiRK1tYdfsePVUK7M1)"
+    ],
+    "assetInformation": {
+      "totalArea": "Die Gesamtfläche eines Wohngebäudes wird ermittelt, indem die Fläche aller Geschosse des Gebäudes (einschließlich Keller und Dachgeschoss) zwischen den Innenflächen der Außenwände sowie die Fläche der Außenbereiche - Balkone, Loggien und Terrassen - addiert werden. Die Fläche des Dachbodens (technischer Dachboden) und des technischen Kellers wird nicht in die Gesamtfläche eines Wohngebäudes einbezogen.  Übersetzt mit www.DeepL.com/Translator (kostenlose Version)",
+      "heatedArea": "Die beheizte Fläche eines Gebäudes ergibt sich aus der Summe der Flächen aller Wohnungen und etwaiger Treppenhäuser oder anderer Nebenräume, die ebenfalls beheizt werden.",
+      "billingArea": "Die Abrechnungsfläche oder Nutzfläche eines Gebäudes wird durch Addition der Gesamtfläche der Wohnungen in einem Wohngebäude, der Gesamtfläche der Nebenräume und der Gesamtfläche der öffentlichen Räume, sofern vorhanden, ermittelt."
+    },
+    "assetFields": {
+      "cadastre": "ID-Nummer des Gebäudes, die von der Gemeinde oder dem Land festgelegt wird.",
+      "owner": [
+        "Sie sollten in der Lage sein, Assets für alle genehmigten Organisationen zu erstellen, denen Sie eine Rolle zugewiesen haben. Wenn Sie eine Organisation in dieser Liste nicht sehen können, kann es daran liegen, dass die Organisation auf die Genehmigung durch den Superuser wartet.",
+        "Dies bedeutet, dass die Organisation entweder gerade erst gegründet und noch nicht genehmigt wurde oder dass wichtige Informationen aktualisiert und noch nicht genehmigt wurden.",
+        "Sie können den Status Ihrer Organisation einsehen, indem Sie die **Organisationsseite** öffnen."
+      ],
+      "residentsCommunity": "Um sicherzustellen, dass die Bewohner Zugang zu den Gebäudeinformationen haben, muss eine Bewohnergemeinschaft angelegt werden. Dieses Feld bleibt jetzt leer, und sobald die Organisation erstellt ist, wird es automatisch vom System ausgefüllt.",
+      "totalArea": "Die Gesamtfläche eines Wohngebäudes wird ermittelt, indem die Fläche aller Geschosse des Gebäudes (einschließlich Keller und Dachgeschoss) zwischen den Innenflächen der Außenwände sowie die Fläche der Außenbereiche - Balkone, Loggien und Terrassen - addiert werden. Die Fläche der Technikräume im Dachboden und Keller werden nicht in die Gesamtfläche eines Wohngebäudes einbezogen.",
+      "billingArea": "Die Abrechnungsfläche oder Nutzfläche eines Gebäudes wird durch Addition der Gesamtfläche der Wohnungen in einem Wohngebäude, der Gesamtfläche der Nebenräume und der Gesamtfläche der öffentlichen Räume, sofern vorhanden, ermittelt.",
+      "heatedArea": "Die beheizte Fläche eines Gebäudes ergibt sich aus der Summe der Flächen aller Wohnungen und etwaiger Treppenhäuser oder anderer Nebenräume, die ebenfalls beheizt werden.",
+      "districtHeating": "Wärmeenergie, die von anderen Anbietern wie der Stadt, der Gemeinde oder anderen Einrichtungen bereitgestellt wird.",
+      "buildingHeating": "Das Gebäude verfügt über eine eigene Heizungsanlage."
+    }
+  },
+  "projects": {
+    "info": [
+      "Auf dieser Seite können Sie auf alle Ihre Projekte zugreifen, um die Baukennzahlen, den aktuellen Fortschritt, die beteiligten Parteien, das Projektteam und mehr zu sehen.",
+      "Sie können nur die Projekte sehen, denen Sie eine Rolle zugewiesen haben. Wenn Sie keines Ihrer Projekte sehen, wenden Sie sich an Ihren Projektleiter.",
+      "Watch Training Videos [**here**](https://www.youtube.com/watch?v=3zAPF1NOK18&list=PL8IdmZDX5yMCOPGV_WSlheZZV6tGLD1a1)"
+    ],
+    "overview": [
+      "Die **Projektübersicht** zeigt Ihnen, wie das Projekt läuft.",
+      "Im Abschnitt **EPC-Vertrag & Forfaitierungsvereinbarung** können Sie eine endgültige Version dieser Verträge ausfüllen und ausdrucken.",
+      "Wenn Sie die **Projektphasen** öffnen, sehen Sie die Aufschlüsselung der einzelnen Phasen, die durchzuführenden Aktivitäten und die zu erreichenden Meilensteine. Von hier aus wird das Projekt verwaltet."
+    ],
+    "guaranteedMetrics": "Dabei handelt es sich um berechnete Messwerte, die für das Gebäude nach Abschluss der Renovierung garantiert werden. Sie sind gültig, sobald das EPC unterzeichnet wurde.",
+    "roles": [
+      "Klicken Sie auf den Pfeil, um zu sehen, wer diesen Rollen zugewiesen ist. Wenn Sie die Erlaubnis haben, können Sie hier Rollen für dieses Projekt zuweisen.",
+      "**Rollendefinitionen:**",
+      "**Projektleiter (PL):** leitet das Projekt. Hat volle Ansichts- und Bearbeitungsrechte. Kann Projektrollen verwalten und Meilensteine abschließen, um Projektphasen zu öffnen.",
+      "Es muss einen PL nach Projekt geben.",
+      "**Projektrechtsunterzeichner (PLSIGN):** Person, die befugt ist, rechtliche Verpflichtungen für ein bestimmtes Projekt zu unterzeichnen. Für ein Projekt muss es pro beteiligter Organisation einen PLSIGN geben.",
+      "**Aufgabenmanager (AUMA):** Person, die verschiedene Aktionen zur Verwaltung einer bestimmten Aufgabe eines Projekts durchführen kann.",
+      "**Teammitglied (TEMI):** Person, die nur Leserechte für ein bestimmtes Projekt hat."
+    ],
+    "epc": {
+      "generalTerms": "Die **Allgemeinen Bedingungen des EPC-Vertrags** sind der erste Teil des Vertrags und sind standardisiert. Auf dieser Seite ist der vollständige Text verfügbar.",
+      "annexesInfo": [
+        "Klicken Sie auf die Titel auf der rechten Seite, um die verschiedenen Anhänge zu öffnen. Auf jeder Seite können Sie die Tabellen und Felder ausfüllen, um den Vertrag zu vervollständigen.",
+        "Es ist von grundlegender Bedeutung, dass **alle Informationen des Vertrags korrekt** sind, da sie von anderen Abschnitten des Projekts abgerufen werden.",
+        "Sie können den Vertrag **herunterladen**, um die aktuelle Version im PDF-Format zu sehen. Sobald die endgültige Fassung unterzeichnet ist, muss sie in der jeweiligen Projektphase hochgeladen werden."
+      ],
+      "annexesExtraPage": [
+        "Diese zusätzliche Seite kann verwendet werden, um bei der Unterzeichnung des Vertrags weitere notwendige Informationen hinzuzufügen und um **zusätzliche Anhänge** auszudrucken, wenn der Vertrag bereits unterzeichnet wurde, aber noch Änderungen erforderlich sind.",
+        "Im Falle von **Änderungen** muss diese Seite separat ausgedruckt und zusammen mit dem **EPC-Vertrag** gespeichert werden."
+      ],
+      "forfaitingAgreement": "Sie müssen diese Vereinbarung vorbereiten, wenn Ihr Projekt zur Forfaitierung zugelassen wurde. Dies kann erst geschehen, wenn das Gebäude in Betrieb genommen wurde und die Messungen einer ganzen Heizperiode erfasst wurden.",
+      "assetAcquisition": [
+        "Diese Phase setzt sich aus **abfolgenden Meilensteinen** zusammen.",
+        "Hier können Sie sehen, in welchem Meilenstein sich das Projekt befindet.",
+        "Jede Seite wird freigeschaltet, sobald der **Projektmanager** den vorherigen Meilenstein abgeschlossen hat."
+      ],
+      "assetAcquisitionCompleteMilestone": "Sobald alle erforderlichen Voraussetzungen erfüllt sind, sollte der Projektleiter bestätigen, dass der Meilenstein abgeschlossen ist. Damit wird diese Seite gesperrt und der nächste Meilenstein freigeschaltet.",
+      "commissioningDateDisclamer": "Die Jahre und Monate der Ergebnismonitoringstabellen werden auf der Grundlage des Datums aktualisiert, an dem Sie diesen Schritt abgeschlossen haben. Der erste zu gemonitorte Monat ist der folgende Monat, nachdem Sie diesen Schritt abgeschlossen haben.",
+      "worksPhase": [
+        "Diese Phase setzt sich aus **aktuellen Meilensteinen** zusammen.",
+        "Durch Anklicken können Sie sehen, in welchem Meilenstein sich das Projekt befindet.",
+        "Die Inbetriebnahme des Gebäudes wird frühere Meilensteine blockieren."
+      ],
+      "monitoringPhase": [
+        "Diese Phase setzt sich aus **aktuellen Meilensteinen** zusammen.",
+        "Durch Anklicken können Sie sehen, in welchem Meilenstein sich das Projekt befindet.",
+        "Die Inbetriebnahme des Gebäudes wird frühere Meilensteine blockieren."
+      ]
+    },
+    "registerProject": [
+      "Hier können Sie ein Projekt für eine Organisation registrieren, der Sie eine Rolle zugewiesen haben.",
+      "Sie können nur ein Projekt für ein Asset registrieren, das bereits genehmigt wurde."
+    ],
+    "requestPermission": [
+      "Falls Sie ein Projekt für ein Asset erstellen müssen, das zu keiner Ihrer Organisationen gehört, können Sie dies hier tun.",
+      "Sie beantragen die Genehmigung bei der Organisation, unter der das Asset registriert ist. Sobald die Genehmigung erteilt ist, können Sie das Projekt erstellen."
+    ]
+  },
+  "users": {
+    "applyLEAR": "Wenn Sie LEAR einer Organisation sind, können Sie sich hier für diese Rolle bewerben. Wählen Sie die Organisation aus und legen Sie Unterlagen vor, die belegen, dass Sie berechtigt sind, LEAR zu sein. Sie werden benachrichtigt, wenn Ihre Rolle bestätigt ist."
+  },
+  "reports": {
+    "info": "Auf diesen Seiten sehen Sie nur Daten, die sich auf die von Ihnen gewählten Rollen beziehen. Wählen Sie die gewünschten Spalten aus und führen Sie den Export durch."
+  },
+  "admin": {
+    "platformRoles": [
+      "Klicken Sie auf ein Rollen-Panel aus der Liste unten, um die Benutzer zu verwalten, die der Plattformrolle für das ausgewählte Land zugewiesen sind.",
+      "**Jedes Land hat die folgenden Aufgaben:**",
+      "**Portfoliodirektor:** Hat Zugang zu spezifischen Berichten für sein Land und seine Projekte und Organisationen mit dem Ziel, Investitionen zu erhalten, neue Akteure auf die Plattform einzuladen und sie zu unterstützen.",
+      "Sieht alle Projekte und Vermögenswerte in seinem Land.",
+      "**Datenschutzbeauftragter:** Beantwortet die Anfragen im Zusammenhang mit der DSGV.",
+      "**Superuser:** Bietet Unterstützung für Benutzer in seinem Land.",
+      "Arbeitet gemeinsam mit anderen Superusern an der Verbesserung der Plattform.",
+      "Genehmigt Assets und Organisationen für sein Land. Genehmigt LEARs für Organisationen.",
+      "Sieht alle Benutzer, Assets, Organisationen und Projekte in seinem Land, um die Benutzer unterstützen zu können.",
+      "**Fondsmanager:** Genehmigt die Finanzierung von Projekten in seinem Land. Sieht alle Projekte in seinem Land.",
+      "**Investor:** hat Zugang zu den Forfaitierungsantragsseiten für das Projekt in seinem Land."
+    ],
+    "rolePFM": [
+      "**Plattformmanager:** Sieht alle Daten in der Plattform.",
+      "Weist andere Rollen auf Plattform- und Länderebene zu."
+    ],
+    "roleNWM": [
+      "**Super User Network Manager:** Dies ist eine Rolle auf Plattformebene.",
+      "Er kann dieselben Aufgaben wie der Superuser erfüllen, allerdings für alle Plattformen (d. h. alle Länder).",
+      "Führt Superuser-Aufgaben für die Benutzer, Assets und Organisationen durch, die zu einem Land gehören, das keine Superuser hat. Außerdem kann er die Superuser-Rolle zuweisen und entziehen."
+    ]
+  },
+  "maintenanceTableNotReady": "Die ersten 3 Jahre des Asset Maintenance Plans müssen ausgefüllt werden.",
+  "home": {
+    "info": [
+      "Here is info tooltip for the home page",
+      "Watch Training Videos [**here**](https://www.youtube.com/watch?v=J4-x7uN8ec0&list=PL8IdmZDX5yMCqp8AZhpD2FARTrm1RdXgj)"
+    ]
+  }
+}

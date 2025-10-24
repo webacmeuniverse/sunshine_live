@@ -1,0 +1,46 @@
+{
+"getTable": {
+    "columns": [
+      {
+        "headers": [
+          "{\"en\": \"Symbol\", \"pl\": \"Oznaczenie\", \"ro\": \"Simbol\", \"au\": \"Symbol\", \"lv\":\"Simbols\", \"bg\": \"Символ\",\"sk\": \"Symbol\"}",
+          "{\"en\": \"Unit\", \"pl\": \"Jednostka\", \"ro\": \"Unitate\", \"au\": \"Einheit\", \"lv\":\"Vienība\", \"bg\": \"Единици\",\"sk\": \"Jednotka\"}"
+        ],
+        "kind": "Name",
+        "name": ""
+      },
+      {
+        "headers": [
+          "$D_{Apk}$",
+          "{\"en\": \"Days\", \"pl\": \"Dni\", \"ro\": \"Zile\", \"au\": \"Tage\", \"lv\":\"Dienas\", \"bg\": \"Дни\",\"sk\": \"Dni\"}"
+        ],
+        "kind": "Count",
+        "name": "{\"en\": \"Heating days\", \"pl\": \"Liczba dni ogrzewania\", \"ro\": \"Numărul zilelor de încălzire efectivă\", \"au\": \"Anzahl Heiztage\", \"lv\":\"Apkures dienu skaits\", \"bg\": \"Брой на дни\",\"sk\": \"Počet vykurovacích dní\"}"
+      },
+      {
+        "headers": [
+          "$Q_{t}$",
+          "MWh"
+        ],
+        "kind": "Energy",
+        "name": "{\"en\": \"Total heat energy consumption\", \"pl\": \"Całkowite zużycie energii cieplnej\", \"ro\": \"Consumul total e energie termică\", \"au\": \"Gesamter Wärmeenergieverbrauch\", \"lv\":\"Kopējais siltumenerģijas patēriņš\", \"bg\": \"Total heat energy consumption\",\"sk\": \"Celková spotreba tepelnej energie\"}"
+      },
+      {
+        "headers": [
+          "V",
+          "m³"
+        ],
+        "kind": "Volume",
+        "name": "{\"en\": \"Domestic hot water consumption\", \"pl\": \"Zużycie ciepłej wody użytkowej\", \"ro\": \"Consumul de apă caldă menajeră\", \"au\": \"Warmwasserverbrauch\", \"lv\":\"Mājsaimniecību karstā ūdens patēriņš\", \"bg\": \"Domestic hot water consumption\",\"sk\": \"Spotreba teplej úžitkovej vody\"}"
+      },
+      {
+        "headers": [
+          "0ku",
+          "°C"
+        ],
+        "kind": "Temperature",
+        "name": "{\"en\": \"Domestic hot water temperature\", \"pl\": \"Temperatura ciepłej wody użytkowej\", \"ro\": \"Temperatura apei calde menajere\", \"au\": \"Warmwasse rtemperatur\", \"lv\":\"Mājsaimniecību karstā ūdens  temperatūra\", \"bg\": \"Domestic hot water temperature\",\"sk\": \"Teplota teplej úžitkovej vody\"}"
+      }
+    ]
+  }
+}

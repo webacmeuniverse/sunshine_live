@@ -1,0 +1,18 @@
+-- +goose Up
+CREATE TABLE step_backup (
+	id UUID PRIMARY KEY DEFAULT PUBLIC.gen_random_uuid(),
+    backup_time CHARACTER VARYING(255) NOT NULL,
+    backup_title CHARACTER VARYING(255) NOT NULL,
+	index NUMERIC,
+	name CHARACTER VARYING(255)NOT NULL,
+	require BOOLEAN DEFAULT false,
+	oss_admin_id CHARACTER VARYING(255) NOT NULL,
+	lang CHARACTER VARYING(255) NOT NULL,
+
+	created_at TIMESTAMP WITH TIME ZONE DEFAULT now(),
+	updated_at TIMESTAMP WITH TIME ZONE DEFAULT now(),
+	deleted_at TIMESTAMP WITH TIME ZONE
+);
+
+-- +goose Down
+DROP TABLE step_backup;

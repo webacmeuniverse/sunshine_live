@@ -1,0 +1,75 @@
+# This relies on ingress-nginx created with:
+# kubectl apply -f https://raw.githubusercontent.com/kubernetes/ingress-nginx/nginx-0.30.0/deploy/static/mandatory.yaml
+# kubectl apply -f https://raw.githubusercontent.com/kubernetes/ingress-nginx/nginx-0.30.0/deploy/static/provider/cloud-generic.yaml
+
+kind: ConfigMap
+apiVersion: v1
+metadata:
+  name: nginx-config
+  namespace: ingress-nginx
+data:
+  proxy-connect-timeout: "10s"
+  proxy-read-timeout: "10s"
+  proxy-body-size: "50m"
+  http2: "true"
+  hsts: "true"
+  ssl-prefer-server-ciphers: "true"
+  ssl-protocols: "TLSv1.2 TLSv1.3"
+  ssl-ciphers: "ECDHE-RSA-AES256-GCM-SHA512:DHE-RSA-AES256-GCM-SHA512:ECDHE-RSA-AES256-GCM-SHA384:DHE-RSA-AES256-GCM-SHA384"
+---
+apiVersion: networking.k8s.io/v1
+kind: Ingress
+metadata:
+  name: sunshine-ingress
+  annotations:
+    kubernetes.io/ingress.class: "nginx"
+    cert-manager.io/cluster-issuer: "letsencrypt-prod"
+    nginx.ingress.kubernetes.io/rewrite-target: /$1
+    nginx.ingress.kubernetes.io/proxy-body-size: 100m
+    nginx.ingress.kubernetes.io/proxy-connect-timeout: 10s
+    nginx.ingress.kubernetes.io/proxy-read-timeout: 10s
+    nginx.ingress.kubernetes.io/proxy-body-size: 50m
+spec:
+  tls:
+  - hosts:
+      - staging-sunshine.acme.universe
+    secretName: stageai-tls
+  rules:
+    - host: prod-sunshine.acme.universe
+      http:
+        paths:
+          - path: /api/(.*)
+            pathType: Prefix
+            backend:
+              service:
+                name: sunshine
+                port:
+                  number: 80
+          - path: /(openapi.json)
+            pathType: Prefix
+            backend:
+              service:
+                name: sunshine
+                port:
+                  number: 80
+          - path: /openapi
+            pathType: Prefix
+            backend:
+              service:
+                name: openapi
+                port:
+                  number: 80
+          - path: /(redoc.standalone.js)
+            pathType: Prefix
+            backend:
+              service:
+                name: openapi
+                port:
+                  number: 80
+          - path: /(.*)
+            pathType: Prefix
+            backend:
+              service:
+                name: sunshine-react
+                port:
+                  number: 80

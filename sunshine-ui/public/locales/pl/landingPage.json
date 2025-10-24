@@ -1,0 +1,236 @@
+{
+  "slider": {
+    "mainTitle": "Witaj, jak możemy Ci pomóc?",
+    "subTitle": "Informacje o platformie SUNShINE powered by EUROPA",
+    "learnMore": "Dowiedz się więcej",
+    "imageTitle": "Chcesz wyremontować swój budynek?",
+    "imageTitle1": "Wypełnij kwestionariusz onboardingowy!"
+    
+  },
+  "menu": {
+    "RESIDENTS": "MIESZKAŃCY",
+        "HOWITWORKS": "JAK TO DZIAŁA",
+        "FindMyPartner": "ZNAJDŹ MOJEGO PARTNERA",
+        "EESCALCULATOR": "KALKULATOR KOSZTÓW RENOWACJI",
+        "SERVICESPROVIDER": "OPERATORZY",
+        "MATCHMAKING": "ZNAJDŹ MOJEGO PARTNERA",
+        "RESOURCES": "ZASOBY",
+        "Assisttomyproject": "Przejdź do mojego projektu",
+        "SIMULATIONTOOL": "NARZĘDZIA SYMULACYJNE",
+        "EESCHECKLIST": "LISTA KONTROLNA EES",
+        "BUILDINGCALCULATOR": "KALKULATOR BUDYNKU",
+        "EESREFINANCEABILITYCHECKLIST": "LISTA KONTROLNA MOŻLIWOŚCI REFINANSOWANIA EES",
+        "Login": "Zaloguj się",
+		
+        "MyDashboard": "Mój pulpit nawigacyjny",
+    "OTHERTOOLS": "Inne narzędzia"
+
+    
+  },
+  "mainTitle": {
+    "title1": "Wprowadź swój adres e-mail"
+    
+    
+  },
+  "individualPrivate":{
+    "title": "Wybierz odpowiednią opcję, aby zalogować się na swoje konto",
+        "title2": "Kod został wysłany na Twój adres e-mail. Sprawdź swoją wiadomość e-mail i wprowadź kod weryfikacyjny.",
+        "LetStart": "Zaczynamy",
+        "box1": "Myślisz o remoncie swojego budynku? Zacznij od naszego kwestionariusza wdrożeniowego!",
+        "box2": "Szukasz operatora do renowacji? Sprawdź „Znajdź mojego partnera”, aby znaleźć operatorów w Twojej okolicy.",
+        "box3": "Czy Twój budynek jest już remontowany?"
+
+  },
+
+  "howItWorks":{
+    "mainTitle": "Jak to działa",
+    "subTitle": "Siedem prostych kroków do renowacji budynku",
+    "title1": "Kwestionariusz kwalifikacji",
+    "description1": "Wypełnij nasz krótki kwestionariusz, aby sprawdzić, czy działamy w Twojej okolicy!",
+    "title2": "Rozmowa telefoniczna",
+    "description2": "Twój OSS skontaktuje się z Tobą, aby dowiedzieć się więcej o procesie. Jeśli w Twojej okolicy nie ma OSS, nie martw się! Skontaktujemy się z Tobą w celu uzyskania wsparcia.",
+    "title3": "Audyt energetyczny/analiza profilu",
+    "description3": "Korzystając z dostępnych narzędzi symulacyjnych, można oszacować oszczędności energii i koszty projektu.",
+    "title4": "Znajdź rozwiązanie",
+    "description4": "Współpracując ze swoim OSS, znajdziesz rozwiązanie renowacji budynku, które będzie dla Ciebie odpowiednie.",
+    "title5": "Śledź renowację budynku w SUNShINE",
+    "description5": "Renowacja budynku różni się w zależności od kontekstu, ale można śledzić cały proces - podpisanie umowy, prace renowacyjne i monitorowanie - wszystko za pośrednictwem platformy SUNShINE.",
+    "title6": "Prace remontowe",
+    "description6": "Po znalezieniu rozwiązania i podpisaniu umowy nadchodzi renowacja budynku!",
+    "title7": "Monitorowanie",
+    "description7": "Monitoruj wydajność swojego budynku i płatności na platformie SUNShINE!"
+  
+
+  },"howMuchRenovationCost":{
+    "title1": "Ile będzie kosztować renowacja budynku?",
+    "title2": "Wypróbuj nasz kalkulator kosztów renowacji i zobacz, ile będzie kosztował projekt renowacji w oparciu o wiele kryteriów.",
+    "title3": "Sprawdź teraz"
+
+  },
+  "SUBSCRIBE":{
+    "title1": "ZAPISZ SIĘ DO NASZEGO NEWSLETTERA",
+    "Email": "Email",
+    "Send":"Wyślij"
+  },
+  "GetInTouch":{
+    "title1": "Skontaktuj się z najbliższym One-Stop-Shop już teraz!",
+    "ContactUs": "Skontaktuj się z nami",
+    "title2":"Z kim współpracujemy?"
+  },"Footer":{
+    "Partners": "Partnerzy",
+        "About": "Informacje",
+        "Support": "Wsparcie",
+        "FAQ": "FAQ",
+        "Contact": "Kontakt",
+        "GoToMyProject": "Przejdź do mojego projektu",
+        "Privacy": "Prywatność",
+        "Terms": "Warunki",
+        "Sitemap": "Mapa strony",
+        "Chatwithus": "Czat z nami",
+        "Title": "©2022 EUROPA. Wszelkie prawa zastrzeżone."
+  },
+  "EESRefinanceabilitychecklist": {
+    "Description": "Lista kontrolna możliwości refinansowania EES",
+    "Description1": "Ponieważ jest to lista kontrolna, nie zawiera ona szczegółowo wszystkich istotnych informacji. Więcej szczegółów i dodatkowe wyjaśnienia dotyczące wymaganych postanowień umownych dla EES, jak również dla umów o refinansowanie można znaleźć w wytycznych „Standardowe postanowienia umowne dotyczące refinansowania usług w zakresie efektywności energetycznej”, które są dostępne pod tym linkiem."
+    
+    
+  }, "FindMyPartner": {
+    "Discover": "Odkryj",
+  "More": "Więcej",
+  "FilterSort": "Filtruj i sortuj",
+  "TypeofOrganization": "Rodzaj organizacji",
+  "TypesofServices": "Rodzaje usług",
+  "OSSApproved": "Zatwierdzone przez OSS",
+  "Sort": "Sortuj",
+  "Nearme": "Blisko mnie",
+  "Services": "Usługi",
+  "Backtothelist": "Powrót do listy",
+  "Address": "Adres",
+  "Phone": "Telefon",
+  "TotalScore": "Całkowity wynik",
+  "QualityofServices": "Jakość usług",
+  "SpeedofServices": "Szybkość usług",
+  "Communication": "Komunikacja",
+  "Rating": "Ocena",
+  "AddRating": "Dodaj ocenę"
+    
+  }
+  , "Resources": {
+    "Learnmore": "Dowiedz się więcej",
+    "title1":"Podręcznik użytkownika",
+    "title2":"Ogólne ramy subskrypcji efektywności energetycznej",
+    "title3":"Infografika zwiększająca świadomość interesariuszy",
+    "title4":"Podręcznik SUNSHINE dotyczący renowacji budynków dEEp",
+    "Resources":"Zasoby"
+
+  
+    
+  }, "MyProjectStatus": {
+    "MyprojectstatusTitle": "Status mojego projektu",
+    "title": "Wybierz odpowiednią opcję, aby zalogować się na swoje konto",
+    "NewUser": "Nowy użytkownik",
+    "Signinwithotp":"Zaloguj się za pomocą OTP",
+    "Login":"Zaloguj się",
+    "title1":"Wprowadź swój adres e-mail",
+    "Welcome":"Witamy",
+    "Submit":"Wyślij",
+    "Back":"Powrót",
+    "CodeValidation":"Kod zatwierdzony!",
+    "title2":"Kod został wysłany na Twój adres e-mail. Sprawdź swoją wiadomość e-mail i wprowadź kod weryfikacyjny.",
+    "Seeyourprojectstatus":"Zobacz status swojego projektu"
+    
+
+  
+    
+  },"faqList": {
+    "mainTitle": "Witaj, jak możemy Ci pomóc?",
+    "subTitle": "Informacje o platformie SUNShINE powered by EUROPA",
+      "titles1": {
+            "questionTitle":"",
+            "questionList": {
+              "question1": "Jestem sklepem One-Stop-Shop i jestem zainteresowany korzystaniem z platformy, co powinienem zrobić?",
+              "question2": "Dlaczego powinienem wybrać platformę SUNShINE powered by Europa do digitalizacji naszej pracy jako OSS?",
+              "question3": "W przypadku sporu:",
+              "question4": "Czym jest lista kontrolna EES?",
+              "question5": "Co to jest kalkulator refinansowania?"
+            },
+            "answerList":{
+              "answer1": "Wypełnij kwestionariusz onboardingowy dla Operatorów Usług i zaznacz, że jesteś OSS. Następnie zespół zarządzający platformą skontaktuje się z Tobą!",
+        "answer2": "Platforma SUNShINE powered by EUROPA zapewnia podejście do środowiska cyfrowego, w którym różne zainteresowane strony mogą korzystać z opracowanych narzędzi. Ze względu na specyfikę zakresu pracy każdego OSS, zestaw narzędzi można dostosować do kontekstu regionalnego i zwiększyć ich użyteczność. Ogólnie rzecz biorąc, platforma SUNShINE powered by EUROPA to kompleksowa metodologia organizacji pracy OSS.",
+        "answer2Sub1": "Kliknij przycisk „Czy możemy Ci pomóc?”, aby odkryć treści, które mogą Ci pomóc w Twojej działalności.",
+        "answer3": "Zdecydowanie zalecamy skontaktowanie się z zespołem zarządzającym platformą w EMAIL.",
+        "answer4": "Zestaw wymagań i standardów ustanowionych przez OSS, które muszą być spełnione przez projekt i operatora. Celem jest zagwarantowanie jakości właścicielom budynków i użytkownikom końcowym w całym łańcuchu wartości głębokiej renowacji energetycznej budynków mieszkalnych. Koncepcja została opracowana w ramach projektu EUROPA Horyzont 2020.",
+        "answer5": "Kalkulator refinansowalności został opracowany w celu zapewnienia możliwości finansowania projektu poprzez ocenę pewnych standardów związanych ze wszystkimi fazami projektu, Koncepcja została opracowana w ramach projektu Horyzont 2020 <a href=„https://refineproject.eu/”>REFINE</a>.",
+        "answer5Sub1": "Przejdź do strony „Mieszkańcy”, aby dowiedzieć się, ile będzie kosztował remont Twojego budynku!"
+        
+            }
+          },
+          "titles2": {
+            "questionTitle":"MIESZKAŃCY",
+            "questionList": {
+              "question1": "O jakie informacje poprosi platforma?",
+              "question2": "Co jeśli nie znam niektórych szczegółowych informacji o moim budynku lub pytania onboardingowe nie pasują do mojego budynku?",
+              "question3": "Co jeśli w moim regionie nie ma skonfigurowanego OSS?",
+              "question4": "Mam problemy techniczne. Z kim powinienem się skontaktować?",
+              "question5": "Jak mogę dowiedzieć się więcej o moim projekcie?",
+              "question6": "Gdzie mogę zobaczyć dostawców usług w mojej okolicy?"
+            },
+            "answerList":{
+              "answer1": "Aby korzystać z platformy, należy podać:",
+              "answer1Sub1": "Imię",
+              "answer1Sub2": "Nazwisko",
+              "answer1Sub3": "E-mail",
+              "answer1Sub4": "Numer telefonu",
+              "answer1Sub5": "Miasto",
+              "answer1Sub6": "Kraj",
+              "answer2": "To żaden problem! Twój OSS pomoże Ci wypełnić pozostałe informacje po pierwszej zaplanowanej rozmowie telefonicznej.",
+              "answer3": "Jeśli w Twoim regionie nie ma OSS, wypełnisz domyślne kwestionariusze onboardingowe, a zespół zarządzający platformą skontaktuje się z Tobą.",
+              "answer4": "Skontaktuj się z zespołem zarządzającym platformy pod adresem EMAIL",
+              "answer5": "Kliknij przycisk „Mój projekt” i wypełnij wszystkie niezbędne informacje, aby uzyskać dostęp do informacji o swoim projekcie.",
+              "answer6": "Wszystkie niezbędne informacje o dostawcach usług można znaleźć na stronie „Znajdź mojego partnera”. Na tej stronie możesz przejrzeć listę wszystkich operatorów usług w Twojej okolicy lub zobaczyć ich na mapie. Klikając na ich logo, można znaleźć ich publiczny profil z informacjami kontaktowymi."
+            }
+          },
+          "titles3": {
+            "questionTitle":"SPÓŁDZIELNIA MIESZKANIOWA",
+            "questionList": {
+              "question1": "Mieszkańcy budynku, którym zarządzam, są zainteresowani remontem swojego budynku i chcę przekazać im odpowiednie informacje. Co powinienem zrobić?",
+              "question2": "Potrzebuję operatora, co powinienem zrobić?"              
+            },
+            "answerList":{
+              "answer1": "Wszystkie materiały informacyjne można znaleźć na stronie „Zasoby” i udostępnić je mieszkańcom!",
+              "answer2": "Wszystkie niezbędne informacje o dostawcach usług można znaleźć na stronie „Znajdź mojego partnera”. Na tej stronie możesz przejrzeć listę wszystkich operatorów w Twojej okolicy lub zobaczyć ich na mapie. Klikając na ich logo, można znaleźć ich publiczny profil z informacjami kontaktowymi."             
+            }
+          },
+          "titles4": {
+            "questionTitle":"Operator",
+            "questionList": {
+              "question1": "Jestem operatorem i chciałbym wziąć udział w sekcji „Znajdź mojego partnera”, czy jest to możliwe?",
+              "question2": "Mam pewne problemy w procesie wdrażania, co powinienem zrobić?",
+              "question3": "Dlaczego muszę dostarczyć moje certyfikaty?",
+              "question4": "Czym jest lista kontrolna EES?",
+              "question5": "Co to jest kalkulator refinansowania?"
+            },
+            "answerList":{
+              "answer1": "Aby być widocznym w sekcji „Znajdź mojego partnera”, musisz przejść przez proces onboardingu dla operatorów i spełnić wymagania określone przez OSS. Po zatwierdzeniu przez OSS publiczny profil Twojej organizacji zostanie dodany do strony „Znajdź mojego partnera”!",
+              "answer2": "Prosimy o kontakt z Super Użytkownikiem platformy pod adresem EMAIL",
+              "answer3": "Certyfikaty potwierdzają odpowiedzi udzielone w kwestionariuszu wdrożeniowym i pomagają lokalnemu OSS ocenić możliwość świadczenia usług.",
+              "answer4": "Zestaw wymagań i standardów ustanowionych przez OSS, które muszą być spełnione przez projekt i operatora. Celem jest zagwarantowanie jakości właścicielom budynków i użytkownikom końcowym w całym łańcuchu wartości głębokiej renowacji energetycznej budynków mieszkalnych. Koncepcja została opracowana w ramach projektu EUROPA Horyzont 2020.",
+              "answer5": "Kalkulator refinansowalności został opracowany w celu zapewnienia możliwości finansowania projektu poprzez ocenę pewnych standardów związanych ze wszystkimi fazami projektu, Koncepcja została opracowana w ramach projektu Horyzont 2020 <a href='https://refineproject.eu/'>REFINE</a>."
+            }
+          },
+          "titles5": {
+            "questionTitle":"OSS",
+            "questionList": {
+              "question1": "Jestem sklepem One-Stop-Shop i jestem zainteresowany korzystaniem z platformy, co powinienem zrobić?",
+              "question2": "Dlaczego powinienem wybrać platformę SUNShINE powered by Europa do digitalizacji naszej pracy jako OSS?",
+              "question3": "W przypadku sporu:"
+            },
+            "answerList":{
+              "answer1": "Wypełnij kwestionariusz onboardingowy dla Operatorów Usług i zaznacz, że jesteś OSS. Następnie zespół zarządzający platformą skontaktuje się z Tobą!",
+              "answer2": "Platforma SUNShINE powered by EUROPA zapewnia podejście do środowiska cyfrowego, w którym różne zainteresowane strony mogą korzystać z opracowanych narzędzi. Ze względu na specyfikę zakresu pracy każdego OSS, zestaw narzędzi można dostosować do kontekstu regionalnego i zwiększyć ich użyteczność. Ogólnie rzecz biorąc, platforma SUNShINE powered by EUROPA to kompleksowa metodologia organizacji pracy OSS.",
+              "answer3": "Zdecydowanie zalecamy skontaktowanie się z zespołem zarządzającym platformą w EMAIL."
+              
+            }
+          }
+    }
+}

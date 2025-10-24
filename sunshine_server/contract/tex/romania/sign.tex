@@ -1,0 +1,13 @@
+% table: signatures
+
+\mbox{}\vfill % ensure placing this at the bottom of the page
+\begin{tabu}{X X} \tabucline{}
+	\rowfont[c]\bfseries Client & Contractant \\
+	[10pt]\makebox[8cm]{\hrulefill} & \makebox[8cm]{\hrulefill} \\
+	\rowfont[c]\itshape {{.Contract.Fields.client_name}} & {{.Contract.Fields.contractor_representative_name}} \\
+	[10pt]\makebox[8cm]{\hrulefill} & \makebox[8cm]{\hrulefill} \\
+	\rowfont[c]\itshape {{.BuildingOwner.Name}} & {{.ESCo.Name}} \\
+	[10pt]\makebox[8cm]{\hrulefill} & \makebox[8cm]{\hrulefill} \\
+	\rowfont[c]\itshape (semnătură) & (semnătură) \\[4cm] \\
+\end{tabu}
+\pagebreak

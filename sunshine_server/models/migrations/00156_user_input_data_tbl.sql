@@ -1,0 +1,30 @@
+-- +goose Up
+CREATE TABLE user_input_data (
+	id UUID PRIMARY KEY DEFAULT PUBLIC.gen_random_uuid(),
+	field_id CHARACTER VARYING(255) NOT NULL,
+	field_title CHARACTER VARYING(255) NOT NULL,
+	field_value CHARACTER VARYING(255) NOT NULL,
+	session CHARACTER VARYING(255) NOT NULL,
+	user_id CHARACTER VARYING(255) NOT NULL,
+	oss_admin_id CHARACTER VARYING(255) NOT NULL,
+	country CHARACTER VARYING(255) NOT NULL,
+	menu_type CHARACTER VARYING(255) NOT NULL,
+	cert_file CHARACTER VARYING(255) NOT NULL,
+	default_score INTEGER NOT NULL,
+	step_default_score INTEGER NOT NULL,
+	question_default_score INTEGER NOT NULL,
+	field_default_score INTEGER NOT NULL,
+	step_name CHARACTER VARYING(255) NOT NULL,
+	question_name CHARACTER VARYING(255) NOT NULL,
+	step_fields_name CHARACTER VARYING(255) NOT NULL,
+	lang CHARACTER VARYING(255) NOT NULL,
+
+	created_at TIMESTAMP WITH TIME ZONE DEFAULT now(),
+	updated_at TIMESTAMP WITH TIME ZONE DEFAULT now(),
+	deleted_at TIMESTAMP WITH TIME ZONE
+);
+
+-- +goose Down
+DROP TABLE user_input_data;
+
+

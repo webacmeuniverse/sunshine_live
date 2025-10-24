@@ -1,0 +1,20 @@
+[
+  {
+     "measures_main": "HVAC Plant",
+     "Investment": 95166,
+     "Energycostsaved": 56657.00,
+     "SumEnergySavedFormatted": 1.52,
+     "SimplePaybackTime": 1.84,
+     "observations": 12,
+     "totalobservations": 748
+  },
+  {
+     "measures_main": "Building Fabric Measures",
+     "Investment": 68151497,
+     "Energycostsaved": 5531763.43,
+     "SumEnergySavedFormatted": 112.60,
+     "SimplePaybackTime": 13.31,
+     "observations": 736,
+     "totalobservations": 748
+  }
+]

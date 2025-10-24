@@ -1,0 +1,22 @@
+[
+  {
+     "category": "HVAC Plant",
+     "open": 2.36,
+     "high": 3.69,
+     "low": 0.41,
+     "medianFormatted": 1.29,
+     "close": 0.58,
+     "observations": 12,
+     "totalobservations": 748
+  },
+  {
+     "category": "Building Fabric Measures",
+     "open": 16.13,
+     "high": 22.81,
+     "low": 6.6,
+     "medianFormatted": 11.57,
+     "close": 8.77,
+     "observations": 736,
+     "totalobservations": 748
+  }
+]

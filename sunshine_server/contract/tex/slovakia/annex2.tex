@@ -1,0 +1,63 @@
+{{- $vt := .VAT -}}
+
+\section{PRÍLOHA č. 2 - ROZPOČET A ROZSAH RENOVAČNÝCH PRÁC}
+
+
+\subsection{Celkový rozpočet na Renovačné práce}
+
+% table: renovation_overall_budget
+
+\begin{center}
+\begin{tabu}{|X[10]|X|} \tabucline{} \rowfont[c]\bfseries
+{{with $t := translate "sk" .Contract.Tables.renovation_overall_budget}} % chktex 25
+	{{$t.Columns | column}} \\\tabucline{}
+	{{range $t.Rows}}
+	{{rowfmt $t .}} \\\tabucline{}
+	{{end}}
+
+	 \bfseries
+	{{total_excl_vat $t}} \\\tabucline{}\bfseries
+	{{vat $t $vt}} \\\tabucline{}\bfseries
+	{{total_incl_vat $t $vt}} \\\tabucline{}
+{{end}}
+\end{tabu}
+\end{center}
+
+\subsection{Finančný plán rekonštrukčných prác}
+
+% table: renovation_financial_plan
+
+\begin{center}
+\begin{tabu}{|X[10]|X|} \tabucline{} \rowfont[c]\bfseries
+{{with $t := translate "sk" .Contract.Tables.renovation_financial_plan}} % chktex 25
+	{{$t.Columns | column}} \\\tabucline{}
+	{{range $t.Rows}}
+	{{rowfmt $t .}} \\\tabucline{}
+	{{end}}
+{{end}}
+\end{tabu}
+\end{center}
+
+kde::
+\begin{itemize}
+  \item $I_c$    finančný príspevok poskytnutý dodávateľom vrátane príslušnej DPH použitý na výpočet poplatku za renováciu 
+  \item $I_t$   celkové investičné náklady na Renovačné práce vrátane DPH 
+\end{itemize}
+
+Časť investičných nákladov použitá na výpočet Poplatku za renováciu v prílohe č. 7 tejto zmluvy sa vypočíta na základe Finančného príspevku poskytnutého dodávateľom, ktorý zodpovedá IC=$I_C$EUR
+
+\subsection{Opatrenia implementované ako súčasť Renovačných prác a podrobné odhady nákladov}
+
+[Prosím, uveďte podrobný návrh plánovaných opatrení projektu v súlade s príslušnými normami a predpismi] 
+Napríklad:
+
+\begin{itemize}
+	\item Analýza existujúcich podmienok
+	\item Navrhované opatrenia
+	\item Návrh a implementácia opatrení, inštalácia projektu a testovacia prevádzka
+	\item Zabezpečenie a preukázanie dosiahnutia garantovanej úspory energie
+	\item Financovanie projektu
+	
+\end{itemize}
+
+[Prosím, uveďte podrobné odhady nákladov na plánované opatrenia vrátane podrobného rozpisu nákladov na vývoj a riadenie projektu] 

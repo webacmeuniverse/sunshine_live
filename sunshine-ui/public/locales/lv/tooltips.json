@@ -1,0 +1,161 @@
+{
+  "organizations": {
+    "register": "Ja Jums neizdevās atrast savu organizāciju, Jūs varat to reģistrēt.",
+    "publicSearchHint": "Meklējiet savu organizāciju šeit.",
+    "info": [
+      "Pirmais solis pēc reģistrēšanās platformā ir pieteikties kā kādas no organizācijas dalībniekiem.",
+      "**Kāpēc mums ir jāzina, kurai organizācijai piederat?**",
+      "Lai nodrošinātu, ka jums ir piekļuve platformas informācijai.",
+      "Sadaļā **Manas organizācijas** Jūs redzat visas organizācijas, kurās Jūs esat kā dalībnieks. Jūs varat noklikšķināt uz katras Organizācijas, lai redzētu detalizētu informāciju par to. **Visas organizācijas** lapā Jūs redzēsiet visas platformā reģistrētās organizācijas, bet, ja Jums nav atļaujas, Jūs neredzēsiet papildus informāciju par organizāciju.",
+      "Ja Jums ir jābūt organizācijas dalibniekam, uzspiediet **Pieprasīt dalību**",
+      "Ja Jūs nevarat atrast savu organizāciju, Jūs varat to reģistrēt.",
+      "Skatieties apmācību video [**šeit**](https://www.youtube.com/watch?v=hkpNvWQK7TA&list=PL8IdmZDX5yMC-UOPQ5TUdI8YwSKWfnp33)"
+    ],
+    "roles": [
+      "Noklikšķiniet uz bultiņas, lai paplašinātu un redzētu katra dalībnieka lomu. Ja Jums ir atļauja, Jūs arī varēsiet piešķirt lomas šajā organizācijā.",
+      "**Lomu definīcija**",
+      "**Juridiskās personas ieceltais pārstāvis (LEAR):** Persona, kas pārvalda organizācijas datus platformā. Personai ir jāatjauno visa nepieciešama juridiskā informācija. Organizācijai ir tikai viens **LEAR**",
+      "**Juridiskas personas konta administrators (LEAA):** Persona, kas palīdz LEAR uzdevumu īstenošanā. Tā nevar pievienot citus organizācijas administratorus, bet var piešķirt projekta līmeņa lomas. Katrai organizācijai var būt vairāki **LEAA**.",
+      "**Organizācijas juridiskais parakstītājs (LSIGN):** Persona ar juridiskajām tiesībam parakstīt ar projektiem saistītos dokumentus (līgumus, nolīgumus, grozījumus). Tā var būt vienāda ar LEAR vai cita persona. Katrai organizācijai var būt vairāki **LSIGN**.",
+      "**Organizācijas dalībnieks (ORME):** ir daļa no organizācijas, kas nevar mainīt organizācijas datus, bet var reģistrēt aktīvus un projektus organizācijas ietvaros."
+    ],
+    "lear": [
+      "**Padomi LEAR**",
+      "Jūs nevarat piešķirt LEAR lomu šajā lapā, jo ir nepieciešami papildus apstiprinājumi.",
+      "Jaunajam LEAR ir jāpieprasa LEAR lomas piešķiršana viņu platformas profilā, kur viņi pievienotu nepieciešamo informāciju. Jūs saņemsiet paziņojumu, kurā būs jāapstiprina, ka Jūs piekrītat lomas piešķiršanai. Pēc tam valsts superlietotājs, balstoties uz iesniegtiem dokumentiem, apstiprinās jauno LEAR.",
+      "Kad jaunais LEAR ir iecelts, Jūs vairs nebūsiet šīs organizācijas LEAR, jo katrā organizācijā var būt tikai viens LEAR. Ja Jums ir jāsaglabā organizācijas līmeņa loma, iedodiet sev jaunu lomu pirms LEAR apstiprināšanas."
+    ]
+  },
+  "assets": {
+    "register": [
+      "**Neredzat savu ēku? Reģistrējiet to šeit.**",
+      "Lai varētu reģistrēties, jums ir jāpārliecinās, ka:",
+      "1. Jums ir visi dokumenti, kuros ir norādīta informācija par ēku (kadastra numurs, apsildāmā platība, kāpņu telpu skaits, utt.)",
+      "2. Jūs esat kādas no organizācijas dalībniekiem: katram aktīvam ir **jāpieder** kādai organizācijai, un Jūs varat izveidot Aktīvu tikai Organizācijai, kurā esat dalībnieks.",
+      "Ja Jums neatbilst kāda no iepriekš minētajām pazīmēm, bet Jūs gribētu reģistrēt savu ēku renovācijai, lūdzu sazinieties ar **sunshinehelp@ekubirojs.lv**, un mēs Jums palīdzēsim ar nākamiem soļiem."
+    ],
+    "publicSearchHint": "Parāk daudz aktīvu? Meklējiet savu šeit. Kad meklējat adresi, rakstiet to tā, kā jūs to rakstītu savā valodā. Šajā laukā ir pieļaujamas visas rakstzīmes.",
+    "info": [
+      "Lapā \"Mani aktīvi\" Jūs varat redzēt visus ēkas, kurās Jūs dzīvojat vai kas pieder organizācijai, kurā Jums ir loma. Jūs varat noklikšķināt uz aktīva, lai redzētu detalizētāku informāciju.",
+      "**Visi aktīvi** lapā Jūs redzēsiet visas platformā reģistrētās ēkas, bet, ja Jums nav atļaujas, Jūs nevarēsiet apskatīt detalizētāku informāciju par tām.",
+      "Ja atrodat ēku, kurā Jūs dzīvojāt, klikšķiniet uz \"Es šeit dzīvoju!\", lai pieprasītu apskatīt informācijai par aktīvu. Jums būs nepieciešams augšupielādēt jebkuru dokumentu, kas apliecina, ka esat iedzīvotājs konkrētajā ēkā.",
+      "Skatieties apmācību video [**šeit**](https://www.youtube.com/watch?v=Q6DlptPaebo&list=PL8IdmZDX5yMDzJoyiRK1tYdfsePVUK7M1)"
+    ],
+    "assetInformation": {
+      "totalArea": "Dzīvojamās ēkas kopējo platību nosaka, saskaitot visu ēkas stāvu (ieskaitot pagrabstāvu un bēniņu stāvu) platību starp ārsienu iekšējām virsmām, kā arī ārtelpu - balkonu, lodžiju un terašu - platību. Dzīvojamās ēkas kopējā platībā neieskaita bēniņu (tehnisko bēniņu) un tehnisko pagrabu platības.",
+      "heatedArea": "Ēkas apkurināmo platību nosaka, saskaitot visu dzīvokļu un kāpņu telpu vai citu palīgtelpu, kas arī tiek apsildītas, platības.",
+      "billingArea": "Ēkas norēķinu vai lietderīgo platību nosaka, saskaitot dzīvojamās ēkas dzīvokļu kopējo platību, nedzīvojamo telpu kopējo platību un sabiedrisko telpu, ja tādas ir, kopējo platību."
+    },
+    "assetFields": {
+      "cadastre": "Ēkas identifikācijas numurs, ko nosaka vietējā pašvaldība vai valsts.",
+      "owner": [
+        "Jums vajadzētu būt iespējai izveidot aktīvu visām apstiprinātajām organizācijām, kurās jums ir piešķirta loma. Ja šajā sarakstā neredzat kādu organizāciju, iespējams, tas ir tāpēc, ka organizācija gaida apstiprinājumu no Superlietotāja.",
+        "Tas nozīmē, ka vai nu organizācija ir tikko izveidota un vēl nav apstiprināta, vai arī galvenā informācija ir atjaunināta un vēl nav apstiprināta.",
+        "Organizācijas statusu var apskatīt, klikšķinot **Organizācijas lapa**."
+      ],
+      "residentsCommunity": "Lai nodrošinātu, ka iedzīvotāji var piekļūt ēkas informācijai, ir jāizveido iedzīvotāju kopiena. Tagad šis lauks paliek tukšs, un pēc Organizācijas izveides sistēma to aizpildīs automātiski.",
+      "totalArea": "Dzīvojamās ēkas kopējo platību nosaka, saskaitot visu ēkas stāvu (ieskaitot pagrabstāvu un bēniņu stāvu) platību starp ārsienu iekšējām virsmām, kā arī ārtelpu - balkonu, lodžiju un terašu - platību. Dzīvojamās ēkas kopējā platībā neieskaita bēniņu (tehnisko bēniņu) un tehnisko pagrabu platības.",
+      "billingArea": "Ēkas norēķinu platību jeb lietderīgo platību nosaka, saskaitot dzīvojamās ēkas dzīvokļu kopējo platību, nedzīvojamo telpu kopējo platību un sabiedrisko telpu, ja tādas ir, kopējo platību.",
+      "heatedArea": "Ēkas apkurināmo platību nosaka, saskaitot visu dzīvokļu un kāpņu telpu vai citu palīgtelpu, kas arī tiek apkurinātas, platības.",
+      "districtHeating": "Apkure, ko nodrošina citi pakalpojumu sniedzēji, piemēram, pilsēta, pašvaldība vai citas struktūras.",
+      "buildingHeating": "Ēkai ir savi apkures nodrošināšanas līdzekļi."
+    }
+  },
+  "projects": {
+    "info": [
+      "Šajā lapā varat piekļūt visiem saviem projektiem, lai redzētu ēkas rādītājus, pašreizējo progresu, iesaistītās puses, projekta komandu un daudz ko citu.",
+      "Jūs varat skatīt tikai tos projektus, kuros Jums ir piešķirta loma. Ja neredzat nevienu no saviem projektiem, sazinieties ar savu projektu vadītāju.",
+      "Skatieties apmācību video [**šeit**](https://www.youtube.com/watch?v=3zAPF1NOK18&list=PL8IdmZDX5yMCOPGV_WSlheZZV6tGLD1a1)"
+    ],
+    "overview": [
+      "**Projekta pārskats** redzēsiet, kā projekts virzās uz priekšu.",
+      "Sadaļā **EPC līgums un Forfaitinga vienošanās** varēsiet aizpildīt un izdrukāt šo līgumu galīgo versiju.",
+      "Atverot sadaļu **Projekta posmi**, Jūs redzēsiet katra posma sadalījumu, veicamās darbības un sasniedzamos starpposma mērķus. Šajā sadaļā tiek pārvaldīts projekts."
+    ],
+    "guaranteedMetrics": "Tie ir aprēķinātie rādītāji, kas tiek garantēti ēkai pēc renovācijas pabeigšanas. Tie ir derīgi pēc EPC parakstīšanas.",
+    "roles": [
+      "Noklikšķiniet uz bultiņas, lai paplašinātu un redzētu, kam ir piešķirtas šīs lomas. Ja Jums ir atļauja, šeit ir vieta, kur Jūs piešķirsiet lomas šim projektam.",
+      "**Lomu definīcija:**",
+      "**Projekta vadītājs (PM):** vada projektu. Ir pilnīgas skatīšanas un rediģēšanas tiesības. Var pārvaldīt projekta lomas un izpildīt starpposma mērķus, lai atvērtu projekta fāzes.",
+      "Projektā jābūt vienam PM.",
+      "**Projekta juridiskais parakstītājs (PLSIGN):** persona, kas ir pilnvarota parakstīt juridiskās saistības attiecībā uz konkrēto projektu. Katrā projektā katrai iesaistītajai organizācijai jābūt vienam PLSIGN.",
+      "**Uzdevuma vadītājs (TAME):** persona, kas var veikt dažādas darbības, lai pārvaldītu konkrētu projekta uzdevumu.",
+      "**Komandas dalībnieks (TEME):** persona, kurai ir tikai lasīšanas tiesības attiecībā uz konkrētu projektu."
+    ],
+    "epc": {
+      "generalTerms": "**EPC līguma vispārīgie noteikumi** ir līguma pirmā daļa, un tie ir standartizēti. Šajā lapā ir pieejams pilns teksts.",
+      "annexesInfo": [
+        "Lai atvērtu dažādus pielikumus, noklikšķiniet uz nosaukumiem labajā pusē. Katrā lapā varat aizpildīt tabulas un laukus, lai aizpildītu līgumu.",
+        "Ir būtiski, lai **visa līguma informācija būtu pareiza**, jo to iegūst citās projekta sadaļās.",
+        "Jūs varat **lejuplādēt** līgumu, lai aplūkotu tā pašreizējo versiju PDF formātā. Kad galīgā versija ir parakstīta, tā ir jāielādē attiecīgajā projekta posmā."
+      ],
+      "annexesExtraPage": [
+        "Šo papildu lapu var izmantot, lai, parakstot līgumu, pievienotu citu nepieciešamo informāciju un izdrukātu **papildu pielikumus** pēc tam, kad līgums ir parakstīts, bet tajā nepieciešami grozījumi.",
+        "**Grozījumu** gadījumā šī lapa ir jāizdrukā atsevišķi un jāglabā kopā ar **EPC līgumu**."
+      ],
+      "forfaitingAgreement": "Jums būs jāsagatavo šis līgums gadījumā, ja jūsu projekts ir apstiprināts Forfaitingam. Tas var notikt tikai tad, kad ēka ir nodota ekspluatācijā un ir reģistrēti visas apkures sezonas mērījumi.",
+      "assetAcquisition": [
+        "Šis posms sastāv no **sekojošiem apakšposmiem**.",
+        "Šeit Jūs varat redzēt, kurā apakšposmā atrodas projekts.",
+        "Katra lapa tiek atvērta, tiklīdz **projekta vadītājs** ir pabeidzis iepriekšējo apakšposmu."
+      ],
+      "assetAcquisitionCompleteMilestone": "Tiklīdz ir izpildīti visi nepieciešamie rekvizīti, projekta vadītājam jāapstiprina, ka apakšposms ir pabeigts. Tas bloķēs šo lapu un atbloķēs nākamo apakšposmu.",
+      "commissioningDateDisclamer": "Rezultātu uzraudzības tabulu gadi un mēneši tiks atjaunināti, pamatojoties uz datumu, kad pabeigsiet šo soli. Pirmais mēnesis, kas tiks uzraudzīts, ir nākamais mēnesis pēc tam, kad esat pabeidzis šo soli.",
+      "worksPhase": [
+        "Šis posms sastāv no **pašreizējiem apakšposmiem**.",
+        "Noklikšķinot uz katra no tiem, varat redzēt, kurā starpposma posmā atrodas projekts.",
+        "Ēkas nodošana ekspluatācijā bloķēs iepriekšējos apakšposmus."
+      ],
+      "monitoringPhase": [
+        "Šis posms sastāv no **pašreizējiem apakšposmiem**.",
+        "Noklikšķinot uz katra no tiem, var redzēt, kurā apakšposmā atrodas projekts",
+        "Ēkas nodošana ekspluatācijā bloķēs iepriekšējos apakšposmus."
+      ]
+    },
+    "registerProject": [
+      "Šeit varat reģistrēt projektu organizācijai, kurā jums ir piešķirta loma.",
+      "Jūs varēsiet reģistrēt projektu tikai tādam aktīvam, kas jau ir apstiprināts."
+    ],
+    "requestPermission": [
+      "Gadījumā, ja Jums ir nepieciešams izveidot projektu aktīvam, kas nepieder nevienai no Jūsu organizācijām, Jūs to varat izdarīt šeit.",
+      "Jūs pieprasīsiet atļauju organizācijai, kurā ir reģistrēts aktīvs. Kad atļauja ir piešķirta, varat izveidot Projektu."
+    ]
+  },
+  "users": {
+    "applyLEAR": "Ja esat organizācijas LEAR, varat pieteikties uz šo lomu šeit. Izvēlieties organizāciju un iesniedziet apliecinošus dokumentus, kas apliecina, ka Jums ir tiesības būt par LEAR. Jums tiks paziņots, kad Jūsu loma tiks apstiprināta."
+  },
+  "reports": {
+    "info": "Šajās lapās redzēsiet tikai datus, kas saistīti ar jums piešķirtajām lomām. Izvēlieties vēlamās kolonnas un veiciet eksportēšanu."
+  },
+  "admin": {
+    "platformRoles": [
+      "Noklikšķiniet uz lomas paneļa no tālāk dotā saraksta, lai pārvaldītu lietotājus, kuriem piešķirta platformas loma izvēlētajā valstī.",
+      "**Katrai valstij ir šādas lomas:**",
+      "**Portfeļa direktors:** ir piekļuve konkrētiem pārskatiem par savu valsti un tās projektiem un organizācijām ar mērķi iegūt ieguldījumus, uzaicināt platformā jaunas ieinteresētās personas un atbalstīt tās.",
+      "Redz visus projektus un aktīvus savā valstī.",
+      "**Datu aizsardzības speciālists:** atbild uz pieprasījumiem, kas saistīti ar GDPR.",
+      "**Superlietotājs:** Sniedz atbalstu lietotājiem savā valstī.",
+      "Sadarbojas ar citiem superlietotājiem, lai uzlabotu platformu.",
+      "Apstiprina aktīvus un organizācijas savā valstī. Apstiprina LEAR organizācijās.",
+      "Redz visus lietotājus, aktīvus, organizācijas un projektus savā valstī, lai varētu atbalstīt lietotājus.",
+      "**Finanšu vadītājs:** Apstiprina projektu finansēšanu savā valstī. Redz visus projektus savā valstī.",
+      "**Investors:** var piekļūt finansēšanas pieteikuma lapām projekta finansēšanai savā valstī."
+    ],
+    "rolePFM": [
+      "**Platformas vadītājs:** redz visus platformas datus.",
+      "Piešķir citas platformas un valsts līmeņa lomas."
+    ],
+    "roleNWM": [
+      "*Superlietotāju tīkla pārvaldnieks:** šī ir platformas līmeņa loma.",
+      "Tā var veikt tādus pašus uzdevumus kā superlietotāji, bet visām platformām (t. i., visām valstīm).",
+      "Veic superlietotāju uzdevumus lietotājiem, aktīviem un organizācijām, kas pieder valstij, kurai nav superlietotāju. Turklāt var piešķirt un atsaukt Superlietotāja lomu."
+    ]
+  },
+  "maintenanceTableNotReady": "Jāaizpilda aktīvu uzturēšanas plāna pirmie 3 gadi.",
+  "home": {
+    "info": [
+      "Šeit ir sākuma lapas informācijas uzvedne",
+      "Skatieties apmācību video [**šeit**](https://www.youtube.com/watch?v=J4-x7uN8ec0&list=PL8IdmZDX5yMCqp8AZhpD2FARTrm1RdXgj)"
+    ]
+  }
+}

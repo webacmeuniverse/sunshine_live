@@ -1,0 +1,62 @@
+[
+  {
+     "category": "Waste heat (without power generation)",
+     "open": 2.72,
+     "high": 4.63,
+     "medianFormatted": 1.8,
+     "low": 0.86,
+     "close": 1.19,
+     "observations": 165,
+     "totalobservations": 458
+  },
+  {
+     "category": "Compressed Air",
+     "open": 4.04,
+     "high": 6.85,
+     "medianFormatted": 3.16,
+     "low": 0.55,
+     "close": 1.82,
+     "observations": 65,
+     "totalobservations": 458
+  },
+  {
+     "category": "Cooling",
+     "open": 9.22,
+     "high": 12.24,
+     "medianFormatted": 4.13,
+     "low": 3.24,
+     "close": 3.57,
+     "observations": 12,
+     "totalobservations": 458
+  },
+  {
+     "category": "Refrigeration",
+     "open": 8.59,
+     "high": 19.76,
+     "medianFormatted": 4.77,
+     "low": 2.44,
+     "close": 3.25,
+     "observations": 32,
+     "totalobservations": 458
+  },
+  {
+     "category": "Other",
+     "open": 8.38,
+     "high": 16.3,
+     "medianFormatted": 4.87,
+     "low": 1.73,
+     "close": 3.17,
+     "observations": 94,
+     "totalobservations": 458
+  },
+  {
+     "category": "Heating",
+     "open": 15.69,
+     "high": 32.84,
+     "medianFormatted": 4.9,
+     "low": 1.68,
+     "close": 2.53,
+     "observations": 90,
+     "totalobservations": 458
+  }
+]

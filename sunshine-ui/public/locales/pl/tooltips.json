@@ -1,0 +1,166 @@
+{
+  "organizations": {
+    "register": "Jeśli nie znalazłeś swojej organizacji, możesz ją zarejestrować samodzielnie.",
+    "publicSearchHint": "Wyszukaj tutaj swoją organizację",
+    "info": [
+      "Pierwszym krokiem przy dołączaniu do platformy jest zostanie członkiem Organizacji, do której należysz",
+      "Dlaczego musimy wiedzieć, do której organizacji należysz?",
+      "To provide you with access to information on the platform",
+      "W zakładce **\"Moje organizacje \"** zobaczysz organizacje, do których należysz. Możesz kliknąć na każdą organizację, aby zobaczyć jej szczegółowe informacje. Na stronie **\"Wszystkie organizacje \"** zobaczysz wszystkie organizacje, które są zarejestrowane na platformie. Nie będziesz jednak mógł otworzyć organizacji, do której nie masz uprawnień.",
+      "Jeśli powinieneś być częścią organizacji, kliknij na **\"Request Membership \"**.",
+      "Jeśli nie możesz znaleźć swojej Organizacji, możesz zarejestrować ją samodzielnie.",
+      "Watch Training Videos [**here**](https://www.youtube.com/watch?v=hkpNvWQK7TA&list=PL8IdmZDX5yMC-UOPQ5TUdI8YwSKWfnp33)"
+    ],
+    "roles": [
+      "Kliknij na strzałkę, aby rozwinąć i zobaczyć, kto jest przypisany do każdej z ról. Jeśli masz uprawnienia, w tym miejscu będziesz mógł przypisać role do tej organizacji.",
+      "**Definicje ról:**",
+      "**Legal Entity Appointed Representative (LEAR):**Osoba wyznaczona przez organizację do zarządzania jej danymi na platformie. Musi aktualizować dane podmiotu prawnego. Organizacja może posiadać tylko jednego **LEAR**.",
+      "**Legal Entity Account Administrator (LEAA):**  Wspomaga LEAR w jego zadaniach. Nie może przypisywać innych administratorów konta. Może przypisać role związane z projektem. Każda organizacja może posiadać kilka **LEAA**.",
+      "**Legal Signatory (LSIGN):**Osoba w organizacji posiadająca osobowość prawną upoważniona do podpisywania (w imieniu organizacji) zobowiązań prawnych dotyczących projektów (tj. umów, porozumień, zmian). Może pokrywać się z **LEAR** lub być inną osobą w organizacji. Każda organizacja może posiadać kilka **LSIGN**.",
+      "**Organization Member (ORME):**jest częścią Organizacji. Nie może zmieniać swoich danych, ale może tworzyć Budynki i Projekty dla Organizacji."
+    ],
+    "lear": [
+      "**Wskazówka dla LEAR**",
+      "Nie możesz mianować nowego LEAR jak inne role, ponieważ ta rola wymaga pewnych dodatkowych zatwierdzeń.",
+      "The new LEAR must request to become a LEAR of your Organization on his/her personal profile, where he/she will also provide the needed documents. You will then get a notification to confirm you agree that he/she can become the new LEAR. The final approval is from your country's Super User, who will check that the documentation provided proves that the new person can be a LEAR.",
+      "Nowy LEAR musi poprosić o zostanie LEARem twojej organizacji na swoim osobistym profilu, gdzie również dostarczy potrzebne dokumenty. Następnie otrzymasz powiadomienie potwierdzające, że zgadzasz się na to, aby został on/ona nowym LEAR. Ostateczna zgoda należy do Super Użytkownika z Twojego kraju, który sprawdzi, czy dostarczone dokumenty potwierdzają, że nowa osoba może zostać LEARem."
+    ]
+  },
+  "assets": {
+    "register": [
+      "**Nie widzisz swoich budynków? Zarejestruj go tutaj.**",
+      "Aby móc się zarejestrować, musisz się upewnić, że:",
+      "1) Posiadasz dokument, który zawiera informacje o budynku (numer katastralny, powierzchnia ogrzewana, liczba klatek schodowych, itp.)",
+      "2) Jesteś częścią Organizacji: ponieważ wszystkie Budynki muszą *\"należeć \"* do Organizacji, a Ty możesz stworzyć Budynki tylko dla Organizacji, do której należysz.",
+      "Jeśli nie masz jednego lub wszystkich z powyższych, ale nadal chcesz dodać swój Budynek do renowacji, skontaktuj się z nami na **sunshinehelp@ekubirojs.lv**, a my poprowadzimy Cię przez kolejne kroki."
+   
+    
+    ],
+    "publicSearchHint": "Zbyt wiele budynków? Poszukaj swojego tutaj. Kiedy szukasz adresu, napisz go tak, jak w swoim języku. To pole akceptuje wszystkie znaki.",
+    "info": [
+      "Na stronie **\"Moje Budynki \"** możesz zobaczyć Budynki, w których mieszkasz, lub te, które należą do organizacji, w której masz rolę. Możesz kliknąć na każdy z budynków, aby zobaczyć jego szczegółowe informacje.",
+      "Na stronie **\"Wszystkie budynki \"** zobaczysz wszystkie aktywa zarejestrowane na platformie. Nie będziesz mógł jednak otworzyć Budynku, jeśli nie masz uprawnień",
+      "Jeśli znajdziesz swój dom, kliknij na przycisk **\"Mieszkam tu!\"**, aby poprosić o wgląd do informacji o budynkach. Będziesz musiał przesłać wszelkie dokumenty potwierdzające, że jesteś mieszkańcem.",
+      "Watch Training Videos [**here**](https://www.youtube.com/watch?v=Q6DlptPaebo&list=PL8IdmZDX5yMDzJoyiRK1tYdfsePVUK7M1)"
+    ],
+    "assetInformation": {
+      "totalArea": "Powierzchnię całkowitą dla budynku mieszkalnego ustala się sumując powierzchnię wszystkich kondygnacji budynku (w tym piwnicy i poddasza) pomiędzy wewnętrznymi powierzchniami ścian zewnętrznych, a także powierzchnię pomieszczeń zewnętrznych - balkonów, loggii i tarasów. Do powierzchni całkowitej budynku mieszkalnego nie wlicza się powierzchni strychu (poddasza technicznego) i piwnic technicznych",
+      "heatedArea": "Powierzchnię ogrzewaną budynku określa się poprzez zsumowanie powierzchni wszystkich mieszkań oraz klatek schodowych lub innych pomieszczeń pomocniczych, które są również ogrzewane.",
+      "billingArea": "Powierzchnię rozliczeniową lub użytkową budynku ustala się sumując powierzchnię całkowitą mieszkań w budynku mieszkalnym, powierzchnię całkowitą pomieszczeń niemieszkalnych oraz powierzchnię całkowitą pomieszczeń ogólnodostępnych, jeżeli takie występują."
+    },
+    "assetFields": {
+      "cadastre": "Numer identyfikacyjny budynku, określony przez lokalną gminę lub kraj.",
+      "owner": [
+        "Powinieneś być w stanie tworzyć Budynki do wszystkich Zatwierdzonych Organizacji, w których masz przypisaną rolę. Jeśli nie widzisz Organizacji na tej liście, może to być spowodowane tym, że Organizacja czeka na zatwierdzenie przez Nadrzędnego Użytkownika.",
+        "Oznacza to, że albo organizacja została dopiero co utworzona i nie została jeszcze zatwierdzona, albo kluczowe informacje zostały zaktualizowane i nie zostały jeszcze zatwierdzone.",
+        "Możesz zobaczyć status swojej Organizacji otwierając **Stronę Organizacji**."
+      ],
+      "residentsCommunity": "Aby mieć pewność, że mieszkańcy będą mieli dostęp do informacji o budynku, musi zostać utworzona Wspólnota Mieszkańców. To pole pozostaje teraz puste, a gdy Organizacja zostanie utworzona, zostanie automatycznie wypełnione przez system.",
+      "totalArea": "Powierzchnię całkowitą dla budynku mieszkalnego ustala się sumując powierzchnię wszystkich kondygnacji budynku (w tym piwnicy i poddasza) pomiędzy wewnętrznymi powierzchniami ścian zewnętrznych, a także powierzchnię pomieszczeń zewnętrznych - balkonów, loggii i tarasów. Do powierzchni całkowitej budynku mieszkalnego nie wlicza się powierzchni strychu (poddasza technicznego) i piwnic technicznych.",
+      "billingArea": "Powierzchnię rozliczeniową lub użytkową budynku ustala się sumując powierzchnię całkowitą mieszkań w budynku mieszkalnym, powierzchnię całkowitą pomieszczeń niemieszkalnych oraz powierzchnię całkowitą pomieszczeń ogólnodostępnych, jeżeli takie występują.",
+      "heatedArea": "Powierzchnię ogrzewaną budynku określa się poprzez zsumowanie powierzchni wszystkich mieszkań oraz klatek schodowych lub innych pomieszczeń pomocniczych, które są również ogrzewane.",
+      "districtHeating": "Ogrzewanie dostarczane przez innych dostawców, takich jak miasto, gmina lub inne podmioty.",
+      "buildingHeating": "Budynek posiada własne źródła ogrzewania."
+    }
+  },
+  "projects": {
+    "info": [
+      "Na tej stronie możesz uzyskać dostęp do wszystkich swoich projektów, aby zobaczyć metryki budynku, aktualny postęp, zaangażowane strony, zespół projektowy i inne.",
+      "Możesz zobaczyć tylko te projekty, w których masz przypisaną rolę. Jeśli nie widzisz żadnego ze swoich projektów, skontaktuj się ze swoim kierownikiem projektu.",
+      "Watch Training Videos [**here**](https://www.youtube.com/watch?v=3zAPF1NOK18&list=PL8IdmZDX5yMCOPGV_WSlheZZV6tGLD1a1)"
+    ],
+    "overview": [
+      "**Przegląd Projektu** pokaże Ci, jak przebiega realizacja Projektu.",
+      "Sekcja **EPC Contract & Forfaiting Agreement** pozwoli Ci na wypełnienie i wydrukowanie ostatecznej wersji tych umów.",
+      "Otwierając **Fazy projektu**, zobaczysz podział każdej z faz, czynności do wykonania oraz kamienie milowe do osiągnięcia. W tym miejscu projekt jest zarządzany."
+
+    ],
+    "guaranteedMetrics": "Są to obliczone parametry, które są gwarantowane dla budynku po zakończeniu remontu. Są one ważne po podpisaniu EPC.",
+    "roles": [
+      "Kliknij na strzałkę, aby rozwinąć i zobaczyć, kto jest przypisany do tych ról. Jeśli masz uprawnienia, w tym miejscu będziesz mógł przypisać role do tego projektu",
+      "**Definicje ról:**",
+      "**Menedżer Projektu (PM):** zarządza projektem. Ma pełne prawa do podglądu i edycji. Może zarządzać rolami w projekcie i realizować kamienie milowe otwierające fazy projektu.",
+      "W ramach projektu musi być jeden PM.",
+      "**Project Legal Signatory (PLSIGN):**Osoba upoważniona do podpisywania zobowiązań prawnych dla danego projektu. W projekcie musi być jeden PLSIGN na każdą zaangażowaną organizację.",
+      "**Task Manager (TAME):**Osoba, która może wykonywać różne czynności związane z zarządzaniem danym zadaniem w projekcie.",
+      "**Team Member (TEME):**Osoba, która ma prawa tylko do odczytu dla danego projektu."
+    ],
+    "epc": {
+      "generalTerms": "**Ogólne Warunki Kontraktu EPC** stanowią pierwszą część kontraktu i są standaryzowane. Na tej stronie dostępny jest ich pełny tekst.",
+      "annexesInfo": [
+        "Kliknij na tytuły po prawej stronie, aby otworzyć poszczególne załączniki. Na każdej stronie możesz wypełnić tabele i pola, aby uzupełnić umowę.",
+        "Podstawą jest, aby **wszystkie informacje zawarte w umowie były poprawne**, ponieważ są one pobierane przez inne części projektu.",
+        "Możesz **pobrać** umowę, aby zobaczyć jej aktualną wersję w PDF. Po podpisaniu ostatecznej wersji, musi ona zostać załadowana do odpowiedniej fazy projektu."
+
+      ],
+      "annexesExtraPage": [
+        "Ta dodatkowa strona może być wykorzystana do dodania innych niezbędnych informacji podczas podpisywania umowy oraz do wydrukowania **dodatkowych załączników**, gdy umowa została już podpisana, ale wymaga poprawek.",
+        "W przypadku **zmian**, strona ta musi być wydrukowana oddzielnie i zapisana razem z **umową EPC**."
+      ],
+      "forfaitingAgreement": "Umowę tę należy sporządzić w przypadku, gdy Państwa projekt został zatwierdzony do forfaitingu. Może to nastąpić dopiero po oddaniu budynku do użytku i zarejestrowaniu pomiarów z całego sezonu grzewczego.",
+      "assetAcquisition": [
+        "Faza ta składa się z **kolejnych kamieni milowych**.",
+        "Tutaj możesz zobaczyć, w którym kamieniu milowym znajduje się projekt.",
+        "Każda strona jest odblokowywana w momencie, gdy **Menedżer Projektu** ukończy poprzedni kamień milowy."
+      ],
+      "assetAcquisitionCompleteMilestone": "Po spełnieniu wszystkich wymaganych warunków, Kierownik Projektu powinien potwierdzić, że Kamień Milowy został ukończony. Spowoduje to zablokowanie tej strony i odblokowanie następnego kamienia milowego.",
+      "commissioningDateDisclamer": "Lata i miesiące w tabelach monitorowania wyników zostaną zaktualizowane w oparciu o datę zakończenia tego kroku. Pierwszym miesiącem, który będzie monitorowany, jest następny miesiąc po wykonaniu tego kroku.",
+      "worksPhase": [
+        "Faza ta składa się z **konkretnych kamieni milowych**.",
+        "Klikając na każdy z nich możesz zobaczyć, w którym kamieniu milowym znajduje się dany projekt.",
+        "Oddanie budynku do użytku zablokuje poprzednie kamienie milowe."
+      ],
+      "monitoringPhase": [
+        "Faza ta składa się z **konkretnych kamieni milowych**.",
+        "Klikając na każdy z nich możesz zobaczyć, w którym kamieniu milowym znajduje się dany projekt.",
+        "Oddanie budynku do użytku zablokuje poprzednie kamienie milowe."
+      ]
+    },
+    "registerProject": [
+      "Tutaj możesz zarejestrować projekt dla organizacji, w której masz przypisaną rolę.",
+      "Będziesz mógł zarejestrować projekt tylko dla Budynków, które zostały już zatwierdzone."
+    ],
+    "requestPermission": [
+      "Jeśli chcesz stworzyć projekt dla budynków, które nie należą do żadnej z Twoich organizacji, możesz to zrobić tutaj.",
+      "Należy poprosić o pozwolenie Organizację, w której zarejestrowane są Budynki. Gdy pozwolenie zostanie przyznane, możesz utworzyć projekt."
+    
+    ]
+  },
+  "users": {
+    "applyLEAR": "Jeśli jesteś LEARem organizacji, możesz ubiegać się o tę rolę tutaj. Wybierz Organizację i dostarcz dokumentację potwierdzającą, że jesteś uprawniony do bycia LEAR. Zostaniesz powiadomiony, gdy Twoja rola zostanie potwierdzona."
+  },
+  "reports": {
+    "info": "Na tych stronach zobaczysz tylko dane związane z rolami, które posiadasz. Wybierz kolumny, które chcesz i wykonaj eksport."
+  },
+  "admin": {
+    "platformRoles": [
+      "Kliknij na panelu roli z listy poniżej, aby zarządzać Użytkownikami przypisanymi do roli platformy dla wybranego kraju.",
+      "**Każde państwo pełni następujące role:**",
+      "**Portfolio Director:** Miał dostęp do specyficznych raportów dla swojego kraju i jego projektów i organizacji w celu pozyskania inwestycji, zapraszania nowych interesariuszy na platformę i wspierania ich.",
+      "Widzi wszystkie projekty i budynki w swoim kraju.",
+      "**Inspektor Ochrony Danych:** Odpowiada na zapytania związane z GDPR.",
+      "**Super Użytkownik:** Zapewnia wsparcie dla użytkowników w swoim kraju.",
+      "Współpracuje z innymi Super Użytkownikami nad ulepszaniem platformy.",
+      "Zatwierdza Budynki i Organizacje dla swojego kraju. Zatwierdza LEAR dla organizacji.",
+      "Widzi wszystkich użytkowników,budynki, organizacje i projekty w swoim kraju, aby móc wspierać użytkowników.",
+      "**Menedżer Funduszu:** Zatwierdza finansowanie dla projektów w swoim kraju. Widzi wszystkie projekty w swoim kraju.",
+      "**Inwestor:** ma dostęp do stron aplikacji forfaitingowych dla projektu w swoim kraju."
+    ],
+    "rolePFM": [
+      "**Menedżer Platformy:** Widzi wszystkie dane w Platformie.",
+      "Przypisuje inne role na poziomie Platformy i Kraju."
+    ],
+    "roleNWM": [
+      "**Super User Network Manager:** jest to rola na poziomie platformy.",
+      "Może on wykonywać te same zadania co Superużytkownicy, ale dla wszystkich platform (czyli wszystkich krajów).",
+      "Wykonuje zadania Super Użytkownika dla Użytkowników, Budynków i Organizacji należących do kraju, który nie posiada Super Użytkowników. Dodatkowo może przypisać i odebrać rolę Super Użytkownika."
+    ]
+  },
+  "maintenanceTableNotReady": "Należy wypełnić pierwsze 3 lata planu utrzymania budynku.",
+  "home":{
+    "info": [
+      "Oto podpowiedź informacyjna dla strony głównej",
+      "Obejrzyj filmy szkoleniowe[**Tutaj**](https://www.youtube.com/watch?v=J4-x7uN8ec0&list=PL8IdmZDX5yMCqp8AZhpD2FARTrm1RdXgj)"
+    ]
+  }
+}

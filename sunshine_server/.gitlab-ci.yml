@@ -1,0 +1,152 @@
+stages:
+  - test
+  - publish
+  - deploy
+
+test:
+  stage: test
+  image: registry.gitlab.com/stage-ai/sunshine/sunshine/golang:1.15-latest
+  artifacts:
+    paths:
+      - .sunshine_version
+    expire_in: 1 hour
+  services:
+    - name: postgres:11-alpine
+      command: ["-c", "max_connections=1024"]
+  variables:
+    POSTGRES_DB: sunshine
+    POSTGRES_USER: postgres
+    POSTGRES_PASSWORD: postgres
+    GO111MODULE: "on"
+    GOPRIVATE: acme.universe
+  tags:
+    - test
+    - kubernetes
+  before_script:
+    - eval $(ssh-agent -s)
+    - echo "$SSH_PRIVATE_KEY" | tr -d '\r' | ssh-add - > /dev/null
+    - mkdir -p ~/.ssh
+    - chmod 700 ~/.ssh
+    - ssh-keyscan gitlab.com >> ~/.ssh/known_hosts
+    - chmod 644 ~/.ssh/known_hosts
+    - git config --global url.git@gitlab.com:.insteadOf https://gitlab.com/
+  script:
+    - make build
+    - make ENV=gitlab migrate
+    - make ENV=gitlab test
+    - go vet ./...
+    - diff -u <(echo -n) <(go fmt ./... | grep -v _gen.go)
+    - SUNSHINE_ENV=gitlab sunshine version > .sunshine_version
+
+build_image:
+  stage: publish
+  only:
+    - tags
+    - master
+  image:
+    name: docker:stable
+    entrypoint: ["/bin/sh", "-c"]
+  services:
+    - docker:stable-dind
+  variables:
+    DOCKER_TLS_CERTDIR: ""
+    DOCKER_HOST: tcp://localhost:2375
+  tags:
+    - privileged
+  artifacts:
+    paths:
+      - .kubeconfig
+    expire_in: 1 hour
+  before_script:
+    - export VERSION=$(cat .sunshine_version)
+  script:
+    - docker login --username $CI_REGISTRY_USER --password $CI_REGISTRY_PASSWORD $CI_REGISTRY
+    - docker build -t "$CI_REGISTRY_IMAGE:$VERSION" .
+    - docker push "$CI_REGISTRY_IMAGE:$VERSION"
+    - docker tag "$CI_REGISTRY_IMAGE:$VERSION" "$CI_REGISTRY_IMAGE:latest"
+    - docker push "$CI_REGISTRY_IMAGE:latest"
+    - echo "Published '$CI_REGISTRY_IMAGE:$VERSION' and tagged it as '$CI_REGISTRY_IMAGE:latest'"
+    - docker run --env=DIGITALOCEAN_ACCESS_TOKEN=$DIGITALOCEAN_ACCESS_TOKEN digitalocean/doctl kubernetes cluster kubeconfig show $K8S_CLUSTER_NAME > .kubeconfig
+
+deploy_staging:
+  stage: deploy
+  only:
+    refs:
+      - master
+  image:
+    name: lachlanevenson/k8s-kubectl:latest
+    entrypoint: ["/bin/sh", "-c"]
+  environment:
+    name: staging
+    url: https://staging-sunshine.acme.universe
+  tags:
+    - privileged
+  variables:
+    KUBECONFIG: .kubeconfig
+  before_script:
+    - export VERSION=$(cat .sunshine_version)
+  script:
+    - sed -i "s/registry.gitlab.com\/stage-ai\/sunshine\/sunshine:latest/registry.gitlab.com\/stage-ai\/sunshine\/sunshine:$VERSION/" k8s/deployment.yaml
+    - sed -i "s/default_env/staging/g" k8s/deployment.yaml
+    - sed -i "s/default_release/$VERSION/g" k8s/deployment.yaml
+    - kubectl --namespace=staging apply -f k8s/deployment.yaml
+    - kubectl --namespace=staging get all
+
+deploy_demo:
+  stage: deploy
+  only:
+    refs:
+      - master
+  image:
+    name: lachlanevenson/k8s-kubectl:latest
+    entrypoint: ["/bin/sh", "-c"]
+  environment:
+    name: demo
+    url: https://demo-sunshine.acme.universe
+  tags:
+    - privileged
+  variables:
+    KUBECONFIG: .kubeconfig
+  before_script:
+    - export VERSION=$(cat .sunshine_version)
+  script:
+    - sed -i "s/registry.gitlab.com\/stage-ai\/sunshine\/sunshine:latest/registry.gitlab.com\/stage-ai\/sunshine\/sunshine:$VERSION/" k8s/deployment.yaml
+    - sed -i "s/default_env/demo/g" k8s/deployment.yaml
+    - sed -i "s/default_release/$VERSION/g" k8s/deployment.yaml
+    - kubectl --namespace=demo apply -f k8s/deployment.yaml
+    - kubectl --namespace=demo get all
+
+deploy_production:
+  stage: deploy
+  only:
+    - tags
+  image:
+    name: lachlanevenson/k8s-kubectl:latest
+    entrypoint: ["/bin/sh", "-c"]
+  environment:
+    name: production
+    url: https://sunshineplatform.eu
+  tags:
+    - privileged
+  variables:
+    KUBECONFIG: .kubeconfig
+  before_script:
+    - export VERSION=$(cat .sunshine_version)
+  script:
+    - sed -i "s/registry.gitlab.com\/stage-ai\/sunshine\/sunshine:latest/registry.gitlab.com\/stage-ai\/sunshine\/sunshine:$VERSION/" k8s/deployment.yaml
+    - sed -i "s/default_env/production/g" k8s/deployment.yaml
+    - sed -i "s/default_release/$VERSION/g" k8s/deployment.yaml
+    - kubectl --namespace=production apply -f k8s/deployment.yaml
+    - kubectl --namespace=production get all
+
+deploy_old_production:
+  stage: deploy
+  only:
+    - tags
+  tags:
+    - sunshine
+    - shell
+  script:
+    - docker login --username $CI_REGISTRY_USER --password $CI_REGISTRY_PASSWORD $CI_REGISTRY
+    - docker pull registry.gitlab.com/stage-ai/sunshine/sunshine:latest
+    - docker-compose -f /home/developer/stageai-projects/zzzax/sunshine/sunshine-compose.yaml up -d sunshine

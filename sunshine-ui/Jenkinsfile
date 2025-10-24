@@ -1,0 +1,43 @@
+properties([gitLabConnection('kkalugerov')])
+
+def installDepsAndBuild() {
+  node('slave-prod8') {
+    nodejs(nodeJSInstallationName: 'nodejs') {
+      checkout scm
+      sh 'git rev-parse --short HEAD > .git/commit-id'
+      sh 'npm install'
+      sh 'npm run build'
+    }
+  }
+}
+
+node {
+  wrap([$class: 'AnsiColorBuildWrapper', colorMapName: 'xterm']) {
+    try {
+      def deployProduction = env.TAG_NAME != null && env.TAG_NAME ==~ /^version-.*/
+      if (deployProduction) {
+        gitlabBuilds(builds: ['Build production', 'Deploy production']) {
+          stage('Build production') {
+            gitlabCommitStatus(name: 'Build production') {
+              installDepsAndBuild()
+            }
+            currentBuild.result = 'SUCCESS'
+          }
+
+          stage('Deploy production') {
+            gitlabCommitStatus(name: 'Deploy production') {
+              node('slave-prod8') {
+                sh 'cp -r build/* /var/www/sunshine'
+              }
+            }
+            currentBuild.result = 'SUCCESS'
+          }
+        }
+      }
+    } catch(ex) {
+      echo "\033[1m \u001B[31m [ERROR]: ${ex.getMessage()} \u001B[0m"
+      currentBuild.result = "FAILURE";
+      throw ex
+    }
+  }
+}

@@ -1,0 +1,18 @@
+apiVersion: snapshot.storage.k8s.io/v1alpha1
+kind: VolumeSnapshot
+metadata:
+  name: postgres-pvc-snapshot
+spec:
+  source:
+    name: postgres-pvc
+    kind: PersistentVolumeClaim
+---
+apiVersion: snapshot.storage.k8s.io/v1alpha1
+kind: VolumeSnapshot
+metadata:
+  name: uploads-pvc-snapshot
+spec:
+  source:
+    name: data-nfs-server-nfs-server-provisioner-0
+    kind: PersistentVolumeClaim
+

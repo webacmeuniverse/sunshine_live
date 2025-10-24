@@ -1,0 +1,47 @@
+apiVersion: v1
+kind: Secret
+metadata:
+  name: config
+type: Opaque
+stringData:
+  config.toml: |-
+    [general]
+    name = "SUNShINE"
+    url = "https://sunshine.acme.universe"
+    logo = "https://sunshine.acme.universe/static/media/Sunshine-Logo-FB1200x627.c038d9ef.png"
+    allowed_origins = [
+    "http://ec2-18-133-28-108.eu-west-2.compute.amazonaws.com", 
+    "http://18.133.28.108",
+    "ec2-18-134-134-114.eu-west-2.compute.amazonaws.com",
+    "18.134.134.114",
+    "http://localhost:3000"
+    ]
+    port = 8000
+
+    [paths]
+    uploads = "/data/uploads"
+    latex = "/home/stageai/sunshine/contract/tex"
+    migrations = "/home/stageai/sunshine/models/migrations"
+
+    [psql]
+    host = "postgres"
+    port = 5432
+    name = "sunshine"
+    username = "{{POPULATE}}"
+    password = "{{POPULATE}}"
+
+    [session]
+    auth = "{{POPULATE}}"
+    encr = "{{POPULATE}}"
+    path = "/"
+    http_only = false
+    secure = true
+    samesite = 3
+
+    [mail]
+    backend = "smtp"
+    from = "SUNShINE <no-reply@sunshine.acme.universe>"
+    host = "smtp.sendgrid.net"
+    port = 587
+    username = "apikey"
+    password = "{{POPULATE}}"

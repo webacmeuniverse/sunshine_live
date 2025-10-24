@@ -1,0 +1,220 @@
+{
+  "slider": {
+    "mainTitle": "BIENVENUE AU SEIN DU PROJET EUROPA",
+    "subTitle": "Vous constatez un inconfort thermique ? Il est temps de rendre votre logement sain, confortable, sûr et plus performant énergétiquement",
+    "learnMore": "En savoir plus",
+    "imageTitle": "Souhaitez-vous rénover votre bâtiment ?",
+    "imageTitle1": "Remplissez le questionnaire d’embarquement"
+  },
+  "menu": {
+    "RESIDENTS": "Copropriétaires",
+    "HOWITWORKS": "Comment est-ce que cela fonctionne?",
+    "FindMyPartner": "Trouvez mon partenaire",
+    "EESCALCULATOR": "Calculatrice CSPE",
+    "SERVICESPROVIDER": "Opérateurs",
+    "MATCHMAKING": "Trouvez mon partenaire",
+    "RESOURCES": "RESSOURCES",
+    "Assisttomyproject": "Aller à mon projet",
+    "SIMULATIONTOOL": "OUTIL DE SIMULATION",
+    "EESCHECKLIST": "CHECKLIST du CSPE",
+    "BUILDINGCALCULATOR": "CALCULATRICE BÂTIMENT",
+    "EESREFINANCEABILITYCHECKLIST": "CHECKLIST DU REFINANCEMENT CSPE",
+    "Login": "Identifiant",
+    "MyDashboard": "Mon tableau de bord"
+  },
+  "mainTitle": {
+    "title1": "Rénovons ensemble, mieux et plus simplement"
+  },
+  "individualPrivate": {
+    "title": "Pour les particuliers",
+    "title1": "Nous fournissons un accompagnement à distance et une assistance afin de vous assurer un parcours de rénovation simple",
+    "title2": "Remplissez le questionnaire pour savoir si nous intervenons dans votre région.",
+    "LetStart": "Démarrons !",
+    "box1": "Vous comptez rénover votre copropriété ? Démarrons alors avec ce questionnaire d’intégration !",
+    "box2": "Vous recherchez un opérateur\/groupement pour votre rénovation ? Cliquez sur “Trouver mon partenaire” pour identifier les opérateurs dans votre région.",
+    "box3": "Est-ce que votre copropriété a déjà été rénovée ?"
+  },
+  "howItWorks": {
+    "mainTitle": "Comment est-ce que cela fonctionne ?",
+    "subTitle": "7 étapes simples pour rénover votre copropriété",
+    "title1": "Questionnaire d’embarquement",
+    "description1": "Remplissez notre rapide questionnaire d’intégration pour voir si nous intervenons dans votre région !",
+    "title2": "Contact téléphonique",
+    "description2": "Notre plateforme d’accompagnement sera en contact avec vous afin de vous éclairer sur le parcours. S’il n’y a pas de plateforme dans votre région, pas de panique ! Nous revenons vers vous pour vous aider.",
+    "title3": "Audit énergétique \/ Analyse du profil",
+    "description3": "En utilisant l’outil de simulation disponible, vous pouvez estimer les économies d’énergie du projet et les coûts",
+    "title4": "Trouvez une solution",
+    "description4": "En travaillant avec votre plateforme, vous trouverez une solution adéquate pour la rénovation de votre copropriété",
+    "title5": "Suivez la rénovation de votre copropriété sur SUNShINE",
+    "description5": "La rénovation de copropriété varie selon le contexte, cependant vous pouvez suivre le processus complet : la signature du contrat, les travaux de rénovation et le pilotage, le tout grâce à la plateforme SUNSHiNE.",
+    "title6": "Travaux de rénovation",
+    "description6": "Une fois la solution trouvée et le contrat signé, la rénovation de votre copropriété peut démarrer !",
+    "title7": "Pilotage",
+    "description7": "Piloter la performance de votre copropriété et les règlements sur la plateforme SUNShINE"
+  },
+  "howMuchRenovationCost": {
+    "title1": "Combien va coûter la rénovation de la copropriété ?",
+    "title2": "Essayez notre calculateur du CPSE et découvrez combien le projet de rénovation va coûter sur la base de plusieurs facteurs.",
+    "title3": "Découvrez-le maintenant"
+  },
+  "SUBSCRIBE": {
+    "title1": "SOUSCRIVEZ A NOTRE NEWSLETTER",
+    "Email": "Courriel",
+    "Send": "Envoyez"
+  },
+  "GetInTouch": {
+    "title1": "Entrez en contact maintenant avec la plateforme la plus proche !",
+    "ContactUs": "Contactez nous",
+    "title2": "Avec qui travaillons nous ?"
+  },
+  "Footer": {
+    "Partners": "Partenaires",
+    "About": "A propos",
+    "Support": "Support",
+    "FAQ": "FAQ",
+    "Contact": "Contact",
+    "GoToMyProject": "Allez à mon projet",
+    "Privacy": "Confidentialité",
+    "Terms": "Conditions",
+    "Sitemap": "Plan du site",
+    "Chatwithus": "Discutez avec nous",
+    "Title": "© 2023 EUROPA. Tous droits réservés."
+  },
+  "EESRefinanceabilitychecklist": {
+    "Description": "Liste de contrôle de refinancement EES",
+    "Description1": "S'agissant d'une liste de contrôle, elle ne contient pas toutes les informations pertinentes en détail. Plus de détails et des explications supplémentaires sur les stipulations contractuelles requises pour l'EES ainsi que pour les contrats de refinancement peuvent être trouvées dans la ligne directrice “Stipulations contractuelles standardisées pour le refinancement des services d'efficacité énergétique” qui est accessible en suivant ce lien."
+  },
+  "FindMyPartner": {
+    "Discover": "Découvrir",
+    "More": "Suite",
+    "FilterSort": "Filtrer et trier",
+    "TypeofOrganization": "Type d'organisation",
+    "TypesofServices": "Types de services",
+    "OSSApproved": "Approuvé OSS",
+    "Sort": "Trier",
+    "Nearme": "Proche de moi",
+    "Services": "Prestations de service",
+    "Backtothelist": "Retour à la liste",
+    "Address": "Adresse",
+    "Phone": "Téléphone fixe",
+    "title": "Prêt à rénover votre bâtiment ?",
+    "title1": "Note de l'organisation",
+    "TotalScore": "Score total",
+    "QualityofServices": "Qualité des services",
+    "SpeedofServices": "Rapidité des services",
+    "Communication": "Communication",
+    "Rating": "Notation",
+    "AddRating": "Ajouter une note"
+  },
+  "Resources": {
+    "Learnmore": "Apprendre encore plus",
+    "title1": "Le manuel d'utilisation",
+    "title2": "Le cadre général de l'Abonnement Efficacité Energétique",
+    "title3": "Infographie pour la sensibilisation des parties prenantes",
+    "title4": "Le manuel SUNSHINE sur la rénovation en profondeur des bâtiments",
+    "Resources": "Ressources"
+  },
+  "MyProjectStatus": {
+    "MyprojectstatusTitle": "Statut de mon projet",
+    "title": "Veuillez choisir l'option appropriée pour vous connecter à votre compte",
+    "NewUser": "Nouvel utilisateur",
+    "Signinwithotp": "Se connecter avec OTP",
+    "Login": "Connexion",
+    "title1": "Veuillez saisir votre adresse e-mail",
+    "Welcome": "Bienvenue",
+    "Submit": "Soumettre",
+    "Back": "Retour",
+    "CodeValidation": "Validation du code !",
+    "title2": "Le code a été envoyé à votre adresse électronique. Vérifiez votre email et entrez le code de vérification.",
+    "Seeyourprojectstatus": "Voir le statut de votre projet"
+  },
+  "faqList": {
+    "mainTitle": "Bonjour, comment pouvons-nous vous aider ?",
+    "subTitle": "À propos de la plate-forme SUNShINE impulsée by EUROPA",
+    "titles1": {
+      "questionTitle": "",
+      "questionList": {
+        "question1": "Que fait la plate-forme SUNShINE impulsée par EUROPA ?",
+        "question2": "À qui s'adresse la plateforme SUNShINE impulsée par EUROPA ?",
+        "question3": "Quel est le coût de l'utilisation de la plateforme SUNShINE d’EUROPA ?",
+        "question4": "Qu'est-ce que le contrat de souscription de performance énergétique ?",
+        "question5": "Comment puis-je calculer les coûts de la rénovation de mon bâtiment ?"
+      },
+      "answerList": {
+        "answer1": "La plateforme SUNShINE impulsée par EUROPA aide toutes les parties prenantes à participer à des activités de rénovation énergétique à toutes les étapes du projet : de l'initiation de l'idée de rénover le bâtiment jusqu'au suivi des résultats des activités.",
+        "answer2": "La plateforme est conçue pour les copropriétaires, les conseils syndicaux, les opérateurs, les municipalités et toutes les autres parties intéressées.",
+        "answer2Sub1": "Cliquez sur le bouton \"Pouvons-nous vous aider ?\" pour découvrir les contenus qui peuvent vous aider dans votre activité.",
+        "answer3": "La plateforme est gratuite. Cette décision était extrêmement importante pour nous car elle permettra l'utilisation de la plateforme à différentes parties prenantes.",
+        "answer4": "Le contrat de souscription de performance énergétique (CSPE) est une offre de services visant à améliorer l'efficacité énergétique d'un bâtiment sous forme d'abonnement, ce qui simplifie le modèle de paiement et crée une compréhension mutuelle des procédures en cours.",
+        "answer5": "Le coût et le plan de paiement de la rénovation peuvent être calculés avec le Calculateur de coût de rénovation - un outil développé sur la plateforme pour modéliser les coûts totaux et le plan de paiement annuel possible pour le bâtiment.",
+        "answer5Sub1": "Rendez-vous sur la page \"Copropriétaires\" pour savoir combien coûtera la rénovation de votre bâtiment !"
+      }
+    },
+    "titles2": {
+      "questionTitle": "COPROPRIETAIRE",
+      "questionList": {
+        "question1": "Quelles sont les informations demandées par la plateforme ?",
+        "question2": "Que se passe-t-il si je ne connais pas certaines des informations particulières relatives à mon bâtiment ou si les questions d'accueil ne correspondent pas à mon bâtiment ?",
+        "question3": "Que faire si aucun OSS n'est mis en place dans ma région ?",
+        "question4": "Je rencontre des difficultés techniques. À qui dois-je m'adresser ?",
+        "question5": "Comment puis-je en savoir plus sur mon projet ?",
+        "question6": "Où puis-je voir les prestataires de services qui se trouvent dans ma région ?"
+      },
+      "answerList": {
+        "answer1": "Pour pouvoir utiliser la plateforme, vous devrez fournir :",
+        "answer1Sub1": "Nom",
+        "answer1Sub2": "Nom de famille",
+        "answer1Sub3": "Courriel",
+        "answer1Sub4": "Numéro de téléphone",
+        "answer1Sub5": "Ville",
+        "answer1Sub6": "Pays",
+        "answer2": "Ce n'est pas un problème ! Votre service d’accompagnement vous aidera à remplir le reste des informations après votre premier appel programmé.",
+        "answer3": "Si aucun OSS n'est mis en place dans votre région, vous remplirez les questionnaires d'onboarding par défaut et l'équipe de gestion de la plateforme prendra contact avec vous.",
+        "answer4": "Veuillez contacter l'équipe de gestion de la plateforme à l'adresse copro@ageden38.org",
+        "answer5": "Veuillez cliquer sur le bouton \"Mon projet\" et remplir toutes les informations nécessaires afin d'avoir accès aux informations sur votre projet.",
+        "answer6": "Vous pouvez trouver toutes les informations nécessaires sur les prestataires de services sur la page \"Trouver mon partenaire\". Sur cette page, vous pouvez soit parcourir la liste de tous les opérateurs de services dans votre région, soit les visualiser sur la carte. En cliquant sur leur logo, vous trouverez leur profil public avec les informations de contact."
+      }
+    },
+    "titles3": {
+      "questionTitle": "CONSEIL SYNDICAL",
+      "questionList": {
+        "question1": "Les copropriétaires de l'immeuble que je gère sont intéressés par la rénovation de leur immeuble et je veux leur fournir les informations correctes. Que dois-je faire ?",
+        "question2": "J'ai besoin d'un opérateur, que dois-je faire ?"
+      },
+      "answerList": {
+        "answer1": "Vous pouvez trouver tous les documents d'information sur la page \"Ressources\" et les partager avec les copropriétaires !",
+        "answer2": "Vous pouvez trouver toutes les informations nécessaires sur les prestataires de services sur la page \"Trouver mon partenaire\". Sur cette page, vous pouvez soit parcourir la liste de tous les opérateurs de votre région, soit les visualiser sur la carte. En cliquant sur leur logo, vous trouverez leur profil public avec les informations de contact."
+      }
+    },
+    "titles4": {
+      "questionTitle": "Opérateurs",
+      "questionList": {
+        "question1": "Je suis un opérateur et je suis intéressé à participer à la section \"Trouver mon partenaire\", est-ce possible ? \n",
+        "question2": "Je rencontre des problèmes dans le processus d'embarquement, que dois-je faire ?",
+        "question3": "Pourquoi dois-je fournir mes certificats ?",
+        "question4": "Qu'est-ce que la checklist du CSPE ?",
+        "question5": "Qu'est-ce que la checklist de la possibilité de refinancement ?"
+      },
+      "answerList": {
+        "answer1": "Afin d'être visible dans la section \"Trouver mon partenaire\", vous devez suivre le processus d'embarquement des opérateurs et vous conformer aux exigences définies par la plateforme d’accompagnement. Après l'approbation de la plateforme d’accompagnement, le profil public de votre Organisation sera ajouté à la page \"Trouver mon partenaire\" !",
+        "answer2": "Veuillez contacter le super utilisateur de la plateforme à l'adresse copro@ageden38.org.",
+        "answer3": "es certificats étayent vos réponses au questionnaire d'accueil et aident le service d’accompagnement local à évaluer votre capacité à fournir les services.",
+        "answer4": "Il s'agit d'un ensemble d'exigences et de normes mises en place par le service d’accompagnement qui doivent être respectées par un projet et un opérateur. L'objectif est de garantir la qualité aux propriétaires de bâtiments et aux utilisateurs finaux tout au long de la chaîne de valeur de la rénovation énergétique globale des bâtiments résidentiels. Le concept a été développé par le projet Horizon 2020 EUROPA.",
+        "answer5": "Le calculateur de refinancement a été développé pour assurer la finançabilité d'un projet en évaluant certaines normes liées à toutes les phases du projet. Le concept a été développé par le projet Horizon 2020 REFINE."
+      }
+    },
+    "titles5": {
+      "questionTitle": "Service d’accompagnement",
+      "questionList": {
+        "question1": "Je suis un service d’accompagnement et je suis intéressé par l'utilisation de la plateforme, que dois-je faire ?",
+        "question2": "Pourquoi devrais-je choisir la plate-forme SUNShINE d'EUROPA pour numériser notre travail en tant que service d'accompagnement ?",
+        "question3": "En cas de litige :"
+      },
+      "answerList": {
+        "answer1": "Veuillez remplir le questionnaire d'accueil pour les opérateurs et indiquer que vous êtes un service d’accompagnement. Ensuite, l'équipe de gestion de la plateforme prendra contact avec vous !",
+        "answer2": "La plateforme SUNShINE d'EUROPA offre une approche de l'environnement numérique, dans laquelle différentes parties prenantes peuvent s'engager avec les outils développés. En raison de la spécificité de la portée du travail de chaque service d'accompagnement, l'ensemble des outils peut être personnalisé pour s'adapter au contexte régional et augmenter leur utilité. Globalement, la plateforme SUNShINE d'EUROPA est une méthodologie complète pour organiser le travail des services d'accompagnement.",
+        "answer3": "Nous vous recommandons vivement de contacter l'équipe de gestion de la plateforme à l'adresse copro@ageden38.org"
+      }
+    }
+  }
+}

@@ -1,0 +1,39 @@
+[general]
+name = "SUNShINE"
+url = "https://test.savehomesave.eu/"
+
+logo = "https://sunshine.acme.universe/static/media/Sunshine-Logo-FB1200x627.c038d9ef.png"
+allowed_origins = ["http://localhost:80"]
+port = 8000
+sentry = "http://f2ec84719c36493b8c45fcfbdb4415f0@localhost:9000/2"
+
+[paths]
+uploads = "/data/uploads"
+latex = "/home/ubuntu/go/src/sunshine_server/contract/tex"
+migrations = "/home/ubuntu/go/src/sunshine_server/models/migrations"
+
+[psql]
+host = "ec2-54-93-233-10.eu-central-1.compute.amazonaws.com"
+port = 5432
+name = "sunshine"
+username = "postgres"
+password = "postgres"
+
+[session]
+auth = "ZS8jMBJ7Kx8iF9YQXnehrew4aKMQZU68aUtxgsNxWf7gfTDCFCdXMFQgWChGa8LXRrdovBWRj0rnkEYfJ1aTUg=="
+encr = "2Pj612hCHapgiXr6F6zGbqZjcpGacMHxVJrGo7Ak+kg="
+path = "/"
+http_only = false
+secure = true
+samesite = 3
+
+
+
+[mail]
+backend = "smtp"
+from = "Sunshine-Mail-Service <sunshine.acmeuniverse@gmail.com>" # sunshine.acmeuniverse@gmail.com
+host = "smtp.gmail.com"
+port = 587
+username = "sunshine.acmeuniverse@gmail.com"
+password = "pnhfgauqhsfulmcb"
+# password = "Web@@123123"

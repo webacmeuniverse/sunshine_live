@@ -1,0 +1,161 @@
+{
+  "organizations": {
+    "register": "Se não encontrou a sua organização, pode registá-la você mesmo.",
+    "publicSearchHint": "Pesquise aqui a sua organização.",
+    "info": [
+      "O primeiro passo ao aderir à plataforma é tornar-se membro da(s) Organização(ões) a que pertence",
+      "**Por que precisamos de saber a que Organização pertence?**",
+      "Para garantir o acesso à informação na plataforma",
+      "Nas **Minhas Organizações** vê as Organizações de que faz parte. Pode clicar em cada Organização para ver as suas informações detalhadas. Na página **Todas as Organizações** verá todas as Organizações que estão registadas na plataforma. No entanto, não poderá abrir a Organização para a qual não tem autorização",
+      "Se deve fazer parte de uma Organização, clique em **Solicitar adesão**",
+      "Se não conseguir encontrar a sua Organização, pode registá-la você mesmo",
+      "Ver vídeos de formação [**aqui***](https://www.youtube.com/watch?v=hkpNvWQK7TA&list=PL8IdmZDX5yMC-UOPQ5TUdI8YwSKWfnp33)"
+    ],
+    "roles": [
+      "Clique na seta para expandir e ver quem está atribuído a cada um dos papéis. Se tiver permissão, é aqui que irá atribuir papéis a esta Organização",
+      "**Definições de buracos:**",
+      "**Representante nomeado por uma entidade jurídica (LEAR):** A pessoa nomeada por uma organização para gerir os seus dados na plataforma. Deve manter os dados das entidades jurídicas actualizados. Uma Organização só pode ter um **LEAR***",
+      "**Gerente de Conta da Entidade Jurídica (LEAA):** Assiste o LEAR nas suas tarefas. Não pode atribuir outros administradores de conta. Pode atribuir funções relacionadas com projectos. Cada organização pode ter vários **LEAA**s.",
+      "**Assinatura legal (LSIGN):** Pessoa de uma organização com personalidade jurídica autorizada a assinar (em nome da organização) compromissos legais para projectos (i.e. contratos, acordos, emendas). Pode sobrepor-se ao **LEAR** ou ser outra pessoa na organização. Cada organização pode ter vários **LSIGN***s.",
+      "**Organization Member (ORME):** faz parte da Organização. Não pode alterar os seus dados, mas pode criar Activos e Projectos para a Organização."
+    ],
+    "lear": [
+      "**Tip for the LEAR**",
+      "Não se pode nomear um novo LEAR por aqui como se faz com os outros papéis, porque este papel requer algumas aprovações extra",
+      "O novo LEAR deve pedir para se tornar um LEAR da sua Organização no seu perfil pessoal, onde também fornecerá os documentos necessários. Receberá então uma notificação para confirmar que concorda que pode tornar-se o novo LEAR. A aprovação final é do Super Utilizador do seu país, que verificará se a documentação fornecida prova que a nova pessoa pode ser um LEAR",
+      "Uma vez aprovado o novo LEAR, não será mais um LEAR, uma vez que cada Organização pode ter apenas um LEAR. No caso de dever permanecer na Organização com um papel diferente, certifique-se de atribuir esse papel a si próprio antes de dar a aprovação, para que não perca o acesso à Organização e aos seus bens e projectos relacionados."
+    ]
+  },
+  "assets": {
+    "register": [
+      "**Não vê o seu bem? Registe-o aqui.**",
+      "Para se poder registar, é preciso certificar-se de que:",
+      "1) Tem um documento que mostra a informação do Bem (número do Cadastro, área aquecida, número de escadas, etc.)",
+      "2) Fazem parte de uma Organização: porque todos os Bens têm de *\"pertencer\"* a uma Organização, e só podem criar um Bens para uma Organização a que pertençam",
+      "Se não tiver um ou todos os bens acima mencionados, mas ainda quiser adicionar o seu bem para renovação, contacte-nos em **sunshinehelp@ekubirojs.lv*** e nós guiá-lo-emos através dos próximos passos."
+    ],
+    "publicSearchHint": "Demasiados bens? Procure o seu aqui. Ao procurar um endereço, escreva-o como faria na sua língua. Este campo aceita todos os caracteres.",
+    "info": [
+      "Na página **Os meus bens** pode ver os bens em que vive, ou os que pertencem à(s) organização(ões) em que tem um papel. Pode clicar em cada um dos seus Bens para ver as suas informações detalhadas",
+      "Na página **Todos os Bens** verá todos os Bens registados na plataforma. No entanto, não poderá abrir um Bens se não tiver a permissão",
+      "Se encontrar a sua casa, clique em **Eu vivo aqui!** botão para pedir para ver as informações do Bem. Ser-lhe-á solicitado que carregue qualquer documento que prove que é residente",
+      "Ver vídeos de formação [**aqui***](https://www.youtube.com/watch?v=Q6DlptPaebo&list=PL8IdmZDX5yMDzJoyiRK1tYdfsePVUK7M1)"
+    ],
+    "assetInformation": {
+      "totalArea": "A área total de um edifício residencial é determinada pela soma da área de todos os andares do edifício (incluindo a cave e o chão do sótão) entre as superfícies interiores das paredes exteriores, bem como a área dos espaços exteriores - varandas, logges e terraços. As áreas do sótão (sótão técnico) e das caves técnicas não estão incluídas na área total de um edifício residencial.",
+      "heatedArea": "A área aquecida de um edifício é determinada pela soma da área de todos os apartamentos e quaisquer escadas ou outras salas auxiliares que também são aquecidas.",
+      "billingArea": "A área de facturação ou área útil de um edifício é determinada pela soma da área total dos apartamentos de um edifício residencial, a área total das instalações não residenciais e a área total das instalações públicas, caso existam."
+    },
+    "assetFields": {
+      "cadastre": "Número de identificação do edifício, definido pelo município ou país local.",
+      "owner": [
+        "Deverá ser capaz de criar Bens a todas as Organizações Aprovadas nas quais tem um papel atribuído. Se não conseguir ver uma Organização nesta lista, poderá ser porque a Organização está à espera da Aprovação do Super Utilizador",
+        "Isto significa que ou a Organização foi criada e ainda não foi aprovada, ou a informação chave foi actualizada e ainda não aprovada",
+        "Pode ver o estatuto da sua Organização abrindo a página **Organização**."
+      ],
+      "residentsCommunity": "Para que os residentes possam ter acesso à Informação sobre o Edifício, tem de ser criada uma Comunidade de Residentes. Este campo permanece agora em branco, e uma vez criada a Organização, será automaticamente preenchido pelo sistema.",
+      "totalArea": "A área total de um edifício residencial é determinada pela soma da área de todos os andares do edifício (incluindo a cave e o chão do sótão) entre as superfícies interiores das paredes exteriores, bem como a área dos espaços exteriores - varandas, logges e terraços. As áreas do sótão (sótão técnico) e das caves técnicas não estão incluídas na área total de um edifício residencial.",
+      "billingArea": "A área de facturação ou área útil de um edifício é determinada pela soma da área total dos apartamentos de um edifício residencial, a área total das instalações não residenciais e a área total das instalações públicas, caso existam.",
+      "heatedArea": "A área aquecida de um edifício é determinada pela soma da área de todos os apartamentos e quaisquer escadas ou outras salas auxiliares que também são aquecidas.",
+      "districtHeating": "Aquecimento fornecido por outros fornecedores, tais como cidade, município ou outras entidades.",
+      "buildingHeating": "O edifício tem os seus próprios meios para fornecer aquecimento."
+    }
+  },
+  "projects": {
+    "info": [
+      "Nesta página pode aceder a todos os seus projectos para ver a métrica do edifício, o progresso actual, as partes envolvidas, a equipa do projecto e muito mais",
+      "Só se pode ver os projectos em que tem um papel atribuído. Se não vir nenhum dos seus projectos, contacte o seu coordenador de projecto",
+      "Ver vídeos de formação [**aqui***](https://www.youtube.com/watch?v=3zAPF1NOK18&list=PL8IdmZDX5yMCOPGV_WSlheZZV6tGLD1a1)"
+    ],
+    "overview": [
+      "A **Visão Geral do Projecto** mostrar-vos-á como está a decorrer o Projecto",
+      "A secção **Contrato e Acordo de Forfaiting*** permitirá preencher e imprimir uma versão final destes contratos",
+      "Ao abrir as **Fases do projecto**, verá a repartição de cada fase, as actividades a realizar e os marcos a atingir. É aqui que o projecto é gerido."
+    ],
+    "guaranteedMetrics": "Estas são métricas calculadas que são garantidas para o edifício após a renovação estar concluída. São válidos após a assinatura da EPC.",
+    "roles": [
+      "Clique na seta para expandir e ver quem está atribuído a estas funções. Se tiver permissão, é aqui que irá atribuir papéis a este Projecto",
+      "**Definições de buracos:**",
+      "**Project Manager (PM):** gere o projecto. Tem todos os direitos de visualização e edição. Pode gerir as funções do projecto e completar marcos para abrir fases do projecto",
+      "Deve haver uma PM por Projecto",
+      "**Assinatura Legal do Projecto (PLSIGN):** Pessoa autorizada a assinar compromissos legais para um determinado projecto. Num projecto deve haver um PLSIGN por organização envolvida",
+      "**Gerente de tarefas (TAME):** Pessoa que pode realizar várias acções para gerir uma determinada tarefa de um projecto",
+      "** Membro da equipa (TEME):** Pessoa que tem direitos apenas de leitura para um determinado projecto"
+    ],
+    "epc": {
+      "generalTerms": "**As Condições Gerais do Contrato EPC** são a primeira parte do contrato e são padronizadas. Nesta página o texto completo está disponível.",
+      "annexesInfo": [
+        "Clique nos títulos à direita para abrir os diferentes anexos. Em cada página, pode preencher os quadros e os campos para completar o contrato",
+        "É fundamental ter **todas as informações do contrato correctas**, porque são recuperadas por outras secções do projecto",
+        "Pode **transferir** o contrato para ver a versão actual em PDF. Uma vez assinada a versão final, esta deve ser carregada para a respectiva fase do projecto."
+      ],
+      "annexesExtraPage": [
+        "Esta página extra pode ser utilizada para acrescentar outras informações necessárias aquando da assinatura do contrato e para imprimir **anexos adicionais** uma vez assinado o contrato, mas necessita de alterações",
+        "No caso de **alterações**, esta página deve ser impressa em separado e guardada juntamente com o **contrato doEPC**."
+      ],
+      "forfaitingAgreement": "Terá de preparar este acordo caso o seu projecto tenha sido aprovado para forfaiting. Isto só pode acontecer depois de o edifício ter sido colocado em funcionamento e as medições de toda uma estação de aquecimento terem sido registadas.",
+      "assetAcquisition": [
+        "Esta fase é constituída por ** marcos sequenciais**",
+        "Aqui pode ver em que marco se encontra o projecto",
+        "Cada página é desbloqueada assim que o **Gerente de Projecto** tiver completado o marco anterior."
+      ],
+      "assetAcquisitionCompleteMilestone": "Uma vez preenchidos todos os requisitos necessários, o Gestor de Projecto deverá confirmar que a Marcos está concluída. Isto irá bloquear esta página e desbloquear a próxima etapa",
+      "commissioningDateDisclamer": "Os Anos e Meses das tabelas de Monitorização de Resultados serão actualizados com base na data em que completar esta etapa. O primeiro mês a ser monitorizado é o mês seguinte depois de ter completado esta etapa.",
+      "worksPhase": [
+        "Esta fase é constituída por **marcos correntes***",
+        "Clicando em cada um pode ver em que marco se encontra o projecto",
+        "A entrada em funcionamento do edifício bloqueará marcos anteriores."
+      ],
+      "monitoringPhase": [
+        "Esta fase é constituída por **marcos correntes***",
+        "Clicando em cada um pode ver em que marco se encontra o projecto",
+        "A entrada em funcionamento do edifício bloqueará marcos anteriores."
+      ]
+    },
+    "registerProject": [
+      "Aqui pode registar um Projecto para uma Organização onde tem um papel atribuído",
+      "Só poderá registar um Projecto para um Bem que já tenha sido aprovado."
+    ],
+    "requestPermission": [
+      "Caso necessite de criar um Projecto para um Bem que não pertença a nenhuma das suas Organizações, pode fazê-lo aqui",
+      "Pedirá autorização à Organização sob a qual o bem está registado. Uma vez concedida a permissão, poderá criar o Projecto."
+    ]
+  },
+  "users": {
+    "applyLEAR": "Se é LEAR de uma Organização, pode candidatar-se ao papel aqui. Seleccione a Organização e forneça documentação de apoio que mostre que tem direito a ser o LEAR. Será notificado quando a sua função for confirmada."
+  },
+  "reports": {
+    "info": "Nestas páginas verá apenas dados relacionados com os papéis que tem. Seleccione as colunas que pretende e faça a exportação."
+  },
+  "admin": {
+    "platformRoles": [
+      "Clique num painel de funções da lista abaixo para gerir os Utilizadores atribuídos à função de plataforma para o país seleccionado",
+      "**Cada país tem os seguintes papéis:**",
+      "**Director de Carteira:** Teve acesso a relatórios específicos para o seu país e os seus projectos e Organizações com o objectivo de obter investimentos, convidando novos intervenientes para plataformas e apoiando-os",
+      "Vê todos os projectos e bens do seu país",
+      "**Data Protection Officer:** Responde aos pedidos relacionados com a GDPR",
+      "**Usuário superior:** Fornece apoio aos utilizadores dentro do seu país",
+      "Trabalha em conjunto com outros Super Utilizadores para melhorar a plataforma",
+      "Aprova Bens e Organizações para o seu País. Aprova LEARs para Organizações",
+      "Vê todos os Utilizadores, Bens, Organizações e Projectos dentro do seu país para poder apoiar os utilizadores",
+      "**Fund Manager:** Aprova o Financiamento de Projectos no seu País. Vê todos os projectos no seu país",
+      "**Investor:** tem acesso a páginas de candidatura forfaiting para o projecto no seu país."
+    ],
+    "rolePFM": [
+      "**Platform Manager:** Vê todos os dados na Plataforma",
+      "Atribui outras funções de plataforma e de país."
+    ],
+    "roleNWM": [
+      "**Gerente de Rede de UtilizadoresSuper:** este é um papel a nível de plataforma",
+      "Pode desempenhar as mesmas tarefas que os Super Utilizadores, mas para todas as plataformas (o que significa, todos os países)",
+      "Realiza tarefas de Super Utilizador para os Utilizadores, Bens e Organizações que pertencem a um país que não tem Super Utilizadores. Além disso, pode atribuir e revogar o papel de Super Utilizador."
+    ]
+  },
+  "maintenanceTableNotReady": "Os primeiros 3 anos do plano de Manutenção de Bens têm de ser preenchidos.",
+  "home": {
+    "info": [
+      "Aqui está a dica de informação para a página inicial",
+      "Ver vídeos de formação [**aqui***](https://www.youtube.com/watch?v=J4-x7uN8ec0&list=PL8IdmZDX5yMCqp8AZhpD2FARTrm1RdXgj)"
+    ]
+  }
+}

@@ -1,0 +1,162 @@
+{
+	"organizations": {
+		"register": "Si vous n'avez pas trouvé votre organisation, vous pouvez l'enregistrer vous-même.",
+		"publicSearchHint": "Recherchez votre organisation ici.",
+		"info": [
+			"La première étape lorsque vous rejoignez la plate-forme est de devenir membre de l'Organisation ou des Organisations auxquelles vous appartenez.",
+			"**Pourquoi avons-nous besoin de savoir à quelle Organisation vous appartenez?**",
+			"Pour vous assurer que vous avez accès aux informations de la plate-forme.",
+			"Dans la section **Mes Organisations ** vous voyez les Organisations dont vous faites partie. Vous pouvez cliquer sur chaque Organisation pour voir ses informations détaillées. Dans la page **Toutes les organisations **, vous verrez toutes les organisations qui sont enregistrées sur la plate-forme. Toutefois, vous ne pourrez pas ouvrir l'Organisation pour laquelle vous n'avez pas d'autorisation.",
+			"Si vous devez faire partie d'une Organisation, cliquez sur **Demande d'adhésion**.",
+			"Si vous ne trouvez pas votre Organisation, vous pouvez l'enregistrer vous-même.",
+			"Regarder les vidéos de formation [**ici**] (https://www.youtube.com/watch?v=hkpNvWQK7TA&list=PL8IdmZDX5yMC-UOPQ5TUdI8YwSKWfnp33)"
+		],
+		"roles": [
+			"Cliquez sur la flèche pour développer et voir qui est affecté à chacun des rôles. Si vous en avez l'autorisation, c'est ici que vous attribuerez des rôles à cette organisation.",
+			"**Définitions des rôles:**",
+			"**Représentant désigné par l'entité juridique (LEAR):** La personne désignée par une organisation pour gérer ses données dans la plate-forme. Elle doit tenir à jour les données de l'entité légale. Une organisation ne peut avoir qu'un seul **LEAR**.",
+			"**Administrateur de compte d'entité légale (LEAA):** Assiste le LEAR dans ses tâches. Ne peut pas attribuer d'autres administrateurs de compte. Peut attribuer des rôles liés au projet. Chaque organisation peut avoir plusieurs **LEAA**.",
+			"**Signataire légal (LSIGN):** Personne dans une organisation d'entité légale autorisée à signer (au nom de l'organisation) les engagements légaux pour les projets (c'est-à-dire les contrats, les accords, les amendements). Peut chevaucher le **LEAR** ou être une autre personne dans l'organisation. Chaque organisation peut avoir plusieurs **LSIGN**.",
+			"**Membre de l'organisation (ORME):** fait partie de l'organisation. Ne peut pas modifier ses données, mais peut créer des actifs et des projets pour l'Organisation."
+
+		],
+		"lear": [
+			"**Conseil pour le LEAR**",
+			"Vous ne pouvez pas nommer un nouveau LEAR ici comme vous le faites avec les autres rôles, car ce rôle nécessite des autorisations supplémentaires.",
+			"Le nouveau LEAR doit demander à devenir un LEAR de votre organisation sur son profil personnel, où il/elle fournira également les documents nécessaires. Vous recevrez ensuite une notification confirmant que vous acceptez qu'il/elle devienne le nouveau LEAR. L'approbation finale est donnée par le super utilisateur de votre pays, qui vérifiera que les documents fournis prouvent que la nouvelle personne peut être un LEAR",
+			"Une fois le nouveau LEAR approuvé, vous ne serez plus un LEAR, car chaque organisation ne peut avoir qu'un seul LEAR. Dans le cas où vous devriez rester dans l'Organisation avec un rôle différent, assurez-vous de vous attribuer ce rôle avant de donner l'approbation, afin de ne pas perdre l'accès à l'Organisation et à ses actifs et projets connexes.Le nouveau LEAR est approuvé."
+		]
+	},
+	"assets": {
+		"register": [
+			"**Vous ne voyez pas votre bien ? Enregistrez-le ici.**",
+			"Pour pouvoir vous enregistrer, vous devez vous assurer que :",
+			"1) Vous disposez d'un document qui indique les informations du bien (numéro de cadastre, surface chauffée, nombre d'escaliers, etc.).",
+			"2) Vous faites partie d'une Organisation : parce que tous les Biens doivent *appartenir * à une Organisation, et vous ne pouvez créer un Bien que pour une Organisation à laquelle vous appartenez.",
+			"Si vous n'avez pas un ou tous les éléments ci-dessus, mais que vous voulez quand même ajouter votre Bien pour la rénovation, contactez-nous à **sunshinehelp@ekubirojs.lv** et nous vous guiderons dans les prochaines étapes."
+		],
+		"publicSearchHint": "Trop d'actifs ? Recherchez les vôtres ici. Lorsque vous recherchez une adresse, écrivez-la comme vous le feriez dans votre langue. Ce champ accepte tous les caractères.",
+		"info": [
+			"Dans la page **My Assets **, vous pouvez voir les Biens dans lesquels vous vivez, ou ceux qui appartiennent à une ou plusieurs organisations dans lesquelles vous avez un rôle. Vous pouvez cliquer sur chacun de vos biens pour voir ses informations détaillées.",
+			"Sur la page **Tous les biens **, vous verrez tous les biens enregistrés sur la plate-forme. Cependant, vous ne pourrez pas ouvrir un bien si vous n'en avez pas l'autorisation.",
+			"Si vous trouvez votre maison, cliquez sur le bouton **J'habite ici!\"** pour demander à voir les informations du bien. Il vous sera demandé de télécharger tout document prouvant que vous êtes un résident.",
+			"Regardez les vidéos de formation [**ici**] (https://www.youtube.com/watch?v=Q6DlptPaebo&list=PL8IdmZDX5yMDzJoyiRK1tYdfsePVUK7M1)"
+		],
+		"assetInformation": {
+			"totalArea": "La superficie totale d'un bâtiment résidentiel est déterminée en additionnant la superficie de tous les étages du bâtiment (y compris le sous-sol et le grenier) entre les surfaces intérieures des murs extérieurs, ainsi que la superficie des espaces extérieurs - balcons, loggias et terrasses. Les surfaces des combles (combles techniques) et des sous-sols techniques ne sont pas incluses dans la surface totale d'un bâtiment résidentiel.",
+			"heatedArea": "La surface chauffée d'un bâtiment est déterminée en additionnant la surface de tous les appartements et de tous les escaliers ou autres pièces auxiliaires qui sont également chauffés.",
+			"billingArea": "La surface de facturation ou surface utile d'un bâtiment est déterminée en additionnant la surface totale des appartements d'un bâtiment résidentiel, la surface totale des locaux non résidentiels et la surface totale des locaux publics, le cas échéant."
+		},
+		"assetFields": {
+			"cadastre": "Numéro d'identification du bâtiment, défini par la municipalité locale ou le pays.",
+			"owner": [
+				"Vous devriez être en mesure de créer des actifs pour toutes les organisations approuvées dans lesquelles vous avez un rôle attribué. Si vous ne voyez pas une Organisation dans cette liste, c'est peut-être parce que l'Organisation est en attente d'approbation par le Super Utilisateur",
+				"Cela signifie que soit l'Organisation vient d'être créée et n'a pas encore été approuvée, soit des informations clés ont été mises à jour et n'ont pas encore été approuvées",
+				"Vous pouvez voir le statut de votre Organisation en ouvrant la page **Organisation**"
+			],
+			"residentsCommunity": "Pour être sûr que les résidents puissent avoir accès aux informations sur le bâtiment, une communauté de résidents doit être créée. Ce champ reste maintenant vide, et une fois l'Organisation créée, il sera rempli automatiquement par le système.",
+			"totalArea": "La superficie totale d'un bâtiment résidentiel est déterminée en additionnant la superficie de tous les étages du bâtiment (y compris le sous-sol et le grenier) entre les surfaces intérieures des murs extérieurs, ainsi que la superficie des espaces extérieurs - balcons, loggias et terrasses. Les surfaces des combles (combles techniques) et des sous-sols techniques ne sont pas incluses dans la surface totale d'un bâtiment résidentiel.",
+			"billingArea": "La surface de facturation ou surface utile d'un bâtiment est déterminée en additionnant la surface totale des appartements d'un bâtiment résidentiel, la surface totale des locaux non résidentiels et la surface totale des locaux publics, le cas échéant.",
+			"heatedArea": "La surface chauffée d'un bâtiment est déterminée en additionnant la surface de tous les appartements et de tous les escaliers ou autres pièces auxiliaires qui sont également chauffés.",
+			"districtHeating": "Le chauffage fourni par d'autres fournisseurs, tels que la ville, la municipalité ou d'autres entités.",
+			"buildingHeating": "Le bâtiment dispose de son propre système de chauffage."
+		}
+	},
+	"projects": {
+		"info": [
+			"Dans cette page, vous pouvez accéder à tous vos projets pour voir les métriques du bâtiment, l'avancement actuel, les parties impliquées, l'équipe du projet et plus encore.",
+			"Vous ne pouvez voir que les projets dans lesquels vous avez un rôle attribué. Si vous ne voyez aucun de vos projets, contactez votre chef de projet.",
+			"Regardez les vidéos de formation [**ici**] (https://www.youtube.com/watch?v=3zAPF1NOK18&list=PL8IdmZDX5yMCOPGV_WSlheZZV6tGLD1a1)"
+		],
+		"overview": [
+			"La **Vue d'ensemble du projet** vous montrera comment se déroule le projet.",
+			"La section **Contrat EPC & Forfaiting Agreement** vous permettra de remplir et d'imprimer une version finale de ces contrats.",
+			"En ouvrant les **Phases du projet**, vous verrez le découpage de chaque phase, les activités à réaliser et les étapes à atteindre. C'est ici que le projet est géré."
+		],
+		"guaranteedMetrics": "Il s'agit de paramètres calculés qui sont garantis pour le bâtiment après l'achèvement de la rénovation. Ils sont valables une fois que le EPC a été signé.",
+		"roles": [
+			"Cliquez sur la flèche pour développer et voir qui est affecté à ces rôles. Si vous en avez la permission, c'est ici que vous attribuerez des rôles à ce projet.",
+			"**Définition des rôles:**",
+			"**Gestionnaire de projet (PM):** gère le projet. Il dispose de tous les droits de visualisation et de modification. Il peut gérer les rôles du projet et compléter les jalons pour ouvrir les phases du projet.",
+			"Il doit y avoir un PM par projet.",
+			"**Signataire légal du projet (PLSIGN):** Personne autorisée à signer les engagements légaux pour un projet particulier. Sur un projet, il doit y avoir un PLSIGN par organisation impliquée",
+			"**Gestionnaire de tâches (TAME):** Personne qui peut effectuer diverses actions pour gérer une tâche particulière d'un projet",
+			"**Membre de l'équipe (TEME):** Personne qui a des droits en lecture seule pour un projet particulier"
+		],
+		"epc": {
+			"generalTerms": "**Les Conditions générales du contrat EPC** constituent la première partie du contrat et sont standardisées. Le texte intégral est disponible sur cette page.",
+			"annexesInfo": [
+				"Cliquez sur les titres à droite pour ouvrir les différentes annexes. Sur chaque page, vous pouvez remplir les tableaux et les champs pour compléter le contrat",
+				"Il est fondamental que **toutes les informations du contrat soient correctes**, car elles sont récupérées par d'autres sections du projet",
+				"Vous pouvez **télécharger** le contrat pour voir la version actuelle en PDF. Une fois que la version finale est signée, elle doit être téléchargée dans la phase respective du projet."
+			],
+			"annexesExtraPage": [
+				"Cette page supplémentaire peut être utilisée pour ajouter d'autres informations nécessaires lors de la signature du contrat et pour imprimer des **annexes supplémentaires** une fois que le contrat a été signé, mais qu'il doit être modifié.",
+				"En cas de **modifications**, cette page doit être imprimée séparément et sauvegardée avec le **contrat EPC**."
+			],
+			"forfaitingAgreement": "Vous devrez préparer cet accord dans le cas où votre projet a été approuvé pour le forfaitage. Cela ne peut se faire que lorsque le bâtiment a été mis en service et que les mesures d'une saison de chauffage complète ont été enregistrées.",
+			"assetAcquisition": [
+				"Cette phase est constituée de **jalons séquentiels**.",
+				"Ici, vous pouvez voir dans quel jalon se trouve le projet.",
+				"Chaque page est déverrouillée dès que le **Gestionnaire de projet** a terminé le jalon précédent."
+			],
+			"assetAcquisitionCompleteMilestone": "Une fois que toutes les conditions requises ont été remplies, le chef de projet doit confirmer que le jalon est terminé. Cela verrouillera cette page et déverrouillera le jalon suivant.",
+			"commissioningDateDisclamer": "Les années et les mois des tableaux de suivi des résultats seront mis à jour en fonction de la date à laquelle vous avez terminé cette étape. Le premier mois à surveiller est le mois suivant celui où vous avez terminé cette étape.",
+			"worksPhase": [
+				"Cette phase est constituée de **jalons concomitants**",
+				"En cliquant sur chacun d'eux, vous pouvez voir dans quel jalon se trouve le projet",
+				"La mise en service du bâtiment bloquera les jalons précédents"
+			],
+			"monitoringPhase": [
+				"Cette phase est constituée de **jalons concomitants**",
+				"En cliquant sur chacun d'eux, vous pouvez voir dans quel jalon se trouve le projet",
+				"La mise en service du bâtiment bloquera les jalons précédents"
+			]
+		},
+		"registerProject": [
+			"Ici, vous pouvez enregistrer un projet pour une organisation où vous avez un rôle assigné.",
+			"Vous ne pourrez enregistrer un projet pour un actif qui a déjà été approuvé."
+		],
+		"requestPermission": [
+			"Dans le cas où vous devez créer un projet pour un actif qui n'appartient à aucune de vos organisations, vous pouvez le faire ici.",
+			"Vous demanderez la permission à l'organisation sous laquelle l'actif est enregistré. Une fois que l'autorisation est accordée, vous pouvez créer le projet.,Vous devez demander l'autorisation à l'organisation sous laquelle l'actif est enregistré."
+		]
+	},
+	"users": {
+		"applyLEAR": "Si vous êtes LEAR d'une Organisation, vous pouvez postuler à ce rôle ici. Sélectionnez l'Organisation et fournissez les documents justificatifs montrant que vous avez le droit d'être LEAR. Vous serez informé lorsque votre rôle sera confirmé."
+	},
+	"reports": {
+		"info": "Dans ces pages, vous ne verrez que les données relatives aux rôles que vous avez. Sélectionnez les colonnes que vous voulez et faites l'exportation."
+	},
+	"admin": {
+		"platformRoles": [
+			"Cliquez sur un panneau de rôle dans la liste ci-dessous pour gérer les Utilisateurs affectés au rôle de la plateforme pour le pays sélectionné.",
+			"**Chaque pays a les rôles suivants:**",
+			"**Directeur de portefeuille:** Avait accès à des rapports spécifiques pour son pays et ses projets et Organisations dans le but d'obtenir des investissements, d'inviter de nouvelles parties prenantes à la plateforme et de les soutenir.",
+			"Voit tous les projets et actifs de son pays.",
+			"**Data Protection Officer:** Répond aux demandes liées au GDPR.",
+			"**Super User:** Fournit une assistance aux utilisateurs de son pays.",
+			"Travaille avec d'autres Super Users pour améliorer la plateforme.",
+			"Approuve les actifs et les organisations pour son pays. Approuve les LEARs pour les organisations",
+			"Voit tous les utilisateurs, actifs, organisations et projets dans son pays pour être en mesure de soutenir les utilisateurs",
+			"**Gestionnaire de fonds:** Approuve le financement des projets dans son pays. Voit tous les projets dans son pays.",
+			"**Investisseur:** a accès aux pages de demande de forfait pour le projet sur son pays."
+		],
+		"rolePFM": [
+			"**Responsable de la plate-forme : **Voit toutes les données de la plate-forme.",
+			"Attribue d'autres rôles au niveau de la plate-forme et du pays."
+		],
+		"roleNWM": [
+			"**Gestionnaire du réseau des super utilisateurs:** il s'agit d'un rôle de niveau plate-forme.",
+			"Il peut effectuer les mêmes tâches que les super utilisateurs, mais pour toutes les plates-formes (ce qui signifie, tous les pays).",
+			"Effectue les tâches de super utilisateur pour les utilisateurs, les actifs et les organisations qui appartiennent à un pays qui n'a pas de super utilisateurs. En outre, il peut attribuer et révoquer le rôle de super utilisateur. Le rôle de super utilisateur peut être attribué et révoqué."
+		]
+	},
+	"maintenanceTableNotReady": "Les 3 premières années du plan de maintenance des actifs doivent être remplies.",
+	"home": {
+		"info": [
+			"Voici une info-bulle pour la page d'accueil",
+			"Regardez les vidéos de formation [**ici**] (https://www.youtube.com/watch?v=J4-x7uN8ec0&list=PL8IdmZDX5yMCqp8AZhpD2FARTrm1RdXgj)"
+		]
+	}
+}

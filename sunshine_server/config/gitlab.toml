@@ -1,0 +1,30 @@
+[general]
+name = "SUNShINE"
+url = "https://sunshine.acme.universe"
+logo = "https://sunshine.acme.universe/static/media/Sunshine-Logo-FB1200x627.c038d9ef.png"
+port = 8000
+sentry = "http://f2ec84719c36493b8c45fcfbdb4415f0@localhost:9000/2"
+
+[paths]
+uploads = "./uploads"
+latex = "./contract/tex"
+migrations = "./models/migrations"
+
+[psql]
+host = "127.0.0.1"
+port = 5432
+name = "sunshine"
+username = "postgres"
+password = "postgres"
+
+[session]
+auth = "C1EOc3fJNxaVOT34snTBpA6iJyrWMWnlsTApj1V3Uv4yD1/kHmkoRrIz0sitO9RBTBhvqGEfQ0TtXexm88EpRQ=="
+encr = "dKdJdGfduc2gEyvl2h0mRSUbYDr+TJMrnSkP0S7qZlg="
+path = "/"
+http_only = false
+secure = false
+
+[mail]
+backend = "file"
+from = "SUNShINE <admin@sunshine.acme.universe>"
+host = "/tmp/sunshine/mails"

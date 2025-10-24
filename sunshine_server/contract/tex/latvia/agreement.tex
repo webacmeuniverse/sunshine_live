@@ -1,0 +1,1566 @@
+\documentclass[a4paper]{article}
+\usepackage[T1]{fontenc}
+\usepackage{fontspec}
+\setmainfont{NotoSans-Regular}
+\usepackage{lmodern}
+\usepackage{textcomp}
+\usepackage{tabu}
+\usepackage{rotating}
+\usepackage{multicol}
+\usepackage{alltt}
+\usepackage{longtable}[=v4.13]%
+\usepackage{url}
+\usepackage[
+  margin=1.5cm,
+]{geometry}
+
+\special{papersize=210mm,297mm}
+\setlength{\parindent}{0pt}
+\tabulinesep=3pt
+\pagestyle{plain}
+
+\begin{document}
+
+% First Page
+\renewcommand\thesection{}
+\renewcommand\thesubsection{}
+\renewcommand\thesubsubsection{}
+
+\begin{center}
+
+  \topskip0pt
+  \vspace*{\fill}
+  \section{FORFAITINGA LĪGUMS}
+  \subsection{(KAS LATVIJAS NORMATĪVO AKTU IZPRATNĒ IR CESIJAS LĪGUMS)}
+  \vspace*{\fill}
+
+  \vspace{8cm}
+
+  \subsubsection{STARP}
+
+  \vspace{1cm}
+
+  \begin{tabu}{|r|X[2]|} \tabucline{}
+
+    CEDENTS&{{.ESCo.Name}}\\\tabucline{}
+
+    FORFAITINGA CESIONĀRS&{{index .Contract.Fields "client_name"}}\\\tabucline{}
+
+  \end{tabu}
+
+  \iffalse input forfaitingFields.front_page_free_text value="{{.Contract.Agreement.front_page_free_text}}" \fi {{.Contract.Agreement.front_page_free_text}}, \iffalse input forfaitingFields.front_page_date value="{{.Contract.Agreement.front_page_date}}" type="date" \fi {{.Contract.Agreement.front_page_date}}
+
+\end{center}
+
+\pagebreak
+
+% Preample Page
+\begin{center}
+	\section{PREAMBULA}
+\end{center}
+
+\vspace{5mm}
+
+Cedents ir noslēdzis energoefektivitātes pakalpojuma līgumu (šā Līguma 1.pielikumā pievienotajā formā),
+kas noslēgts
+{{index .Contract.Fields "date"}} starp {{index .Contract.Fields "client_name"}}
+(kā \textbf{“Pasūtītāju”} jeb \textbf{“Cedenta klientu“}) un Cedentu (kā \textbf{“Izpildītāju”}),
+saskaņā ar kuru Cedentam ir jānodrošina finansējums un jāuzņemas visi atbilstošie darbi, lai pilnībā,
+pienācīgi un atbilstoši īstenotu energoefektivitātes paaugstināšanas pasākumus, par kuriem panākta
+iepriekšēja vienošanās, kā atlīdzību saņemot regulārus maksājumus par panākto garantēto enerģijas
+patēriņu (turpmāk – “Energoefektivitātes pakalpojuma līgums”), un Energoefektivitātes pakalpojuma
+līgumā definētajiem jēdzieniem un frāzēm (ja vien konteksts nenosaka citādāk) ir tāda pati nozīme kā šajā
+Līgumā;;\par
+
+\vspace{5mm}
+
+Cedenta atlīdzības saskaņā ar Energoefektivitātes pakalpojuma līgumu maksājama saskaņā ar atrunāto
+mēneša maksājumu grafiku  {{date_diff .Project.ConstructionFrom .Project.ConstructionTo}}
+gadu termiņā, kas sastāv no šādiem elementiem, kas detalizēti aprakstīti
+Energoefektivitātes pakalpojuma līgumā, prot:\par
+
+\vspace{5mm}
+
+\begin{enumerate}
+\item{\textbf{Maksa par enerģiju:} saskaņā ar šobrīd spēkā esošo Enerģijas tarifu par Enerģijas patēriņu un
+sadalīta vienādos ikmēneša maksājumos, kam piemērojama norēķinu korekcija reizi gadā, ņemot
+vērā: atsauces periodā dominējošos faktiskos laika apstākļus un garantētā enerģijas ietaupījuma
+mērījumus un pārbaudi.;}
+
+\item{\textbf{Maksa par renovāciju:} saistībā ar Ēkas renovācijas izmaksām maksājamā summa, kas indeksēta
+atbilstoši EURIBOR likmei;;}
+
+\item{\textbf{Ekspluatācijas un apkopes maksa:} par ekspluatācijas un apkopes izdevumiem pienākošais
+maksājums, kam piemērojama ikgadēja indeksācija atbilstoši {{.Contract.Fields.country_adj}} patēriņa cenu indeksam
+attiecīgajā gadā, kuru publicē {{.Contract.Fields.country_issuer}}.}
+
+\item{\textbf{Jebkādi aprēķinātie nodokļi} (piemēram, PVN) par pakalpojumu veikšanu}
+
+\item{\textbf{Mājsaimniecības karstais ūdens:} summa, kas maksājama saskaņā ar šobrīd spēkā esošo Enerģija
+tarifu, kas aprēķināt par faktisko karstā ūdens patēriņu mājsaimniecībā.
+turpmāk tekstā saīsināti saukti par
+\textbf{"Debitoru parādiem"}}
+\end{enumerate}
+
+Cedents vēlas Forfaitinga cesionāram nodot savus no Energoefektivitātes pakalpojuma izrietošos
+Debitoru parādus pilnā apmērā ar nosacījumu, ka apmierinoši ir izpildīti Energoefektivitātes pakalpojuma
+līgumā noteiktie darbi un par cesiju ir rakstveidā paziņots Ēkas attiecīgajiem iedzīvotājiem.\par
+
+\pagebreak
+
+% Specific Terms and Conditions of this agreement
+\renewcommand\thesection{}
+\renewcommand\thesubsection{\arabic{subsection}}
+\renewcommand\thesubsubsection{\thesubsection.\arabic{subsubsection}.}
+
+\renewcommand*{\theenumi}{\thesubsection.\arabic{enumi}}
+\renewcommand*{\theenumii}{\theenumi.\arabic{enumii}}
+
+\section{SPECIĀLIE NOTEIKUMI}
+\vspace{5mm}
+
+\subsection{LĪGUMA PUSES}
+
+\textbf{“Cedents“ (saukts arī – “ESCO”)}
+
+\vspace{2mm}
+
+\begin{tabu}{|X|X[2]|} \tabucline{}
+  Nosaukums                  &{{.ESCo.Name}}                                          \\\tabucline{}
+  Reģistrācijas numurs   &{{.ESCo.VAT}}                                           \\\tabucline{}
+  Adrese               &{{.ESCo.Address}}                                       \\\tabucline{}
+  Tiesiskais pārstāvis  &{{.Contract.Fields.contractor_representative_name}}     \\\tabucline{}
+\end{tabu}
+
+\vspace{5mm}
+
+\textbf{“Forfaitinga cesionārs“ (saukts arī – “Fonds” vai “LABEEF”)}
+
+\vspace{2mm}
+
+\begin{tabu}{|X|X[2]|} \tabucline{}
+  Nosaukums                   &{{index .Contract.Fields "client_name"}}                 \\\tabucline{}
+  Reģistrācijas numurs    &{{index .Contract.Fields "client_id"}}                   \\\tabucline{}
+  Adrese                &{{index .Contract.Fields "client_address"}}              \\\tabucline{}
+  Tiesiskais pārstāvis  &{{index .Contract.Fields "client_representative_name"}}  \\\tabucline{}
+\end{tabu}
+
+\vspace{5mm}
+
+\subsection{LĪGUMA APJOMS}
+
+\vspace{2mm}
+
+\begin{enumerate}
+\item{Ievērojot šā Līguma noteikumus un nosacījumus, Cedents cedē un nodod Forfaitinga
+cesionāram, turpretī Forfaitinga cesionārs pērk un saņem uz šā Līguma pamata visu
+Debitoru parādu kopējo summu, kas definēti un Cedenta klientam maksājami saskaņā ar
+Energoefektivitātes pakalpojuma līgumu, tai skaitā apkalpošanas maksas, kas pastāv
+starp Cedenta klientu un Cedentu saskaņā ar Energoefektivitātes pakalpojuma līgumu un
+kas atbilst turpmāk norādītajiem kritērijiem:}
+
+  \begin{enumerate}
+  \item{Debitoru parādi ir radušies, īstenojot Energoefektivitātes paaugstināšanas
+pasākumus, kurus Cedents ir sniedzis Cedenta klientam;}
+
+  \item{Debitoru parādi pastāv ar fiksētu vai aprēķināmu vērtību, tiem ir piemērojama
+līgumā noteiktā indeksācija, tie ir tiesiski realizējamā un piedzenamā formā,
+atbilstoši Latvijas tiesību aktiem, tiem ir piemērojama Latvijas tiesu jurisdikcija, un
+tie nav noprotestējami, tiem nav piemērojama regresa kārtība, pārsūdzības
+tiesības, pretprasības, ieskaits, ķīla vai citas trešo personu tiesības;}
+
+  \item{Energoefektivitātes pakalpojuma līgums un visi Debitoru parādus un to izpildi
+apliecinošie dokumenti nav pretrunā ar jebkādām piemērojamajām obligātajām
+tiesību normām, un visi šādi dokumenti ir iesniegti Forfaitinga cesionāram; un}
+
+  \item{Debitoru parādu pārdošana, cesija un/vai ieķīlāšana nav aizliegtas (vienalga vai
+saskaņā ar Energoefektivitātes pakalpojuma līguma, jebkura cita līguma vai
+jebkādu piemērojamo tiesību aktu noteikumiem);
+līdz ar:}
+
+  \item{jebkādu aizturējumu, ķīlu, citu nodrošinājumu vai galvojumu cesiju, kas nodibināti
+nolūkā nodrošināt ar šo Līgumu cedēto un nodoto Debitoru parādu samaksu; un}
+
+  \item{Cedenta Ēkā uzstādītā Aprīkojuma ķīlu maksimālajā iespējamajā apmērā
+(atbilstoši šā līguma vispārīgie noteikumi un nosacījumi tālāk aprakstītajam), lai
+nodrošinātu šajā Līgumā ietvertās Forfaitinga cesionāra tiesības.}
+  \end{enumerate}
+
+\item{Šis Līgums tiek noslēgts ar atrunu, ka cesijai, nodošanai un atsavināšanai ir piemērojams
+nosacījums, ka tās ir realizējamas tikai tad, ja izpildās turpmāk norādītie īpašie nosacījumi:}
+
+  \begin{enumerate}
+  \item{Projekts ir izstrādāts saskaņā ar Forfaitinga cesionāra Energoefektivitātes
+pakalpojuma līguma Vispārīgajiem noteikumiem un nosacījumiem un pilnībā ievērojot {{index .Contract.Fields "client_name"}}
+Finanšu un tehniskos noteikumus un vadlīnijas attiecībā uz energoefektivitātes
+pasākumiem;}
+
+  \item{ir pieejama vismaz viena kalendārā gada nepārtraukta komunālo maksājumu rēķinu
+apmaksas vēsture saistībā ar attiecīgo Projektu, kas apliecina Energoefektivitātes pakalpojuma
+līgumā Garantētā enerģijas patēriņa sasniegšanu atbilstoši Energoefektivitātes pakalpojuma
+līgumā noteiktajai mērījumu un pārbaudes kārtībai;}
+
+  \item{visas Energoefektivitātes paaugstināšanas pasākumu īstenošanas izmaksas ir pilnībā
+apmaksātas attiecīgajiem apakšuzņēmējiem (ja tādi būtu);}
+
+  \item{ir ticis pienācīgi nosūtīts un tiesīgi atzīts paziņojums par Debitoru parādu cesiju šā Līguma
+2.pielikumā noteiktajā formātā, ar kuru Cedenta klients apstiprina Forfaitinga cesionāram šāda
+paziņojuma saņemšanu;}
+
+  \item{iegādāta tiesīgi noslēgta un spēkā esoša apdrošināšanas polise par visu Ēkas vērtību pēc
+tās renovācijas ar minimālo apdrošināšanas segumu pret ugunsgrēku, zemestrīci, plūdiem, ūdens
+nodarītiem bojājumiem, jebkādām citām dabas katastrofām, kas ietekmē Ēku, strukturāliem
+bojājumiem, ko izraisījusi nosēšanās un krituši koki, ko apliecina attiecīgās polises vai cita
+pārliecinoša dokumenta, kas apstiprina apdrošināšanas prēmijas samaksu, apliecinātas kopijas
+iesniegšana. Apdrošināšanas polisei vajadzētu būt spēkā ne mazāk kā 3 gadus pēc tās
+noformēšanas un noslēgtai atbilstoši noteikumiem un nosacījumiem, kas ietver attiecīgās nozares
+standarta noteikumus, un noslēgtai ar apdrošinātāju, kuram saskaņā ar Latvijā piemērojamiem
+atzītiem reitingiem ir piešķirts vismaz A+ reitings;}
+
+  \item{Apmierinoši Forfaitinga cesionāra nolūkā pārbadīt Ēkā veikto renovācijas darbu un
+īstenoto Energoefektivitātes pasākumu kvalitāti veiktās padziļinātās izpētes procesa, kas veikts
+ne ātrāk kā pēc pirmās apkures sezonas beigām (šīs padziļinātās izpētes datuma nosacījums ir 20
+(divdesmit) darba dienas pēc datuma, kad Cedents ir iesniedzis visus Forfaitinga cesionāra
+padziļinātās izpētes nolūkā pieprasītos dokumentus), rezultāti. Puses atzīst, ka šis padziļinātās
+izpētes nosacījums ir iekļauts vienīgi Forfaitinga cesionāra labā, lai Forfaitinga cesionāram ļautu
+izpētīt Cedenta veikto darbu kvalitāti un saskaņā ar Energoefektivitātes pakalpojuma līgumu
+panākto faktisko enerģijas patēriņa apjomu; un}
+
+  \item{ir tiesīgi noslēgts un spēkā esošs Pārvaldības līgums (atbilstoši 8.punktā tālāk sniegtajai
+definīcijai) un Trīspusējais līgums (atbilstoši 8.punktā tālāk sniegtajai definīcijai).}
+  \end{enumerate}
+
+\item{Līdz ar Nosacījumu izpildes protokola parakstīšanu Debitoru parādu nodošana tiek
+pabeigta. Šis Līgums ir tiesiski saistošs, sākot no tā parakstīšanas brīža, bet no tā izrietošās
+saistības, ja vien nav skaidri norādīts pretējais, uzskatāmas par atliktām līdz
+iepriekšminētā Protokola izdošanai, kas apliecina no (2.21) līdz (2.2.7) punktam iepriekš
+norādīto nosacījumu izpildi.}
+
+\end{enumerate}
+
+\subsection{AR ŠO LĪGUMU NODOTIE DEBITORU PARĀDI}
+
+\begin{enumerate}
+\item{Ar šo Līgumu Forfaitinga cesionāram nodoto Debitoru parādu kopējā summa ir visi
+debitoru parādi, kuru maksājumus Cedentam ir tiesības saņemt no Cedenta klienta, uz
+tiesīgi noslēgta Energoefektivitātes pakalpojuma līguma pamata (šādi debitoru parādi ir
+nododami kā 1.2.punktā iepriekš definētie Debitoru parādi), un neierobežojot Forfaitinga
+cesionāra tiesības pārjaunot jebkādas no Energoefektivitātes pakalpojuma līgumā
+noteiktajām Cedenta tiesībām. Debitoru parādi, kas cedējami Fondam, rodas no šādām
+maksājumu saistībām: \par
+
+    \begin{tabu}{XX[2]}
+      Cedenta klients:  & {{.BuildingOwner.Name}} \\
+      juridiskā adrese:      & {{.BuildingOwner.Address}}
+    \end{tabu}}
+
+\item{Debitoru parādu nodošana saskaņā ar šo Līgumu veido tiesību uz visu to prasību pret Cedenta
+klientu cesiju (Latvijas Civillikuma 1793.panta devītās daļas 1.punkta un saistīto normu izpratnē),
+uz kuriem Cedents ir tiesīgs. Lai novērstu šaubas, visu esošo Cedenta prasību pret Cedenta klientu
+cesija piešķir Forfaitinga cesionāram tiesības vienpersoniski vai ar trešo personu starpniecību
+uzņemties visas atbilstošās faktiskās un juridiskās darbības visu šādu prasību pret katru no
+Dzīvokļu īpašniekiem atsevišķi vai kopīgi kā Cedenta klientu realizācijai. Neierobežojot
+iepriekšminēto, Cedents ar šo do savu piekrišanu un bez ierunām piekrīt pārjaunot Forfaitinga
+cesionāram vai jebkurai no tā ieceltajām personām jebkuras no savām saistībām saskaņā ar
+Energoefektivitātes pakalpojuma līgumu ne vēlāk kā 5 Darba dienu laikā no attiecīga Forfaitinga
+cesionāra pieprasījuma saņemšanas dienas.}
+\end{enumerate}
+
+\subsection{DEBITORU PARĀDU PIRKUMA MAKSA}
+
+\begin{enumerate}
+\item{Debitoru parādu pirkuma maksa ir EUR
+    \iffalse input forfaitingFields.receivable_price value="{{.Contract.Agreement.receivable_price}}" type="number" \fi {{.Contract.Agreement.receivable_price}} (\iffalse input forfaitingFields.receivable_price_words value="{{.Contract.Agreement.receivable_price_words}}" \fi {{.Contract.Agreement.receivable_price_words}}) (the \textbf{"Price"}) apmērā
+    \iffalse input forfaitingFields.receivable_price_percent value="{{.Contract.Agreement.receivable_price_percent}}" type="number" \fi {{.Contract.Agreement.receivable_price_percent}} (\iffalse input forfaitingFields.receivable_price_percent_words value="{{.Contract.Agreement.receivable_price_percent_words}}" \fi {{.Contract.Agreement.receivable_price_percent_words}}) no pilnas vērtības debitoru parādiem, kas saistītas ar renovācijas maksa par EPC
+līgumu.}
+
+\item{Pirkuma maksas samaksa tiek veikta saskaņā ar 5.1.punktu pēc tā, kas iestājas vēlāk}
+
+    \begin{enumerate}
+    \item{Cedenta klients saņem paziņojumu par Cedenta veikto visu Debitoru parādu kopējās
+summas nodošanu Forfaitinga cesionāram, un }
+
+    \item{tiek saņemts 2.3.punktā iepriekš atrunātais Nosacījumu izpildes protokols.}
+    \end{enumerate}
+\end{enumerate}
+
+\subsection{ATLĪDZĪBA PAR IZPILDI UN CITI VEICAMIE MAKSĀJUMI}
+
+\begin{enumerate}
+\item{Cedentu būs tiesības uz maksājumu no forfaiting pārņēmējs, kas atbilst:}
+
+  \begin{enumerate}
+  \item{ \iffalse input forfaitingFields.forfaiting_assignee_payment value="{{.Contract.Agreement.forfaiting_assignee_payment}}" type="number" \fi {{.Contract.Agreement.forfaiting_assignee_payment}} (\iffalse input forfaitingFields.forfaiting_assignee_payment_words value="{{.Contract.Agreement.forfaiting_assignee_payment_words}}" \fi {{.Contract.Agreement.forfaiting_assignee_payment_words}})
+no debitoru saistīta renovācijai maksa par EPC vienošanās}
+
+  \item{uz Ekspluatācijas un apkopes maksu, kas norādīta Energoefektivitātes pakalpojuma
+līgumā un tiek maksāta vienu reizi ceturksnī, kamēr tiek sniegti pakalpojumi}
+  \end{enumerate}
+
+\item{Cedentu būs papildus ir tiesības uz atlīdzību darbības attiecībā uz katru gadu, kurā sasniegts
+enerģijas taupīšanas atbilstoši EPC vienošanās, pārsniedz summu, garantēto enerģijas
+ietaupījumu šim gadam atbilstoši EPC nolīguma (pēc mērījumu un pārbaudes saskaņā ar LABEEF
+Finanšu un tehniskie noteikumi un vadlīnijas energoefektivitātes pasākumi). Šāds sniegums
+maksu aprēķina katru gadu saskaņā ar šādu formulu: \par
+
+    \begin{center}
+      \[Pārsniedzošie rezultāti maksa = \iffalse input forfaitingFields.performance_fee value="{{.Contract.Agreement.performance_fee}}" type="number" \fi {{.Contract.Agreement.performance_fee}}\% P_G\]
+    \end{center}
+
+    kur: \par
+    $P_G$: garantiju pārsniedzošie rezultāti Norēķinu periodā, EUR (bez PVN), kas aprēķināts
+saskaņā ar EPC līgumu (3.pielikums šā nolīguma) 5.pielikums}
+
+\item{Maksa sniegums aprēķināta iepriekšminētajā veidā kļūst jāsamaksā ar forfaiting pārņēmējam ar
+Maksājumu par pirmo ceturksni periodā pēc termiņa beigām gadu, kurā tika panākta papildu
+enerģijas ietaupījumu.}
+
+\item{Garantijas neizpildes gadījumā, kur bilance starp Enerģijas ietaupījumu Norēķinu periodā un
+Garantēto enerģijas ietaupījumu ir negatīva, Cedentam ir atsevišķi un bez ierunām pienākums
+maksāt Forfaitinga cesionāram Energoefektivitātes pakalpojuma līgumā noteikto Kompensāciju.
+Forfaitinga cesionārs patur tiesības atskaitīt Kompensāciju no maksājamās Ekspluatācijas un
+apkopes maksas un Maksas par renovāciju (5.1.punkts).}
+
+\item{Iepriekšminētie aprēķini veicami reizi gadā līdz ar Atlīdzības ikgadējo korekciju saskaņā ar
+Energoefektivitātes pakalpojuma līguma 5. pielikumu. Iegūtā starpība starp Debitoru parādiem,
+balstoties uz Garantēto enerģijas patēriņu, un Debitoru parādiem, kuru pamatā ir faktiskais gada
+enerģijas maksājums, ir iekasējama un jāmaksā Forfaitinga cesionāram 30 dienu laikā pēc
+aprēķinu veikšanas, kuros konstatēta novirze no Garantētā enerģijas patēriņa. Cedentam ir
+jānokārto savs parāds ar pārskaitījumu uz Forfaitinga cesionāra norādīto bankas kontu
+iepriekšminētajā termiņā. Iepriekšminētais maksājuma kavējums piešķir Forfaitinga cesionāram
+tiesības uz kavējuma naudu \iffalse input forfaitingFields.late_payment_fee value="{{.Contract.Agreement.late_payment_fee}}" type="number" \fi {{.Contract.Agreement.late_payment_fee}} \%
+    (\iffalse input forfaitingFields.late_payment_fee_words value="{{.Contract.Agreement.late_payment_fee_words}}" \fi {{.Contract.Agreement.late_payment_fee_words}}) apmērā no nesamaksātās
+summas par katru kavējuma dienu, bet kopumā nepārsniedzot \iffalse input forfaitingFields.outstanding_amount value="{{.Contract.Agreement.outstanding_amount}}" type="number" \fi {{.Contract.Agreement.outstanding_amount}}
+    \%(\iffalse input forfaitingFields.outstanding_amount_words value="{{.Contract.Agreement.outstanding_amount_words}}" \fi {{.Contract.Agreement.outstanding_amount_words}}) no nesamaksātās summas.}
+
+\item{Neierobežojot iepriekšminēto, Forfaitinga cesionārs ir tiesīgs veikt savu prasījumu par
+iepriekšminētajām summām ieskaitu no jebkuriem izpildes maksas maksājumiem, kas pienākas
+saskaņā ar 6.1.punktu iepriekš, un/vai samazināt jebkura no ceturkšņa maksājumiem summu kā
+aizstāvību, ieturējumu, iebildumu, pretprasību vai uz jebkuru citu savu no šā Līguma izrietošo
+tiesību pamata.}
+\end{enumerate}
+
+\subsection{SAMAKSAS TERMIŅI}
+
+\begin{enumerate}
+\item{Cedentam ir jāizraksta rēķins par Maksu [katru tās maksājumu] 10 dienu laikā pēc 4. punktā
+iepriekš minētā Nosacījumu izpildes protokola parakstīšanas starp Pusēm datuma saskaņā ar šajā
+Līgumā iepriekš minētajiem noteikumiem. Maksājumi tiks veikti šādas iemaksas (iemaksu) veidā:{[}s{]}: \par
+
+    {{index .Contract.Agreement "payment_first_amount"}} EUR – – kuru termiņš ir un kas maksājami ne vēlāk kā {{index .Contract.Agreement "payment_first_date"}}; \par
+    {{index .Contract.Agreement "payment_second_amount"}} EUR – – kuru termiņš ir un kas maksājami ne vēlāk kā {{index .Contract.Agreement "payment_second_date"}}; and \par
+    {{index .Contract.Agreement "payment_third_amount"}} EUR – – kuru termiņš ir un kas maksājami ne vēlāk kā {{index .Contract.Agreement "payment_third_date"}}.\par}
+
+\item{Cedentu izdod faktūru par ceturkšņiem attiecībā uz maksājumiem, kas atbilst Uzkrāto nodevām
+saskaņā raksts 5.1.}
+
+\item{Cedentu izsniedz rēķinu par katru gadu pēc mērīšanai un pārbaudei, kā norādīts EPC līgumā
+saskaņā 5.2 rakstu.}
+
+\item{Ar Maksu vai izpildi saistītie maksājumi (saskaņā ar 4.3.1.punktu) vai citi atlīdzības maksājumi
+(saskaņā ar 4.4.1.punktu) ir veicami uz turpmāk norādīto Cedenta bankas kontu (ja vien Cedents
+10.lapa no 24
+neizmaina savus norādījumus attiecībā uz maksājumiem, pirms Forfaitinga cesionārs uzsāk
+attiecīgo maksājumu, nosūtot Cesionāram rakstisku paziņojumu, un tādā gadījumā maksājami ir
+veicami uz šādā paziņojumā norādīto bankas kontu): \par
+
+    \begin{tabu}{XX[2]}
+      Saņēmēja vārds/nosaukums: 	& 	{{.FABankAcc.BeneficiaryName}} 	\\
+      Bankas nosaukums un adrese: 	& 	{{.FABankAcc.BankNameAddress}} 	\\
+      IBAN:			& 	{{.FABankAcc.IBAN}} 		\\
+      SWIFT:			& 	{{.FABankAcc.SWIFT}} 		\\
+    \end{tabu}}
+
+\item{The Assignor shall pay any due invoice within 30 working days.}
+
+\item{The Forfaiting Assignee shall issue an invoice on annual basis
+    after Measurement and Verification as indicated in the Energy
+    Performance Contract pursuant Art. 5.5.}
+
+\item{The payments in respect of the breach of Guaranteed Energy
+    Consumption shall be made to the following bank account of the
+    Forfaiting Assignee (unless the Forfaiting Assignee changes its
+    payment instructions prior to the Assignor initiating the relevant
+    payment by giving a written notice, in which case payments shall
+    be made to the bank account indicated in such notice):
+
+    \begin{tabu}{XX[2]}
+      Beneficiary Name: 	& 	{{.FABankAcc.BeneficiaryName}} 	\\
+      Bank name and address: 	& 	{{.FABankAcc.BankNameAddress}} 	\\
+      IBAN:			& 	{{.FABankAcc.IBAN}} 		\\
+      SWIFT:			& 	{{.FABankAcc.SWIFT}} 		\\
+    \end{tabu}}
+
+\end{enumerate}
+
+{{template "sign.tex"}}
+
+% General Terms and Conditions
+\section{ŠĀ LĪGUMA VISPĀRĪGIE NOTEIKUMI UN NOSACĪJUMI}
+
+\begin{multicols}{2}
+
+  \subsection{KAS ESCO IR JĀIESNIEDZ LABEEF – NEPIECIEŠAMIE
+DOKUMENTI UN CITAS GARANTIJAS UN NOSACĪJUMI}
+
+  \begin{enumerate}
+  \item{Parakstot šo Līgumu, Cedents nodod Energoefektivitātes pakalpojuma
+līgumu un visus dokumentus, kas apliecina nodotos Debitoru padomus
+un ne vēlāk kā 5 dienu laikā pēc attiecīga Forfaitinga cesionāra
+pieprasījuma saņemšanas visu informāciju, kas nepieciešama cedēto
+Debitoru parādu iekasēšanai no Cedenta klienta un/vai no katra
+Dzīvokļa īpašnieka, un jāiesniedz visi dokumenti un informācija, kas
+nepieciešama visu no Energoefektivitātes pakalpojuma līguma izrietošo
+prasījumu realizācijai. Cedentam ne retāk kā reizi ceturksnī ir
+jāapstiprina, ka Forfaitinga cesionāram iesniegtie dokumenti un
+informācija attiecībā uz nodotajiem Debitoru parādiem aptver visus
+dokumentus un informāciju attiecībā uz nodotajiem Debitoru parādiem
+vai, ja tā nav, jāiesniedz visi papildu dokumenti un informācija, lai
+novērstu jebkādu iztrūkumu. Cedentam ir pienākums nekavējoties
+rakstveidā informēt Forfaitinga cesionāru par jebkādiem apstākļiem,
+kas liecinātu par Cedenta klienta kredītreitinga vai kredītspējas
+pasliktināšanos.}
+
+  \item{Cedentam ir atsevišķi jebkurā laikā jāsniedz Forfaitinga cesionāram
+informācija par Cedenta finanšu uzskaiti, ciktāl tā ir saistīta ar
+nodotajiem Debitoru parādiem, kā arī peļņas un zaudējumu pārskats
+sešu mēnešu laikā pēc bilances datuma.}
+
+  \item{Cedentam ir pienākums nekavējoties rakstveidā informēt Forfaitinga
+cesionāru par jebkādu strīdu, pārsūdzību, garantijas prasību, garantijas
+tiesību anulēšanu, realizāciju no Cedenta klienta puses vai tā saistību
+neizpildi, kā arī nekavējoties jāpakļaujas jebkādam Cedenta klienta
+likumīgam prasījumam pret Cedentu nomainīt, uzlabot vai uzstādīt
+jebkādu trūkstošu iekārtu vai pakalpojumu vai novērst jebkādu
+neizpildi. Neierobežojot iepriekšminētā vispārīgumu, iepriekšminētais
+ietver, bez ierobežojuma jebkādas garantijas prasības vai jebkādas cita
+rakstura prasības, kas izriet no Energoefektivitātes pakalpojuma
+līguma, neaprobežojoties ar jebkādām prasībām, kas izriet no Cedenta
+Ēkā uzstādīto Energoefektivitātes paaugstināšanas pasākumu
+trūkumiem vai bojājumiem.}
+
+  \item{Cedentam ir atsevišķs pienākums pēc pieprasījuma nodrošināt
+apmierinošus pierādījumus jebkādu dokumentu īstumam, kas apliecina
+nodotos Debitoru parādus un liecina, ka šādi dokumenti rada tiesiskas,
+spēkā esošas, saistošas un realizējamas saistības bez jebkāda regresa
+pret Forfaitinga cesionāru. Forfaitinga cesionāram ir 10 Darba dienu
+laikā pēc to saņemšanas jāizpēta Cedenta iesniegtie dokumenti, un tas
+var neņemt vērā vai atdot Cedentam jebkuru iesniegto dokumentu, kas
+neatbilst spēkā esošas, saistošas un realizējamas saistības
+apliecināšanas kritērijiem, un jāpieprasa, lai pienācīgi un nekavējoties
+tiktu iesniegti šīm prasībām atbilstoši dokumenti.}
+
+  \item{Cedents garantē Forfaitinga cesionāram, ka:}
+
+    \begin{enumerate}
+
+    \item{ tas ir pienācīgi dibināts, tiesīgi pastāvošs un ar labu
+reputāciju saskaņā ar to jurisdikciju, kurā tas ir dibināts vai reģistrēts,
+un tam ir visas tiesības un pilnvaras parakstīt, nodot un izpildīt savas
+šajā Līgumā noteiktās saistības;}
+
+    \item{tam parakstot, nododot un izpildot šo Līgumu, nerodas
+jebkāda (i) tā dibināšanas dokumentu, (ii) tam piemērojamā jebkāda
+likumdošanas akta, tiesību aktu vai jebkuras valsts iestādes noteikumu;
+(iii) jebkāda tam piemērojamā sprieduma vai rīkojuma par pagaidu
+noregulējumu noteikuma pārkāpums vai neatbilstība;}
+
+    \item{šā Līguma parakstīšana, nodošana un izpilde tā vārdā ir
+pienācīgi un tiesīgi pilnvarota, un šis Līgums pēc tā parakstīšanas kļūs
+par tā tiesiskām, spēkā esošām un saistošām saistībām, kas
+realizējamas pret to saskaņā ar attiecīgajiem Līguma noteikumiem;
+izņemot šajā Līgumā noteikto, nekāds cits paziņojums, izņemot
+paziņojumu Cedenta klientam par Debitoru parādu nodošanu, jebkādai
+kompetentajai valsts iestādei vai jebkurai citai personai, tās piekrišana
+vai saskaņojums, vai jebkura cita darbība no tās puses nav un nebūs
+nepieciešama, lai parakstītu, nodotu un izpildītu šajā Līgumā noteiktos
+tā pienākumus;}
+
+    \item{ tam ir pienācīgas tiesības cedēt nodotos Debitoru parādus;}
+
+    \item{pilnībā vai daļēji nodotie Debitoru parādi ir tiesiskas, spēkā
+esošas un saistošas Cedenta klienta saistības, un tie ir piedzenami no
+Cedenta klienta saskaņā ar attiecīgajiem noteikumiem;}
+
+    \item{nodotie Debitoru parādi nav tikuši citādā veidā cedēti,
+pārdoti, uz tiem nav tikusi nodibināta hipotēka, tie nav ieķīlāti vai
+jebkādā citādā veidā apgrūtināti vai apgrūtināti ar jebkādām jebkuras
+trešās personas tiesībām un ka nevienam no nodotajiem Debitoru
+parādiem nav un nav sagaidāms ieskaits pret jebkādiem maksājumiem,
+kas Cedentam varētu būt maksājami Cedenta klientam; un}
+
+    \item{nekādi procesi nav (i) gaidāmi pret Cedentu vai, (ii) cik
+zināms Cedentam, nedraud Cedentam jebkurā kompetentā valsts
+iestādē, tiesā vai šķīrējtiesā, kas atsevišķi vai kopumā varētu būtiski un
+nelabvēlīgi ietekmē (i) jebkādu saskaņā ar šo Līgumu veikto vai veicamo
+Cedenta darbību vai (ii) nodotos Debitoru parādus.}
+    \end{enumerate}
+  \end{enumerate}
+
+  \subsection{KAS FONDAM PIENĀKAS NO ESCO – CEDENTA
+TIESĪBAS UN PIENĀKUMI}
+
+  \begin{enumerate}
+  \item{Cedents uzņemas atbildību pret Forfaitinga cesionāru, ja paziņojuma
+par Debitoru parādu cesiju nosūtīšanas dienā vai pirms tam tas nav
+atklājis jebkādu maksājumu prasījumu vai citu saistību pastāvēšanu, ka
+var ietekmēt saskaņā ar šo Līgumu nododamo Debitoru parādu summu
+vai spēkā esamību. Iepriekšminētais neierobežo to, ka Cedents nav
+atbildīgs, nedz atsevišķi, nedz kopīgi ar Cedenta klientu, par jebkādu
+Debitoru parādu un saskaņā ar šo Līgumu Forfaitinga cesionāram
+nodoto saistībā ar Debitoru parādiem nodibināto nodrošinājumu
+savlaicīgu samaksu vai piedziņu. Neņemot vērā neko pretēju, Cedents vēl aizvien ir atbildīgs par nododamo Debitoru parādu un attiecībā uz
+tiem nodibināto nodrošinājumu patiesumu un realizējamību.}
+
+
+  \item{Cedentam kopā ar Forfaitinga cesionāru ir kopīgi jāinformē Cedenta
+klients vienā paziņojumā par Debitoru parādu nodošanu uz šā Līguma
+pamata, un šādam paziņojumam ir jābūt 1.pielikumā pievienotajā
+formātā.}
+
+  \item{Cedents garantē Energoefektivitātes pakalpojuma līgumā norādītā
+Garantētā enerģijas ietaupījuma apjomu un apņemas nodrošināt tā
+līmeņa uzturēšanu visā Energoefektivitātes pakalpojuma līguma spēkā
+esamības laikā, vienlaikus apņemoties veikt visus tādus papildu darbus,
+kuri nerada būtiskus papildu izdevumus.}
+
+  \item{Cedentam ir jānodrošina, lai visi komunālie pakalpojumi no Ēkas
+atsevišķiem dzīvokļiem un uz tiem, no kuriem izriet Debitoru parādi,
+nebūtu atslēgti vai pārtraukti jebkurā brīdī bez Cedenta klienta
+iepriekšējas piekrišanas (tai skaitā, kad šāda piekrišana ir izteikta
+mutiski, rakstiski vai nodota Pārvaldniekam pa e-pastu) un tiek
+nekavējoties atjaunoti gadījumā, ja tie īslaicīgi nedarbojas jebkāda
+veida regulāru pārbaužu vai trūkumu vai bojājumu novēršanas vai
+nomaiņas dēļ. Šī garantija neattiecas uz gadījumiem, kad Cedents
+neietekmē šādus pārtraukumus un/vai tie ir radušies tieši piegādātāju,
+Forfaitinga cesionāra vai jebkādu trešo personu darbības vai
+bezdarbības dēļ.}
+
+  \item{Cedents piekrīt saglabāt savu atbildību un apņemas pildīt visus savus
+pienākumus un saistības saskaņā ar Energoefektivitātes pakalpojuma
+līgumu, kas ir tieši saistīti ar Cedenta kā Izpildītāja darbību vai
+pienākumiem Energoefektivitātes pakalpojuma līguma ietvaros.
+Iepriekšminētais neierobežo Cedenta saistības jebkāda īstenoto
+Energoefektivitātes paaugstināšanas pasākumu vai renovācijas darbu
+trūkumu vai bojājuma gadījumā, kas konstatēti var radušies šā Līguma
+darbības laikā uzņemties remontu un/vai nomaiņu (atkarībā no tā, kas
+no šiem abiem tiek noteikts kā kvalitātes un cenas ziņā efektīvākais
+līdzeklis) par saviem līdzekļiem saprātīgā termiņā atbilstoši
+piemērojamajiem nozares standartiem. Gadījumā, ja Cedents saprātīgā
+laikā, bet ne ilgāk kā 20 darba dienas neievēro iepriekšminēto,
+Forfaitinga cesionāram rodas tiesības izpildīt darbus par Cedenta
+līdzekļiem un saņemt atlīdzību 20 dienu laikā pēc attiecīga rēķina
+nosūtīšanas Cedentam (kuru var nosūtīt pa e-pastu).}
+
+  \item{Cedentam nekavējoties pēc uzzināšanas ir jāziņo Forfaitinga
+cesionāram par jebkādu kaitējumu vai izmaiņām, kas veiktas bez tā
+ziņas vai atļaujas jebkurās Cedenta uzstādītajās iekārtās (ieskaitot, bet
+neaprobežojoties ar skaitītājiem un piederumiem), vai jebkādiem
+apstākļiem, kas ir un/vai varētu negatīvi ietekmēt Cedenta šajā periodā
+12.lapa no 24 sagaidīto Enerģijas patēriņa samazināšanos (atsevišķi vai kopā jebkurā
+periodā) par diviem (2) vai vairāk procentiem no Enerģijas patēriņa. Ja
+Cedents neievēro iepriekšminēto, Cedents kļūst atbildīgs par visiem
+zaudējumiem un kaitējumu, kas rodas tieši no bojājuma vai izmaiņām,
+ja vien netiek konstatēts, ka ātrāks paziņojums Forfaitinga cesionāram
+nebūtu tam devis pietiekami laika, lai mazinātu Forfaitinga cesionāram
+radušos kaitējumu un zaudējumus.}
+
+  \item{Cedents ar šo piekrīt, ka saskaņā ar šo Līgumu Forfaitinga cesionārs
+saņem pienācīgu pilnvarojumu attiecībā uz, tiek pienācīgi iecelts un
+tiesīgs ievākt, apstrādāt, uzglabāt, izmantot un nodot saskaņā ar
+Energoefektivitātes pakalpojuma līgumu Cedenta klienta sniegtos
+personas datus un nodot tos jebkurai trešajai personai, kurai var tikt
+nodotas no šā Līguma izrietošās Forfaitinga cesionāra tiesības vai
+pienākumi, tai skaitā, bet ne tikai jebkurai personai, kas ir atbildīga par
+īstenoto Energoefektivitātes paaugstināšanas pasākumu veiktspējas
+uzraudzībai domātas tiešsaistes platformas izstrādi, realizāciju,
+ekspluatāciju un apkopi. Citiem mērķiem Forfaitinga cesionārs datus
+var izmantot vienīgi pēc Cedenta klienta piekrišanas tam saņemšanas.
+Lai novērstu šaubas un, neņemot vērā iepriekšminēto, jebkuri no
+personas datiem vai ar Ēku vai Aprīkojumu saistītie dati paliek Cedenta
+klienta īpašumā, neierobežojot Forfaitinga cesionāra tiesības ievākt,
+apstrādāt, uzglabāt, izmantot un nodot tos, un, izbeidzot šo Līgumu, tie
+ir pilnībā jāatdod Cedenta klientam (vai pēc Cedenta klienta izvēlas
+neatgriezeniski jāiznīcina, šo datu glabātājam izdodot apliecinājumu
+par šādu iznīcināšanu).}
+
+  \item{Forfaitinga cesionārs atzīst un piekrīt, ka Cedents vai jebkura trešā
+persona, kurai Cedents ir nodevis šajā Līgumā ietvertās tiesības un/vai
+pienākumus, izmanto jebkādus anonīmus datus un informāciju saistībā
+ar enerģijas patēriņu Ēkā vienalga, vai to ir sniedzis Cedenta klients vai
+ieguvis Cedents, nolūkā atzīmēt un apkopot valsts, reģionāla vai ES
+mēroga datubāzi vai ar mērķi Cedentam izmantot kā atsauci vai
+jebkādam iekšējam mērķim, kam ir piekritis Cedenta klients.}
+
+  \item{Ar šo cedentu piekrīt, ka saskaņā ar šo nolīguma forfaiting pārņēmējs
+saņem pienācīgu pilnvarojumu attiecībā uz, ir pienācīgi piešķirtas un
+tiesīga vākt, apstrādāt, uzglabāt, izmantot un nodot personas datus, ko
+cedenta Klienta piešķirtas saskaņā ar EPC nolīgumu, un pārskaitīt
+pēdējais jebkurai trešajai personai, kurai forfaiting pēcteča tiesības vai
+saistības, kas izriet no šā nolīguma, var tikt piešķirts, tostarp bez
+ierobežojumiem jebkuru personu, kas atbild par attīstību, ieviešanu,
+darbību un uzturēšanu tiešsaistes platformu sekotu sniegumu īstenoto
+renovācija darbojas. To datu izmantošana, ko forfaiting pēctecim
+citiem mērķiem jāveic tikai saņemot cedenta Klienta piekrišanu šajā
+sakarā. Lai izvairītos no šaubām un neraugoties uz iepriekš minēto,
+kādu no personas datu vai datu, kas saistīti ar ēku vai istabai paliek
+īpašumā cedenta Klientam neskarot labi no forfaiting cesionāru savākt,
+apstrādāt, uzglabāt, izmantošanu un nodošanu to un atdod pēdējo (vai
+pēc izvēles cedenta Klienta, pastāvīgi iznīcināta ar sertifikātu šādas
+iznīcināšanas turētājs šādu datu izsniegtā) pilnā apmērā pēc šī līguma
+izbeigšanas.}
+
+  \item{Forfaiting pārņēmējs atzīst un piekrīt izmantošanas, ko cedents vai
+jebkurai citai trešajai pusei tā piešķirta ar tiesībām un / vai saistības
+saskaņā ar šo nolīgumu, par jebkādiem anonīmiem datiem un
+informāciju, kas attiecas uz enerģijas patēriņa ēka, vai ar nosacījumu,
+cedenta Klients vai iegūti, atsavinātājam, lai ar salīdzinošās
+novērtēšanas un apkopošanu no valsts, reģionālā vai ES mēroga datu
+bāzē mērķiem vai par lietošanas mērķiem, ko cedents kā atsauce vai
+jebkuram iekšējam mērķim vienojās ar cedenta Klientam.}
+  \end{enumerate}
+
+  \subsection{KAS CEDENTAM (ESCO) PIENĀKAS NO FORFAITINGA
+CESIONĀRA (FONDA) – FORFAITINGA CESIONĀRA
+TIESĪBAS UN PIENĀKUMI}
+
+  \begin{enumerate}
+  \item{Pēc attiecīgo dokumentu saņemšanas no Cedenta Forfaitinga
+cesionāram ir jāizpēta šie dokumenti, lai noteiktu, vai tie ir
+nepieciešamie dokumenti, un nekavējoties, bet jebkurā gadījumā ne
+vēlāk kā 10 (desmit) darba dienu laikā jāatdod Cedentam jebkāds
+dokuments, kas acīmredzami neatbilst tā īstuma nosacījumiem un/vai
+acīmredzami nerada spēkā esošu, tiesisku, saistošu vai izpildāmu
+saistību. Ja, balstoties uz iepriekšminētajiem faktoriem, Forfaitinga
+cesionārs konstatē, ka iesniegtie dokumenti nav apmierinoši vai ka
+nepieciešami papildu dokumenti, Forfaitinga cesionāram ir rakstveidā
+jāinformē par to Cedents, norādot savus iebildumus. Gadījumā, ja
+Cedents nepiekrīt Forfaitinga cesionāra izteiktajiem iebildumiem, strīds
+ir jāizskata cienījamam ekspertam ar pietiekamām profesionālām
+zināšanām un vērā ņemamu atpazīstamību starptautisko finanšu jomā,
+kuru Puses ir kopīgi iecēlušas un kura lēmums ir galīgs, saistošs un spēkā
+no tā pieņemšanas brīža. Ja Puses nevienojas par ekspertu strīda
+risināšanai, katrai Pusei rodas tiesības iecelt vienu profesionālu
+ekspertu, un abiem šādiem ekspertiem ir kopīgi jāizvēlas trešais
+eksperts, kas vadīs ekspertu grupu. Ekspertu grupas lēmums ir saistošs,
+un Pusēm ir līdzvērtīgi jāsadala iepriekšminētā procesa administrācijas
+izdevumi.}
+
+  \item{Izņemot tālāk un 9.punktā noteikto, Forfaitinga cesionāram nav
+regresa prasījuma tiesību pret Cedentu par Debitora parāda
+nesamaksu, ja vien:}
+
+    \begin{enumerate}
+    \item{nav pieļauts Energoefektivitātes pakalpojuma līgumā
+noteikto Cedenta saistību pārkāpums; un/vai}
+
+    \item{darbība vai bezdarbība neietilpst Cedenta saskaņā ar
+Energoefektivitātes pakalpojuma līgumu uzņemtajās saistībās attiecībā
+uz Energoefektivitātes paaugstināšanas pasākumu īstenošanu un to
+apkopi }
+    \end{enumerate}
+
+  \item{Iepriekšminētais neierobežo Forfaitinga cesionāra tiesības prasīt
+jebkādu saskaņā ar šo Līgumu nodoto Debitoru parādu realizāciju un
+piedziņu, izmantojot pēc saviem ieskatiem mērķim vispiemērotāko
+ārpustiesas vai tiesas procesu pret Cedenta klientu, tai skaitā, bez
+ierobežojuma – ikvienu Dzīvokļa īpašnieku. Cedentam ir jānodrošina
+visa nepieciešamā sadarbība saistībā ar šādu piespiedu izpildi.}
+
+  \item{Cedentam ir jāatlīdzina un jāpasargā Cesionārs no jebkādas atbildības
+un/vai prasījuma, kas rodas Forfaitinga cesionāram vai pret to, kas izriet
+no vai rodas būtiska jebkādu Cedenta apliecinājumu, garantiju vai
+saistību, kas izriet no šā Līguma vai Energoefektivitātes pakalpojuma
+līguma, pārkāpuma rezultātā.}
+
+  \item{Forfaitinga cesionāram ir jāatlīdzina un jāpasargā Cedents no jebkādas
+atbildības un/vai prasījuma, kas rodas Cedentam vai pret to, kas izriet no vai rodas būtiska jebkādu Forfaitinga cesionāra apliecinājumu,
+garantiju vai saistību, kas izriet no šā Līguma vai Energoefektivitātes
+pakalpojuma līguma, pārkāpuma rezultātā, tomēr ar nosacījumu, ka
+kopējā summa, kuru Forfaitinga cesionāram ir pienākums maksāt
+Cedentam, tiek aprobežota ar vēl nesamaksāto saskaņā ar 4.4.1.
+punktu pienākošos maksājumu atlikumu.}
+
+  \item{. Saskaņā ar 7.3.un 7.4.punktu iepriekš, ja jebkura trešā persona uzsāk
+jebkādu procesu vai izsaka jebkādu prasību pret Cedentu vai Forfaitinga
+cesionāru (turpmāk katrs saukts – “Puse”), par kuru šī Puse (turpmāk –
+“Kompensāciju saņemošā puse”) ir tiesīga uz kompensāciju saskaņā ar
+šo Līgumu, šādai Atlīdzību saņemošajai pusei ir nekavējoties rakstveidā
+jāinformē otra Puse (turpmāk – “Kompensējošā puse”) par šādu
+procesu vai prasību. Pusei, kas šādā procesā ir uzņēmusies aizstāvību,
+ir jāsniedz otrai Pusei visu šāda procesa ietvaros iesniegto vai izsniegto
+paziņojumu, lūgumu un citu dokumentu kopijas. Neviena Puse nedrīkst
+noslēgt nekādu izlīgumu vai veikt grozījumus bez otras Puses
+piekrišanas, kas (i) Kompensējošās puses gadījumā nedrīkst tikt
+nepamatoti atteikta, ja izlīgums vai grozījumi ir aprobežoti ar finansiālas
+kompensācijas izmaksu; (ii) Kompensāciju saņemošās puses gadījumā
+nedrīkst tikt nepamatoti atteikta, ja izlīgums vai grozījumi paredz, ka
+Kompensāciju saņemošajai pusei tiek uzlikts izpildes pienākums vai tā
+uzņemas atbildību. }
+
+  \item{Katra kompensācija atbilstoši šim Līgumam ir saistības turpinājums,
+atsevišķi un neatkarīgi no citām Pušu līgumsaistībām un paliek spēkā
+pēc šā Līguma izbeigšanas, un Pusei nav nepieciešami izdevumi vai veikt
+maksājumus pirms no šā Līguma izrietošo tiesību uz kompensāciju
+realizācijas.}
+
+  \item{Forfaitinga cesionārs ir tiesīgs pieprasīt un saņemt no Cedenta
+atbilstošu un savlaicīgu visu Energoefektivitātes pakalpojuma līgumā
+noteikto Cedenta pienākumu un saistību izpildi, kas ir tieši saistīti ar
+Cedenta kā Izpildītāja atbilstoši Energoefektivitātes pakalpojuma
+līgumam darbību vai saistībām un/vai tieši saistīti ar
+Energoefektivitātes paaugstināšanas pasākumu apkopi.
+Iepriekšminētais neierobežo Forfaitinga cesionāra tiesības pieprasīt un
+saņemt noteiktu Cedenta Energoefektivitātes pakalpojuma līgumā
+noteikto saistību pārjaunojumu nekavējoties, bet ne vēlāk kā 5 Darba
+dienu laikā pēc attiecīga Cedenta paziņojuma saņemšanas, savlaicīgi
+atbilstoši nepieciešamībai saņemt visus dokumentus un/vai papildu
+paskaidrojumus un skaidrojumus attiecībā uz Ēku.}
+
+ \item{Forfaitinga cesionāram kā personai, kurai Debitoru parādi tiek cedēti, ir
+tiesības ierosināt jebkādu tiesas vai ārpustiesas procesu, kas ir
+nepieciešams, lai iekasētu, piedzītu un saņemtu Debitoru parādus. Ja
+Forfaitinga cesionāram būs jārealizē savas tiesības, tas informēs
+Cedentu, un Cedents atbilstoši nepieciešamībai sadarbosies.
+Forfaitinga cesionārs iesniegs Cedentam jebkādu rakstisku nodomu
+vēstuli vai rakstiskus apliecinājumus, kas apstiprina vai ir nepieciešami
+tiesību realizācijai, un Cedents tos parakstīs, ja tas varētu būt
+nepieciešams, lai īstenotu plānoto tiesību realizāciju.}
+  \end{enumerate}
+
+  \subsection{PĀRVALDNIEKS UN ĒKAS APSAIMNIEKOŠANA}
+
+  \begin{enumerate}
+  \item{Cedentam ir jānodrošina, lai jebkurā brīdī būtu formas un satura ziņā
+Forfaitinga cesionāram pieņemams:}
+
+    \begin{enumerate}
+    \item{līgums starp personu, kurš rīkojas kā pārvaldnieks (lai
+iekasētu maksājumus no Cedenta klienta, nodrošinātu saziņu starp
+Cedentu un Cedenta klientu un informētu Forfaitinga cesionāru par
+visiem ar Debitoru parādiem saistītiem jautājumiem) (turpmāk –
+„Pārvaldnieks”), Cedentu un Cedenta klientu (turpmāk – „Pārvaldības
+līgums”); un}
+
+    \item{līgums starp Cedentu, Forfaitinga cesionāru un
+Pārvaldnieku (turpmāk – "Trīspusējais līgums").}
+    \end{enumerate}
+  \end{enumerate}
+
+  \subsection{ATTIECĪGIE LĪGUMĀ NOTEIKTIE TERMIŅI – LĪGUMA
+SPĒKĀ ESAMĪBAS PERIODS}
+
+  \begin{enumerate}
+
+  \item{Debitoru parādu cesijas saskaņā ar šo Līgumu un visu šajā Līgumā
+noteikto Pušu saistību nosacījums ir visu priekšnosacījumu izpilde, ko
+apliecina 4.punktā iepriekš noteiktā Nosacījumu izpildes protokola
+parakstīšana.}
+
+  \item{Visi šā Līguma grozījumi, papildinājumi un izmaiņas ir veicami
+rakstveidā pēc visu Pušu savstarpējas vienošanās un stājas spēkā tikai
+pēc tam, kad Puses tos ir parakstījušas.}
+
+  \item{Cedents vienpusēji izbeidz šo Līgumu, rakstveidā paziņojot par to
+Forfaitinga cesionāram un Pārvaldniekam vismaz 30 (trīsdesmit) dienas
+iepriekš, ja Cedenta klients ir izbeidzis Energoefektivitātes pakalpojuma
+līgumu, neatkarīgi no izbeigšanas iemesla. Šādā gadījumā Forfaitinga
+cesionārs ir tiesīgs saņemt no Cedenta kompensāciju turpmāk
+norādītās kopsummas apmērā: }
+
+    \begin{enumerate}
+    \item{visas Forfaitinga cesionāra Cedentam saskaņā ar šo Līguma
+samaksātās summas, plus likumīgie procenti, kas uzkrājušies saistībā ar
+tām, sākot no samaksas Cedentam datuma; plus}
+    \item{visas Forfaitinga cesionāra ieguldījumu izmaksas un tā
+kapitāla izmaksas, ieskaitot, bet neaprobežojoties ar jebkādiem saistību
+maksājumiem, procentu likmēm un citām papildu piemaksām, kas
+Forfaitinga cesionāram varētu būt radušās, un plānoto ieņēmumu
+summu, kuru Cedents būtu saņēmis, ja Energoefektivitātes
+pakalpojuma līgums nebūtu izbeigts.}
+    \item{tomēr nerēķinot dubultā.}
+    \end{enumerate}
+
+  \item{Līgums nevar tikt izbeigts pirms Energoefektivitātes pakalpojuma
+līguma izbeigšanas, ja vien Cedents un Forfaitinga cesionārs nav
+rakstveidā vienojušies par citiem noteikumiem, vai arī Līgumā nav noteikts citādi.}
+
+  \item{Šā Līguma izbeigšana neatbrīvo Puses no savu attiecīgo šajā Līgumā
+noteikto saistību izpildes, kuru izpildes termiņš ir iestājies pirms šā
+Līguma izbeigšanas, ja vien Puses nav rakstveidā vienojušās par citiem
+noteikumiem, vai arī šajā Līgumā nav noteikt citādi. }
+
+  \item{Gadījumā, ja Energoefektivitātes pakalpojuma līgums ir izbeigts pirms
+termiņa jebkādu apstākļu dēļ un a Forfaitinga cesionāram nav
+izmaksāta kompensācija saskaņā ar šā Līguma (jo īpaši 9.3.punkta)
+noteikumiem:}
+
+    \begin{enumerate}
+    \item{Forfaitinga cesionāram ir tiesības saņemt jebkādu summu, kuru
+Cedenta klientam ir jāmaksā saskaņā ar Energoefektivitātes
+pakalpojuma līguma noteikumiem šādas izbeigšanas rezultātā (un šīs
+summas veido daļu no Debitoru parādiem);}
+
+    \item{ievērojot Energoefektivitātes pakalpojuma līgumā noteikumus,
+ja jebkura no Cedenta uzstādītā Aprīkojuma demontāžas vai trūkuma
+rezultātā Ēkai neradīsies nekāds būtisks kaitējums, Forfaitinga
+cesionāram ir tiesības demontēt Cedentam piederošo Aprīkojumu Ēkā
+un izvest to no Ēkas, nemaksājot par to Cedenta klienta, ar nosacījumu,
+ka (i) šāda demontāža ir tehniski iespējama, būtiski nesabojājot Ēku, un
+(ii) Cedenta klients ir saskaņā ar Energoefektivitātes pakalpojuma
+līgumu samaksājis summu, kas ir mazāka nekā izmaksas par
+Energoefektivitātes pakalpojuma līgumā noteikto siltumenerģijas un
+apkopes pakalpojumu sniegšanu (x) apmērā, un 80 \% no Cedenta
+kopējo ieguldījumu summas (y) apmērā, īstenojot Energoefektivitātes
+paaugstināšanas pasākumus; un/vai}
+
+    \item{gadījumā, ja pirmstermiņa izbeigšanas iemesls ir Cedenta
+pieļauta neizpilde, tad Cedentam ir jāmaksā Forfaitinga cesionāram
+tāda summa, kas kopā ar jebkurām citām saskaņā ar šo 9.6.punktu
+saņemtajām summām ir līdzvērtīga summai, kuru Forfaitinga cesionārs
+būtu tiesīgs saņemt saskaņā ar 9.3.punktu, ja Cedents būtu izbeidzis šo
+Līgumu. Iepriekšminētais neierobežo Cedenta pienākumu pēc
+Forfaitinga cesionāra pieprasījuma pārjaunot Forfaitinga cesionāra
+norādītai trešajai personai jebkuras vai visas savas Energoefektivitātes
+pakalpojuma līgumā noteiktā saistības, kas Cedentam ir jāveic 5 Darba
+dienu laikā pēc rakstiska paziņojuma saņemšanas.}
+    \end{enumerate}
+
+  \item{Papildus šā Līguma noteikumiem Puses var izbeigt šo Līgumu jebkurā
+laikā uz savstarpējas vienošanās pamata par šā Līguma izbeigšanas
+nosacījumiem. Šajā punktā minētā vienošanās par izbeigšanu ir
+noformējama rakstveidā un stājas spēkā pēc tam, kad to ir parakstījušas
+visas Puses.}
+  \end{enumerate}
+
+  \subsection{APDROŠINĀŠANA}
+
+  \begin{enumerate}
+  \item{Energoefektivitātes pakalpojuma līguma spēkā esamības laikā un par
+Dzīvokļu īpašnieku līdzekļiem Cedentam ir pastāvīgi jāuztur
+apdrošināšanas polise par Ēku ar minimālo apdrošināšanas segumu
+pret ugunsgrēku, zemestrīci, plūdiem, ūdens nodarītiem bojājumiem,
+jebkādām citām dabas katastrofām, kas ietekmē Ēku, strukturāliem
+bojājumiem, ko izraisījusi nosēšanās un krituši koki, par summu, kas nav mazāka par Ēkas atjaunošanas vērtību. Apdrošināšanas līgumam ir
+jābūt noslēgtam atbilstoši noteikumiem un nosacījumiem, kas ietver
+attiecīgās nozares standarta noteikumus, ar apdrošinātāju, kuram
+saskaņā ar Latvijā piemērojamiem atzītiem reitingiem ir piešķirts
+vismaz A+ reitings. Cedentam ir jāiesniedz Forfaitinga cesionāram šādas
+apdrošināšanas polises oriģināls vai jāiesniedz polises vai cita
+pamatojoša dokumenta, kas apliecina apdrošināšanas prēmijas valūtu
+un samaksu, kopija. Jebkāda polise, kurā Cedents ir minēts kā
+apdrošināšanas atlīdzības saņēmējs saskaņā ar apdrošināšanas
+segumu, ir pienācīgi jānodod piemērojamā un tiesiski saistošā kārtībā
+Forfaitinga cesionāram, lai tādējādi Forfaitinga cesionārs kļūtu par
+patieso atlīdzības saņēmēju saskaņā ar apdrošināšanas polisi.}
+
+  \item{Neievērojot neko pretēju, Forfaitinga cesionārs ir tiesīgs par saviem
+līdzekļiem papildus apdrošināt Ēku, Energoefektivitātes
+paaugstināšanas pasākumus, no Energoefektivitātes pakalpojuma
+līguma izrietošo Debitoru parādu iekasēšanu un to piedziņu vai
+jebkādus citus aktīvus, kas uzskatāmi par būtiskiem Cesionāra
+komercdarījumā, bez vajadzības informēt vai saņemt tam Cedenta vai
+tā Klienta piekrišanu.}
+  \end{enumerate}
+
+  \subsection{PRASĪJUMU CESIJA }
+
+  \begin{enumerate}
+  \item{Forfaitinga cesionārs var brīvi cedēt, ieķīlāt, apgrūtināt vai atsavināt
+trešajām personām savas šajā Līgumā noteiktās tiesības un/vai
+prasījumus (vienalga, vai tie radušies cesijas brīdī vai jebkurus
+turpmākus prasījumus) attiecībā uz jebkuriem no Cedenta nodotajiem
+Debitoru parādiem (kuru cesija vai atsavināšana var tikt veikta vairāku
+cesiju veidā, kur katra attiecas uz Debitoru parādiem, kas pienākas no
+viena vai vairākiem Dzīvokļu īpašniekiem), un jebkāda šāda
+atsavināšana var notikt kā saskaņā ar šo Līgumu forfaitinga ietvaros
+nodoto Debitoru parādu cesija jebkurai trešajai personai}
+
+  \item{Cedents nedrīkst cedēt Debitoru parādus citādi, kā vien saskaņā ar šo
+Līgumu. Cedents nedrīkst cedēt nekādas savas tiesības saņemt
+maksājumus par Pakalpojumiem.}
+  \end{enumerate}
+
+  \subsection{KAM PIEDER UZSTĀDĪTĀS IEKĀRTAS –
+ĪPAŠUMTIESĪBAS UZ APRĪKOJUMU}
+
+  \begin{enumerate}
+  \item{Šis Līgums neierobežo nekādus Energoefektivitātes pakalpojuma
+līguma Vispārīgo noteikumu un nosacījumu [16.punkta] noteikumus un
+Cedenta īpašumtiesības uz Energoefektivitātes paaugstināšanas
+pasākumu īstenošanas nolūkā Ēkā uzstādīto Aprīkojumu, kuru var
+atdalīt no Ēkas, neradot būtisku kaitējumu Ēkai}
+
+  \item{Ievērojot iepriekšminēto un kā nodrošinājumu no šā Līguma
+izrietošajām Cedenta saistībām, Forfaitinga cesionāram ir vienīgi savā
+vai trešo personu labā jānodibina īpaša ķīla pār Ēkā uzstādīto
+Aprīkojumu ne vēlāk kā 10 darba dienu laikā pēc attiecīgā Aprīkojuma
+pieņemšanas-nodošanas akta parakstīšanas (atbilstoši
+14.lapa no 24 Energoefektivitātes pakalpojuma līgumā ietvertajai definīcijai).
+Iepriekšminētajā termiņā Cedents apņemas veikt visas tiesiskās un
+faktiskās darbības, kas nepieciešamas ķīlas nodibināšanai, tai skaitā
+pienācīgu reģistrāciju Latvijas Komercķīlu reģistrā pēc visu atbilstošo
+juridisko dokumentu un papildu vienošanos parakstīšanas to
+atbilstošajā tiesiskajā formā.}
+  \end{enumerate}
+
+  \subsection{KAS NOTIEK ŠĀ LĪGUMA SAISTĪBU NEIZPILDES
+GADĪJUMĀ – ATBILDĪBA}
+
+  \begin{enumerate}
+  \item{Cedents nav atbildīgs par jebkādiem prasījumiem, kas saistīti ar
+Debitoru parādu cesiju, izņemot šādos gadījumos:}
+    \begin{enumerate}
+    \item{Cedents ir pārkāpis savas Energoefektivitātes pakalpojuma
+līgumā noteiktās saistības, kā rezultātā Forfaitinga cesionāram ir
+nodarīti zaudējumi, un šo pārkāpumu rakstveidā ir atzinis Cedents vai
+tas ir konstatēts atbilstoši Energoefektivitātes pakalpojuma līgumā
+noteiktajai Strīdu izskatīšanas kārtībai, un šī Strīdu risināšanas kārtība
+līdz ar nepieciešamajiem grozījumiem – mutatis mutandis – ir iekļauta
+šajā Līgumā; un/vai}
+
+    \item{par Cedenta kompensāciju, kas katrā gadījumā ir skaidri
+norādīta šajā Līgumā.}
+    \end{enumerate}
+
+  \item{Cedentam ir jāatlīdzina un jāpasargā Forfaitinga cesionārs no jebkādas
+atbildības un/vai prasījumiem, kas Forfaitinga cesionāram var rasties
+vai pret to var tikt izvirzīti uz jebkādu šajā Līgumā vai
+Energoefektivitātes pakalpojuma līgumā ietverto Cedenta
+apliecinājumu, garantiju un apņemšanos būtiska pārkāpuma pamata
+vai no tā izrietoši, tomēr ar nosacījumu, ka kopējā summu, kuru
+Cedentam ir pienākums maksāt Forfaitinga cesionāram, tiek
+aprobežota ar nesamaksāto Debitoru parādu summu, kas saskaņā ar
+grafiku ir maksājama un kuru nav iekasējis Forfaitinga cesionārs}
+
+  \item{Forfaitinga cesionāram ir jāatlīdzina un jāpasargā Cedents no jebkādas
+atbildības un/vai prasījumiem, kas Cedentam var rasties vai pret to var
+tikt izvirzīti uz jebkādu šajā Līgumā vai Energoefektivitātes pakalpojuma
+līgumā ietverto Forfaitinga cesionāra apliecinājumu, garantiju un
+apņemšanos būtiska pārkāpuma pamata vai no tā izrietoši, tomēr ar
+nosacījumu, ka kopējā summu, kuru Forfaitinga cesionāram ir
+pienākums maksāt Cedentam, tiek aprobežota ar simt procentiem
+(100\%) no atbilstoši šim Līgumam nodoto Debitoru parādu kopējās
+vērtības.}
+
+  \item{Forfaitinga cesionāram ir tiesības nekavējoties atkāpties no šā Līguma
+jebkādu turpmāk norādīto svarīgo iemeslu dēļ:}
+
+    \begin{enumerate}
+    \item{gaidāma Cedenta maksātnespēja vai likvidācijas vai
+administratīva procesa uzsākšana attiecībā uz tā mantu vai arī šāds
+likvidācijas vai administratīvais process nav uzsākts tikai tāpēc, ka nav
+pietiekamu līdzekļu likvidatora vai administratora apmaksai;}
+
+    \item{Cedents 14 dienu laikā pēc jebkāda rakstiska pieprasījuma
+nesniedz informāciju un dokumentus, kas nepieciešami nodoto
+Debitoru parādu iekasēšanai;}
+
+    \item{Cedents pārkāpj jebkādu būtisku šā Līguma saistību, kā
+rezultātā Forfaitinga cesionāram rodas zaudējumi;}
+
+    \item{Cedents nav atklājis faktus, kas tam bijuši zināmi vai kurus tam
+būtu vajadzējis zināt, kas liedz veiksmīgi iekasēt nodotos Debitoru
+parādus}
+    \end{enumerate}
+
+  \item{Izņemot 5.3.un 5.6.punktos noteikto, ja Forfaitinga cesionārs atkāpjas
+no šā Līguma attiecībā uz visiem vai jebkuru daļu no nodotajiem
+Debitoru parādiem, Cedentam ir jāatmaksā jebkāda summa, kas
+samaksāta saistībā ar attiecīgajiem Debitoru parādiem saskaņā ar IV.punktu iepriekš (izņemot jebkuras summas, kuras Forfaitinga cesionārs
+jau ir saņēmis saistībā ar šiem Debitoru parādiem), un tam vairs nav
+tiesības uz jebkādiem turpmākiem maksājumiem no Forfaitinga
+cesionāra saskaņā ar šiem punktiem par attiecīgajiem Debitoru
+parādiem. Šī summa ir jāsamaksā 14 dienu laikā pēc atkāpšanās.
+Forfaitinga cesionāram par Cedenta līdzekļiem ir jāatdod Cedentam
+attiecīgie Debitoru parādi un saistībā ar tiem saņemtās summas (ja
+tādas būtu), atskaitot izmaksas un izdevumus.
+Izbeidzot šo Līgumu, Forfaitinga cesionārs ir tiesīgs piedzīt no Cedenta
+jebkādus izdevumus par juridisko palīdzību, kas ir nepieciešama, lai
+iekasētu pienākošos debitoru parādus vai paturētu jebkādus
+pienākošos maksājumus, kamēr nav atrisināts strīds.}
+  \end{enumerate}
+
+  \subsection{NEPĀRVARAMAS VARAS APSTĀKĻI}
+
+  \begin{enumerate}
+  \item{Jebkura ārkārtas situācija vai iepriekš neparedzams notikums, kam ir
+visas tālāk uzskaitītās pazīmes, ir uzskatāms par nepārvaramas varas
+apstākļiem:}
+
+    \begin{enumerate}
+    \item{Puses nevar paredzēt un ietekmēt tos;}
+
+    \item{tie traucē Pusēm pildīt Līguma saistības;}
+
+    \item{tie nevar tikt uzskatīti par attiecīgās Puses pieļautu kļūdu vai
+nolaidību; }
+
+    \item{var pierādīt, ka tie ir, vai vienoties, ka tie ir nepārvarami,
+lai gan attiecīgā Puse ir pielikusi saprātīgas pūles, lai mēģinātu tos novērst.
+Nepārvaramas varas apstākļi, piemēram, ietver, bet ne aprobežojas
+ar karadarbību, dabas katastrofām un valsts pārvaldes iestāžu
+normatīvajiem aktiem. Neņemot vērā iepriekšminēto, Aprīkojuma
+trūkumi, nolīgtās kvalitātes vai kvantitātes ziņā nepilnīgi
+Pakalpojumi, Cedenta izmantotie, nodrošinātie vai uzstādītie
+materiāli vai to ekspluatācijas kavējumi (ja to nav izraisījuši
+nepārvaramas varas apstākļi), Cedenta klienta strīdi streiki un
+finansiālas grūtības NAV uzskatāmi par nepārvaramas varas
+apstākļiem.}
+    \end{enumerate}
+
+  \item{Puses nav atbildīgas par pilnīgu vai daļēju Līgumā noteikto saistību
+neizpildi, ja tās cēlonis ir nepārvaramas varas apstākļi. Puse, kas
+paļaujas uz nepārvaramas varas apstākļiem, ir jāiesniedz otrai Pusei
+pierādījumi par to.}
+
+  \item{Pusei, kuras saistību izpilde nepārvaramas varas apstākļu rezultātā ir
+kļuvusi apgrūtināta vai neiespējama, ir nekavējoties jāinformē otra
+Puse par radušos stāvokli, norādot apstākļu aprakstu, iespējamo
+ilgumu, sagaidāmās sekas un potenciālo to risinājumu.}
+
+  \item{Pusēm ir jāveic nepieciešamās darbības, lai mazinātu nepārvaramas
+varas apstākļu sekas, un jāveic saprātīgas darbības, lai mazinātu
+jebkādu radīto kaitējumu.}
+
+  \item{Ja nepārvaramas varas apstākļi ilgst vairāk nekā 6 (sešus) mēnešus
+pēc kārtas, un nav sagaidāms, ka tie beigsies vēl nākamos 3 (trīs)
+mēnešus, gan Cedentam, gan Forfaitinga cesionāram ir tiesības
+vienpusēji izbeigt Līgumu un saņemt 9.3.punktā iepriekš noteikto
+kompensāciju.}
+  \end{enumerate}
+
+  \subsection{KONFIDECIALITĀTE UN PERSONAS DATU AIZSARDZĪBA}
+
+  \begin{enumerate}
+  \item{Šā Līguma Puses vienojas neizpaust trešajām personām citu personu
+Konfidenciālo informāciju (kur „Konfidenciālā informācija” nozīmē,
+ievērojot 15.5.un 15.6.punktu, informāciju, kas atbilst 15.3.un 15.4.
+punktā noteiktajām kategorijām), kā arī neizpaust datus par citiem,
+kas varētu tikt izmantoti konkurences vai nelikumīgu darbību
+veikšanas nolūkā gan Līguma spēkā esamības laikā, gan trīs gadus pēc
+Līguma izbeigšanās}
+
+  \item{Cedents nedrīkst pieprasīt vai informēt jebkādu Forfaitinga cesionāra
+un/vai jebkādas juridiskas personas klientu, potenciālo klientu vai
+sadarbības partneri, ka Cedentam ir zināms, ka Forfaitinga cesionārs
+vēlas izveidot attiecības, lai apcirptu, anulētu, atsauktu, ierobežotu,
+samazinātu vai citādi ierobežotu viņu darījumus ar Forfaitinga
+cesionāru.}
+
+  \item{Šā Līguma noslēgšanas vai izpildes gaitā iegūtā informācija, kas nav
+vispārpieejama trešajām personām un kuras izpaušana, kā zināms
+saņēmējai personai vai vajadzētu zināt saņēmējai personai, var kaitēt
+izpaudējas personas likumīgajām tiesībām vai interesēm, uzskatāma
+par konfidenciālu.}
+
+  \item{Papildus 11.3.punkta noteikumiem, turpmāk uzskaitītā informācija
+uzskatāma par konfidenciālu informāciju:}
+
+    \begin{enumerate}
+    \item{jebkāda ierobežotas pieejamības informācija par šā Līguma
+Pusēm, to klientiem vai sadarbības partneriem, ieskaitot, bet
+neaprobežojoties ar jebkādu informāciju, kurai ir jebkuras Puses
+komercnoslēpuma statuss;}
+
+    \item{jebkāda informācija par šā Līguma Pušu darba organizāciju,
+krājumiem, iekārtām nu tehnoloģijām.}
+    \end{enumerate}
+
+  \item{Līguma 15.4.punktā sniegtais Konfidenciālas informācijas
+uzskaitījums nav izsmeļošs, un uzskatāms, ka jebkura konfidenciāla
+informācija, kas tomēr tiek izpausta, atbilst Konfidenciālas
+informācijas definīcijai.}
+
+  \item{Informācija, kas kļūst publiski pieejama trešo personu darbības
+rezultātā, nevienai no Pusēm nepārkāpjot Līguma noteikumus, nav
+uzskatāma par Konfidenciālu informāciju.}
+
+  \item{Šā Līguma Puses var izpaust Konfidenciālo informāciju saviem
+konsultantiem, ar nosacījumu, ka tās uzņemas atbildību, ja šādas
+trešās personas saņemto Konfidenciālo informāciju izmanto
+nelikumīgi vai neievēro šajā Līgumā noteiktos konfidencialitātes
+pienākumus.}
+
+  \item{Ja šā Līguma Pusei, kas ir saņēmusi Konfidenciālo informāciju, ir
+pienākums šādu Konfidenciālo informāciju izpaust saskaņā ar Latvijā
+spēkā esošajiem normatīvajiem aktiem vai rīkojumiem (vai
+jebkuriem tiem tai piemērojamiem tiesību aktiem), tad: (i) šādai
+Pusei ir atļauts izpaust šo informāciju; un (ii) paziņojums par
+izpaušanas faktu ir nekavējoties jādod atklājējai Pusei, ja vien
+piemērojamo normatīvo aktu prasības nenosaka citādi.}
+
+  \item{Cedents un Forfaitinga cesionārs reklāmas nolūkā un nolūkā
+informēt sabiedrību ir tiesīgi atklāt vispārīgu informāciju par
+savstarpējo sadarbību, tai skaitā izpaust informāciju, kas jau ir
+publiski pieejama par Pusēm, sadarbības raksturu, panākto Enerģijas
+ietaupījumu un procesa termiņiem atbilstoši Līgumam, ciktāl tas
+nepārkāpj citu pušu likumīgās tiesības un intereses saistībā ar
+konfidenciālās informācijas aizsardzību. Ja šā Līguma Pusei ir šaubas
+par konkrētas informācijas raksturu, pirms tās izpaušanas šīs
+informācijas raksturs ir jāsaskaņo ar to Pusi (Pusēm), kuras likumīgās
+tiesības un intereses var aizskart šīs informācijas izpaušana, ja šī Puse
+šo informāciju uzskata par pakļautu Līgumā noteiktajam
+konfidencialitātes pienākumam.}
+
+  \item{Iepriekšminētais punkts neierobežo Forfaitinga cesionāra tiesības
+ievākt, apstrādāt, uzglabāt, pārveidot un izplatīt visus no Cedenta
+ievāktos datus nolūkā uzlabot savu pakalpojumu kvalitāti un
+izstrādāt, pārvaldīt un uzturēt Energoefektivitātes pakalpojuma
+tiešsaistes platformu, lai atbalstītu visus posmus un iesaistītās
+personas tipiska Energoefektivitātes pakalpojuma projekta ietvaros.}
+
+  \item{Neierobežojot 6.8.punktu, Cedents ar šo piekrīt, ka Forfaitnga
+cesionārs ir tiesīgs ievākt, apstādāt, uzglabāt, izmanto un nodot
+Cedenta saskaņā ar šo Līgumu sniegtos personas datus, tam veicot
+savas likumā noteiktās saistības, nolūkā sniegt savus pakalpojumus
+vai nodot tos jebkurai trešajai personai, kurai var tikt cedētas no šā
+Līguma izrietošās tiesības vai saistības, tai skaitā, bet ne tikai jebkurai
+personai, kas ir atbildīga par tiešsaistes platformas izstrādi,
+īstenošanu, pārvaldīšanu un uzturēšanu, lai uzraudzītu īstenoto
+Energoefektivitātes pasākumu veiktspēju. Forfaitinga cesionārs
+datus var izmantot citiem mērķiem pēc tam, kad ir saņēmis Cedenta
+vai atbilstošos gadījumos Cedenta klienta piekrišanu tam. Neņemot
+vērā iepriekšminēto, jebkuri personas dati vai ar Ēku vai Aprīkojumu
+saistīti dati paliek Cedenta klienta īpašumā.}
+
+  \item{Cedents atzīst un piekrīt, ka Forfaitinga cesionārs vai jebkura trešā
+persona, kurai Forfaitinga cesionārs ir nodevis šajā Līgumā ietvertās
+tiesības, izmanto jebkādus anonīmus datus un informāciju saistībā ar
+enerģijas patēriņu Ēkā vienalga, vai to ir sniedzis Cedents vai ieguvis
+Cesionārs nolūkā atzīmēt un apkopot valsts, reģionāla vai ES mēroga
+datubāzi vai ar mērķi Cedenta klientam izmantot kā atsauci vai
+jebkādam iekšējam mērķim, kam ir piekritis Pasūtītājs.}
+  \end{enumerate}
+
+  \subsection{KURŠ PARAKSTA ŠO LĪGUMU – PUŠU PĀRSTĀVĪBA}
+
+  \begin{enumerate}
+  \item{Visos ar šo Līgumu saistītajos jautājumos Puses pārstāv to likumīgie
+pārstāvji (ja tās ir juridiskas personas) vai pienācīgi un tiesīgi
+pilnvarotas personas, kurām ir pārstāvības tiesības attiecīgās šā
+Līguma Puses vārdā uzņemties saistības.}
+
+  \item{Pušu pilnvarotie pārstāvji ir pilnvaroti pārstāvēt attiecīgo Pusi
+saistībā ar visu juridisko jautājumu kārtošanu saistībā ar šo Līgumu
+atbilstoši Latvijā spēkā esošajiem normatīvajiem aktiem vai
+gadījumā, ja Puse ir reģistrēta ārpus Latvijas, tās jurisdikcijas
+normatīvajiem aktiem, kurā šī Puse ir reģistrēta.}
+
+  \item{Puses ir tiesīgas jebkurā laikā atsaukt savu pilnvaroto pārstāvju
+pilnvarojumu, rakstveidā paziņojot par to pārējām Pusēm un
+vienlaikus pilnvarojot citu pārstāvi, kura rakstiskās pilnvaras
+pārstāvēt attiecīgo Pusi ir jāiesniedz pārējām Pusēm. Nomainot savu
+pārstāvi, Pusei ir jānodrošina, lai otra Puse tiktu informēta par
+pārstāvja nomaiņu ne vēlāk kā pārstāvja nomaiņas dienā. Minētais
+paziņojums kļūst par daļu no šā Līguma.}
+
+  \item{Papildus iepriekšminētajam, Cedents ir tiesīgs, ievērojot
+Energoefektivitātes pakalpojuma līguma noteikumus, piesaistīt
+jebkuru trešo personu kā savu apakšuzņēmēju vai sadarbības
+partneri nolūkā izpildīt noteiktus darbus vai īstenot pakalpojumus ar
+mērķi izpildīt šajā Līgumā vai Energoefektivitātes pakalpojuma
+līgumā ietvertās saistības, iepriekš rakstveidā paziņojot pa to
+Cedenta klientam, un paziņojums nododams tai skaitā pa e{-}pastu.}
+  \end{enumerate}
+
+  \subsection{KĀ RISINĀMI STRĪDI – STRĪDU RISINĀŠANAS KĀRTĪBA}
+
+  \begin{enumerate}
+  \item{Pusēm ar šo Līgumu saistītas nesaskaņas ir jāatrisina savstarpēju
+sarunu ceļā, pieliekot visas pūles, lai atrisinātu attiecīgās nesaskaņas.
+Šim nolūkam Pusēm ir jāsniedz savlaicīga rakstiska atbilde uz jebkuru
+otras Puses vēstuli saistībā ar nesaskaņām, kā arī jāvelta saprātīgs
+laiks, ciktāl tas ir iespējams, lai attiecīgās nesaskaņas atrisinātu
+personiski.}
+
+  \item{Ja Puses nepanāk savstarpēju vienošanos, un starp Pusēm pastāv
+strīds, nesaskaņas vai prasības, kas izriet no šā Līguma, ir saistītas ar
+to vai tā darbības apturēšanu, izbeigšanu vai spēkā neesamību, tās ir
+jāatrisina meditācijas procesā saskaņā ar biedrības “Ēku
+saglabāšanas un energotaupības birojs”, vienotais reģistrācijas
+numurs 40008198558, vai tā tiesību un saistību pārņēmēja
+meditācijas noteikumiem, kas ir spēkā šā Līguma darbības laikā un
+pastāv, kad pirmo reizi strīds tiek nodots izskatīšanai. Ja starp Pusēm
+pastāv strīds par tehniskiem jautājumiem, jebkura Puse var pieprasīt,
+lai strīdu par konstatētiem apstākļiem risinātu saskaņā ar biedrības
+“Ēku saglabāšanas un energotaupības birojs”, vienotais reģistrācijas
+numurs 40008198558, apstākļu izmeklēšanas komisijas darba
+kārtību.}
+
+  \item{Ja Puses nepanāk savstarpēju vienošanos pēc meditācijas procesa un/vai apstākļu izmeklēšanas procesa,
+strīds ir izšķirams Latvijas vispārējās jurisdikcijas tiesā saskaņā ar piemērojamajiem Latvijā
+spēkā esošajiem normatīvajiem aktiem. Pieteikums ir iesniedzams
+tiesā pēc piekritības atbilstoši atbildētāja dzīvesvietai vai juridiskajai
+adresei, tomēr, ja tā nav Latvijā, tad Rīgas pilsētas centra rajona tiesā
+vai Rīgas apgabaltiesā atbilstoši prasības piekritības noteikumiem.}
+  \end{enumerate}
+
+  \subsection{CITI NOTEIKUMI}
+
+  \begin{enumerate}
+  \item{Jebkāds rakstisks paziņojums saistībā ar šo Līgumu uzskatāms par
+saņemtu 7. (septītajā) dienā pēc paziņojuma nosūtīšanas dienas, ja
+tas ir nosūtīts ierakstītā sūtījumā uz jaunāko tās Puses pilnvarotā
+pārstāvja norādīto adresi, kurai tas ir adresēts. Paziņojuma
+nosūtīšanas diena ir tā diena, kad paziņojums ir nodots pastā, un to
+apstiprina pasta zīmogs. Pa elektronisko pastu uz norādīto vai Pušu
+paziņoto e-pasta adresi uzskatāmi par rakstiskiem paziņojumiem ar
+visām no tā izrietošajām sekām, un tie ir uzskatāmi par saņemtiem
+no brīža, kad tie ir sasnieguši saņēmēja operētājsistēmu neatkarīgi
+no tā, vai tie ir izlasīti vai ne.}
+
+  \item{Šis Līgums ir sastādīts un no tā izrietošās tiesības un pienākumi ir
+iztulkojami, kā arī Pušu darbība ir vērtējama saskaņā ar Latvijas
+Republikas piemērojamajiem tiesību aktiem.}
+
+  \item{Šā Līguma sadaļu vai punktu virsraksti nevar tikt izmantoti šā Līguma
+interpretācijā.}
+
+  \item{Šis Līgums satur visus noteikumus, apsolījumus, nosacījumus un
+nolūku apliecinājumus starp Pusēm, un Puses garantē, ka nav nekādu
+mutisku noteikumu, apsolījumu, vienošanos, nosacījumu un nolūku
+apliecinājumu, izņemot tos, kas minēti šajā Līgumā. }
+
+  \item{Ja šā Līguma spēkā esamības laikā spēkā stājas grozījumi Latvijas
+normatīvajos aktos, kuru dēļ jebkādu šajā Līgumā ietverto saistību
+izpilde kļūst pilnīgi vai daļēji neiespējama, vai izmainās jebkuras
+Puses pienākumu izpildes nosacījumi, tas neietekmē pārējo šā
+Līguma noteikumu spēkā esamību, un Pusēm ir jāapņemas veikt
+nepieciešamos grozījumus šajā Līgumā, kas vislabāk īsteno šā Līguma
+sākotnējo nolūku un mērķi, un saimniecisko ietekmi.}
+
+  \item{Pušu reorganizācija, kā arī Pušu akcionāru/dalībnieku (īpašnieku) vai
+vadības struktūru pārstāvju (valdes locekļu) vai Cedenta klienta
+nomaiņa (Ēkas Dzīvokļu īpašnieki atsavina īpašumtiesības uz
+Dzīvokļiem un/vai izīrē tos īstermiņā vai ilgtermiņā) nav pamats šā
+Līguma izbeigšanai vai šajā Līgumā noteikto saistību neizpildei. Ja
+16.lapa no 24 jebkura no Pusēm ir iesaistīta uzņēmumu apvienošanās vai iegādes
+procesā, attiecībā uz to ir sākts likvidācijas vai bankrota process, vai
+Ēkas Dzīvokļu īpašnieki mainās, šis Līgums paliek spēkā, un tā
+noteikumi ir saistoši attiecīgās Puses tiesību un saistību
+pārņēmējiem. Katrai Pusei ir nekavējoties, bet ne vēlāk kā 5 (piecu)
+dienu laikā pēc šādām izmaiņām, jāinformē pārējās Puses par šajā
+Līgumā norādītās Puses adreses maiņu vai citām izmaiņām tās
+tiesiskajā statusā vai pārvaldībā.}
+
+    \item{Līgums ir sastādīts un parakstīts 2 (divos) eksemplāros [angļu]
+[latviešu] valodā. Visiem eksemplāriem ir vienāds juridisks spēks.
+Katra Puse patur 1 (vienu) šā Līguma eksemplāru. Puses ar saviem
+parakstiem apliecina, ka ir sapratušas šā Līguma saturu, nozīmi un
+sekas; tās atzīst, ka šis Līgums ir pareizs, savstarpēji izdevīgs un ka tās
+labprātīgi vēlas parakstīt to.}
+  \end{enumerate}
+
+  \subsection{PIELIKUMI}
+
+  \begin{enumerate}
+  \item{Šā Līguma parakstīšanas brīdī šim Līgumam ir pievienoti šādi  pielikumi:}
+   \begin{enumerate}
+	\item{PIELIKUMS:PAZIŅOJUMS PAR DEBITORU PARĀDU CESIJU}
+	\item{PIELIKUMS:CEDENTA KLIENTS/ PASŪTĪTĀJS}
+	\item{ PIELIKUMS:ENERGOEFEKTIVITĀTES PAKALPOJUMA LĪGUMS}
+	\item{PIELIKUMS:PILNVAROTIE PĀRSTĀVJI}
+	\item{PIELIKUMS:DEFINĪCIJAS}
+    \end{enumerate}
+
+  \item{Visi pielikumi uzskatāmi par šā Līguma neatņemamu sastāvdaļu un ir
+Pusēm saistoši. Pretrunu gadījumā starp šā Līguma un jebkuru
+pielikumu terminiem, šā Līguma noteikumi ir noteicošie, izņemot tos
+pielikumus, kas parakstīti pēc šā Līguma parakstīšanas. Pēc šā Līguma
+parakstīšanas parakstītie pielikumi ir noteicošie salīdzinājumā ar šā
+Līguma noteikumiem}
+
+  \item{Parakstot šo Līgumu, tiek apliecināts, ka Puses ir iepriekš
+apspriedušas Līguma un tam pievienoto pielikumu noteikumus, un
+visām Pusēm tie ir skaidri un saprotami.}
+  \end{enumerate}
+
+\end{multicols}
+
+\vspace{5mm}
+
+{{template "sign.tex"}}
+
+\begin{center}
+  \section{ANNEXES}
+\end{center}
+
+\vspace{1cm}
+
+\subsection{1. PIELIKUMS.PAZIŅOJUMS PAR DEBITORU PARĀDU CESIJU}
+
+\vspace{2mm}
+
+\begin{tabu}{|X|} \tabucline{}
+
+  Kam: {{.Contract.Fields.client_name}} \par
+
+  \begin{flushright}
+    {{index .Contract.Agreement "place-of-forfaiting-agreement"}}, {{index .Contract.Agreement "date-of-forfaiting-agreement"}}
+  \end{flushright}
+
+  \begin{alltt}  Debitoru parādu [nodošana] [cesija]
+
+
+
+    Godātie kungi/dāmas
+
+
+
+    % TODO: @edimov Fix manager-name to be input %
+    Mēs atsaucamies uz Energoefektivitātes pakalpojuma līgumu Nr.  {{.Contract.Fields.date}},datumā parakstīts starp Jums un mums, un informējam Jūs,
+ka saskaņā ar {{.Contract.Agreement.front_page_date}} Forfaitinga līgumu mēs esam [nodevuši] [cedējuši] visus no Energoefektivitātes pakalpojuma līguma izrietošos
+Debitoru parādus, tai skaitā Atlīdzību, kas aprēķināta un maksājama atbilstoši Energoefektivitātes pakalpojuma līguma 5.pielikumā sniegtajai
+definīcijai Forfaitinga cesionāram,   {{index .Contract.Fields "client_name"}},  {{index .Contract.Fields "client_id"}}  {{index .Contract.Fields "client_address"}} (turpmāk – „Forfaitinga
+cesionārs"). Visi Atlīdzības maksājumi kopā ar atlikumiem un naudassodiem, un citam summām atbilstoši Energoefektivitātes pakalpojuma
+līgumā noteiktajam turpmāk ir maksājami Forfaitinga cesionāram, lai dzēstu Jūsu Energoefektivitātes pakalpojuma līgumā paredzētās
+saistības. Forfaitinga cesionārs ir nozīmējis Jūsu esošo Pārvaldnieku, {{index .Contract.Agreement "manager-name"}} (the 'Manager'), (turpmāk – „Pārvaldnieks"), tā vārdā iekasēt visas maksājamās
+summas.
+  \end{alltt}
+
+  \vspace{5mm}
+
+  Mēs lūdzam Jūs pieņemt zināšanai Forfaitinga līgumu un saistīto debitoru parādu pārdošanu un informēt Forfaitinga cesionāru par savu
+akceptu, izmantojot pievienoto veidni.
+
+  \vspace{1cm}
+
+    Ar cieņu,
+
+  \vspace{1cm}
+
+   {{.ESCo.Name}}, Assignor
+
+  \vspace{1cm} \\\tabucline{}
+
+\end{tabu}
+
+\pagebreak
+
+\begin{tabu}{|X|} \tabucline{}
+
+  {{.ESCo.Name}}, Cedents\par
+
+  \begin{flushright}
+     {{index .Contract.Agreement "place-of-forfaiting-agreement"}},  {{index .Contract.Agreement "date-of-forfaiting-agreement"}} \par
+  \end{flushright}
+
+\begin{alltt}
+
+ Debitoru parādu [nodošana] [cesija]
+
+
+Godātie kungi/dāmas,
+
+
+Mēs, {{index .Contract.Agreement "assignors-client-name"}}, atsaucamies uz iepriekšminēto paziņojumu, ar kuru mēs tiekam informēti un
+uzzinām kā {{index .Contract.Agreement "assignor-name"}}(turpmāk – “Cedents") klients, ka Cedents ir
+ {{index .Contract.Agreement "forfaiting-assignee"}} (turpmāk – "Forfaitinga cesionārs") nodevis savas likumīgās tiesības uz debitoru parādiem, kas
+tam pienākas no mums saistībā ar mums un Cedentu {{index .Contract.Agreement "date-of-energy-contract"}} noslēgto Energoefektivitātes pakalpojuma līgumu (turpmāk –
+“Energoefektivitātes pakalpojuma līgums”) (šādu nodošanu veicot saskaņā ar  {{index .Contract.Agreement "date-of-forfaiting-agreement"}}
+starp Cedentu un Forfaitinga cesionāru noslēgto
+Forfaitinga līgumu). Parakstot šo paziņojumu, mēs apstiprinām Cedentam un Forfaitinga cesionāram, ka mēs esam pienācīgi informēti par
+iepriekšminēto Atlīdzības nodošanu un cesiju un atzīstam Forfaitinga cesionāru par Atlīdzības un visu citu debitoru parādu kreditoru, kas
+pienākas no mums saskaņā ar Energoefektivitātes pakalpojuma līguma noteikumiem. Kamēr Forfaitinga cesionārs nebūs mūs informējis
+citādi, mēs visas šādas summas maksāsim [ ] (turpmāk – "Pārvaldnieks") vai citai Forfaitinga cesionāra norādītai personai.
+\end{alltt}
+
+  \vspace{2mm}
+
+  Mēs tāpat atzīstam, ka Forfaitinga cesionārs var izmantot Energoefektivitātes pakalpojuma līgumā noteiktās Cedenta tiesības jaunu izpildītāju
+nomainīt ar Cedentu.
+
+  \vspace{2cm}
+
+  \begin{flushright}
+    {\_\_\_\_\_\_\_\_\_\_\_\_\_\_} \par
+    Vārds: \par
+    Pilnvarojums: \par
+  \end{flushright}
+
+  \vspace{1cm} \\\tabucline{}
+
+\end{tabu}
+
+{{template "sign.tex"}}
+
+\subsection{2. PIELIKUMS.CEDENTA KLIENTS / PASŪTĪTĀJS}
+
+\iffalse input forfaitingFields.annex2_tarea value="{{.Contract.Agreement.annex2_tarea}}" type="textarea" \fi {{.Contract.Agreement.annex2_tarea}}
+
+\pagebreak
+
+\subsection{3. PIELIKUMS.ENERGOEFEKTIVITĀTES PAKALPOJUMA LĪGUMS}
+
+\url{ {{.Attachments.signed_epc }} }
+
+\iffalse attachment value="signed epc" \fi
+
+\pagebreak
+
+\subsection{4. PIELIKUMS.PILNVAROTIE PĀRSTĀVJI}
+
+\iffalse input forfaitingFields.annex4_tarea value="{{.Contract.Agreement.annex4_tarea}}" type="textarea" \fi {{.Contract.Agreement.annex4_tarea}}
+
+\pagebreak
+
+\subsection{5. PIELIKUMS.DEFINĪCIJAS}
+
+
+\renewcommand*{\theenumi}{\roman{enumi}}
+
+Puses vienojas, ka šā Līguma izpratnē tālāk norādītajām definīcijām ir tālāk aprakstītā nozīme: \par
+
+\begin{longtabu}{|X|X[2]|} \tabucline{}
+
+  % Include `\hline` after every row to be sure that
+  % if this is the last row of the page, to ensure upper and lower
+  % bold line and remove the "empty" boxes
+
+   Līgums & Šis forfaitinga līgums, kas noslēgts starp Cedentu un Forfaitinga cesionāru. \\\tabucline{}
+
+   \hline
+
+   Dzīvoklis & Katrs Ēkā esošs dzīvokļa īpašums normatīvo aktu izpratnē. \\\tabucline{}
+
+   \hline
+
+   Dzīvokļa īpašnieks  & Fiziska vai juridiska persona, uz kuras vārda Dzīvoklis ir ierakstīts Zemesgrāmatā, vai cita persona, kurai saskaņā ar
+normatīvajiem aktiem pieder īpašumtiesības uz attiecīgo Dzīvokli. \\\tabucline{}
+
+   \hline
+
+   Cedenta klients &  {{index .Contract.Fields "client_name"}} turpmāk tekstā saukts arī “Pasūtītājs”.\\\tabucline{}
+
+   \hline
+
+   Sākotnējie rādītāji
+(patēriņš/apjoms/ tarifs) & Sākotnējie rādītāji (patēriņš/apjoms/tarifs) apraksta apstākļus ēkā pirms Energoefektivitātes paaugstināšanas
+pasākumu īstenošanas un ietver pamata gada datus par enerģiju un ēkas apstkākļus pamata gadā. \\\tabucline{}
+
+   \hline
+
+   Pamata gada dati par enerģiju & Enerģijas patēriņš gados, kas izraudzīti kā izejas pozīcija un apraksta ēkas energoefektivitāti pirms energoefektivitātes
+paaugstināšanas pasākumu īstenošanas. \\\tabucline{}
+
+   \hline
+
+  Pamata gada apstākļi & Apstākļu kopums, kas bija iemesls enerģijas izlietojumam/pieprasījumam pamata gadā, jo īpaši istabas temperatūra,
+āra temperatūra, apkures sezonas ilgums. \\\tabucline{}
+
+   \hline
+
+   Ēka & Daudzdzīvokļu dzīvojamā ēka {{index .Contract.Fields "client_address"}}. \\\tabucline{}
+
+   \hline
+
+   Darba diena & Oficiāla darba diena, kas nav izsludināta kā oficiāla brīvdiena vai oficiāla atpūtas diena atbilstoši Latvijas tiesību aktu
+normām. \\\tabucline{}
+
+   \hline
+
+   Komforta standarti  & Nepieciešamais minimālais komforta līmenis, kas norādīts Energoefektivitātes pakalpojuma līguma 2. pielikumā
+(“Komforta standarti”) \\\tabucline{}
+
+   \hline
+
+   Aprīkojuma pieņemšana un
+nodošana & Pēc šajā Līgumā nolīgto Energoefektivitātes paaugstināšanas pasākumu īstenošanas pabeigšanas Ēkā Pasūtītāja
+pārstāvis ir jāuzaicina uz Aprīkojuma pieņemšanu un nodošanu. Pasūtītāja un Izpildītāja pārstāvjiem ir jāparaksta
+divpusējs akts, kas apliecina izpildītos darbus un detalizēti (tai skaitā ar foto materiāliem) apraksta stāvokli, kādā
+Aprīkojums tiek nodots Pasūtītaāja valdījumā. \\\tabucline{}
+
+   \hline
+
+   Energoefektivitātes
+paaugstināšanas pasākumi & Energoefektivitātes pakalpojuma līgumā norādītās darbības, kuru rezultātā tiek panākts pārbaudāms un izmērāms vai
+aprēķināms Enerģijas ietaupījums. Energoefektivitātes paaugstināšanas pasākumi un siltumenerģijas piegādes pasākumi
+ietver visus plānošanas, tehniskos un organizatoriskos pasākumus, kurus īsteno Izpildītājs, pamatojoties uz
+Energoefektivitātes pakalpojuma līguma noteikumiem, tai skaitā, bet ne tikai pasākumu īstenošanas projekta sagatavošana,
+Enerģijas ietaupījuma aizsardzības, mērījumu un pārbaudes pasākumi un optimizācijas nolūkā īstenojami pasākumi, un
+uzturēšanas pasākumi, kā arī visas saistītās un atbilstošās darbības, ko Izpildītājs pamatoti uzskata par nepieciešamām
+saskaņā ar šādu līdzīgu Energoefektivitātes paaugstināšanas pasākumu īstenošanas standartiem.\\\tabucline{}
+
+   \hline
+
+   Enerģijas tarifs & Maksa par Enerģijas vienību, kas tiek mērīta mWh un ko nosaka Enerģijas piegādātājs ēka atrašanās vietā, kas ir spēkā
+noteiktu laika periodu un kuru apstiprina attiecīgais Regulators/saskaņā ar Līgumu.\\\tabucline{}
+
+   \hline
+
+   Garantētais enerģijas patēriņš & Pēc klimata korekcijām garantētais enerģijas daudzums [•] MWh apmērā, kas patērējams pēc Energoefektivitātes
+paaugstināšanas pasākumu īstenošanas un kas veido  \% palielinājumu Ēkas energoefektivitātes ziņā salīdzinājumā ar
+Sākotnējo apjomu. Lai novērstu šaubas, Izpildītājs garantē, ka koriģētais Ēkas enerģijas patēriņš nepārsniegtu Izpildītāja
+garantētos apjomus, un atsevišķi apņemas pielikt papildu, izmaksu ziņā saprātīgas pūles, lai vēl vairāk samazinātu enerģijas
+patēriņu visā šā Līguma darbības laikā.\\\tabucline{}
+
+   \hline
+
+   Aprīkojums & Izpildītāja uzstādītās vai citādi Ēkā ieguldītās iekārtas, sistēmas, piederumi un citi Energoefektivitātes paaugstināšanas
+pasākumi nolūkā uzlabot vai saglabāt tās energoefektivitāti vai pārbaudīt, kontrolēt, izmērīt, uzturēt vai remontēt tās
+saskaņā ar Energoefektivitātes pakalpojuma līgumu.\\\tabucline{}
+
+   \hline
+
+   Atlīdzība & Periodisks maksājums, kuru Pasūtītājs maksā Izpildītājam par Līgumā noteikto Pakalpojumu sniegšanu Pakalpojumu
+sniegšanas periodā, kas ietver Maksu par enerģiju, Maksu par renovāciju un Ekspluatācijas un apkopes maksu.\\\tabucline{}
+
+   \hline
+
+   Apkures sezona &Ikgadējs periods laikposmā no 30. oktobra līdz 1. aprīlim, kurā Izpildītājam ir jānodrošina apkures sistēmas darbība
+(siltumapgāde) Ēkas Dzīvokļos un jāgarantē atbilstība Līgumā noteiktajiem Komforta standartiem.\\\tabucline{}
+
+   \hline
+
+   LABEEF &Nozīmē Latvian Baltic Energy Efficiency Facility AS, kas darbojas kā Latvijas Komercreģistrā pienācīgi reģistrēta akciju
+sabiedrība ar uzņēmuma reģistrācijas Nr. 40103960646.\\\tabucline{}
+
+   \hline
+
+   Pakalpojumi&Saskaņā ar Energoefektivitātes pakalpojuma līgumu Cedenta īstenotie Energoefektivitātes paaugstināšanas pasākumi,
+Enerģijas piegāde un Aprīkojuma apkope.\\\tabucline{}
+
+   \hline
+
+   Pakalpojumu sniegšanas periods & Periods, kurā Cedentam ir pienākums sniegt savam Pasūtītājam Pakalpojumus saskaņā ar Energoefektivitātes
+pakalpojuma līgumu.\\\tabucline{}
+
+   \hline
+
+   Pārvaldnieks & Fiziskā vai juridiskā persona, kas saskaņā ar Latvijas Dzīvojamo māju pārvaldīšanas likuma piemērojamajiem
+noteikumiem un uz pārvaldīšanas līguma pamata veic Pasūtītāja uzdotās pārvaldīšanas darbības Ēkā, kā arī šajā Līgumā
+24.lapa no 24 un Energoefektivitātes pakalpojuma līgumā noteiktos pienākumus. Lai novērstu šaubas, pārvaldīšanas līgums, atbilstoši
+kuram Pārvaldnieks sniedz savus pakalpojumus, atsauces nolūkā ir jāpievieno šim Līgumam.\\\tabucline{}
+
+   \hline
+
+  Puse & Cedents un Cesionārs katrs atsevišķi.\\\tabucline{}
+
+   \hline
+
+   Puses & Cedents un Cesionārs kopā.\\\tabucline{}
+
+   \hline
+
+   Projekts & Projekts nozīmē visu daudzdzīvokļu dzīvojamo māju vai publisko ēku visaptverošu renovāciju, kas īstenota uz pievienotā
+Energoefektivitātes pakalpojuma līguma pamata un ir daļa no šā Līguma, pateicoties kurai tiek panākta minimālais
+Enerģijas patēriņa apjoms.\\\tabucline{}
+
+   \hline
+
+   PVN & Pievienotās vērtības nodoklis, kas maksājams saskaņā ar Latvijas normatīvajiem aktiem un Līguma noteikumiem.\\\tabucline{}
+
+ \end{longtabu}
+
+ \vspace{5mm}
+
+ Ja vien konteksts nenosaka citādi, lietots šajā Līgumā, vienskaitlis ietver daudzskaitli, un daudzskaitlis var ietvert vienskaitli. Jebkura dzimuma lietošana var būt
+attiecināta uz visiem dzimumiem. Ja vien nav norādīts citādi, atsauces uz Punktiem, Nodaļām vai apakšnodaļām ir atsauces uz šā Līguma Punktiem, Nodaļām un
+apakšnodaļām. Ja vien konteksts nenosaka citādi, apzīmējums “ieskaitot/tai skaitā” nozīmē “ieskaitot, bet neaprobežojoties”. \par
+
+\vspace{5mm}
+
+{{ template "sign.tex"}}
+
+\end{document}

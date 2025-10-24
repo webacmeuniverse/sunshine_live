@@ -1,0 +1,22 @@
+[
+  {
+     "category": "Integrated Renovation",
+     "open": 6.87,
+     "high": 9.29,
+     "low": 3.17,
+     "medianFormatted": 5.23,
+     "close": 4.13,
+     "observations": 138,
+     "totalobservations": 180
+  },
+  {
+     "category": "Building Fabric Measures",
+     "open": 9.17,
+     "high": 11.93,
+     "low": 4.11,
+     "medianFormatted": 6.45,
+     "close": 4.81,
+     "observations": 42,
+     "totalobservations": 180
+  }
+]

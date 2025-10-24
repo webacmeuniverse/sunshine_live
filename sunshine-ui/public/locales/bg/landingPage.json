@@ -1,0 +1,238 @@
+{
+  "slider": {
+    "mainTitle": "WELCOME TO THE EUROPA PROJECT",
+    "subTitle": "Noticing temperature imbalances? It's time to make your house healthy, comfortable, safe, and more energy-efficient.",
+    "learnMore": "Learn more",
+    "imageTitle": "Would you like to renovate your building?",
+    "imageTitle1": "Fill-in the onboarding questionnaire!"
+    
+  },
+  "menu": {
+    "RESIDENTS": "RESIDENTS",
+    "HOWITWORKS": "HOW IT WORKS",
+    "FindMyPartner": "FIND MY PARTNER",
+    "EESCALCULATOR": "RENOVATION COST CALCULATOR",
+    "SERVICESPROVIDER": "OPERATORS",
+    "MATCHMAKING": "FIND MY PARTNER",
+    "RESOURCES": "RESOURCES",
+    "Assisttomyproject": "Go to my project",
+    "SIMULATIONTOOL":"SIMULATION TOOLS",
+    "EESCHECKLIST":"EES CHECKLIST",
+    "BUILDINGCALCULATOR":"BUILDING CALCULATOR",
+    "EESREFINANCEABILITYCHECKLIST":"EES REFINANCEABILITY CHECKLIST",
+    "Login": "Login",
+    "MyDashboard": "My Dashboard",
+    "OTHERTOOLS": "Other Tools"
+
+    
+  },
+  "mainTitle": {
+    "title1": "Renovate simpler, better, together."
+    
+    
+  },
+  "individualPrivate":{
+    "title": "For the Individual or Private",
+    "title1": "We provide digital support and assistance to ensure a smooth and simple renovation journey.",
+    "title2": "Take the quiz to find out if we operate in your area!",
+    "LetStart": "Let’s Start",
+    "box1": "Are you thinking about renovating your building? Start here with our onboarding questionnaire!",
+    "box2": "Looking for an Operator for the renovation? Check out “Find my partner” for the Operators in your area.",
+    "box3": "Is your building already being renovated?"
+
+  },
+
+  "howItWorks":{
+    "mainTitle": "How it works",
+    "subTitle": "Seven easy steps to renovate your building",
+    "title1": "Qualification Onboarding Questionnaire",
+    "description1": "Take our quick onboarding questionnaire to see if we operate in our area!",
+    "title2": "Phone call",
+    "description2": "Your OSS will get in touch with you to learn more about the process. If there is no OSS in your area, don’t worry! We will contact you for support.",
+    "title3": "Energy Audit/ Profile analysis",
+    "description3": "By using the available simulation tools, you can estimate energy savings of the project and costs.",
+    "title4": "Find a solution",
+    "description4": "Working together with your OSS, you will find a solution for building renovation that works for you.",
+    "title5": "Follow your building renovation on SUNShINE",
+    "description5": "Building renovation will vary by context, but you can follow the whole process – contract signing, renovation works and monitoring – all through the SUNShINE platform.",
+    "title6": "Renovation Work",
+    "description6": "After the solution is found and the contract is signed, the renovation of your building is coming!",
+    "title7": "Monitoring",
+    "description7": "Monitor performance of your building and payments on SUNShINE platform!"
+  
+
+  },"howMuchRenovationCost":{
+    "title1": "How much will building renovation cost?",
+    "title2": "Try our Renovation Cost Calculator and see how much the renovation project will cost based on multiple criteria.",
+    "title3": "Check it out now"
+
+  },
+  "SUBSCRIBE":{
+    "title1": "SUBSCRIBE TO OUR NEWSLETTER",
+    "Email": "Email",
+    "Send":"Send"
+  },
+  "GetInTouch":{
+    "title1": "Get in touch with the closest One-Stop-Shop now!",
+    "ContactUs": "Contact Us",
+    "title2":"Who do we work with?"
+  },"Footer":{
+    "Partners": "Partners",
+    "About": "About",
+    "Support":"Support",
+    "FAQ":"FAQ",
+    "Contact":"Contact",
+    "GoToMyProject":"Go to my project",
+    "Privacy":"Privacy",
+    "Terms":"Terms",
+    "Sitemap":"Sitemap",
+    "Chatwithus":"Chat with us",
+    "Title":"©2022 EUROPA. All rights reserved."
+  },
+  "EESRefinanceabilitychecklist": {
+    "Description": "EES Refinanceability Checklist",
+
+    "Description1": "Being a checklist, it does not contain all relevant information in detail. More details and additional explanations on the required contract stipulations for the EES as well as for the Refinancing Contracts can be found in the Guideline “Standardised Contract Stipulations for Refinancing of Energy Efficiency Services” which is accessible by following this link."
+  
+    
+  }, "FindMyPartner": {
+    "Discover": "Discover",
+    "More":"More",
+    "FilterSort": "Filter & Sort",
+    "TypeofOrganization":"Type of Organization",
+    "TypesofServices":"Types of Services",
+    "OSSApproved":"OSS Approved",
+    "Sort":"Sort",
+    "Nearme":"Near me",
+    "Services":"Services",
+    "Backtothelist":"Back to the list",
+    "Address":"Address",
+    "Phone":"Phone",
+    "title":"Ready to renovate your building?",
+    "title1":"Organization Score",
+    "TotalScore":"Total Score",
+    "QualityofServices":"Quality of Services",
+    "SpeedofServices":"Speed of Services",
+    "Communication":"Communication",
+    "Rating":"Rating",
+    "AddRating":"Add Rating"
+    
+  }
+  , "Resources": {
+    "Learnmore": "Learn more",
+    "title1":"The User Manual",
+    "title2":"The general framework of Energy Efficiency Subscription",
+    "title3":"Infographic for stakeholder awareness",
+    "title4":"The SUNSHINE handbook on dEEp Building renovation",
+    "Resources":"Resources"
+
+  
+    
+  }, "MyProjectStatus": {
+    "MyprojectstatusTitle": "My project status",
+    "title": "Please choose the appropriate option to log in to your account",
+    "NewUser": "New User",
+    "Signinwithotp":"Sign in with otp",
+    "Login":"Login",
+    "title1":"Please enter your email address",
+    "Welcome":"Welcome",
+    "Submit":"Submit",
+    "Back":"Back",
+    "CodeValidation":"Code Validation!",
+    "title2":"The code has been sent to your email. Check your email and enter the Verification code.",
+    "Seeyourprojectstatus":"See your project status"
+    
+
+  
+    
+  },"faqList": {
+    "mainTitle": "Hello, how can we help you?",
+    "subTitle": "About SUNShINE Platform powered by EUROPA ",
+      "titles1": {
+            "questionTitle":"",
+            "questionList": {
+              "question1": "What does the  SUNShINE Platform powered by EUROPA do?",
+              "question2": "Who is the SUNShINE Platform powered by EUROPA made for?",
+              "question3": "What does it cost to use the  SUNShINE Platform powered by EUROPA?",
+              "question4": "What is the Energy Efficiency Subscription?",
+              "question5": "How can I calculate the costs of my building renovation?"
+            },
+            "answerList":{
+              "answer1": "The SUNhINE Platform powered by EUROPA provides the help to all the stakeholders to participate in energy retrofitting activities in all the stages of the project: starting from the initiation of the idea to renovate the building up to the monitoring of the results of the activities.",
+              "answer2": "The platform is designed for residents, housing associations, operators, municipalities, and all other interested parties.",
+              "answer2Sub1": "Click on the 'Can we help you?' button to discover the contents that can help you in your business.",
+              "answer3": "The platform is free of charge. This decision was extremely important for us as it will allow the use of the platform to different stakeholders.",
+              "answer4": "Energy Efficiency Subscription (EES) is the offer of services of increasing the energy efficiency of the building provided as a subscription model, which simplifies the payment model and creates a mutual understanding of the ongoing procedures.",
+              "answer5": "The cost and payment plan for the renovation can be calculated with the Renovation Cost Calculator - a tool developed on the platform to model the total costs and the possible yearly payment plan for the building.",
+              "answer5Sub1":"Go to the “Residents” page to find out how much the renovation of your building will cost!"
+            }
+          },
+          "titles2": {
+            "questionTitle":"RESIDENT",
+            "questionList": {
+              "question1": "What sort of information will the platform ask for?",
+              "question2": "What if I don’t know some of the particular information about my building or the onboarding questions don’t fit my building?",
+              "question3": "What if there is no OSS set up in my region?",
+              "question4": "I am having technical difficulties. Who should I get in touch with?",
+              "question5": "How can I learn more about my project?",
+              "question6": "Where can I see service providers that are in my area?"
+            },
+            "answerList":{
+              "answer1": "In order to use the platform, you will have to provide:",
+              "answer1Sub1": "Name",
+              "answer1Sub2": "Last name",
+              "answer1Sub3": "Email",
+              "answer1Sub4": "Phone number",
+              "answer1Sub5": "City",
+              "answer1Sub6": "Country",
+              "answer2": "That is no problem! Your OSS will help you fill in the rest of the information after your first scheduled call.",
+              "answer3": "If no OSS is set up in your region, you will fill the default onboarding questionnaires and the platform management team will get in touch with you.",
+              "answer4": "Please get in touch with the platform’s management team at EMAIL",
+              "answer5": "Please click on the “My project” button and fill in all the necessary information in order to get access to the information about your project.",
+              "answer6": "You can find all the necessary information about the service providers on the “Find my Partner” page. On this page, you can either go through the list of all the service operators in your area or look at them on the map. By clicking on their logo you can find their public profile with the contact information."
+            }
+          },
+          "titles3": {
+            "questionTitle":"HOUSING ASSOCIATION",
+            "questionList": {
+              "question1": "Residents in the building I manage are interested in renovating their building and I want to provide them with the correct information. What should I do?",
+              "question2": "I need an Operator, what should I do?"              
+            },
+            "answerList":{
+              "answer1": "You can find all the informative materials on the “Resources” page and share them with the residents!",
+              "answer2": "You can find all the necessary information about the service providers on the “Find my Partner” page. On this page, you can either go through the list of all the Operators in your area or look at them on the map. By clicking on their logo you can find their public profile with the contact information."             
+            }
+          },
+          "titles4": {
+            "questionTitle":"Operator",
+            "questionList": {
+              "question1": "I am an Operator and I’m interested in taking part to the “Find my Partner” section, is it possible?",
+              "question2": "I am having some problems in the onboarding process, what should I do?",
+              "question3": "Why do I need to provide my certificates?",
+              "question4": "What is the EES Checklist?",
+              "question5": "What is the Refinanceability calculator?"
+            },
+            "answerList":{
+              "answer1": "In order to be visible on the “Find my Partner” section, you have to go through the onboarding process for the Operators and comply with the requirements set by OSS. After the approval from the OSS, the public profile of your Organization will be added to the “Find my Partner” page! ",
+              "answer2": "Please get in touch with the platform’s Super User at EMAIL ",
+              "answer3": "The certificates support your answers to the onboarding questionnaire and help the local OSS to evaluate your possibility to provide the services.",
+              "answer4": "A set of requirements and standards that are set into place by the OSS that have to be met by a Project and Operator. The aim is to guarantee quality to the building owners and end users throughout the whole value chain of the deep energy renovation of residential buildings. The concept was developed by the Horizon 2020 EUROPA project.",
+              "answer5": "The refinanceability  Calculator was developed to ensure the financeability of a project by evaluating certain standards related to all the phases of the project, The concept was developed by the Horizon 2020 <a href='https://refineproject.eu/'>REFINE</a> project."
+            }
+          },
+          "titles5": {
+            "questionTitle":"OSS",
+            "questionList": {
+              "question1": "I am a One-Stop-Shop and I am interested in using the platform, what should I do?",
+              "question2": "Why should I choose SUNShINE platform powered by Europa to digitize our work as an OSS?",
+              "question3": "In the case of dispute:"
+            },
+            "answerList":{
+              "answer1": "Please fill in the onboarding questionnaire for the Service Operators and mark that you are an OSS. After that the platform management team will get in touch with you!",
+              "answer2": "SUNShINE Platform powered by EUROPA provides an approach to the digital environment, in which different stakeholders can engage with the tools developed. Due to the specificity of the scope of work of each OSS, the set of tools can be customized to fit the regional context and increase their usefulness. Overall, the SUNShINE Platform powered by EUROPA platform comprehensive methodology to organize the work of the OSS. ",
+              "answer3": "We strongly recommend reaching out to the platform management team at EMAIL."
+              
+            }
+          }
+    }
+}

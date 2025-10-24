@@ -1,0 +1,18 @@
+-- +goose Up
+CREATE TABLE user_basic_details (
+	id UUID PRIMARY KEY DEFAULT PUBLIC.gen_random_uuid(),
+	user_public_ip CHARACTER VARYING(255) NOT NULL,
+	session CHARACTER VARYING(255)NOT NULL,
+	oss_admin_id CHARACTER VARYING(255) NOT NULL,
+	country CHARACTER VARYING(255)NOT NULL,
+	user_id CHARACTER VARYING(255)NOT NULL,
+	lang CHARACTER VARYING(255) NOT NULL,
+	total_year INTEGER NOT NULL,
+
+	created_at TIMESTAMP WITH TIME ZONE DEFAULT now(),
+	updated_at TIMESTAMP WITH TIME ZONE DEFAULT now(),
+	deleted_at TIMESTAMP WITH TIME ZONE
+);
+
+-- +goose Down
+DROP TABLE user_basic_details;

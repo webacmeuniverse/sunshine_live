@@ -1,0 +1,64 @@
+-- +goose Up
+CREATE TABLE master_step (
+	id UUID PRIMARY KEY DEFAULT PUBLIC.gen_random_uuid(),
+    index INTEGER NOT NULL,
+	name CHARACTER VARYING(255)NOT NULL,
+	require BOOLEAN DEFAULT false,
+	menu_type CHARACTER VARYING(255) NOT NULL,
+	oss_admin_id CHARACTER VARYING(255) NOT NULL,
+	default_score REAL NOT NULL,
+	lang CHARACTER VARYING(255) NOT NULL,
+
+	created_at TIMESTAMP WITH TIME ZONE DEFAULT now(),
+	updated_at TIMESTAMP WITH TIME ZONE DEFAULT now(),
+	deleted_at TIMESTAMP WITH TIME ZONE
+);
+
+CREATE TABLE master_question (
+	id UUID PRIMARY KEY DEFAULT PUBLIC.gen_random_uuid(),
+	step_id UUID NOT NULL,
+	index INTEGER NOT NULL,
+	name CHARACTER VARYING(2048)NOT NULL,
+	default_score REAL NOT NULL,
+	lang CHARACTER VARYING(255) NOT NULL,
+
+	created_at TIMESTAMP WITH TIME ZONE DEFAULT now(),
+	updated_at TIMESTAMP WITH TIME ZONE DEFAULT now(),
+	deleted_at TIMESTAMP WITH TIME ZONE
+);
+
+CREATE TABLE master_field (
+	id UUID PRIMARY KEY DEFAULT PUBLIC.gen_random_uuid(),
+    index INTEGER NOT NULL,
+	question_id CHARACTER VARYING(255) NOT NULL,
+	name TEXT NOT NULL,
+	placeholder CHARACTER VARYING(255) NOT NULL,
+	input_type CHARACTER VARYING(255) NOT NULL,
+	require BOOLEAN DEFAULT false,
+	default_score REAL NOT NULL,
+	lang CHARACTER VARYING(255) NOT NULL,
+
+	created_at TIMESTAMP WITH TIME ZONE DEFAULT now(),
+	updated_at TIMESTAMP WITH TIME ZONE DEFAULT now(),
+	deleted_at TIMESTAMP WITH TIME ZONE
+);
+
+CREATE TABLE master_option (
+	id UUID PRIMARY KEY DEFAULT PUBLIC.gen_random_uuid(),
+    step_field_id UUID NOT NULL,
+	title CHARACTER VARYING(255)NOT NULL,
+	option_value CHARACTER VARYING(255)NOT NULL,
+	default_score REAL NOT NULL,
+	image CHARACTER VARYING(255)NOT NULL,
+
+	created_at TIMESTAMP WITH TIME ZONE DEFAULT now(),
+	updated_at TIMESTAMP WITH TIME ZONE DEFAULT now(),
+	deleted_at TIMESTAMP WITH TIME ZONE
+);
+
+-- +goose Down
+DROP TABLE master_step;
+DROP TABLE master_question;
+DROP TABLE master_field;
+DROP TABLE master_option;
+

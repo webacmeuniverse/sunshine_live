@@ -1,0 +1,7 @@
+{
+  "auth": {
+    "Invalid Credentials": "Ungültige Anmeldedaten!",
+    "This email is already taken.": "Diese E-Mail ist bereits vergeben.",
+    "You have successfully signed up!": "Sie haben sich erfolgreich angemeldet!"
+  }
+}

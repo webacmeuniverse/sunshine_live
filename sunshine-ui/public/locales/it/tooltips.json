@@ -1,0 +1,168 @@
+{
+  "organizations": {
+    "register": "Se non avete trovato la vostra organizzazione, potete registrarla voi stessi.",
+    "publicSearchHint": "Cercate qui la vostra organizzazione.",
+    "info": [
+	
+     "Il primo passo da fare quando ci si iscrive alla piattaforma è diventare membro della/e Organizzazione/i a cui si appartiene.",
+		"**Perché abbiamo bisogno di sapere a quale Organizzazione appartenete? **",
+		"Per garantire l'accesso alle informazioni della piattaforma.",
+		"Nella sezione **\"Le mie organizzazioni\"** si vedono le Organizzazioni di cui si fa parte. È possibile fare clic su ciascuna Organizzazione per visualizzarne le informazioni dettagliate. Nella pagina **\"Tutte le organizzazioni\"** si vedranno tutte le organizzazioni registrate nella piattaforma. Tuttavia, non sarà possibile aprire l'Organizzazione per la quale non si dispone di un'autorizzazione.",
+		"Se si desidera far parte di un'Organizzazione, fare clic su **\"Richiedi l'iscrizione\"**.",
+		"Se non si riesce a trovare la propria Organizzazione, è possibile registrarla autonomamente.",
+		"Guarda i video di formazione [**qui**](https://www.youtube.com/watch?v=hkpNvWQK7TA&list=PL8IdmZDX5yMC-UOPQ5TUdI8YwSKWfnp33)"
+	],
+    "roles": [
+      "Fare clic sulla freccia per espandere e vedere chi è assegnato a questi ruoli. Se si dispone dell'autorizzazione, è qui che si assegnano i ruoli a questo Progetto.",
+      "**Definizioni dei ruoli:**",
+      "**Project Manager (PM):** gestisce il progetto. Ha diritti di visualizzazione e modifica completi. Può gestire i ruoli del progetto e completare le milestone per aprire le fasi del progetto.",
+      "Ci deve essere un PM per progetto.",
+      "**Firmatario legale del progetto (PLSIGN):** Persona autorizzata a firmare gli impegni legali per un determinato progetto. In un progetto deve esserci un PLSIGN per ogni organizzazione coinvolta.",
+      "**Task Manager (TAME):** Persona che può eseguire varie azioni per gestire una particolare attività di un progetto.",
+      "**Membro del team (TEME):** Persona che dispone di diritti di sola lettura per un particolare progetto."
+	  ],
+    "lear": [
+       "**Tip for the LEAR**",
+      "Não se pode nomear um novo LEAR por aqui como se faz com os outros papéis, porque este papel requer algumas aprovações extra",
+      "O novo LEAR deve pedir para se tornar um LEAR da sua Organização no seu perfil pessoal, onde também fornecerá os documentos necessários. Receberá então uma notificação para confirmar que concorda que pode tornar-se o novo LEAR. A aprovação final é do Super Utilizador do seu país, que verificará se a documentação fornecida prova que a nova pessoa pode ser um LEAR",
+      "Uma vez aprovado o novo LEAR, não será mais um LEAR, uma vez que cada Organização pode ter apenas um LEAR. No caso de dever permanecer na Organização com um papel diferente, certifique-se de atribuir esse papel a si próprio antes de dar a aprovação, para que não perca o acesso à Organização e aos seus bens e projectos relacionados"
+      ]
+  },
+  "assets": {
+    "register": [
+      "**Non vedi la tua attività? Registralo qui.**",
+      "Per poter effettuare la registrazione, è necessario assicurarsi che:",
+      "1) Si disponga di un documento che riporti le informazioni del Bene (numero di Catasto, superficie riscaldata, numero di scale, ecc.)",
+      "2) Si fa parte di un'Organizzazione: perché tutti gli Asset devono *\"appartenere\"* a un'Organizzazione, e si può creare un Asset solo per un'Organizzazione a cui si appartiene.",
+      "Se non avete uno o tutti i requisiti di cui sopra, ma volete comunque aggiungere la vostra Attività per la ristrutturazione, contattateci all'indirizzo **sunshinehelp@ekubirojs.lv** e vi guideremo nei passi successivi."
+       ],
+    "publicSearchHint": "Troppi beni? Cercate il vostro qui. Quando si cerca un indirizzo, scriverlo come si farebbe nella propria lingua. Questo campo accetta tutti i caratteri.",
+    "info": [
+      "Nella pagina **\"Le mie attività\"** si possono vedere le attività in cui si vive o quelle che appartengono alle organizzazioni in cui si ha un ruolo. È possibile fare clic su ciascuna delle proprie Attività per visualizzarne le informazioni dettagliate.",
+"Nella pagina **\"Tutte le attività\"** si vedranno tutte le attività registrate nella piattaforma. Tuttavia, non sarà possibile aprire un'Attività se non si dispone dell'autorizzazione.",
+"Se trovate la vostra casa, cliccate sul pulsante **\"Vivo qui!\"** per richiedere di vedere le informazioni sull'Attivo. Verrà richiesto di caricare qualsiasi documento che dimostri che si è residenti.",
+"Guarda i video di formazione [**qui**](https://www.youtube.com/watch?v=Q6DlptPaebo&list=PL8IdmZDX5yMDzJoyiRK1tYdfsePVUK7M1)"
+	  
+	  ],
+    "assetInformation": {
+      "totalArea": "La superficie totale di un edificio residenziale è determinata sommando la superficie di tutti i piani dell'edificio (compresi il piano interrato e il piano sottotetto) tra le superfici interne delle pareti esterne, nonché la superficie degli spazi esterni - balconi, logge e terrazze. Le superfici del sottotetto e del seminterrato tecnico non sono incluse nella superficie totale di un edificio residenziale.",
+      "heatedArea": "La superficie riscaldata di un edificio si determina sommando la superficie di tutti gli appartamenti e di eventuali scale o altri locali ausiliari anch'essi riscaldati.",
+      "billingArea": "La superficie di fatturazione o superficie utile di un edificio si determina sommando la superficie totale degli appartamenti di un edificio residenziale, la superficie totale dei locali non residenziali e la superficie totale dei locali pubblici, se presenti."
+    },
+    "assetFields": {
+      "cadastre": "Numero identificativo dell'edificio, definito dal comune o dal paese.",
+      "owner": [
+        "Dovreste essere in grado di creare attività per tutte le organizzazioni approvate a cui avete assegnato un ruolo. Se non è possibile visualizzare un'organizzazione in questo elenco, potrebbe essere perché l'organizzazione è in attesa di approvazione da parte del superutente.",
+        "Ciò significa che l'Organizzazione è stata appena creata e non è ancora stata approvata, oppure che le informazioni chiave sono state aggiornate e non sono ancora state approvate.",
+        "È possibile vedere lo stato della propria Organizzazione aprendo la pagina **Organizzazione**."
+      ],
+      "residentsCommunity": "Per essere sicuri che i residenti possano accedere alle informazioni sull'edificio, è necessario creare una Comunità di residenti. Questo campo rimane ora vuoto e, una volta creata l'Organizzazione, verrà compilato automaticamente dal sistema.",
+      "totalArea": "La superficie totale di un edificio residenziale è determinata sommando la superficie di tutti i piani dell'edificio (compresi il piano interrato e il piano sottotetto) tra le superfici interne delle pareti esterne, nonché la superficie degli spazi esterni - balconi, logge e terrazze. Le superfici del sottotetto e del seminterrato tecnico non sono incluse nella superficie totale di un edificio residenziale.",
+      "billingArea": "La superficie di fatturazione o superficie utile di un edificio si determina sommando la superficie totale degli appartamenti di un edificio residenziale, la superficie totale dei locali non residenziali e la superficie totale dei locali pubblici, se presenti.",
+      "heatedArea": "La superficie riscaldata di un edificio si determina sommando la superficie di tutti gli appartamenti e di eventuali scale o altri locali ausiliari anch'essi riscaldati.",
+      "districtHeating": "Riscaldamento fornito da altri fornitori, come città, comuni o altri enti.",
+      "buildingHeating": "L'edificio dispone di mezzi di riscaldamento propri."
+    }
+  },
+  "projects": {
+    "info": [
+      "In questa pagina è possibile accedere a tutti i progetti per vedere le metriche di costruzione, lo stato di avanzamento attuale, le parti coinvolte, il team di progetto e altro ancora",
+      "È possibile vedere solo i progetti a cui è stato assegnato un ruolo. Se non vedete nessuno dei vostri progetti, contattate il vostro project manager.",
+      "Guarda i video di formazione [**qui**](https://www.youtube.com/watch?v=3zAPF1NOK18&list=PL8IdmZDX5yMCOPGV_WSlheZZV6tGLD1a1)"
+    ],
+    "overview": [
+	  "La **Panoramica del progetto** vi mostrerà come si sta svolgendo il progetto.",
+      "La sezione **EPC Contract & Forfaiting Agreement** vi permetterà di compilare e stampare una versione finale di questi contratti.",
+      "Aprendo le **Fasi del progetto**, si vedrà la suddivisione di ogni fase, le attività da svolgere e le tappe fondamentali da raggiungere. È qui che viene gestito il progetto."
+    
+      ],
+    "guaranteedMetrics": "Si tratta di valori metrici calcolati che vengono garantiti per l'edificio dopo il completamento della ristrutturazione. Sono validi una volta firmato l'EPC.",
+    "roles": [
+      "Fare clic sulla freccia per espandere e vedere chi è assegnato a questi ruoli. Se si dispone dell'autorizzazione, è qui che si assegnano i ruoli a questo Progetto.",
+      "**Definizioni dei ruoli:**",
+      "**Project Manager (PM):** gestisce il progetto. Ha diritti di visualizzazione e modifica completi. Può gestire i ruoli del progetto e completare le milestone per aprire le fasi del progetto.",
+      "Ci deve essere un PM per progetto.",
+      "**Firmatario legale del progetto (PLSIGN):** Persona autorizzata a firmare gli impegni legali per un determinato progetto. In un progetto deve esserci un PLSIGN per ogni organizzazione coinvolta.",
+      "**Task Manager (TAME):** Persona che può eseguire varie azioni per gestire una particolare attività di un progetto.",
+      "**Membro del team (TEME):** Persona che dispone di diritti di sola lettura per un particolare progetto."
+    ],
+    "epc": {
+      "generalTerms": "Le **Condizioni generali del contratto EPC** sono la prima parte del contratto e sono standardizzate. In questa pagina è disponibile il testo completo.",
+      "annexesInfo": [
+	    "Cliccare sui titoli a destra per aprire i diversi allegati. In ogni pagina, è possibile compilare le tabelle e i campi per completare il contratto.",
+        "È fondamentale che **tutte le informazioni del contratto** siano corrette, perché vengono recuperate da altre sezioni del progetto.",
+        "È possibile **scaricare** il contratto per vedere la versione attuale in PDF. Una volta firmata la versione definitiva, questa deve essere caricata nella rispettiva fase del progetto."
+      ],
+      "annexesExtraPage": [
+        "Questa pagina aggiuntiva può essere utilizzata per aggiungere altre informazioni necessarie al momento della firma del contratto e per stampare **allegati aggiuntivi** una volta che il contratto è stato firmato, ma necessita di modifiche",
+        "In caso di **modifiche**, questa pagina deve essere stampata a parte e salvata insieme al **contratto EPC**."
+      ],
+      "forfaitingAgreement": "Dovrete preparare questo accordo nel caso in cui il vostro progetto sia stato approvato per il forfaiting. Questo può avvenire solo dopo che l'edificio è stato messo in funzione e sono state registrate le misure di un'intera stagione di riscaldamento.",
+      "assetAcquisition": [
+        "Questa fase è costituita da **pietre miliari consecutive**.",
+        "Qui si può vedere in quale milestone si trova il progetto.",
+        "Ogni pagina viene sbloccata non appena il **Project Manager** ha completato la milestone precedente."
+      
+      ],
+      "assetAcquisitionCompleteMilestone": "Una volta completati tutti i requisiti richiesti, il Project Manager deve confermare che la milestone è stata completata. Questo bloccherà questa pagina e sbloccherà la milestone successiva.",
+      "commissioningDateDisclamer": "Gli anni e i mesi delle tabelle di monitoraggio dei risultati saranno aggiornati in base alla data di completamento di questa fase. Il primo mese da monitorare è quello successivo al completamento di questa fase.",
+      "worksPhase": [
+        "Questa fase è costituita da **milastri contemporanei**.",
+        "Facendo clic su ciascuna di esse è possibile vedere in quale milestone si trova il progetto.",
+        "La messa in funzione dell'edificio bloccherà le milestone precedenti"
+      ],
+      "monitoringPhase": [
+        "Questa fase è costituita da **milastri contemporanei**.",
+        "Facendo clic su ciascuna di esse è possibile vedere in quale milestone si trova il progetto.",
+        "La messa in funzione dell'edificio bloccherà le milestone precedenti."
+      ]
+    },
+    "registerProject": [
+      "Qui è possibile registrare un Progetto per un'Organizzazione a cui è stato assegnato un ruolo.",
+      "Sarà possibile registrare un Progetto solo per un'Attività che è già stata approvata."
+    ],
+    "requestPermission": [
+      "Nel caso in cui dobbiate creare un Progetto per un Asset che non appartiene a nessuna delle vostre Organizzazioni, potete farlo qui.",
+      "Si richiede l'autorizzazione all'Organizzazione sotto la quale è registrata l'Attività. Una volta ottenuta l'autorizzazione, si potrà creare il Progetto."
+   
+    ]
+  },
+  "users": {
+    "applyLEAR": "Se siete LEAR di un'organizzazione, potete candidarvi al ruolo qui. Selezionate l'Organizzazione e fornite la documentazione di supporto che dimostri che siete autorizzati a ricoprire il ruolo di LEAR. Sarete informati quando il vostro ruolo sarà confermato."
+  },
+  "reports": {
+    "info": "In queste pagine vengono visualizzati solo i dati relativi ai ruoli che si hanno. Selezionare le colonne desiderate ed effettuare l'esportazione."
+  },
+  "admin": {
+    "platformRoles": [
+      "Fare clic su un pannello di ruoli dall'elenco sottostante per gestire gli Utenti assegnati al ruolo della piattaforma per il Paese selezionato.",
+      "**Ogni Paese ha i seguenti ruoli:**",
+      "**Direttore di portafoglio:** Ha accesso a rapporti specifici per il suo Paese e i suoi progetti e Organizzazioni con l'obiettivo di ottenere investimenti, invitare nuovi soggetti alla piattaforma e supportarli.",
+      "Vede tutti i progetti e le attività del suo Paese",
+      "**Data Protection Officer:** risponde alle richieste relative al GDPR.",
+     "**Superutente:** Fornisce assistenza agli utenti del proprio Paese.",
+      "Collabora con altri Superutenti per migliorare la piattaforma.",
+      "Approva le attività e le organizzazioni per il suo Paese. Approva i LEAR per le organizzazioni.",
+      "Vede tutti gli utenti, le attività, le organizzazioni e i progetti all'interno del suo Paese per essere in grado di supportare gli utenti",
+      "**Fund Manager:** Approva i finanziamenti per i progetti nel suo Paese. Vede tutti i progetti nel suo Paese.",
+      "**Investitore:** ha accesso alle pagine di richiesta di finanziamento per il progetto nel proprio Paese."
+    ],
+    "rolePFM": [
+     "**Gestore della piattaforma:** vede tutti i dati della piattaforma.",
+      "Assegna altri ruoli a livello di piattaforma e di Paese."
+    ],
+    "roleNWM": [
+      "**Gestore della rete di superutenti:** questo è un ruolo a livello di piattaforma.",
+      "Può svolgere le stesse attività dei Superutenti, ma per tutte le piattaforme (cioè per tutti i Paesi).",
+      "Esegue le attività dei Superutenti per gli Utenti, le Attività e le Organizzazioni che appartengono a un Paese che non ha Superutenti. Inoltre, può assegnare e revocare il ruolo di Superutente."
+    
+    ]
+  },
+  "maintenanceTableNotReady": "È necessario compilare i primi 3 anni del piano di manutenzione degli asset.",
+  "home":{
+    "info": [
+      "Ecco il tooltip informativo per la home page",
+      "Guarda i video di formazione [**qui**](https://www.youtube.com/watch?v=J4-x7uN8ec0&list=PL8IdmZDX5yMCqp8AZhpD2FARTrm1RdXgj)"
+    ]
+  }
+}

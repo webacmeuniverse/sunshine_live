@@ -1,0 +1,38 @@
+[
+  {
+     "measures_main":"Lighting",
+     "Investment": 33472588,
+     "Energycostsaved": 9718188.28,
+     "SumEnergySavedFormatted": 80.48,
+     "SimplePaybackTime": 4.71,
+     "observations": 806,
+     "totalobservations": 3534
+  },
+  {
+     "measures_main":"HVAC Plant",
+     "Investment": 108058960,
+     "Energycostsaved": 22684015.53,
+     "SumEnergySavedFormatted": 374.10,
+     "SimplePaybackTime": 7.86,
+     "observations": 1346,
+     "totalobservations": 3534
+  },
+  {
+     "measures_main":"Building Fabric Measures",
+     "Investment": 145150583,
+     "Energycostsaved": 10374321.10,
+     "SumEnergySavedFormatted": 161.57,
+     "SimplePaybackTime": 15.34,
+     "observations": 1042,
+     "totalobservations": 3534
+  },
+  {
+     "measures_main":"Integrated Renovation",
+     "Investment": 105915174,
+     "Energycostsaved": 10785975.57,
+     "SumEnergySavedFormatted": 134.22,
+     "SimplePaybackTime": 16.89,
+     "observations": 340,
+     "totalobservations": 3534
+  }
+]

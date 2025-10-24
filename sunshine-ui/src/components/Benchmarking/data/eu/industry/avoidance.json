@@ -1,0 +1,112 @@
+[
+  {
+     "category": "Heating",
+     "open": 2.8,
+     "high": 6.2,
+     "medianFormatted": 1.23,
+     "low": 0.18,
+     "close": 0.43,
+     "observations": 1006,
+     "totalobservations": 7746
+  },
+  {
+     "category": "Waste heat (without power generation)",
+     "open": 4.61,
+     "high": 8.06,
+     "medianFormatted": 1.78,
+     "low": 0.38,
+     "close": 0.75,
+     "observations": 1471,
+     "totalobservations": 7746
+  },
+  {
+     "category": "Metering, Monitoring and Energy Management",
+     "open": 3.84,
+     "high": 12.99,
+     "medianFormatted": 1.97,
+     "low": 0.41,
+     "close": 0.59,
+     "observations": 52,
+     "totalobservations": 7746
+  },
+  {
+     "category": "Motors",
+     "open": 5.57,
+     "high": 10.97,
+     "medianFormatted": 2.23,
+     "low": 0.37,
+     "close": 0.83,
+     "observations": 690,
+     "totalobservations": 7746
+  },
+  {
+     "category": "Cooling",
+     "open": 5.76,
+     "high": 12.59,
+     "medianFormatted": 2.79,
+     "low": 0.72,
+     "close": 1.45,
+     "observations": 340,
+     "totalobservations": 7746
+  },
+  {
+     "category": "Pumps",
+     "open": 6.94,
+     "high": 12.31,
+     "medianFormatted": 2.89,
+     "low": 0.61,
+     "close": 1.56,
+     "observations": 233,
+     "totalobservations": 7746
+  },
+  {
+     "category": "Other",
+     "open": 8.14,
+     "high": 19.83,
+     "medianFormatted": 3.46,
+     "low": 0.29,
+     "close": 1.25,
+     "observations": 271,
+     "totalobservations": 7746
+  },
+  {
+     "category": "ICT",
+     "open": 17.35,
+     "high": 43.61,
+     "medianFormatted": 4.46,
+     "low": 0.58,
+     "close": 1.88,
+     "observations": 13,
+     "totalobservations": 7746
+  },
+  {
+     "category": "Refrigeration",
+     "open": 8.35,
+     "high": 13.83,
+     "medianFormatted": 4.53,
+     "low": 1.63,
+     "close": 2.63,
+     "observations": 51,
+     "totalobservations": 7746
+  },
+  {
+     "category": "Compressed Air",
+     "open": 9.34,
+     "high": 14.0,
+     "medianFormatted": 5.53,
+     "low": 1.32,
+     "close": 2.98,
+     "observations": 3600,
+     "totalobservations": 7746
+  },
+  {
+     "category": "Street Lighting",
+     "open": 10.64,
+     "high": 14.08,
+     "medianFormatted": 7.5,
+     "low": 3.37,
+     "close": 4.17,
+     "observations": 19,
+     "totalobservations": 7746
+  }
+]

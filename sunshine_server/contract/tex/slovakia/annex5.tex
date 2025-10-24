@@ -1,0 +1,75 @@
+\section{PRÍLOHA č. 5 {–} NÁVOD NA PREVÁDZKU A ÚDRŽBU}
+
+\subsection{Činnosti v rámci pravidelnej údržby, ktoré zabezpečuje dodávateľ v rámci tejto zmluvy:}
+
+% table: periodic_maint_activities_covered_by_contractor
+
+\begin{center}
+\begin{tabu}{|X[3]|X|X|X|X|} \tabucline{} \rowfont[c]\bfseries
+	{{$tt := period "sk" .periodic_maint_activities_covered_by_contractor}} % chktex 26
+	{{with $t := translate "sk" $tt}}
+	{{.Columns | column}} \\\tabucline{}
+	{{range .Rows}} % chktex 26
+	{{.|row}} \\\tabucline{}
+	{{end}}
+{{end}}
+\end{tabu}
+\end{center}
+
+\subsection{Činnosti v rámci strednodobej preventívnej údržby}
+
+% table: mid_term_preventative_activity
+
+\begin{center}
+\begin{tabu}{|X[3]|X|X|X|X|} \tabucline{} \rowfont[c]\bfseries
+	{{$tt := period "sk" .mid_term_preventative_activity}} % chktex 26
+	{{with $t := translate "sk" $tt}}
+	{{.Columns | column}} \\\tabucline{}
+	{{range .Rows}} % chktex 26
+	{{.|row}} \\\tabucline{}
+	{{end}}
+{{end}}
+\end{tabu}
+\end{center}
+
+\subsection{Činnosti v rámci dlhodobej predbežnej údržby, ktoré poskytuje dodávateľ v rámci tejto zmluvy:}
+
+% table: long_term_provisioned_activities
+
+\begin{center}
+\begin{tabu}{|X[3]|X|X|X|X|} \tabucline{} \rowfont[c]\bfseries
+	{{$tt := period "sk" .long_term_provisioned_activities}} % chktex 26
+	{{with $t := translate "sk" $tt}}
+	{{.Columns | column}} \\\tabucline{}
+	{{range .Rows}} % chktex 26
+	{{.|row}} \\\tabucline{}
+	{{end}}
+{{end}}
+\end{tabu}
+\end{center}
+
+\subsection{Prevádzkové náklady hradené dodávateľom v rámci tejto zmluvy:}
+\begin{enumerate}
+	\item Administratívne náklady spojené s organizáciou činností v rámci údržby a úloh, ktoré sú súčasťou tejto zmluvy
+	\item Reagovanie na núdzové volania a konanie na základe nich
+	\item Spotreba elektrickej energie pre nové elektrické zaťaženie inštalované ako súčasť tejto zmluvy
+\end{enumerate}
+
+
+\subsection{Odporúčaná činnosť v rámci údržby}
+
+Dodávateľ odporúča klientovi realizáciu nasledujúcich činností v rámci dlhodobej údržby, ktoré nie sú súčasťou tejto zmluvy:
+
+% table: reccomended_maintanance_activity
+
+\begin{center}
+\begin{tabu}{|X[3]|X|X|X|X|} \tabucline{} \rowfont[c]\bfseries
+	{{$tt := period "sk" .reccomended_maintanance_activity}} %chktex 26
+	{{with $t := translate "sk" $tt}}
+	{{.Columns | column}} \\\tabucline{}
+	{{range .Rows}} %chktex 26
+	{{.|row}} \\\tabucline{}
+	{{end}}
+{{end}}
+\end{tabu}
+\end{center}

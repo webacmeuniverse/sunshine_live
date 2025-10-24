@@ -1,0 +1,161 @@
+{
+  "organizations": {
+    "register": "Ak ste nenašli svoju organizáciu, môžete ju zaregistrovať sami.",
+    "publicSearchHint": "Vyhľadajte svoju organizáciu tu.",
+    "info": [
+      "Prvým krokom pri vstupe do platformy je stať sa členom organizácie (organizácií), do ktorej patríte.",
+      "**Prečo potrebujeme vedieť, ku ktorej organizácii patríte?",
+      "Aby sme vám zabezpečili prístup k informáciám v platforme.",
+      "V časti **\"Moje organizácie\"** vidíte organizácie, ktorých ste členom. Kliknutím na každú Organizáciu si môžete pozrieť jej podrobné informácie. Na stránke **\"Všetky organizácie\"** uvidíte všetky Organizácie, ktoré sú zaregistrované v platforme. Nebudete však môcť otvoriť Organizáciu, pre ktorú nemáte oprávnenie.",
+      "Ak by ste mali byť súčasťou Organizácie, kliknite na **\"Požiadať o členstvo\"**.",
+      "Ak nemôžete nájsť svoju Organizáciu, môžete si ju zaregistrovať sami.",
+      "Watch Training Videos [**here**](https://www.youtube.com/watch?v=hkpNvWQK7TA&list=PL8IdmZDX5yMC-UOPQ5TUdI8YwSKWfnp33)"
+    ],
+    "roles": [
+      "Kliknutím na šípku rozbaľte a pozrite sa, kto je priradený k jednotlivým rolám. Ak máte oprávnenie, tu priradíte role tejto Organizácii.",
+      "**Definície rolí:**",
+      "**Zástupca menovaný právnickou osobou (LEAR):** Osoba menovaná organizáciou na správu jej údajov v platforme. Musí udržiavať údaje právneho subjektu aktuálne. Organizácia môže mať len jedného **LEAR**.",
+      "**Správca účtu právnickej osoby (LEAA):** Pomáha LEAR pri plnení ich úloh. Nemôže priradiť iných správcov účtov. Môže prideľovať roly súvisiace s projektom. Každá organizácia môže mať niekoľko **LEAA**.",
+      "**Zákonný signatár (LSIGN) :** Osoba v organizácii právnickej osoby oprávnená podpisovať (v mene organizácie) právne záväzky pre projekty (t. j. zmluvy, dohody, dodatky). Môže sa prekrývať s **LEAR** alebo môže byť inou osobou v organizácii. Každá organizácia môže mať niekoľko **LSIGN**.",
+      "**Člen organizácie (ORME):** je súčasťou organizácie. Nemôže meniť svoje údaje, ale môže pre organizáciu vytvárať aktíva a projekty."
+    ],
+    "lear": [
+      "**Tip pre LEAR**",
+      "Prostredníctvom tejto roly nemôžete vymenovať nového LEAR, ako je to v prípade ostatných rolí, pretože táto rola vyžaduje niektoré dodatočné schválenia.",
+      "Nový LEAR musí požiadať o členstvo vo vašej organizácii na svojom osobnom profile, kde poskytne aj potrebné dokumenty. Následne dostanete oznámenie, v ktorom potvrdíte, že súhlasíte s tým, aby sa mohol stať novým LEAR-om. Konečný súhlas udeľuje superužívateľ vašej krajiny, ktorý skontroluje, či poskytnuté dokumenty dokazujú, že nová osoba môže byť LEAR.",
+      "Po schválení nového LEAR-u už nebudete LEAR-om, pretože každá organizácia môže mať len jedného LEAR-a. V prípade, že by ste mali zostať v Organizácii s inou rolou, uistite sa, že ste si túto rolu priradili pred schválením, aby ste nestratili prístup k Organizácii a jej súvisiacim Aktívam a Projektom."
+    ]
+  },
+  "assets": {
+    "register": [
+      "**Nevidíte svoje aktívum? Zaregistrujte ho tu.**",
+      "Aby ste sa mohli zaregistrovať, musíte sa uistiť, že:",
+      "1) Máte dokument, v ktorom sú uvedené informácie o Aktíve (katastrálne číslo, vykurovaná plocha, počet schodísk atď.).",
+      "2) Ste súčasťou Organizácie: pretože všetky Aktíva musia *\"patriť\"* do Organizácie a Aktívum môžete vytvoriť len pre Organizáciu, do ktorej patríte.",
+      "Ak nemáte jednu alebo všetky vyššie uvedené podmienky, ale napriek tomu chcete pridať svoje Aktíva na renováciu, kontaktujte nás na adrese **sunshinehelp@ekubirojs.lv** a my vás prevedieme ďalšími krokmi."
+    ],
+    "publicSearchHint": "Príliš veľa aktív? Vyhľadajte si svoj tu. Pri vyhľadávaní adresy ju napíšte tak, ako by ste ju napísali vo svojom jazyku. Toto pole akceptuje všetky znaky.",
+    "info": [
+      "Na stránke **\"Moje aktíva\"** môžete vidieť aktíva, v ktorých žijete, alebo ktorý patrí organizácii (organizáciám), v ktorej (ktorých) máte rolu. Kliknutím na každý z vašich Aktív si môžete pozrieť jeho podrobné informácie.",
+      "Na stránke **\"Všetky aktíva\"** uvidíte všetky aktíva zaregistrované v platforme. Ak však nemáte oprávnenie, nebudete môcť otvoriť Aktíva.",
+      "Ak nájdete svoj dom, kliknite na tlačidlo **\"Tu bývam!\"** a požiadajte o zobrazenie informácií o Aktíve. Budete musieť nahrať akýkoľvek dokument, ktorý dokazuje, že ste obyvateľom.",
+      "Watch Training Videos [**here**](https://www.youtube.com/watch?v=Q6DlptPaebo&list=PL8IdmZDX5yMDzJoyiRK1tYdfsePVUK7M1)"
+    ],
+    "assetInformation": {
+      "totalArea": "Celková plocha pre obytný dom sa určí súčtom plôch všetkých podlaží budovy (vrátane suterénu a podkrovia) medzi vnútornými plochami obvodových stien, ako aj plochy vonkajších priestorov - balkónov, lodžií a terás. Podkrovie (technické podkrovie) a technické pivničné priestory sa do celkovej plochy bytového domu nezapočítavajú.",
+      "heatedArea": "Vykurovaná plocha budovy sa určí súčtom plôch všetkých bytov a všetkých schodísk alebo iných pomocných miestností, ktoré sú tiež vykurované.",
+      "billingArea": "Účtovná plocha alebo úžitková plocha budovy sa určí súčtom celkovej plochy bytov v obytnej budove, celkovej plochy nebytových priestorov a celkovej plochy verejných priestorov, ak nejaké sú."
+    },
+    "assetFields": {
+      "cadastre": "Identifikačné číslo budovy, ktoré určuje miestna samospráva alebo štát.",
+      "owner": [
+        "Mali by ste mať možnosť vytvárať aktíva pre všetky schválené organizácie, v ktorých máte pridelenú rolu. Ak v tomto zozname nevidíte Organizáciu, môže to byť preto, že Organizácia čaká na Schválenie od Superužívateľa.",
+        "To znamená, že buď bola Organizácia práve vytvorená a ešte nebola schválená, alebo boli aktualizované kľúčové informácie a ešte neboli schválené.",
+        "Stav Organizácie si môžete pozrieť otvorením stránky **Organizácie**."
+      ],
+      "residentsCommunity": "Ak chcete mať istotu, že obyvatelia majú prístup k informáciám o budove, je potrebné vytvoriť komunitu obyvateľov. Toto pole teraz zostáva prázdne a po vytvorení Organizácie ho systém vyplní automaticky.",
+      "totalArea": "Celková plocha pre obytnú budovu sa určí súčtom plôch všetkých podlaží budovy (vrátane suterénu a podkrovia) medzi vnútornými plochami vonkajších stien, ako aj plochy vonkajších priestorov - balkónov, lodžií a terás. Podkrovie (technické podkrovie) a technické pivničné priestory sa do celkovej plochy bytového domu nezapočítavajú.",
+      "billingArea": "Účtovná plocha alebo úžitková plocha budovy sa určí súčtom celkovej plochy bytov v obytnej budove, celkovej plochy nebytových priestorov a celkovej plochy verejných priestorov, ak nejaké sú.",
+      "heatedArea": "Vykurovaná plocha budovy sa určí súčtom plôch všetkých bytov a všetkých schodísk alebo iných pomocných priestorov, ktoré sú tiež vykurované.",
+      "districtHeating": "Vykurovanie zabezpečované inými poskytovateľmi, napríklad mestom, obcou alebo inými subjektmi.",
+      "buildingHeating": "Budova má vlastné prostriedky na vykurovanie."
+    }
+  },
+  "projects": {
+    "info": [
+      "Na tejto stránke máte prístup ku všetkým projektom a môžete si pozrieť parametre budovy, aktuálny priebeh, zúčastnené strany, projektový tím a ďalšie informácie.",
+      "Môžete vidieť len projekty, v ktorých máte pridelenú rolu. Ak nevidíte žiadny zo svojich projektov, kontaktujte svojho projektového manažéra.",
+      "Watch Training Videos [**here**](https://www.youtube.com/watch?v=3zAPF1NOK18&list=PL8IdmZDX5yMCOPGV_WSlheZZV6tGLD1a1)"
+    ],
+    "overview": [
+      "V **Prehľade projektov** sa zobrazí, ako projekt pokračuje.",
+      "Časť **EPC Zmluva a Zmluva o forfeitingu** vám umožní vyplniť a vytlačiť konečnú verziu týchto zmlúv.",
+      "Otvorením časti **Fázy projektu** uvidíte rozdelenie jednotlivých fáz, činnosti, ktoré sa majú vykonať a míľniky, ktoré sa majú dosiahnuť. V tejto časti sa riadi projekt."
+    ],
+    "guaranteedMetrics": "Ide o vypočítané ukazovatele, ktoré sú pre budovu garantované po dokončení renovácie. Sú platné po podpísaní EPC zmluvy.",
+    "roles": [
+      "Kliknutím na šípku rozbaľte a pozrite si, kto je priradený k týmto úlohám. Ak máte oprávnenie, toto je miesto, kde priradíte roly k tomuto projektu.",
+      "**Definície rolí:**",
+      "**Manažér projektu (PM):** riadi projekt. Má plné práva na zobrazenie a úpravu. Môže spravovať roly projektu a plniť míľniky na otvorenie fáz projektu.",
+      "Podľa projektu musí existovať jeden PM.",
+      "**Zákonný signatár projektu (PLSIGN):** Osoba oprávnená podpisovať právne záväzky pre konkrétny projekt. Na projekte musí byť PLSIGN za každú zúčastnenú organizáciu.",
+      "**Manažér úlohy (TAME):** Osoba, ktorá môže vykonávať rôzne činnosti na riadenie konkrétnej úlohy projektu.",
+      "**Člen tímu (TEME):** Osoba, ktorá má práva len na čítanie pre konkrétny projekt."
+    ],
+    "epc": {
+      "generalTerms": "**Všeobecné podmienky EPC zmluvy** sú prvou časťou zmluvy a sú štandardizované. Na tejto stránke je k dispozícii ich úplné znenie.",
+      "annexesInfo": [
+        "Kliknutím na názvy vpravo otvoríte jednotlivé prílohy. Na každej stránke môžete vyplniť tabuľky a polia na vyplnenie zmluvy.",
+        "Je nevyhnutné mať **všetky informácie o zmluve správne**, pretože ich získavajú ďalšie časti projektu.",
+        "Aktuálnu verziu zmluvy si môžete **stiahnuť** vo formáte PDF. Po podpísaní konečnej verzie je potrebné ju nahrať do príslušnej fázy projektu."
+      ],
+      "annexesExtraPage": [
+        "Túto dodatočnú stranu môžete použiť na doplnenie ďalších potrebných informácií pri podpise zmluvy a na vytlačenie **dodatočných príloh** po podpise zmluvy, ktorá však potrebuje zmeny.",
+        "V prípade **zmien a doplnení** sa táto strana musí vytlačiť samostatne a uložiť spolu s **EPC zmluvou**."
+      ],
+      "forfaitingAgreement": "Túto zmluvu musíte pripraviť v prípade, že váš projekt bol schválený na financovanie. To sa môže stať až po uvedení budovy do prevádzky a po zaznamenaní meraní z celej vykurovacej sezóny.",
+      "assetAcquisition": [
+        "Táto fáza pozostáva z **následných míľnikov**.",
+        "Tu môžete vidieť, v ktorom míľniku sa projekt nachádza.",
+        "Každá stránka sa odomkne hneď, ako **Manažér projektu** dokončí predchádzajúci míľnik."
+      ],
+      "assetAcquisitionCompleteMilestone": "Po dokončení všetkých požadovaných náležitostí by mal projektový manažér potvrdiť, že míľnik je dokončený. Tým sa táto stránka uzamkne a odomkne sa ďalší míľnik.",
+      "commissioningDateDisclamer": "Roky a mesiace v tabuľkách monitorovania výsledkov sa aktualizujú na základe dátumu dokončenia tohto kroku. Prvý mesiac, ktorý sa bude monitorovať, je nasledujúci mesiac po dokončení tohto kroku.",
+      "worksPhase": [
+        "Táto fáza sa skladá z **priebežných míľnikov**.",
+        "Kliknutím na každý z nich môžete zistiť, v ktorom míľniku sa projekt nachádza.",
+        "Uvedenie budovy do prevádzky zablokuje predchádzajúce míľniky."
+      ],
+      "monitoringPhase": [
+        "Táto fáza pozostáva z **bežných míľnikov**.",
+        "Kliknutím na každý z nich môžete vidieť, v ktorom míľniku sa projekt nachádza.",
+        "Uvedenie budovy do prevádzky zablokuje predchádzajúce míľniky."
+      ]
+    },
+    "registerProject": [
+      "Tu môžete zaregistrovať projekt pre organizáciu, v ktorej máte pridelenú úlohu.",
+      "Projekt budete môcť zaregistrovať len pre Aktívum, ktoré už bolo schválené."
+    ],
+    "requestPermission": [
+      "V prípade, že potrebujete vytvoriť Projekt pre Aktívum, ktoré nepatrí do žiadnej z vašich Organizácií, môžete to urobiť tu.",
+      "O povolenie požiadate Organizáciu, pod ktorou je Aktívum zaregistrované. Po udelení povolenia môžete vytvoriť Projekt."
+    ]
+  },
+  "users": {
+    "applyLEAR": "Ak ste LEAR Organizácie, môžete sa o túto úlohu uchádzať tu. Vyberte Organizáciu a predložte podpornú dokumentáciu, ktorá preukazuje, že ste oprávnený byť LEARom. Budete informovaní, keď bude vaša úloha potvrdená."
+  },
+  "reports": {
+    "info": "Na týchto stránkach uvidíte len údaje týkajúce sa rolí, ktoré máte. Vyberte požadované stĺpce a vykonajte export."
+  },
+  "admin": {
+    "platformRoles": [
+      "Kliknutím na panel rolí z nižšie uvedeného zoznamu môžete spravovať Používateľov priradených k rolám platformy pre vybranú krajinu.",
+      "**Každá krajina má tieto roly:**",
+      "**Riaditeľ portfólia:** mal prístup k špecifickým správam pre svoju krajinu a jej projekty a organizácie s cieľom získavať investície, pozývať nové zainteresované strany do platformy a podporovať ich.",
+      "Vidí všetky projekty a aktíva vo svojej krajine.",
+      "**Odborník pre ochranu údajov:** Odpovedá na žiadosti týkajúce sa nariadenia GDPR.",
+      "**Superužívateľ:** Poskytuje podporu používateľom v rámci svojej krajiny.",
+      "Spolupracuje s ostatnými superužívateľmi na zlepšovaní platformy.",
+      "Schvaľuje aktíva a organizácie pre svoju krajinu. Schvaľuje LEARov pre organizácie.",
+      "Vidí všetkých používateľov, aktíva, organizácie a projekty v rámci svojej krajiny, aby mohol podporovať používateľov.",
+      "**Manažér fondov:** Schvaľuje financovanie projektov vo svojej krajine. Vidí všetky projekty vo svojej krajine.",
+      "**Investor:** má prístup k stránkam žiadosti o financovanie projektu vo svojej krajine."
+    ],
+    "rolePFM": [
+      "**Správca platformy:** vidí všetky údaje v platforme.",
+      "Prideľuje ostatné roly na úrovni platformy a krajiny."
+    ],
+    "roleNWM": [
+      "**Správca siete superužívateľov:** ide o rolu na úrovni platformy.",
+      "Môže vykonávať rovnaké úlohy ako Superužívatelia, ale pre všetky platformy (čo znamená, všetky krajiny).",
+      "Vykonáva úlohy superužívateľa pre používateľov, aktíva a organizácie, ktoré patria do krajiny, ktorá nemá superužívateľov. Okrem toho môže priradiť a odobrať rolu Superužívateľa."
+    ]
+  },
+  "maintenanceTableNotReady": "Je potrebné vyplniť prvé 3 roky plánu údržby aktív.",
+  "home": {
+    "info": [
+      "Here is info tooltip for the home page",
+      "Watch Training Videos [**here**](https://www.youtube.com/watch?v=J4-x7uN8ec0&list=PL8IdmZDX5yMCqp8AZhpD2FARTrm1RdXgj)"
+    ]
+  }
+}

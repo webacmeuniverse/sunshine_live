@@ -1,0 +1,92 @@
+[
+  {
+     "measures_main": "Metering, Monitoring and Energy Management",
+     "Investment": 2119649,
+     "Energycostsaved": 693494.58,
+     "SumEnergySavedFormatted": 14.22,
+     "SimplePaybackTime": 3.55,
+     "observations": 35,
+     "totalobservations": 6605
+  },
+  {
+     "measures_main": "Heating",
+     "Investment": 79298021,
+     "Energycostsaved": 20139913.21,
+     "SumEnergySavedFormatted": 589.65,
+     "SimplePaybackTime": 4.35,
+     "observations": 704,
+     "totalobservations": 6605
+  },
+  {
+     "measures_main": "Motors",
+     "Investment": 34274338,
+     "Energycostsaved": 10774533.86,
+     "SumEnergySavedFormatted": 98.99,
+     "SimplePaybackTime": 4.72,
+     "observations": 633,
+     "totalobservations": 6605
+  },
+  {
+     "measures_main": "Cooling",
+     "Investment": 19877174,
+     "Energycostsaved": 5726923.12,
+     "SumEnergySavedFormatted": 59.92,
+     "SimplePaybackTime": 4.94,
+     "observations": 324,
+     "totalobservations": 6605
+  },
+  {
+     "measures_main": "Compressed Air",
+     "Investment": 82467751,
+     "Energycostsaved": 28902118.95,
+     "SumEnergySavedFormatted": 227.80,
+     "SimplePaybackTime": 4.96,
+     "observations": 3502,
+     "totalobservations": 6605
+  },
+  {
+     "measures_main": "Pumps",
+     "Investment": 9349119,
+     "Energycostsaved": 2911637.91,
+     "SumEnergySavedFormatted": 26.55,
+     "SimplePaybackTime": 5.05,
+     "observations": 215,
+     "totalobservations": 6605
+  },
+  {
+     "measures_main": "Other",
+     "Investment": 20066377,
+     "Energycostsaved": 3396748.01,
+     "SumEnergySavedFormatted": 42.48,
+     "SimplePaybackTime": 5.68,
+     "observations": 30,
+     "totalobservations": 6605
+  },
+  {
+     "measures_main": "Street Lighting",
+     "Investment": 13903460,
+     "Energycostsaved": 2194420.00,
+     "SumEnergySavedFormatted": 19.93,
+     "SimplePaybackTime": 5.95,
+     "observations": 19,
+     "totalobservations": 6605
+  },
+  {
+     "measures_main": "Waste heat (without power generation)",
+     "Investment": 893416791,
+     "Energycostsaved": 215425858.34,
+     "SumEnergySavedFormatted": 4358.68,
+     "SimplePaybackTime": 9.12,
+     "observations": 1130,
+     "totalobservations": 6605
+  },
+  {
+     "measures_main": "ICT",
+     "Investment": 2032883,
+     "Energycostsaved": 154672.75,
+     "SumEnergySavedFormatted": 1.11,
+     "SimplePaybackTime": 9.14,
+     "observations": 13,
+     "totalobservations": 6605
+  }
+]

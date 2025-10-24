@@ -1,0 +1,237 @@
+{
+  "slider": {
+    "mainTitle": "BEM-VINDO AO PROJETO EUROPA",
+    "subTitle": "Verificou algumas alterações de temperatura? Está na hora de tornar a sua casa mais saudável, confortável e mais eficiente em termos energéticos.",
+    "learnMore": "Saiba mais",
+    "imageTitle": "Gostava de renovar o seu prédio??",
+    "imageTitle1": "Preencha o questionário de adesão!"
+    
+  },
+  "menu": {
+    "RESIDENTS": "MORADORES",
+    "HOWITWORKS": "OPERADORES DE MERCADO",
+    "FindMyPartner": "ENCONTRAR UM PARCEIRO",
+    "EESCALCULATOR": "Calculadora de custos de renovação",
+    "SERVICESPROVIDER": "Operadores de Mercado",
+    "MATCHMAKING": "ENCONTRAR UM PARCEIRO",
+    "RESOURCES": "RECURSOS",
+    "Assisttomyproject": "Ir para o meu Projeto",
+    "SIMULATIONTOOL":"FERRAMENTA DE SIMULAÇÃO",
+    "EESCHECKLIST":"CHECKLIST SEE",
+    "BUILDINGCALCULATOR":"CALCULADORA DO EDIFÍCIO",
+    "EESREFINANCEABILITYCHECKLIST":"CHECKLIST DE REFINANCIAMENTO DA SEE",
+    "Login": "Login",
+    "MyDashboard": "O meu painel"
+
+    
+  },
+  "mainTitle": {
+    "title1": "Renovação simples, melhor, em conjunto."
+    
+    
+  },
+  "individualPrivate":{
+    "title": "Particulares/Privados",
+    "title1": "Facultamos apoio e assistência digital, de modo a garantir uma jornada de renovação tranquila e simples.",
+    "title2": "Responda às questões e descubra se atuamos na sua região.",
+    "LetStart": "Vamos começar.",
+    "box1": "Está a pensar renovar o seu prédio? Comece o seu percurso aqui e preencha o questionário de adesão!",
+    "box2": "Procura um Operador de Mercado para a renovação? Aceda ao menu «Aceder à rede de parceiros» e descubra os operadores de mercado que trabalham na sua área.",
+    "box3": "O seu edifício já está a ser renovado?"
+
+  },
+
+  "howItWorks":{
+    "mainTitle": "Como funciona",
+    "subTitle": "Sete passos simples para a renovação do seu edifício",
+    "title1": "Questionário de Qualificação de Adesão",
+    "description1": "Responda ao nosso breve questionário de adesão, de modo a aferir se atuamos na sua área!",
+    "title2": "Chamada telefónica",
+    "description2": "A OSS que opera na sua região irá entrar em contacto consigo para saber mais acerca do processo. Se não houver nenhuma OSS estabelecida na sua área, não se preocupe! Entraremos em contacto consigo, de modo a apoiá-lo.",
+    "title3": "Auditoria Energética/Análise de Perfil",
+    "description3": "Utilizando as ferramentas de simulação disponíveis, pode estimar a poupança energética do projeto e custos associados.",
+    "title4": "Encontre uma solução",
+    "description4": "Ao trabalhar em conjunto com a sua OSS, irá encontrar uma solução para a renovação energética de edifícios que sirva os seus propósitos.",
+    "title5": "Acompanhe a renovação do seu edifício na Plataforma SUNShINE",
+    "description5": "A renovação de edifícios varia de acordo com o contexto, mas pode acompanhar todo o processo – assinatura de contrato, trabalhos de renovação e monitorização – através da plataforma SUNShINE.",
+    "title6": "Trabalho de renovação",
+    "description6": "Depois de encontrada a solução e do contrato estar assinado, aproxima-se a renovação do seu edifício!",
+    "title7": "Monitorização",
+    "description7": "Faça a monitorização da performance do seu edifício e dos pagamentos através da plataforma SUNShINE."
+  
+
+  },"howMuchRenovationCost":{
+    "title1": "Quanto irá custar a renovação energética do edifício?",
+    "title2": "Experimente a nossa Calculadora SEE e saiba quanto irá custar o projeto de renovação com base em vários critérios.",
+    "title3": "Descubra agora!"
+
+  },
+  "SUBSCRIBE":{
+    "title1": "SUBSCREVA A NOSSA NEWSLETTER",
+    "Email": "E-mail",
+    "Send":"Enviar"
+  },
+  "GetInTouch":{
+    "title1": "Fique em contacto com a One-Stop-Shop mais próxima!",
+    "ContactUs": "Contacte-nos",
+    "title2":"Com quem é que trabalhamos?"
+  },"Footer":{
+    "Partners": "Parceiros",
+    "About": "Acerca",
+    "Support":"Apoio",
+    "FAQ":"FAQ",
+    "Contact":"Contacto",
+    "GoToMyProject":"Ir para o meu projeto",
+    "Privacy":"Privacidade",
+    "Terms":"Termos",
+    "Sitemap":"Mapa do site",
+    "Chatwithus":"Fale conosco",
+    "Title":"© 2022 EUROPA. Todos os direitos reservados."
+  },
+  "EESRefinanceabilitychecklist": {
+    "Description": "CHECKLIST DE REFINANCIAMENTO DA SEE",
+
+    "Description1": "Being a checklist, it does not contain all relevant information in detail. More details and additional explanations on the required contract stipulations for the EES as well as for the Refinancing Contracts can be found in the Guideline “Standardised Contract Stipulations for Refinancing of Energy Efficiency Services” which is accessible by following this link."
+  
+    
+  }, "FindMyPartner": {
+    "Discover": "Descobrir",
+    "More":"mais",
+    "FilterSort": "Filtro & Ordenar",
+    "TypeofOrganization":"Tipologia de Entidade",
+    "TypesofServices":"Tipologia de serviços",
+    "OSSApproved":"OSS Aprovada",
+    "Sort":"Ordenar",
+    "Nearme":"Perto de mim",
+    "Services":"Serviços",
+    "Backtothelist":"Voltar para a lista",
+    "Address":"Morada",
+    "Phone":"Telefone",
+    "title":"Pronto de renovar o seu edifício?",
+    "title1":"Pontuação da Organização",
+    "TotalScore":"Pontuação total",
+    "QualityofServices":"Qualidade dos Serviços",
+    "SpeedofServices":"Rapidez dos serviços",
+    "Communication":"Comunicação",
+    "Rating":"Classificação",
+    "AddRating":"Acrescentar Classificação"
+    
+  }
+  , "Resources": {
+    "Learnmore": "Saiba mais",
+    "title1":"O Manual do Utilizador",
+    "title2":"Quadro geral da Subscrição de ",
+    "title3":"Infográfico para sensibilização de stakeholders",
+    "title4":"Manual SUNShINE sobre renovação profunda de edifícios",
+    "Resources":"Recursos"
+
+  
+    
+  }, "MyProjectStatus": {
+    "MyprojectstatusTitle": "Estado do meu projecto",
+    "title": "Por favor escolha a opção apropriada para entrar na sua conta",
+    "NewUser": "Novo Usuário",
+    "Signinwithotp":"Inicie a sessão com OTP",
+    "Login":"Login",
+    "title1":"Por favor introduza o seu endereço de correio electrónico",
+    "Welcome":"Bem-vindo",
+    "Submit":"Submeter",
+    "Back":"Voltar",
+    "CodeValidation":"Validação do código!",
+    "title2":"O código foi enviado para o seu e-mail. Verifique o seu correio electrónico e introduza o código de Verificação.",
+    "Seeyourprojectstatus":"Veja o estado do seu projecto"
+    
+
+  
+    
+  },"faqList": {
+    "mainTitle": "Olá, podemos ajudá-lo??",
+    "subTitle": "Acerca da Plataforma SUNShINE, desenvolvida pelo EUROPA",
+      "titles1": {
+            "questionTitle":"",
+            "questionList": {
+              "question1": "O que faz a Plataforma SUNShINE, desenvolvida pelo EUROPA?",
+              "question2": "Para quem é desenvolvida a Plataforma SUNShINE, desenvolvida pelo EUROPA?",
+              "question3": "Quanto custa a utilização da plataforma SUNShINE, desenvolvida no âmbito do EUROPA?",
+              "question4": "O que é a Subscrição de Eficiência Energética (SEE)?",
+              "question5": "Como posso calcular os custos da renovação do meu edifício?"
+            },
+            "answerList":{
+              "answer1": "A Plataforma SUNShINE, desenvolvida pelo Projeto EUROPA, ajuda todas as partes interessadas em participar em atividades de renovação energética, em todas as fases de projeto: desde o início da ideia de renovação do edifício até ao acompanhamento/monitorização dos resultados das atividades.",
+              "answer2": "A plataforma SUNShINE destina-se a moradores (a título individual), associações de condomínio, operadores de mercado, autarquias e todos os demais interessados.",
+              "answer2Sub1": "´Carregue no botão «Podemos ajudá-lo?» e aceda aos conteúdos que podem ajudá-lo no seu negócio.",
+              "answer3": "A plataforma é gratuita. Esta decisão é de extrema importância para nós, uma vez que permite a utilização da plataforma por parte de vários stakeholders.",
+              "answer4": "A Subscrição de Eficiência Energética (EES) constitui a oferta de serviços de incremento da eficiência energética do edifício, disponibilizada em modelo de subscrição, o que simplifica o modelo de pagamento e cria um entendimento mútuo dos procedimentos em curso.",
+              "answer5": "O custo e o plano de pagamento da renovação podem ser calculados através da Calculadora de Custos de Renovação - ferramenta desenvolvida na plataforma para modelar os custos totais e o possível plano de pagamento anual do edifício.",
+              "answer5Sub1":"Aceda à página «Moradores» para saber quanto vai custar a renovação do seu edifício!"
+            }
+          },
+          "titles2": {
+            "questionTitle":"MORADOR",
+            "questionList": {
+              "question1": "Que tipo de informação será solicitada pela plataforma?",
+              "question2": "E se eu não souber algumas das informações específicas acerca do meu edifício ou se as perguntas existentes no questionário de adesão não se adequarem à minha casa?",
+              "question3": "E se não houver um OSS instalado na minha região?",
+              "question4": "Estou a ter dificuldades técnicas. Com quem devo entrar em contacto?",
+              "question5": "Como posso saber mais acerca do meu Projeto?",
+              "question6": "Onde posso encontrar os prestadores de serviços que operam na minha área?"
+            },
+            "answerList":{
+              "answer1": "De modo a utilizar a plataforma, terá de fornecer:",
+              "answer1Sub1": "Nome",
+              "answer1Sub2": "Apelido",
+              "answer1Sub3": "Email",
+              "answer1Sub4": "Telefone",
+              "answer1Sub5": "Cidade",
+              "answer1Sub6": "País",
+              "answer2": "Isso não constitui um problema! A sua OSS ajudá-lo-á a preencher as restantes informações após o agendamento da primeira chamada.",
+              "answer3": "Se não for criado um OSS na sua região, preencherá os questionários de bordo padrão e a equipa de gestão da plataforma entrará em contacto consigo.",
+              "answer4": "Por favor entre em contacto com a equipa de gestão da plataforma através do EMAIL",
+              "answer5": "Por favor clique no botão «O meu Projeto» e preencha todas as informações necessárias para ter acesso às informações do seu projeto.",
+              "answer6": "Pode encontrar todas as informações necessárias sobre os prestadores de serviços na página “Aceder à rede de parceiros”. Nesta página, pode percorrer a lista de todos os operadores de serviço que operam na sua área ou vê-los no mapa. Ao clicar no seu logotipo, pode encontrar o seu perfil público com as informações de contato."
+            }
+          },
+          "titles3": {
+            "questionTitle":"ASSOCIAÇÃO DE MORADORES/CONDOMÍNIO",
+            "questionList": {
+              "question1": "Os moradores do prédio que administro estão interessados em renovar o edifício e quero fornecer-lhes as informações corretas. O que devo fazer?",
+              "question2": "Preciso de um Operador de Mercado, o que devo fazer?"              
+            },
+            "answerList":{
+              "answer1": "Pode encontrar todos os materiais informativos na página «Recursos» e partilhá-los com os moradores.",
+              "answer2": "Pode encontrar todas as informações necessárias sobre os prestadores de serviços na página “Aceder à rede de parceiros”. Nesta página, pode percorrer a lista de todos os operadores de serviço que operam na sua área ou vê-los no mapa. Ao clicar no seu logotipo, pode encontrar o seu perfil público com as informações de contato."             
+            }
+          },
+          "titles4": {
+            "questionTitle":"Operadores de Mercado",
+            "questionList": {
+              "question1": "Sou um Operador de Mercado e tenho interesse em fazer parte da seção «Aceder à rede de parceiros». É possível?",
+              "question2": "Estou a ter algumas dificuldades no processo de adesão. O que devo fazer?",
+              "question3": "Por que motivo preciso de apresentar os meus certificados?",
+              "question4": "O que é a checklist SEE?",
+              "question5": "O que é a checklist de Refinanciamento?"
+            },
+            "answerList":{
+              "answer1": "De modo a ficar visível na seção «Aceder à rede de parceiros», tem de passar pelo processo de adesão para operadores de mercado e cumprir com os requisitos estabelecidos pela OSS. Após a aprovação por parte da OSS, o seu perfil público será adicionado à página «Aceder à rede de parceiros»!",
+              "answer2": "Por favor entre em contacto com o super-utilizador da Plataforma através do EMAIL.",
+              "answer3": "Os certificados dão apoio às suas respostas ao questionário de adesão e ajudam a OSS local a avaliar a sua capacidade de fornecer os serviços indicados.",
+              "answer4": "Um conjunto de requisitos e padrões estabelecidos pela OSS que devem ser cumpridos por um Projeto e Operador. O objetivo é garantir qualidade aos proprietários e utilizadores finais dos edifícios em toda a cadeia de valor da renovação energética profunda de edifícios residenciais. O conceito foi desenvolvido pelo projeto Horizonte 2020 EUROPA.",
+              "answer5": "A Calculadora de Refinanciamento foi desenvolvida para garantir o financiamento de um projeto, avaliando determinados padrões relacionados com todas as fases do projeto. O conceito foi desenvolvido pelo projeto Horizonte 2020 REFINE. <a href='https://refineproject.eu/'>REFINE</a> project."
+            }
+          },
+          "titles5": {
+            "questionTitle":"One Stop Shop (OSS)",
+            "questionList": {
+              "question1": "Sou uma One-Stop-Shop e estou interessado em utilizar a plataforma. O que devo fazer?",
+              "question2": "Por que motivo devo escolher a plataforma SUNShINE, desenvolvida pelo EUROPA, para apresentar o meu trabalho enquanto OSS?",
+              "question3": "Em caso de litígio:"
+            },
+            "answerList":{
+              "answer1": "Por favor preencha o questionário de adesão para Operadores de Mercado e indique que se trata de uma OSS. Depois disso, a equipa de gestão da plataforma entrará em contacto consigo!",
+              "answer2": "A Plataforma SUNShINE, desenvolvida no âmbito do Projeto EUROPA, fornece uma abordagem digital, na qual diferentes stakeholders podem trabalhar com as ferramentas desenvolvidas. Devido à especificidade do âmbito de trabalho de cada OSS, o conjunto de ferramentas pode ser adaptado, de modo a adequar-se ao contexto regional e aumentar sua utilidade. De forma geral, a plataforma SUNShINE é alimentada pela metodologia abrangente da plataforma EUROPA, permitindo organizar o trabalho da OSS.",
+              "answer3": "Recomendamos que entre em contato com a equipa de gestão da plataforma através do EMAIL"
+              
+            }
+          }
+    }
+}

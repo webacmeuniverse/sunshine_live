@@ -1,0 +1,123 @@
+{{- $tables := .Contract.Tables -}}
+
+\section{PRÍLOHA č. 4 {-} ZÁKLADNÝ SCENÁR A ZÁRUKA ÚSPORY ENERGIE}
+\begin{enumerate}
+
+\item Základné obdobie zahŕňa mesačné údaje z roka [ $rok^{n-1}$, $rok^{n-1}$ a $rok^n$]
+
+\begin{enumerate}
+
+\item Energetické údaje pre Základné obdobie:
+
+% table: baseyear
+
+\begin{center}
+\begin{tabu}{|X[2]|X|X|X|X|X|X|X|X|X|X|X|X|} \tabucline{} \rowfont[c]\bfseries
+	& \multicolumn{4}{c|}{ {{baseyear "sk" 2}} } & \multicolumn{4}{c|}{ {{baseyear "sk" 1}} } & \multicolumn{4}{c|}{ {{baseyear "sk" 0}} } \\
+	& \multicolumn{4}{c|}{ {{.Contract.Tables.baseyear_n_2.Title}} } & \multicolumn{4}{c|}{ {{.Contract.Tables.baseyear_n_1.Title}} } & \multicolumn{4}{c|}{ {{.Contract.Tables.baseyear_n.Title}} } \\\tabucline{}\rowfont[c]\bfseries
+        {{$tt := join_tables .Contract.Tables.baseyear_n_2 .Contract.Tables.baseyear_n_1 .Contract.Tables.baseyear_n }} %chktex 25
+        {{with $t := translate "sk" $tt}}
+	{{$t.Columns | column_sideways}} \\\tabucline{} \rowfont[]\bfseries %chktex 25
+	{{range $t.Headers}}
+	{{.|row}} \\\tabucline{}
+	{{end}}
+	{{range $t.Rows}}
+	{{row .}} \\\tabucline{} %chktex 26
+	{{end}}
+
+	\bfseries {{average $t }} \\\tabucline{}
+	\bfseries {{total $t}} \\\tabucline{}
+{{end}}
+\end{tabu}
+\end{center}
+
+\item Podmienky počas Základného obdobia:
+
+% table: baseconditions
+
+\begin{center}
+\begin{tabu}{|X[2]|X|X|X|X|X|X|X|X|X|X|X|X|} \tabucline{} \rowfont[c]\bfseries
+	& \multicolumn{4}{c|}{ {{baseyear "sk" 2}} } & \multicolumn{4}{c|}{ {{baseyear "sk" 1}} } & \multicolumn{4}{c|}{ {{baseyear "sk" 0}} } \\
+	& \multicolumn{4}{c|}{ {{.Contract.Tables.baseyear_n_2.Title}} } & \multicolumn{4}{c|}{ {{.Contract.Tables.baseyear_n_1.Title}} } & \multicolumn{4}{c|}{ {{.Contract.Tables.baseyear_n.Title}} } \\\tabucline{}\rowfont[c]\bfseries
+  	{{$tt := join_tables .Contract.Tables.baseconditions_n_2 .Contract.Tables.baseconditions_n_1 .Contract.Tables.baseconditions_n }} %chktex 25
+  	{{with $t := translate "sk" $tt}}
+	{{$t.Columns | column_sideways}} \\\tabucline{} \rowfont[]\bfseries %chktex 25
+	{{range $t.Headers}}
+	{{.|row}} \\\tabucline{}
+	{{end}}
+	{{range $t.Rows}}
+	{{row .}} \\\tabucline{} %chktex 26
+	{{end}}
+
+	\bfseries {{average $t }} \\\tabucline{}
+	\bfseries {{total $t}} \\\tabucline{}
+{{end}}
+\end{tabu}
+\end{center}
+
+Počet dní vykurovacej sezóny (degree days) je stanovený podľa vzorcov:
+\begin{center}
+	GDD = $D_apk$x($T_1$ - $T_3$)
+\end{center}
+
+kde:
+\begin{itemize}
+	\item GDD počet dní vykurovacej sezóny (degree days) počas Základného obdobia
+	\item $D_apk$ počet vykurovacích dní počas Základného obdobia
+	\item $T_1$ vnútorná teplota počas Základného obdobia  (°C).
+	\item $T_3$ skutočná priemerná vonkajšia teplota počas Základného obdobia (°C).
+\end{itemize}
+\end{enumerate}
+
+\item Základný scenár
+
+\begin{enumerate}
+\item Základný scenár sa určuje na základe energetických údajov a podmienok počas Základného obdobia takto:
+\end{enumerate}
+
+% table: baseline
+
+\begin{center}
+\begin{tabu}{|X[2]|X|X|X|X|X|X|} \tabucline{}
+{{with $t := translate "sk" .Contract.Tables.baseline}}
+	{{.Columns | column}} \\\tabucline{}
+	{{range .Rows}} {{rowf $t .}} \\\tabucline{} {{end}} %chktex 26
+{{end}}
+\end{tabu}
+\end{center}
+
+
+\item Záruka úspory energie a záruka spotreby energie
+\begin{enumerate}
+
+\item Dodávateľ zaručuje počas Doby poskytovania služby podľa tejto zmluvy, že implementované Opatrenia a poskytnuté Služby znížia spotrebu energie na vykurovanie priestorov a cirkulačné tepelné straty ($Q_{Apk,cz,ref}$)na Vyúčtovacie obdobie (jeden rok) o sumu:
+
+ ÚSPORA\textsubscript{TEPLO}  \iffalse input project.savings value="{{.Project.GuaranteedSavings}}" type="number" \fi {{.Project.GuaranteedSavings}}  \% Základnej spotreby na vykurovanie priestorov a cirkulačné tepelné straty ($Q_{Apk,cz,ref}$) 
+
+
+
+\item Záruka úspory energie zodpovedá:
+
+$Q_{iet,G} = Q_{Apk, cz, ref}$  x  ÚSPORA\textsubscript{TEPLO}   = {{.Contract.Fields.calculations_qietg}} MWh/rok
+
+
+
+kde:
+\begin{itemize}
+	\item $Q_{iet,G}$	Záruka úspory energie , MWh/rok
+	\item $Q_{Apk,cz,ref}$	Základná spotreba energie na vykurovanie priestorov a cirkulačné tepelné straty, MWh/rok
+\end{itemize}
+
+\item Záruka úspory energie zodpovedá:
+
+
+\[Q_{Apk,cz,G} = Q_{Apk,cz,ref} - Q_{iet,G} = {{.Contract.Fields.calculations_qapkczg}} MWh/rok\]
+\end{enumerate}
+kde:
+
+\begin{itemize}
+	\item $QApk,cz,G$	je Záruka úspory energie na vykurovanie priestorov a cirkulačné tepelné straty, MWh/rok
+	\item $QApk,cz,ref$	je Základná spotreba energie na vykurovanie priestorov a cirkulačné tepelné straty, MWh/rok
+	\item $Qiet,G$	je  Záruka úspory energie, MWh/rok
+\end{itemize}
+\end{enumerate}

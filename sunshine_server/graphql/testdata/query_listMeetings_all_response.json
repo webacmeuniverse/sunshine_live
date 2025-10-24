@@ -1,0 +1,40 @@
+{
+    "listMeetings": [
+        {
+            "name": "init meeting",
+            "host": {
+                "ID": "%s"
+            },
+            "attachments": [
+                {
+                    "name": "new-attachment",
+                    "upload_type": ""
+                }
+            ]
+        },
+        {
+            "name": "init meeting",
+            "host": {
+                "ID": "%s"
+            },
+            "attachments": [
+                {
+                    "name": "new-attachment",
+                    "upload_type": "pre epc agreement"
+                }
+            ]
+        },
+        {
+            "name": "init meeting",
+            "host": {
+                "ID": "%s"
+            },
+            "attachments": [
+                {
+                    "name": "new-attachment",
+                    "upload_type": "commitment protocol meeting"
+                }
+            ]
+        }
+    ]
+}

@@ -1,0 +1,100 @@
+
+stages:
+  - test
+  - publish
+  - deploy
+
+variables:
+  LOCAL_IMAGE: "${CI_REGISTRY_IMAGE}:${CI_PIPELINE_ID}"
+
+test:
+  image: node:13
+  stage: test
+  tags:
+    - shared
+  before_script:
+    - eval $(ssh-agent -s)
+    - echo "$SSH_PRIVATE_KEY" | tr -d '\r' | ssh-add - > /dev/null
+    - mkdir -p ~/.ssh
+    - chmod 700 ~/.ssh
+    - ssh-keyscan gitlab.com >> ~/.ssh/known_hosts
+    - chmod 644 ~/.ssh/known_hosts
+    - git config --global url.git@gitlab.com:.insteadOf https://gitlab.com/
+  script:
+    - yarn
+    - yarn build
+    # - CI=1 yarn test
+    # - yarn lint
+  artifacts:
+    paths:
+      - build/*
+
+build image:
+  stage: publish
+  only:
+    refs:
+      - master
+  image:
+    name: docker:stable
+    entrypoint: ["/bin/sh", "-c"]
+  services:
+    - docker:stable-dind
+  variables:
+    DOCKER_TLS_CERTDIR: ""
+    DOCKER_HOST: tcp://localhost:2375
+  tags:
+    - privileged
+  artifacts:
+    paths:
+      - .kubeconfig
+    expire_in: 1 hour
+  dependencies:
+    - test
+  script:
+    - docker login --username $CI_REGISTRY_USER --password $CI_REGISTRY_PASSWORD $CI_REGISTRY
+    - docker build -t "$LOCAL_IMAGE" .
+    - docker push "$LOCAL_IMAGE"
+    - docker tag "$LOCAL_IMAGE" "$CI_REGISTRY_IMAGE:latest"
+    - docker push "$CI_REGISTRY_IMAGE:latest"
+    - echo "Published '$CI_REGISTRY_IMAGE:$VERSION' and tagged it as '$CI_REGISTRY_IMAGE:latest'"
+    - docker run --env=DIGITALOCEAN_ACCESS_TOKEN=$DIGITALOCEAN_ACCESS_TOKEN digitalocean/doctl kubernetes cluster kubeconfig show $K8S_CLUSTER_NAME > .kubeconfig
+
+deploy staging:
+  stage: deploy
+  only:
+    refs:
+      - master
+  image:
+    name: lachlanevenson/k8s-kubectl:latest
+    entrypoint: ["/bin/sh", "-c"]
+  environment:
+    name: staging
+    url: https://staging-sunshine.stageai.tech
+  tags:
+    - privileged
+  variables:
+    KUBECONFIG: .kubeconfig
+  script:
+    - kubectl --namespace=staging apply -f provisioning/k8s/deployment.yaml
+    - kubectl --namespace=staging rollout restart deployment sunshine-react
+    - kubectl --namespace=staging get all
+
+deploy demo:
+  stage: deploy
+  only:
+    refs:
+      - master
+  image:
+    name: lachlanevenson/k8s-kubectl:latest
+    entrypoint: ["/bin/sh", "-c"]
+  environment:
+    name: demo
+    url: https://demo-sunshine.stageai.tech
+  tags:
+    - privileged
+  variables:
+    KUBECONFIG: .kubeconfig
+  script:
+    - kubectl --namespace=demo apply -f provisioning/k8s/deployment.yaml
+    - kubectl --namespace=demo rollout restart deployment sunshine-react
+    - kubectl --namespace=demo get all

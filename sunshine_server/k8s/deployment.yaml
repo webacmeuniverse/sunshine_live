@@ -1,0 +1,80 @@
+apiVersion: v1
+kind: Service
+metadata:
+  name: sunshine
+spec:
+  type: NodePort
+  selector:
+      app: sunshine
+  ports:
+    - protocol: TCP
+      port: 80
+      targetPort: 8000
+      name: http
+---
+apiVersion: v1
+kind: Service
+metadata:
+  name: openapi
+spec:
+  type: NodePort
+  selector:
+      app: sunshine
+  ports:
+    - protocol: TCP
+      port: 80
+      targetPort: 80
+      name: http
+---
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: sunshine
+  labels:
+    app: sunshine
+spec:
+  selector:
+    matchLabels:
+      app: sunshine
+      tier: web
+  replicas: 2
+  template:
+    metadata:
+      labels:
+        app: sunshine
+        tier: web
+    spec:
+      containers:
+      - name: server
+        image: registry.gitlab.com/stage-ai/sunshine/sunshine:latest
+        env:
+        - name: VERSION
+          value: default_release
+        - name: ENVIRONMENT
+          value: default_env
+        ports:
+        - containerPort: 8000
+          name: sunshine
+        volumeMounts:
+        - name: uploads
+          mountPath: /data/uploads
+        - name: config
+          mountPath: /data/config
+          readOnly: true
+      - name: openapi
+        image: redocly/redoc
+        env:
+        - name: SPEC_URL
+          value: https://staging-sunshine.acme.universe/openapi.json
+        ports:
+        - containerPort: 80
+          name: openapi
+      volumes:
+      - name: uploads
+        persistentVolumeClaim:
+          claimName: uploads-nfs
+      - name: config
+        secret:
+          secretName: config
+      imagePullSecrets:
+      - name: gitlab-registry

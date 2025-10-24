@@ -1,0 +1,40 @@
+
+
+
+####################################################################################################
+
+REQUEST TYPE: 	GET
+
+Tables Queried: 	[step_item_backup]
+
+****************************************************************************************************
+
+Loggedin ID: 	owen_bednar@fadel.org
+
+Date & Time: 	2022-08-19 10:40:55.905091018 +0300 EAT m=+8.867799136
+
+Session ID: 	9dfe8dbf-957f-473d-b07e-56b4cfd6c488
+
+Session DocID: 	c906eb56-b921-414e-9016-2429d943ebd5
+
+Is Admin User: 	false
+
+Is Superuser: 	false
+
+Is Platform Manager: 	false
+
+Is Admin NW Manager: 	false
+
+Menu Type: 	N/A
+
+Error: 	nil
+
+Origin Path: 	/
+
+Origin Domain: 	
+
+Origin SameSite: 	0
+
+
+
+

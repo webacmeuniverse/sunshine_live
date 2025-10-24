@@ -1,0 +1,20 @@
+[
+  {
+     "measures_main": "Integrated Renovation",
+     "Investment": 30555940,
+     "Energycostsaved": 6261478.49,
+     "SumEnergySavedFormatted": 75.54,
+     "SimplePaybackTime": 6.02,
+     "observations": 138,
+     "totalobservations": 180
+  },
+  {
+     "measures_main": "Building Fabric Measures",
+     "Investment": 7585496,
+     "Energycostsaved": 1256824.22,
+     "SumEnergySavedFormatted": 20.33,
+     "SimplePaybackTime": 7.06,
+     "observations": 42,
+     "totalobservations": 180
+  }
+]

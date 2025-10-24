@@ -1,0 +1,78 @@
+[general]
+name = "Sunshine"
+# url = "https://sunshine.acme.universe"
+url = "http://test.savehomesave.eu"
+logo = "https://sunshine.acme.universe/static/media/Sunshine-Logo-FB1200x627.c038d9ef.png"
+allowed_origins = [
+    "http://localhost:3000",
+    "http://3.69.170.251",
+    "http://test.savehomesave.eu",
+	 "https://test.savehomesave.eu",
+	 "https://www.test.savehomesave.eu",
+	 "http://www.test.savehomesave.eu",
+    "3.69.170.251",
+	" 122.166.143.161",
+	"test.savehomesave.eu",
+	"www.test.savehomesave.eu"
+    ]
+port = 8000
+git_access_token = ""
+git_name = "webacmeuniverse"
+# "*/5 * * * * *" schedule every 5 secs
+# backupcron = "0 2 13 ? * WED"
+backupcron = "0 0 12 ? * SUN"
+
+[paths]
+uploads = "/tmp/uploads"
+pdf_uploads = "/data/pdfs"
+latex = "./contract/tex"
+migrations = "./models/migrations"
+
+[psql]
+host = "localhost"
+# host = "18.134.15.131"
+# host = "ec2-18-132-71-133.eu-west-2.compute.amazonaws.com"
+port = 5432
+
+
+
+
+
+#name = "sunshine_new_test_25_8"
+name = "sunshine_live"
+
+
+username = "postgres"
+password = "postgres"
+
+[session]
+auth = "ZS8jMBJ7Kx8iF9YQXnehrew4aKMQZU68aUtxgsNxWf7gfTDCFCdXMFQgWChGa8LXRrdovBWRj0rnkEYfJ1aTUg=="
+encr = "2Pj612hCHapgiXr6F6zGbqZjcpGacMHxVJrGo7Ak+kg="
+path = "/"
+http_only = false
+secure = false
+
+
+[mail]
+backend = "smtp"
+from = "Sunshine-Mail-Service <sunshine.acmeuniverse@gmail.com>" # sunshine.acmeuniverse@gmail.com
+host = "smtp.gmail.com"
+port = 587
+username = "sunshine.acmeuniverse@gmail.com"
+password = "pnhfgauqhsfulmcb"
+# password = "Web@@123123"
+
+
+# SMTP Host: smtp.gmail.com
+# SMTP Port: 587
+# SSL Protocol: OFF
+# TLS Protocol: ON
+# SMTP Username: (your Gmail username)
+# SMTP Password: (your Gmail password or you may need to use a Google App Password instead)
+
+# Also, make sure your "From email address" in HESK settings is set to your Gmail email address!
+
+# [mail]
+# backend = "file"
+# from = "Sunshine <admin@sunshine.acme.universe>"
+# host = "/tmp/sunshine/mails"

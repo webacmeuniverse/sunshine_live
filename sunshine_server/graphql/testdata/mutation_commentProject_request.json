@@ -1,0 +1,13 @@
+mutation {
+    commentProject(id: "%s", comment: "Comment") {
+        comments {
+            author {
+                name
+            }
+            content
+        }
+
+        EPCSigned
+        FASigned
+    }
+}

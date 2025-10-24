@@ -1,0 +1,180 @@
+\section{PRÍLOHA č. 6 {-} POPLATKY TÝKAJÚCE SA ENERGIE, ÚŽITKOVEJ TEPLEJ VODY A MERANIE A OVEROVANIE}
+
+\subsection{Stanovenie vyrovnanej spotreby tepelnej energie }
+\begin{enumerate}
+	\item 	Poplatok za vykurovanie sa vypočíta za Vyúčtovacie obdobie a rozdelí sa na 12 (dvanásť) rovnakých častí. Klient teda zaplatí každý mesiac (v rámci 12-mesačného obdobia) platby za rovnaké množstvo tepelnej energie. 
+	\item	Mesačný poplatok za tepelnú energiu sa vypočíta na základe Záruky spotreby energie, a to podľa aktuálnej Tarify tepelnej energie a Fakturačnej rozlohy Budovy za každý mesiac Vyúčtovacieho obdobia takto:
+\[ Q^{m}_{Apk,cz,G} = \frac{Q_{Apk,cz,G}}{12} \]
+\[ E^{m}_{F,G} = Q^{m}_{Apk,cz,G} \times HT^m \]
+\[ Ap^m = \frac{E^{m}_{F,G}}{A_{Apk}} \]
+
+kde:
+
+\begin{itemize}
+	\item $Q^{m}_{Apk,cz,G}$ je mesačná spotreba vyrovnanej tepelnej energie pripísateľná vykurovaniu priestorov a cirkulačným tepelným stratám v Budove na základe Záruky spotreby energie, $MWh/month$
+	\item $Q_{Apk,cz,G}$ je Záruka spotreby energie na vykurovanie priestorov a cirkulačné tepelné straty, vypočítaná v prílohe č. 5 k tejto zmluve, MWh/rok
+	\item $E^{m}_{F,G}$ je celkový mesačný Poplatok za tepelnú energiu pre Budovu,
+	\item $HT^m$ je Tarifa tepelnej energie platná v relatívnom fakturačnom mesiaci, EUR/MWh
+	\item $A_{Apk}$ je Fakturačná rozloha Budovy používaná na fakturačné účely, $m^2$
+	\item $Ap^m$ je mesačný Poplatok za tepelnú energiu na meter štvorcový používaný správcom na prípravu mesačných faktúr pre klienta,  $EUR/m^2$ mesiac 
+\end{itemize}
+
+	\item TDodávateľ každý mesiac vyplní túto tabuľku pre výpočet mesačného Poplatku za tepelnú energiu:
+
+% table: calc_energy_fee
+
+\begin{center}
+\begin{tabu}{|X|X|X|X|X|X|} \tabucline{}
+{{with translate "sk" .Contract.Tables.calc_energy_fee}} %chktex 26
+	{{.Columns | column}} \\\tabucline{}
+	{{range .Headers}} {{.|row}} \\\tabucline{} {{end}} %chktex 26
+	{{range .Rows}} {{.|row}} \\\tabucline{} {{end}} %chktex 26
+	\bfseries {{total .}} \\\tabucline{} %chktex 26
+{{end}}
+\end{tabu}
+\end{center}
+	\item Dodávateľ bude na mesačnej báze fakturovať správcovi klienta celkový mesačný Poplatok za tepelnú energiu ($E^{m}_{F, G}$). Správca bude fakturovať každému jednotlivému vlastníkovi Bytu cenu za meter štvorcový na pomernom základe.
+\end{enumerate}
+
+\subsection{Vyúčtovanie Vyrovnanej spotreby tepelnej energie na konci Vyúčtovacieho obdobia}
+\begin{enumerate}
+	\item Na konci každého Vyúčtovacieho obdobia dodávateľ vypočíta Platbu zostatku pre vyúčtovanie 12 (dvanástich) Poplatkov za tepelnú energiu, ktoré boli účtované klientovi na základe Vyrovnanej spotreby tepelnej energie oproti splatnej platbe vzhľadom na nameranú spotrebu tepelnej energie. Výška vyúčtovacej sumy sa vypočíta ako:
+
+\[ B_F = E_{F,S,T} - E_{F,G,T} \]
+
+kde:
+
+\begin{itemize}
+	\item $E_{F,S,T}$ je celkový ročný Poplatok za energiu na základe nameraných energetických údajov, vypočítaný ako súčet mesačného $E^{m}_{F,S}$počas 12-mesačného Vyúčtovacieho obdobia, $EUR$ 
+	\item $E_{F,G,T}$ je celkový ročný Poplatok za energiu za Budovu vypočítaný ako súčet mesačného $E^{m}_{F,S}$  počas 12-mesačného Vyúčtovacieho obdobia, $EUR$
+\end{itemize}
+
+	\item Dodávateľ na konci každého Vyúčtovacieho obdobia vyplní nasledujúcu tabuľku pre výpočet Platby zostatku:
+
+% table: balancing_period_fee
+
+\begin{center}
+\begin{tabu}{|X|X|X|X|X|X|X|} \tabucline{}
+{{with translate "sk" .Contract.Tables.balancing_period_fee}} %chktex 26
+	{{.Columns | column}} \\\tabucline{}
+	{{range .Headers}} {{.|row}} \\\tabucline{} {{end}} %chktex 26
+	{{range .Rows}} {{.|row}} \\\tabucline{} {{end}} %chktex 26
+{{end}}
+\end{tabu}
+\end{center}
+
+kde:
+
+\begin{itemize}
+	\item $Q^{m}_{Apk,cz,G}$ ije mesačná spotreba vyrovnanej tepelnej energie, ktorá pripadá na Budovu na vykurovanie priestorov a cirkulačné tepelné straty na základe Záruky spotreby energie, $MWh/month$
+	\item $HT^m$ je Tarifa tepelnej energie platná v relatívnom fakturačnom mesiaci,  $EUR/MWh$
+	\item $Q^m_{Apk,cz,S}$ je mesačná Spotreba energie na vykurovanie priestorov a cirkulačné tepelné straty, ktorá podlieha Meraniu a overovaniu
+	\item $E^m_{F,G}$ je celkový mesačný Poplatok za energiu pre Budovu vypočítaný každý mesiac ako $Q^{m}_{Apk,cz,G} \times HT^{m}$
+\end{itemize}
+
+	\item Ak bude rozdiel záporný ($B_F$ bude záporné číslo), zmluvné strany vyrovnajú rozdiel buď jednorazovou platbou zostatku zo strany dodávateľa klientovi, alebo odpočítaním zostávajúceho zostatku v rovnakých sumách od platby, ktorú má klient zaplatiť dodávateľovi, rozložených počas nasledujúceho Vyúčtovacieho obdobia. Za Vyúčtovacie obdobie, po ktorom sa končí zmluva, sa zostatok vyrovná jednorazovou platbou.
+
+	\item Ak bude rozdiel kladný ($B_F$ bude kladné číslo), zmluvné strany vyrovnajú rozdiel:
+	\begin{enumerate}
+	\item jednorazovou platbou zostatku zo strany klienta dodávateľovi, alebo
+	\item rozdelením nevyrovnaného zostatku v rovnakých sumách podľa počtu platieb splatných počas nasledujúceho Vyúčtovacieho obdobia a pripočítaním jednej rovnakej rozdelenej sumy k platbe, ktorú má klient zaplatiť dodávateľovi počas nasledujúceho Vyúčtovacieho obdobia.  
+	\item Za posledné Vyúčtovacie obdobie zmluvy musia zmluvné strany vyrovnať zostatok jednorazovou platbou.
+	\end{enumerate}
+
+	\item 1.3.	Klient berie na vedomie, že Poplatok za tepelnú energiu bude bezodkladne zohľadňovať všetky zmeny a úpravy Tarify za tepelnú energiu ($HT^m$) po nadobudnutí účinnosti regulačného predpisu.
+\end{enumerate}
+
+
+\subsection{Meranie a overovanie Záruky úspory energie}
+
+\begin{enumerate}
+	\item Na konci každého Vyúčtovacieho obdobia zmluvné strany overia, či je splnená Záruka úspory energie podľa tejto zmluvy. Zmluvné strany sa dohodli, že overia:
+	\begin{enumerate}
+		\item či sú vykonané úpravy podľa počasia s cieľom porovnať podmienky počas poskytovania Služieb energetickej efektívnosti so Základnými podmienkami. Úprava sa počíta podľa tohto vzorca:
+
+\[ Q^{Adj}_{Apk,CZ,S} = Q_{Apk,S} \times \left( \frac{GDD_{Ref}}{GDD_S}\right) + Q_{CZ,S} \]
+
+Where:
+
+\begin{itemize}
+	\item $Q^{Adj}_{Apk,CZ,S}$: spotreba energie na vykurovanie priestorov a cirkulačné tepelné straty upravená podľa počasia v účtovnom roku vyúčtovania, MWh
+	\item $Q_{Apk,S}$: skutočná spotreba energie na vykurovanie priestorov v účtovnom roku vyúčtovania, MWh
+	\item $Q_{CZ,S}$: skutočná spotreba energie na cirkulačné tepelné straty v účtovnom roku vyúčtovania, MWh
+	\item $GDD_{Ref}$: počet dní vykurovacej sezóny (Heating Degree Days) v Základnom scenári 
+	\item $GDD_S$: počet dní vykurovacej sezóny v príslušnom účtovnom roku pre vyúčtovanie, vypočítané podľa Všeobecných podmienok zmluvy pre meranie a overovanie
+\end{itemize}
+
+		\item Na konci každého Vyúčtovacieho obdobia dodávateľ poskytne hodnotenie o tom, či boli služby poskytnuté tak, aby sa splnila Záruka úspory energie, a to nasledovne:
+
+\[ Q_{iet,S} = Q_{Apk,cz,ref} - Q^{Adj}_{Apk,cz,S} \]
+\[ BH_{iet} = Q_{iet,S} - Q_{iet,G} \]
+
+kde:
+
+\begin{itemize}
+\item $Q_{Apk,cz,ref}$: základná spotreba energie na vykurovanie priestorov a cirkulačné tepelné straty, MWh/rok
+\item $Q^{Adj}_{Apk,cz,S}$: spotreba energie na vykurovanie priestorov a cirkulačné tepelné straty upravená podľa počasia vo Vyúčtovacom období, MWh/rok
+\item $Q_{iet,S}$: Úspora energie na vykurovanie priestorov a cirkulačné tepelné straty za Vyúčtovacie obdobie, MWh/rok
+\item $Q_{iet,G}$: Záruka úspory energie na vykurovanie priestorov a cirkulačné tepelné straty, MWh
+\item $BH_{iet}$: Zostatok úspory energie za Vyúčtovacie obdobie, MWh
+\end{itemize}
+
+\vspace{1cm}
+		\begin{enumerate}
+			\item Splnenie Záruky úspory energie: ak sa zostatok bude rovnať $BH_{iet} = 0.0 MWh$ v tom prípade dodávateľ splnil Záruku úspory energie na príslušné Vyúčtovacie obdobie. V tomto prípade dodávateľ nemá vrátiť sumu klientovi.
+			\item Nesplnenie  Záruky úspory energie: ak bude zostatok záporný ($BH_{iet}$  bude záporné číslo), v tom prípade dodávateľ nesplnil svoju Záruku úspory energie za príslušné Vyúčtovacie obdobie a vráti klientovi záporný zostatok vypočítaný takto:
+\[ C_G = B_{iet} \times HT_S \]
+
+kde:
+
+\begin{itemize}
+	\item $C_G$: náhrada za nesplnenie  Záruky úspory energie za Vyúčtovacie obdobie, EUR (bez DPH)
+	\item $BH_{iet}$: Zastatok úspory energie za Vyúčtovacie obdobie, MWh
+	\item $HT_S$: priemerná Tarifa tepelnej energie počas Vyúčtovacieho obdobia vypočítaná ako súčet mesačných Taríf tepelnej energie počas Vyúčtovacieho obdobia, vydelená počtom mesiacov v príslušnom Vyúčtovacom období, EUR/MWh (bez DPH) 
+\end{itemize}
+Zmluvné strany uhradia výšku náhrady ($C_G$) buď jednorazovou platbou dodávateľa klientovi, alebo odpočítaním náhrady v rovnakých čiastkach od splatnej platby klienta dodávateľovi, rozložených počas nasledujúceho Vyúčtovacieho obdobia. Dodávateľ má právo zvoliť si preferovanú možnosť; avšak za posledné Vyúčtovacie obdobie, po ktorom dôjde k ukončeniu zmluvy, sa zmluvné strany vyrovnajú prostredníctvom jednorazovej platby.
+		
+\end{enumerate}
+
+		\item Mimoriadne splnenie: 
+
+		Mimoriadne splnenie: ak bude zostatok kladný ($BH_{iet}$ bude kladné číslo), v tom prípade dodávateľ prekročil svoju Záruku úspory energie a je oprávnený ponechať si za to všetky platby. Mimoriadne splnenie sa vypočíta:
+\[ P_G = BH_{iet} \times ET_S \]
+
+kde:
+
+\begin{itemize}
+	\item $P_G$: mimoriadne splnenie počas Vyúčtovacieho obdobia, EUR (bez DPH)
+	\item $BH_{iet}$: Zostatok úspory energie za Vyúčtovacie obdobie, MWh
+	\item $HT_S$: priemerná Tarifa tepelnej energie počas Vyúčtovacieho obdobia vypočítaná ako súčet mesačných Taríf tepelnej energie počas Vyúčtovacieho obdobia, vydelená počtom mesiacov v príslušnom Vyúčtovacom období, EUR/MWh (bez DPH)
+\end{itemize}
+Zmluvné strany uhradia platbu za mimoriadne splnenie ($P_G$) buď jednorazovou platbou zostatku zo strany klienta dodávateľovi alebo pripočítaním zostávajúceho zostatku v rovnakých čiastkach k sume, ktorú má klient zaplatiť dodávateľovi, rozložených počas nasledujúceho Vyúčtovacieho obdobia. Klient má právo zvoliť si preferovanú možnosť, avšak za posledné Vyúčtovacie obdobie, po ktorom dôjde k ukončeniu zmluvy, sa zmluvné strany vyrovnajú prostredníctvom jednorazovej platby.
+
+	\end{enumerate}
+	\item Pre stanovenie Záruky úspory energie a určenie splnenia Záruky úspory energie sú vstupné údaje určené podľa Všeobecných podmienok zmluvy pre meranie a overovanie. 
+\end{enumerate}
+
+\subsection{Poplatok za teplú úžitkovú vodu}
+
+\begin{enumerate}
+	\item Platba za teplú úžitkovú vodu vychádza zo skutočnej spotreby každého samostatného Vlastníka bytu, ktorá je primerane zaznamenaná samostatnými kalibrovanými meračmi nainštalovanými pre každý byt. 
+	\item Platba za teplú úžitkovú vodu sa počíta na mesačnej báze na základe tohto vzorca:
+
+\[ Q^{m}_{ku} = \frac{V_m \times \rho_{ku} \times c_u \times \left(\theta_{ku} - \theta_{u,pieg}\right)}{3600} \times HT^m \]
+
+Where:
+
+\begin{itemize}
+	\item $V_m$: mesačná objemová spotreba teplej úžitkovej vody nameraná v rozvodni,  $m^3$
+	\item $\rho_{ku}$: hustota vody zodpovedajúca 985 $985 kg/m^3$
+	\item $c_u$: hmotnostná tepelná kapacita zodpovedajúca  $4.1868 \times 10^{-3} J/kg^\circ C$
+	\item $\theta_{u,pieg}$: teplota studenej vody od vodárenskej spoločnosti,  $^\circ C$
+	\item $\theta_{ku}$: teplota teplej vody dodávanej do rozvodne Budovy, $^\circ C$
+	\item $HT_m$: je Tarifa tepelnej energie platná pre príslušný fakturačný mesiac, $EUR/MWh$
+\end{itemize}
+
+	\item Meranie a overovanie: Teplota dodávanej studenej a teplej vody je určená podľa Všeobecných podmienok zmluvy pre meranie a overovanie.
+	\item Klient náležite berie na vedomie, že všetky zmeny alebo úpravy Tarify energie sa vzťahujú na poplatok za teplú vodu bezodkladne po ich schválení príslušným regulačným orgánom alebo sú uplatniteľné voči príslušnému orgánu a budú sa uplatňovať od dátumu ich ratifikácie a nadobudnutia účinnosti spôsobom, podľa ktorého sa vykonávajú výpočty poplatku za vykurovanie.
+	\item Dodávateľ bude na mesačnej báze fakturovať správcovi klienta celkový mesačný Poplatok za teplú úžitkovú vodu. Správca bude fakturovať každému jednotlivému Vlastníkovi bytu spotrebu vody na individuálnej báze.
+
+\end{enumerate}

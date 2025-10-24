@@ -1,0 +1,7 @@
+{
+  "auth": {
+    "Invalid Credentials": "Credenziali non valide!",
+    "This email is already taken.": "Questa e-mail è già stata utilizzata.",
+    "You have successfully signed up!": "L'iscrizione è avvenuta con successo!"
+  }
+}

@@ -1,0 +1,149 @@
+properties([gitLabConnection('kkalugerov')])
+@Library('pipeline-lib')_
+
+def createReport(String type, String image_tag, String commit_hash) {
+  if (type == "junit") {
+      sh "docker cp sunshine-${image_tag}:/home/stageai/sunshine/junit-results.xml ${WORKSPACE}/junit-results-${commit_hash}.xml"
+      junit testResults: "junit-results-${commit_hash}.xml"
+  } else if (type == "coverage") {
+      sh "docker cp sunshine-${image_tag}:/home/stageai/sunshine/coverage.xml ${WORKSPACE}/coverage-${commit_hash}.xml"
+      cobertura coberturaReportFile: "coverage-${commit_hash}.xml"
+  }
+}
+
+def secrets = [
+  [path: 'secret/test', engineVersion: 1, secretValues: [
+    [envVar: 'test_db', vaultKey: 'test-db'],
+    [envVar: 'test_user', vaultKey: 'test-user'],
+    [envVar: 'test_pass', vaultKey: 'test-pass']]],
+  [path: 'secret/sunshine', engineVersion: 1, secretValues: [
+    [envVar: 'staging_db_host', vaultKey: 'staging-db-host'],
+    [envVar: 'staging_db_user', vaultKey: 'staging-db-user'],
+    [envVar: 'staging_db_name', vaultKey: 'staging-db-name'],
+    [envVar: 'production_db_host', vaultKey: 'db-host'],
+    [envVar: 'production_db_user', vaultKey: 'db-user'],
+    [envVar: 'production_db_name', vaultKey: 'db-name']]],
+  [path: 'secret/cryfs', engineVersion: 1, secretValues: [
+    [envVar: 'cryfs_pass', vaultKey: 'pass']]]
+]
+
+node {
+  wrap([$class: 'AnsiColorBuildWrapper', colorMapName: 'xterm']) {
+    try {
+      def commit_id
+      def uuid = UUID.randomUUID().toString()
+      def sunshine_image
+      def postgres_container
+      def preparation = {
+        checkout scm
+        sh 'git rev-parse --short HEAD > .git/commit-id'
+        commit_id = readFile('.git/commit-id').trim()
+      }
+      gitlabBuilds(builds: ["Preparation", "Test", "Deploy production"]) {
+        withVault([vaultSecrets: secrets]) {
+          stage('Preparation') {
+            node('slave-prod5') {
+              gitlabCommitStatus(name: "Preparation"){
+                preparation()
+              }
+            }
+          }
+
+          stage("Test") {
+            node('slave-prod5') {
+              gitlabCommitStatus(name: "Test") {
+                try {
+                  docker.withRegistry('https://docker.acme.universe', 'docker-stageai') {
+                    sh "docker network create ${commit_id}_${uuid}"
+                    postgres_container = docker.image("postgres:11-alpine").run(
+                    "--env POSTGRES_USER=${test_user} --env POSTGRES_PASSWORD=${test_pass} --env POSTGRES_DB=${test_db} \
+                    --network=${commit_id}_${uuid} --name sunshine-psql-${commit_id}_${uuid}",
+                    "-c max_connections=1024")
+
+                    sunshine_image = docker.build(
+                    "docker.acme.universe/sunshine:${commit_id}_${uuid}",
+                    "--build-arg COMMIT_REVISION=${commit_id} --no-cache -f docker/Dockerfile docker/")
+
+                    def sunshine_container = docker.script.sh(script: "docker run \
+                    --network=${commit_id}_${uuid} \
+                    --name=sunshine-${commit_id}_${uuid} \
+                    --env POSTGRES_HOST=sunshine-psql-${commit_id}_${uuid} \
+                    docker.acme.universe/sunshine:${commit_id}_${uuid} test", returnStderr: true)
+
+                    def sunshine_status_code = sh (script: "docker inspect sunshine-${commit_id}_${uuid} \
+                                                            --format={{.State.ExitCode}}", returnStdout: true).trim()
+                    if (sunshine_status_code != "0") {
+                      currentBuild.result = 'FAILURE'
+                      throw new Exception ("Test stage failed !")
+                    }
+                    currentBuild.result = 'SUCCESS'
+                    if (env.BRANCH_NAME == "master") {
+                      sunshine_image.push("${commit_id}")
+                      sh "docker rmi docker.acme.universe/sunshine:${commit_id}"
+                    }
+                  }
+                  currentBuild.result = 'SUCCESS'
+                } catch (ex) {
+                    currentBuild.result = 'FAILURE'
+                    echo "\033[1m \u001B[31m [ERROR]: ${ex.getMessage()} \u001B[0m"
+                    throw ex
+                } finally {
+                    def exists = sh (script: "docker ps -a -q -f name=sunshine-${commit_id}_${uuid}", returnStdout: true).trim()
+                    if ( exists != "" ) {
+                      createReport("coverage", "${commit_id}_${uuid}", "${commit_id}")
+                    }
+                    postgres_container.stop()
+                    sh """
+                      docker rm sunshine-${commit_id}_${uuid} -f || true
+                      docker rm sunshine-psql-${commit_id}_${uuid} -f || true
+                      docker rmi docker.acme.universe/sunshine:${commit_id}_${uuid} -f || true
+                      docker network rm ${commit_id}_${uuid} || true
+                      docker volume prune -f
+                    """
+                }
+              }
+            }
+          }
+
+          stage("Deploy production") {
+            node("slave-prod8") {
+              gitlabCommitStatus(name: "Deploy production") {
+                if (env.BRANCH_NAME == "master") {
+                  try {
+                    sh "git -C $PROJECTS_PATH/sunshine pull origin master"
+                    sh '''
+                      docker exec ${production_db_host} bash -c "pg_dump -U ${production_db_user} ${production_db_name} > ${production_db_name}.sql"
+                      docker cp ${production_db_host}:/${production_db_name}.sql /home/developer/${production_db_name}.sql
+                      cd /home/developer && printf '%s\n' ${cryfs_pass} | cryfs basedir /home/developer/cryfs-backups
+                      mv /home/developer/${production_db_name}.sql /home/developer/cryfs-backups
+                      fusermount -u /home/developer/cryfs-backups
+                    '''
+                    docker.withRegistry('https://docker.acme.universe', 'docker-stageai') {
+                      docker.image("docker.acme.universe/sunshine:${commit_id}").pull()
+                      sh "docker rm sunshine -f"
+                      docker.image("docker.acme.universe/sunshine:${commit_id}").run(
+                        "--env POSTGRES_HOST=${production_db_host} \
+                        --env POSTGRES_USER=${production_db_user} \
+                        --env POSTGRES_DB=${production_db_name} \
+                        --volume ${PROJECTS_PATH}/sunshine-uploads:/home/stageai/sunshine/uploads \
+                        --volume ${PROJECTS_PATH}/sunshine/docker/production.toml:/home/stageai/sunshine/config/production.toml \
+                        --network=sunshine --name sunshine", "production")
+                    }
+                  } catch (ex) {
+                      currentBuild.result = 'FAILURE'
+                      echo "\033[1m \u001B[31m [ERROR]: ${ex.getMessage()} \u001B[0m"
+                      throw ex
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    } catch (ex) {
+        currentBuild.result = 'FAILURE'
+        echo "\033[1m \u001B[31m [ERROR]: ${ex.getMessage()} \u001B[0m"
+        throw ex
+    }
+  }
+}

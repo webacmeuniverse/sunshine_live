@@ -1,0 +1,25 @@
+{
+    "slider": {
+      "mainTitle": "BEM-VINDO AO PROJETO EUROPA",
+      "subTitle": "Sem custos administrativos e sem custos de transação, dinheiro desperdiçado em anúncios e marketing, elevados riscos de investimento e acordos não confiáveis.",
+      "learnMore": "Saiba mais",
+      "imageTitle": "Junte-se à nossa rede de parceiros!",
+      "imageTitle1": "Novos negócios que garantem rendimento planeado a longo prazo"
+      
+    },"Operators": {
+      "Operators": "Prestadores de serviços e operadores de mercado",
+      "subTitle": "Fornecemos-lhe as ferramentas para criar um processo padronizado e eficiente, com poucas dores de cabeça.",
+      "LetStart": "Vamos começar",
+      "box1": "Verifique o módulo Find My Partner.",
+      "box2": "Quer gerir o seu projeto? Consulte a nossa plataforma SUNShINE.",
+      "box3": "Deseja calcular os custos de renovação?"
+      
+    },
+    "SUBSCRIBE":{
+      "title1": "SUBSCREVA A NOSSA NEWSLETTER",
+      "title2":"Com quem é que trabalhamos?",
+      "Email": "E-mail",
+      "Send":"Enviar"
+    }
+  }
+  

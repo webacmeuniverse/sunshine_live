@@ -1,0 +1,20 @@
+FROM node:latest
+
+# setup ssh
+RUN mkdir ~/.ssh
+ARG SSH_PRIVATE_KEY
+RUN echo "$SSH_PRIVATE_KEY" > ~/.ssh/id_rsa && chmod 0600 ~/.ssh/id_rsa
+RUN ssh-keyscan -t rsa gitlab.com >> ~/.ssh/known_hosts
+
+RUN mkdir -p /src/sunshine-react
+WORKDIR /src/sunshine-react
+
+ADD ./package.json /src/sunshine-react/
+ADD ./yarn.lock /src/sunshine-react/
+
+RUN yarn
+
+# install the app
+ADD . /src/sunshine-react
+
+EXPOSE 3000

@@ -1,0 +1,17 @@
+-- +goose Up
+CREATE TABLE year_values (
+	id UUID PRIMARY KEY DEFAULT PUBLIC.gen_random_uuid(),
+	result_id CHARACTER VARYING(255) NOT NULL,
+	year CHARACTER VARYING(255)NOT NULL,
+	value CHARACTER VARYING(255) NOT NULL,
+	lang CHARACTER VARYING(255) NOT NULL,
+
+	created_at TIMESTAMP WITH TIME ZONE DEFAULT now(),
+	updated_at TIMESTAMP WITH TIME ZONE DEFAULT now(),
+	deleted_at TIMESTAMP WITH TIME ZONE
+);
+
+-- +goose Down
+DROP TABLE year_values;
+
+

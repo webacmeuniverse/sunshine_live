@@ -1,0 +1,51 @@
+{{- $vt := .VAT -}}
+
+\section{PRÍLOHA č. 8 – POPLATOK ZA PREVÁDZKU A ÚDRŽBU}
+
+\begin{enumerate}[label=\arabic*.]
+	\item	Klient zaplatí dodávateľovi Poplatok za prevádzku a údržbu za služby poskytované podľa tejto zmluvy počas Doby poskytovania služby.
+  \item	Za prvý rok Doby poskytovania služby podľa zmluvy Poplatok za prevádzku a údržbu zodpovedá ročnému poplatku $OM_1={{.Contract.Fields.calculations_om1}}EUR/rok$ bez DPH. Rozdelenie nákladov na prevádzku a údržbu je nasledovné:
+
+% table: operation_maintenance_budget
+
+\begin{center}
+\begin{tabu}{|X[10]|X|} \tabucline{} \rowfont[c]\bfseries
+	{{$tt := period "sk" .Contract.Tables.operation_maintenance_budget}} %chktex 26
+	{{with $t := translate "sk" $tt}}
+	{{.Columns | column}} \\\tabucline{}
+	{{range .Rows}} % chktex 26
+	{{.|row}} \\\tabucline{}
+	{{end}}
+
+	 \bfseries
+	{{total_excl_vat $t}} \\\tabucline{}\bfseries
+	{{vat $t $vt}} \\\tabucline{}\bfseries
+	{{total_incl_vat $t $vt}} \\\tabucline{}
+{{end}}
+\end{tabu}
+\end{center}
+
+	\item Za každý nasledujúci rok Doby poskytovania služby bude Poplatok za prevádzku a údržbu podliehať revízii založenej na indexe spotrebiteľských cien Lotyšska, ktorý zverejňuje Ústredný štatistický úrad (Centrala statistikas parvalde), aby odrážal nasledujúcu všeobecnú zásadu:
+\[ OM_y = OM_{y-1} + (OM_{y-1} \times CPI_{y-1}) \]
+
+kde:
+\begin{itemize}
+	\item $y$ je rok od začiatku Doby poskytovania služby, pričom y=2 je druhý rok Doby poskytovania služby podľa zmluvy a y={{div .Project.ContractTerm 12}} je posledný rok Doby poskytovania služby %chktex 26
+	\item $OM_y$ je Poplatok za prevádzku a údržbu za Rok vyúčtovania „y”
+	\item $OM_{y-1}$ je Poplatok za prevádzku a údržbu za predchádzajúci Rok vyúčtovania
+\end{itemize}
+	\item Na konci každého Vyúčtovacieho obdobia dodávateľ oznámi správcovi klienta výpočet Poplatku za prevádzku a údržbu pre nasledujúce Vyúčtovacie obdobie na základe nasledujúcej tabuľky: 
+% table: operations_maintenance_fee
+
+\begin{center}
+\begin{tabu}{|X|X|X|X|X|X|} \tabucline{}
+	{{$tt := period "sk" .Contract.Tables.operations_maintenance_fee}} %chktex 26
+	{{with $t := translate "sk" $tt}}
+	{{.Columns | column}} \\\tabucline{}
+	{{range .Headers}} {{.|row}} \\\tabucline{} {{end}} %chktex 26
+	{{range .Rows}} {{.|row}} \\\tabucline{} {{end}} %chktex 26
+{{end}}
+\end{tabu}
+\end{center}
+	\item Dodávateľ bude na mesačnej báze fakturovať správcovi klienta celkový mesačný Poplatok za prevádzku a údržbu (OMm). Správca bude fakturovať každému jednotlivému vlastníkovi Bytu cenu za meter štvorcový na pomernom základe.
+\end{enumerate}

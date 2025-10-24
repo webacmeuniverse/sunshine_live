@@ -1,0 +1,237 @@
+{
+  "slider": {
+    "mainTitle": "WILLKOMMEN BEIM EUROPA PROJEKT",
+    "subTitle": "Ist Ihr Haus in die Jahre gekommen? Sind Ihre Energiekosten hoch? Dann ist es an der Zeit, Ihr Haus komfortabel und energieeffizient zu machen!",
+    "learnMore": "Mehr Informationen",
+    "imageTitle": "Möchten Sie Ihr Haus sanieren?",
+    "imageTitle1": "Füllen Sie jetzt den Einführungsfragebogen aus!"
+    
+  },
+  "menu": {
+    "RESIDENTS": "Haus- & Wohnungseigentümer:innen",
+    "HOWITWORKS": "Wie es funktioniert",
+    "FindMyPartner": "SANIERUNGSPARTNER FINDEN",
+    "EESCALCULATOR": "Sanierungskostenrechner",
+    "SERVICESPROVIDER": "Anbieter",
+    "MATCHMAKING": "SANIERUNGSPARTNER FINDEN",
+    "RESOURCES": "RESSOURCEN",
+    "Assisttomyproject": "Zu meinem Projekt",
+    "SIMULATIONTOOL":"SIMULATION",
+    "EESCHECKLIST":"CHECKLISTE SANIERUNGSPAKET",
+    "BUILDINGCALCULATOR":"GEBÄUDERECHNER",
+    "EESREFINANCEABILITYCHECKLIST":"CHECKLISTE REFINANZIERUNG",
+    "Login": "Login",
+    "MyDashboard": "Mein Dashboard"
+
+    
+  },
+  "mainTitle": {
+    "title1": "Sanieren Sie einfacher, besser, gemeinsam.."
+    
+    
+  },
+  "individualPrivate":{
+    "title": "Für Haus- & Wohnungseigentümer:innen",
+    "title1": "Wir bieten digitale Unterstützung für eine reibungslose und einfache Sanierung.",
+    "title2": "Finden Sie heraus, ob wir in Ihrer Nähe tätig sind.",
+    "LetStart": "Los geht’s",
+    "box1": "Überlegen Sie, Ihr Haus zu sanieren? Beginnen Sie hier mit dem Einführungsfragebogen!",
+    "box2": "Suchen Sie einen Anbieter für Ihr Sanierungspaket? Sehen Sie sich unter SANIERUNGSPARTNER FINDEN die Betriebe in Ihrer Nähe an.",
+    "box3": "Wird Ihr Gebäude bereits saniert?"
+
+  },
+
+  "howItWorks":{
+    "mainTitle": "Wie es funktioniert",
+    "subTitle": "In sieben einfachen Schritten zu Ihrer Gebäudesanierung",
+    "title1": "Einführungsfragebogen",
+    "description1": "Füllen Sie unseren kurzen Einführungsfragebogen aus, damit wir Ihnen gezielt weiter helfen können.",
+    "title2": "Anruf",
+    "description2": "Ihr One-Stop-Shop wird sich bei Ihnen melden, um mehr über Ihr Sanierunsprojekt zu erfahren. Falls es keinen OSS in Ihrer Region gibt, kontaktieren wir Sie und helfen Ihnen bei Ihrem Projekt.  ",
+    "title3": "Energieprüfung / Profil-Analyse",
+    "description3": "Mithilfe der verfügbaren Simulationswerkzeuge können Sie die Energieeinsparungen des Projekts und die Kosten abschätzen.",
+    "title4": "Finden Sie eine Lösung",
+    "description4": "Zusammen mit Ihrem OSS werden Sie eine für Sie passende Sanierungslösung finden.",
+    "title5": "Verfolgen Sie Ihre Gebäudesanierung auf SUNShINE",
+    "description5": "Von der Auftragsvergabe über die Sanierungsarbeiten bis hin zur Kontrolle – auf der SUNShINE-Plattform haben Sie Ihre Sanierung immer im Blick.",
+    "title6": "Sanierungsarbeiten",
+    "description6": "Wenn der Plan steht und der Vertrag unterzeichnet ist, können die Arbeiten beginnen!",
+    "title7": "Monitoring",
+    "description7": "Überwachen Sie das Ergebnis der Sanierung."
+  
+
+  },"howMuchRenovationCost":{
+    "title1": "Was kostet die Sanierung unseres Gebäudes?",
+    "title2": "Mit unserem Kostenrechner Sanierungspaket können Sie Ihr Projekt einschätzen. ",
+    "title3": "Jetzt Sanierungskosten kalkulieren"
+
+  },
+  "SUBSCRIBE":{
+    "title1": "TRAGEN SIE SICH IN UNSEREN NEWSLETTER EIN",
+    "Email": "E-Mail",
+    "Send":"Absenden"
+  },
+  "GetInTouch":{
+    "title1": "Melden Sie sich jetzt beim nächsten One-Stop-Shop!",
+    "ContactUs": "Kontaktieren Sie uns",
+    "title2":"Unsere Partner"
+  },"Footer":{
+    "Partners": "Partner",
+    "About": "Über uns",
+    "Support":"Support",
+    "FAQ":"FAQ",
+    "Contact":"Kontakt",
+    "GoToMyProject":"Zu meinem Projekt",
+    "Privacy":"Datenschutz ",
+    "Terms":"Impressum",
+    "Sitemap":"Sitemap",
+    "Chatwithus":"Chat with us",
+    "Title":"© 2022 EUROPA. All rights reserved."
+  },
+  "EESRefinanceabilitychecklist": {
+    "Description": "CHECKLISTE REFINANZIERUNG",
+
+    "Description1": "Being a checklist, it does not contain all relevant information in detail. More details and additional explanations on the required contract stipulations for the EES as well as for the Refinancing Contracts can be found in the Guideline “Standardised Contract Stipulations for Refinancing of Energy Efficiency Services” which is accessible by following this link."
+  
+    
+  }, "FindMyPartner": {
+    "Discover": "Entdecken",
+    "More":"More",
+    "FilterSort": "Filtern & Sortieren",
+    "TypeofOrganization":"Art der Organisation",
+    "TypesofServices":"Angebotene Dienstleistungen",
+    "OSSApproved":"Vom OSS genehmigt",
+    "Sort":"Sortieren",
+    "Nearme":"In meiner Nähe",
+    "Services":"Dienstleistungen",
+    "Backtothelist":"Zurück zur Liste",
+    "Address":"Adresse",
+    "Phone":"Telefonnummer",
+    "title":"Sind Sie bereit, Ihr Gebäude zu renovieren?",
+    "title1":"Organisation Score",
+    "TotalScore":"Gesamtpunktzahl",
+    "QualityofServices":"Qualität der Dienstleistungen",
+    "SpeedofServices":"Geschwindigkeit der Dienstleistungen",
+    "Communication":"Kommunikation",
+    "Rating":"Bewertung",
+    "AddRating":"Bewertung hinzufügen"
+    
+  }
+  , "Resources": {
+    "Learnmore": "Mehr Informationen",
+    "title1":"Das Benutzerhandbuch",
+    "title2":"Der allgemeine Rahmen des Sanierungspakets",
+    "title3":"Infografik zur Sensibilisierung der Stakeholder",
+    "title4":"Das SUNShINE-Handbuch für die ganzheitliche Sanierung von Gebäuden",
+    "Resources":"Ressourcen"
+
+  
+    
+  }, "MyProjectStatus": {
+    "MyprojectstatusTitle": "My project status",
+    "title": "Bitte wählen Sie die entsprechende Option, um sich bei Ihrem Konto anzumelden",
+    "NewUser": "Neuer Benutzer",
+    "Signinwithotp":"Sign in with OTP",
+    "Login":"Anmeldung",
+    "title1":"Bitte geben Sie Ihre E-Mail Adresse ein",
+    "Welcome":"Willkommen",
+    "Submit":"Einreichen",
+    "Back":"Zurück",
+    "CodeValidation":"Code-Validierung!",
+    "title2":"Der Code wurde an Ihre E-Mail gesendet. Prüfen Sie Ihre E-Mail und geben Sie den Verifizierungscode ein.",
+    "Seeyourprojectstatus":"Sehen Sie Ihren Projektstatus"
+    
+
+  
+    
+  },"faqList": {
+    "mainTitle": "Hallo, wie können wir Ihnen helfen??",
+    "subTitle": "Über die SUNShINE-Plattform",
+      "titles1": {
+            "questionTitle":"",
+            "questionList": {
+              "question1": "Was ist das Ziel der SUNSHiNE-Plattform?",
+              "question2": "Für wen ist die  SUNSHiNE-Plattform gedacht?",
+              "question3": "Was kostet die Benutzung der  SUNSHiNE-Plattform?",
+              "question4": "Was ist das Sanierungspaket?",
+              "question5": "Wie kann ich die Kosten meiner Gebäudesanierung berechnen?"
+            },
+            "answerList":{
+              "answer1": "Die SUNShINE-Plattform unterstützt alle Beteiligten an energetischen Sanierungsmaßnahmen über alle Projektphasen hinweg: beginnend mit der Idee, das Gebäude zu sanieren bis hin zur Überwachung der Ergebnisse der Maßnahmen.",
+              "answer2": "Die Plattform richtet sich an Bewohner:innen, Wohnungsbaugesellschaften, Anbieter, Kommunen und alle anderen Interessierten.",
+              "answer2Sub1": "Klicken Sie auf die Schaltfläche 'Können wir Ihnen helfen?', um die Inhalte zu entdecken, die für Sie relevant sind.",
+              "answer3": "Die Plattform ist kostenlos. Diese Entscheidung war uns äußerst wichtig, da sie allen Interessengruppen die Nutzung der Plattform ermöglicht. ",
+              "answer4": "Das Sanierungspaket ist ein Sammlung von Maßnahmen zur Steigerung der Energieeffizienz Ihres Gebäudes. Über den One-Stop-Shop finden Sie kompetente Anbieter, die Sie bei der Sanierung begleiten und die einzelnen Schritte aufeinander abgestimmt durchführen.",
+              "answer5": "Mit dem Sanierungskostenrechner können Sie die Gesamtkosten Ihres Projekts einschätzen. Der Rechner bietet Ihnen außerdem die Möglichkeit, einen jährlichen Zahlungsplan zu erstellen. ",
+              "answer5Sub1":"Gehen Sie auf die Seite 'Haus- & Wohnungseigentümer:innen', um herauszufinden, wie viel die Sanierung Ihres Gebäudes kosten wird!"
+            }
+          },
+          "titles2": {
+            "questionTitle":"Haus- & Wohnungseigentümer:innen",
+            "questionList": {
+              "question1": "Welche Informationen werden von der Plattform benötigt?",
+              "question2": "Was ist, wenn ich einige der speziellen Informationen über mein Gebäude nicht kenne oder die Onboarding-Fragen nicht zu meinem Gebäude passen?",
+              "question3": "Was ist, wenn es in meiner Region keine OSS gibt?",
+              "question4": "Ich habe technische Schwierigkeiten. An wen kann ich mich wenden?",
+              "question5": "Wie kann ich mehr über mein Projekt erfahren?",
+              "question6": "Wo kann ich die Anbieter in meiner Nähe finden?"
+            },
+            "answerList":{
+              "answer1": "Um die Plattform verwenden zu können, müssen Sie Folgendes angeben:",
+              "answer1Sub1": "Vorname",
+              "answer1Sub2": "Nachname",
+              "answer1Sub3": "E-Mail-Adresse",
+              "answer1Sub4": "Telefonnummer",
+              "answer1Sub5": "Stadt",
+              "answer1Sub6": "Land",
+              "answer2": "Das ist kein Problem! Ihr OSS wird Ihnen helfen, die restlichen Informationen nach Ihrem ersten telefonischen Termin auszufüllen.",
+              "answer3": "Wenn in Ihrer Region kein OSS eingerichtet ist, füllen Sie die Standardfragebögen für das Onboarding aus und das Managementteam der Plattform wird sich mit Ihnen in Verbindung setzen.",
+              "answer4": "Wenden Sie sich bitte an das Team der SUNShINE-Plattform unter EMAIL",
+              "answer5": "Über die Schaltfläche 'Mein Projekt' finden Sie alle Informationen zu Ihrem Sanierungsprojekt.",
+              "answer6": "Auf der Seite 'Sanierungspartner finden' bekomme Sie einen Überblick über alle unsere Anbieter. Die Anbieter in Ihrer Nähe können Sie sich auf der Karte anzeigen lassen. Wenn Sie auf das Logo des Anbieters klicken, finden Sie sein Profil mit den Kontaktinformationen."
+            }
+          },
+          "titles3": {
+            "questionTitle":"WOHNUNGSGESELLSCHAFTEN",
+            "questionList": {
+              "question1": "Die Bewohner:innen des von mir verwalteten Gebäudes sind an einer Sanierung ihres Gebäudes interessiert und ich möchte sie mit den richtigen Informationen versorgen. Was muss ich tun?",
+              "question2": "Ich brauche einen Anbieter, was soll ich tun?"              
+            },
+            "answerList":{
+              "answer1": "Sie können alle Informationsmaterialien auf der Seite 'Ressourcen' finden und sie mit den Bewohner:innen teilen!",
+              "answer2": "Auf der Seite 'Sanierungspartner finden' erhalten Sie alle notwendigen Informationen zu den Anbietern. Auf dieser Seite können Sie entweder die Liste aller Bauunternehmen in Ihrer Nähe durchgehen oder sie auf der Karte anzeigen lassen. Wenn Sie auf das Logo des Anbieters klicken, finden Sie sein Profil mit den Kontaktinformationen."             
+            }
+          },
+          "titles4": {
+            "questionTitle":"Anbieter",
+            "questionList": {
+              "question1": "Ich habe ein Bauunternehmen/Handwerksbetrieb/Planungsbüro und möchte ein Unternehmensprofil im “Sanierungspartner”-Bereich anlegen.",
+              "question2": "Ich habe Probleme mit dem Einführungsprozess. Was soll ich tun?",
+              "question3": "Warum muss ich meine Zertifikate vorlegen? ",
+              "question4": "Was ist die Checkliste Sanierungspaket?",
+              "question5": "Was ist die Checkliste Refinanzierbarkeit?"
+            },
+            "answerList":{
+              "answer1": "Um im Bereich 'Sanierungspartner finden' sichtbar zu sein, müssen Sie das Onboarding-Verfahren für Anbieter durchlaufen und die vom OSS festgelegten Anforderungen erfüllen. Nach der Genehmigung durch den OSS wird das Profil Ihrer Organisation zur 'Sanierungspartner finden'-Seite hinzugefügt.",
+              "answer2": "Wenden Sie sich bitte an das Team der SUNShINE-Plattform unter EMAIL",
+              "answer3": "Die Zertifikate dienen als Nachweis zu ihren Antworten auf den Einführungsfragebogen und helfen dem lokalen OSS, Ihre Fähigkeit zur Erbringung der Dienste zu bewerten.",
+              "answer4": "Eine Reihe von Anforderungen und Standards, die vom OSS festgelegt wurden und die von einem Projekt und Anbieter erfüllt werden müssen. Ziel ist es, den Gebäudeeigentümer:innen über die gesamte Wertschöpfungskette der umfassenden, energetischen Sanierung Qualität zu garantieren. Das Konzept wurde im Rahmen des Horizon 2020-Projekts EUROPA entwickelt.",
+              "answer5": "Ziel der Checkliste ist es, die Finanzierbarkeit eines Projekts zu gewährleisten, indem bestimmte Standards in allen Projektphasen bewertet werden. Das Konzept wurde im Rahmen des Horizon 2020 REFINE-Projekts entwickelt.  <a href='https://refineproject.eu/'>REFINE</a> project."
+            }
+          },
+          "titles5": {
+            "questionTitle":"OSS",
+            "questionList": {
+              "question1": "Ich bin ein One-Stop-Shop und daran interessiert, die Plattform zu verwenden, was soll ich tun?",
+              "question2": "Was bietet die SUNShINE-Plattform für unsere Arbeit als OSS?",
+              "question3": "Im Falle von Uneinigkeiten:"
+            },
+            "answerList":{
+              "answer1": "Bitte füllen Sie den Einführungsfragebogen für Anbieter aus und geben Sie an, dass Sie ein OSS sind. Danach wird sich das Managementteam der Plattform mit Ihnen in Verbindung setzen!",
+              "answer2": "Über die Plattform können verschiedene Interessengruppen in einem digitalen Umfeld mit den entwickelten Tools zusammen arbeiten. Das Instrumentarium kann an die regionalen Besonderheiten einzelner OSS angepasst werden und so den Nutzen weiter steigern. Insgesamt bietet die SUNShINE-Plattform eine umfassende Methodik zur Organisation der Arbeit der OSS.",
+              "answer3": "Wir raten Ihnen dringend, sich an das Team der SUNShINE-Plattform zu wenden."
+              
+            }
+          }
+    }
+}

@@ -1,0 +1,752 @@
+\documentclass[a4paper]{article}
+\usepackage[T1]{fontenc}
+\usepackage{fontspec}
+\usepackage{lmodern}
+\usepackage{textcomp}
+\usepackage{tabu}
+\usepackage{rotating}
+\usepackage{multicol}
+\usepackage{alltt}
+\usepackage{longtable}[=v4.13]%
+\usepackage{url}
+\usepackage[
+  margin=1.5cm,
+]{geometry}
+
+\special{papersize=210mm,297mm}
+\setlength{\parindent}{0pt}
+\tabulinesep=3pt
+\pagestyle{plain}
+
+\begin{document}
+
+% First Page
+\renewcommand\thesection{}
+\renewcommand\thesubsection{}
+\renewcommand\thesubsubsection{}
+
+\begin{center}
+
+  \topskip0pt
+  \vspace*{\fill}
+  \section{SKBEEF}
+  \section{Forfaitingová zmluva}
+  \subsection{(NA ÚČELY SLOVENSKEJ REPUBLIKY ZMLUVA O POSTÚPENÍ)}
+  \vspace*{\fill}
+
+  \vspace{8cm}
+
+  \subsubsection{MEDZI}
+
+  \vspace{1cm}
+
+  \begin{tabu}{|r|X[2]|} \tabucline{}
+
+    POSTUPCA&{{.ESCo.Name}}\\\tabucline{}
+
+    POSTUPNÍK&{{index .Contract.Fields "client_name"}}\\\tabucline{}
+
+  \end{tabu}
+
+  \iffalse input forfaitingFields.front_page_free_text value="{{.Contract.Agreement.front_page_free_text}}" \fi {{.Contract.Agreement.front_page_free_text}}, \iffalse input forfaitingFields.front_page_date value="{{.Contract.Agreement.front_page_date}}" type="date" \fi {{.Contract.Agreement.front_page_date}}
+
+\end{center}
+
+\pagebreak
+
+% Preample Page
+\begin{center}
+	\section{PREAMBULA}
+\end{center}
+
+\vspace{5mm}
+
+Postupca uzavrel zmluvu o vykonaní Renovačných prác s garantovanými výsledkami,
+ktoré sú definované v zmluve o energetickej efektívnosti (príloha č. 3 k tejto zmluve)
+uzavretej dňa ({{index .Contract.Fields "date"}}) medzi ({{index .Contract.Fields "client_name"}}) 
+(ďalej len \textbf{„zákazník“} alebo \textbf{„klient postupcu“}) a postupcom (ďalej len \textbf{„dodávateľ“}), 
+na základe ktorej postupca zabezpečí financovanie a vykoná všetky príslušné Renovačné 
+práce za pravidelné platby a oproti garantovanej úspore energie, pričom slová a výrazy
+definované v zmluve o energetickej efektívnosti (pokiaľ z kontextu nevyplýva niečo iné) 
+majú rovnaký význam, ak sú použité v tejto zmluve;\par
+\vspace{5mm}
+
+Zaplatenie odmeny postupcu podľa zmluvy o energetickej efektívnosti sa zrealizuje podľa 
+dohodnutého rozvrhu mesačných platieb na obdobie [...] rokov, ktorý obsahuje nasledujúce 
+prvky, ktoré sú podrobne uvedené v prílohe č. 5 k zmluve o energetickej efektívnosti, a to
+konkrétne:\par
+
+\vspace{5mm}
+
+\begin{enumerate}
+\item{\textbf{Poplatok za energie:}  suma splatná podľa aktuálnej Tarify energie za Garantovanú spotrebu energie, rozdelená v rovnakých mesačných platbách, ktorá podlieha ročnému vyúčtovaniu, s ohľadom na skutočné poveternostné podmienky prevládajúce v referenčnom období;
+Poplatok za renováciu: suma splatná za náklady na renováciu budovy, ktorá podlieha indexácii podľa EURIBOR;}
+
+\item{\textbf{Poplatok za renováciu:} suma splatná za náklady na renováciu budovy, ktorá podlieha indexácii podľa EURIBOR;}
+
+\item{\textbf{Poplatok za prevádzku a údržbu:} suma splatná za výdavky na prevádzku a údržbu, ktorá podlieha ročnej indexácii podľa príslušného indexu spotrebiteľských cien Slovenskej republiky na príslušný rok, zverejnený Národnou bankou Slovenska (Národnou bankou Slovenskej republiky).}
+
+\item{\textbf{Všetky dane splatné:} (napr. DPH) pri dodaní služby.
+}
+
+\item{\textbf{Poplatok za teplú úžitkovú vodu:} suma splatná podľa aktuálnej Tarify energie, vypočítaná pre skutočnú spotrebu teplej úžitkovej vody.
+    \textbf{"Pohľadávky"}}
+\end{enumerate}
+
+Postupca by chcel previesť svoje Pohľadávky vyplývajúce zo zmluvy o energetickej efektívnosti v plnej výške na postupníka za predpokladu uspokojivej realizácie vykonaných prác podľa zmluvy o energetickej efektívnosti a na základe písomného oznámenia o postúpení príslušným obyvateľom Budovy.\par
+
+\pagebreak
+
+% Specific Terms and Conditions of this agreement
+\renewcommand\thesection{}
+\renewcommand\thesubsection{\arabic{subsection}}
+\renewcommand\thesubsubsection{\thesubsection.\arabic{subsubsection}.}
+
+\renewcommand*{\theenumi}{\thesubsection.\arabic{enumi}}
+\renewcommand*{\theenumii}{\theenumi.\arabic{enumii}}
+
+\section{OSOBITNÉ PODMIENKY TEJTO ZMLUVY}
+\vspace{5mm}
+
+\subsection{ZMLUVNÉ STRANY ZMLUVY}
+
+\textbf{„Postupca“ (ďalej len „ESCO“))}
+
+\vspace{2mm}
+
+\begin{tabu}{|X|X[2]|} \tabucline{}
+    Názov                  &{{.ESCo.Name}}                                          \\\tabucline{}
+    Registrácia            &{{.ESCo.VAT}}                                           \\\tabucline{}
+    Adresa                 &{{.ESCo.Address}}                                       \\\tabucline{}
+    Právny zástupca        &{{.Contract.Fields.contractor_representative_name}}     \\\tabucline{}
+\end{tabu}
+
+\vspace{5mm}
+
+\textbf{„Postupník“ (ďalej len „Fond“ alebo „SKBEEF“) }
+
+\vspace{2mm}
+
+\begin{tabu}{|X|X[2]|} \tabucline{}
+  Názov            &{{index .Contract.Fields "client_name"}}                 \\\tabucline{}
+  Registrácia            &{{index .Contract.Fields "client_id"}}                   \\\tabucline{}
+  Adresa            &{{index .Contract.Fields "client_address"}}              \\\tabucline{}
+  Právny zástupca   &{{index .Contract.Fields "client_representative_name"}}  \\\tabucline{}
+\end{tabu}
+
+\vspace{5mm}
+
+\subsection{PREDMET ZMLUVY }
+
+\vspace{2mm}
+
+\begin{enumerate}
+\item{V súlade s podmienkami tejto zmluvy postupca postupuje a prevádza na postupníka a tento na základe tejto zmluvy kupuje a prijíma celkovú sumu všetkých Pohľadávok definovaných a splatných podľa zmluvy o energetickej efektívnosti od klienta postupcu, ktoré existujú medzi klientom postupcu a postupcom podľa zmluvy o energetickej efektívnosti a ktoré spĺňajú tieto kritériá: }
+
+  \begin{enumerate}
+  \item{Pohľadávky vznikli na základe implementácie Opatrení na zlepšenie energetickej efektívnosti, ktoré vykonal postupca pre klienta postupcu;}
+
+  \item{Pohľadávky existujú s definovanou a vypočítateľnou hodnotou, podliehajú zmluvnej indexácii, sú právne vykonateľné a vo vykonateľnej forme, v súlade s právnym poriadkom Slovenskej republiky, podliehajú právomoci súdov Slovenskej republiky a sú bez výhrad, regresu, práva na odvolanie, protinárok, vzájomné započítanie, vyúčtovanie alebo iné práva tretích strán;}
+
+  \item{zmluva o energetickej efektívnosti a všetky dokumenty preukazujúce Pohľadávky a ich plnenie nie sú v rozpore so žiadnymi platnými záväznými právnymi predpismi a všetky tieto dokumenty boli predložené postupníkovi; ad}
+
+  \item{predaj, postúpenie a/alebo založenie Pohľadávok nie je zakázané (či už v zmysle zmluvy o energetickej efektívnosti, akejkoľvek inej dohody alebo platných právnych predpisov); }
+
+  \item{postúpením akýchkoľvek záložných práv, zadržiavacích práv, záruk úspory energie, iných cenných papierov alebo záruk poskytnutých na zabezpečenie zaplatenia Pohľadávok takto postúpených a prevedených; a  }
+
+  \item{záložným právom, v čo najväčšej možnej miere, na zariadenie nainštalované postupcom v Budove (ako je predpokladané vo Všeobecných podmienkach tejto zmluvy), pre zabezpečenie práv postupníka podľa tejto zmluvy.}
+  \end{enumerate}
+
+\item{Táto zmluva sa uzatvára na základe toho, že postúpenie a prevod sú podmienené a vykonateľné, iba ak sú splnené tieto osobitné podmienky:}
+
+  \begin{enumerate}
+    \item Projekt je vypracovaný na základe vzoru zmluvy o energetickej efektívnosti postupníka a plne vyhovuje Finančným a technickým pravidlám a pokynom pre Opatrenia energetickej efektívnosti SKBEEF;
+    \item existencia nepretržitej histórie platieb za energie po dobu najmenej jedného kalendárneho roka pre príslušný Projekt na preukázanie splnenia Garantovanej spotreby energie zaručenej na základe zmluvy o energetickej efektívnosti;
+    \item všetky náklady na implementáciu Opatrení na zlepšenie energetickej efektívnosti boli v plnej miere uhradené príslušným subdodávateľom (ak existuje);
+    \item bolo riadne zaslané oznámenie o postúpení Pohľadávok vo formáte stanovenom v prílohe 1 k tejto zmluve;
+    \item existuje platne uzavretá a účinná poistná zmluva na celú hodnotu Budovy po jej renovácii s minimálnym poistným krytím proti požiaru, zemetraseniu, povodni, škodám spôsobeným vodou, iným prírodným katastrofám, ktoré majú dopad na Budovu, škodám konštrukcie spôsobeným klesaním pôdy a popadanými stromami, čo sa preukazuje predložením overenej kópie príslušnej poistnej zmluvy alebo iných rozhodujúcich dokladov potvrdzujúcich zaplatenie poistného. Poistná zmluva by mala byť platná minimálne 3 roky po dátume jej uzavretia a mala by byť uzavretá za podmienok, ktoré zahŕňajú príslušné ustanovenia odvetvových noriem a mala by byť uzavretá v poisťovni s hodnotením minimálne A+ podľa príslušných hodnotení renomovaných ratingových agentúr platných pre Slovenskú republiku;
+    \item uspokojivé výsledky procesu hĺbkovej kontroly, ktorý postupník použije na overenie kvality renovačných prác a implementovaných Opatrení na zlepšenie energetickej efektívnosti v Budove najskôr po uplynutí prvej vykurovacej sezóny. Zmluvné strany berú na vedomie, že táto podmienka hĺbkovej kontroly sa uvádza iba v prospech postupníka a k tomu, aby postupník mohol skontrolovať kvalitu práce vykonanej postupcom a skutočné množstvo spotreby energie dosiahnuté na základe zmluvy o energetickej efektívnosti); a
+    \item existuje platne uzavretá a účinná zmluva o výkone správy a trojstranná dohoda, ako sú definované vo Všeobecných podmienkach tejto zmluvy.
+    
+  \end{enumerate}
+
+\item{Po podpísaní protokolu „Podmienky splnené“ bude postúpenie Pohľadávok dokončené. Táto zmluva je právne záväzná od okamihu jej podpísania, ale povinnosti z nej vyplývajúce, pokiaľ nie je výslovne uvedené inak, sa považujú za pozastavené, kým nebude vydaný protokol uvedený vyššie na dôkaz úspešného splnenia podmienok podľa bodov (2.2.1) až (2.2.7) vyššie. Účinky postúpenia jednotlivých Pohľadávok nastanú v momente vzniku jednotlivých Pohľadávok voči klientovi v súlade so zmluvou o energetickej efektívnosti. Za moment vzniku jednotlivých Pohľadávok sa pre účely tejto zmluvy považuje okamih, kedy v dôsledku poskytnutia konkrétnej služby vznikne nárok postupcu na vyplatenie príslušnej protihodnoty podľa zmluvy o energetickej efektívnosti, t.j. okamih vzniku zdaniteľného plnenia uskutočneného postupcom, ktoré zodpovedá nároku postupcu vystaviť faktúru za konkrétne protiplnenie.}
+
+\end{enumerate}
+
+\subsection{POHĽADÁVKY PREVÁDZANÉ PODĽA TEJTO ZMLUVY}
+
+\begin{enumerate}
+\item{Pohľadávky prevádzané podľa tejto zmluvy na postupníka predstavujú celkovú výšku všetkých pohľadávok, ktoré je postupca oprávnený prijať od klienta postupcu na základe platne uzavretej zmluvy o energetickej efektívnosti (ako je definované v preambule) a nie je tým dotknuté právo postupníka obnoviť ktorýkoľvek zo záväzkov postupcu vyplývajúcich zo zmluvy o energetickej efektívnosti. Pohľadávky po ich postúpení do Fondu vzniknú z platobných záväzkov nasledovných:} \par
+
+    \begin{tabu}{XX[2]}
+    Klient postupcu::  & {{.BuildingOwner.Name}} \\
+      Adresa:      & {{.BuildingOwner.Address}}
+    \end{tabu}
+
+\item{Prevod Pohľadávok podľa tejto zmluvy predstavuje postúpenie (v zmysle Občianskeho zákonníka Slovenskej republiky a príslušných ustanovení) práv na všetky nároky, na ktoré má postupca voči klientovi postupcu nárok v súvislosti s Pohľadávkami. Aby sa predišlo pochybnostiam, postúpenie všetkých nárokov, ktoré má postupca voči klientovi postupcu, oprávňuje postupníka vykonať samostatne alebo prostredníctvom tretích osôb všetky náležité faktické a právne kroky na vymáhanie všetkých týchto nárokov voči každému z Vlastníkov bytov samostatne alebo hromadne ako klient postupcu. Bez toho, aby bolo dotknuté vyššie uvedené, postupca týmto súhlasí a bezpodmienečne schvaľuje, že najneskôr do 5 pracovných dní odo dňa prijatia príslušnej žiadosti od postupníka oznámi ktorúkoľvek zo svojich povinností vyplývajúcich zo zmluvy o energetickej efektívnosti postupníkovi alebo ktorémukoľvek z jeho splnomocnených zástupcov.  }
+\end{enumerate}
+
+\subsection{KÚPNA CENA POHĽADÁVOK}
+
+\begin{enumerate}
+\item{
+    Kúpna cena Pohľadávok je vo výške EUR (slovom) 
+    \iffalse input forfaitingFields.receivable_price value="{{.Contract.Agreement.receivable_price}}" type="number" \fi {{.Contract.Agreement.receivable_price}} (\iffalse input forfaitingFields.receivable_price_words value="{{.Contract.Agreement.receivable_price_words}}" \fi {{.Contract.Agreement.receivable_price_words}})
+     (\textbf{"Cena"})  čo zodpovedá osemdesiatim percentám 
+    ( \iffalse input forfaitingFields.receivable_price_percent value="{{.Contract.Agreement.receivable_price_percent}}" type="number" \fi {{.Contract.Agreement.receivable_price_percent}} (\iffalse input forfaitingFields.receivable_price_percent_words value="{{.Contract.Agreement.receivable_price_percent_words}}" \fi {{.Contract.Agreement.receivable_price_percent_words}}) 
+    celkových hodnôt Pohľadávok v súvislosti s fixnou zložkou Poplatku za renováciu zmluvy o energetickej efektívnosti.}
+\item{Úhrada kúpnej ceny sa uskutoční v súlade s čl. 6.1 po nasledujúcej udalosti, podľa toho, ktorá nastane neskôr}
+
+    \begin{enumerate}
+        \item {klient postupcu dostane oznámenie o prevode celkovej výšky všetkých Pohľadávok voči postupcovi z postupcu na postupníka a }
+        \item {prijatie protokolu „Podmienky splnené“, ktorý sa uvádza v čl. 2.3 vyššie.}
+        
+    \end{enumerate}
+\end{enumerate}
+
+\subsection{POPLATOK ZA VÝKON A ĎALŠIE SPLATNÉ POPLATKY}
+
+\begin{enumerate}
+\item{Postupca bude mať nárok na platbu od postupníka zodpovedajúcu::}
+
+  \begin{enumerate}
+  \item{ 
+       \iffalse input forfaitingFields.forfaiting_assignee_payment value="{{.Contract.Agreement.forfaiting_assignee_payment}}" type="number" \fi {{.Contract.Agreement.forfaiting_assignee_payment}} (\iffalse input forfaitingFields.forfaiting_assignee_payment_words value="{{.Contract.Agreement.forfaiting_assignee_payment_words}}" \fi {{.Contract.Agreement.forfaiting_assignee_payment_words}})
+       fixnej zložky Poplatku za renováciu zmluvy o energetickej efektívnosti}
+
+  \item{sto percentám (100 \%) Poplatku za prevádzku a údržbu zmluvy o energetickej efektívnosti}
+  \end{enumerate}
+
+\item{Postupca bude mať navyše nárok na Poplatok za výkon za každý rok, v ktorom dosiahnutá úspora energie podľa zmluvy o energetickej efektívnosti presahuje sumu garantovanej úspory energie pre daný rok podľa zmluvy o energetickej efektívnosti (po meraní a overovaní podľa Finančných a technických pravidiel a pokynov pre Opatrenia energetickej efektívnosti SKBEEF). Takýto Poplatok za výkon sa vypočíta na ročnej báze podľa tohto vzorca:\par
+
+    \begin{center}
+      \[Poplatok za výkon  = \iffalse input forfaitingFields.performance_fee value="{{.Contract.Agreement.performance_fee}}" type="number" \fi {{.Contract.Agreement.performance_fee}}\% P_G\]
+    \end{center}
+
+    kde: \par
+    $P_G$: mimoriadne splnenie záruky počas Vyúčtovacieho obdobia, EUR (bez DPH) vypočítané podľa prílohy 5 k zmluve o energetickej efektívnosti (príloha 3 tejto zmluvy)}
+
+    \item {Poplatok za výkon vypočítaný vyššie uvedeným spôsobom sa stane splatným pre postupníka spolu s platbou za obdobie prvého štvrťroka po skončení roka, v ktorom sa dosiahli dodatočné úspory energie.}
+    \item {Postupca je samostatne a bezpodmienečne povinný zaplatiť postupníkovi náhradu za nesplnenie Garantovanej úspory energie počas Vyúčtovacieho obdobia, ako je uvedené v prílohe 5 k zmluve o energetickej efektívnosti.}
+    \item {Náhrada za nesplnenie Garantovanej úspory energie sa stane splatnou pre postupníka do 30 dní od dátumu dokončenia výpočtu, ktorým sa zistilo porušenie Garantovanej spotreby energie. Postupca vyrovná svoj dlh prevodom na bankový účet stanovený postupníkom vo vyššie uvedenej lehote. Za nezabezpečenie včasnej platby vyššie uvedeného má postupník nárok na úrok z omeškania vo výške 0,1 \% (jednu desatina jedného percenta) z dlžnej sumy za každý deň omeškania, avšak celkovo maximálne 25 \% (dvadsaťpäť percent) z dlžnej sumy.}
+    \item {Bez toho, aby bolo dotknuté vyššie uvedené, postupník je oprávnený započítať svoj nárok na náhradu za nesplnenie Garantovanej úspory energie vo vyššie uvedenej výške oproti akýmkoľvek platbám poplatku za výkon splatným podľa čl. 5.1 vyššie, a/alebo znížiť alebo zadržať platby (ako napr. platbu za údržbu budovy od postupníka postupcovi) ako obhajobu, zadržanie, namietanie, protinárok alebo na základe akýchkoľvek ďalších práv vyplývajúcich z tejto zmluvy.}
+    \item {Ak sa dodávateľ dostane do konkurzu alebo likvidácie, má SKBEEF právo prideliť nového dodávateľa, aby sa zabezpečilo splnenie povinností dodávateľa podľa zmluvy EPC a podmienok.}
+    
+\end{enumerate}
+
+\subsection{PLATOBNÉ TERMÍNY}
+
+
+\begin{enumerate}
+\item{ostupca vystaví faktúru pre každú splátku zodpovedajúcu Cene (podľa článku 4.1) do 10 dní od dátumu podpísania protokolu „Podmienky splnené,“ ktorý sa uvádza v čl. 2.3., ktorý podpíšu zmluvné strany podľa vyššie uvedených ustanovení. Platby sa uskutočnia v nasledujúcich splátkach [splátke]:} \par
+
+    {{index .Contract.Agreement "payment_first_amount"}} EUR – splatná najneskôr do{{index .Contract.Agreement "payment_first_date"}}; \par
+    {{index .Contract.Agreement "payment_second_amount"}} EUR – splatná najneskôr do{{index .Contract.Agreement "payment_second_date"}}; a \par
+    {{index .Contract.Agreement "payment_third_amount"}} EUR – splatná najneskôr do{{index .Contract.Agreement "payment_third_date"}}.\par
+
+
+
+\item{Postupca vystaví faktúry štvrťročne pre platby zodpovedajúce vzniknutým Poplatkom podľa článku 5.1.}
+\item{Postupca vystaví faktúry na ročnej báze po meraní a overovaní, ako je uvedené v zmluve o energetickej efektívnosti podľa článku 5.2.}
+
+\item{Platby v súvislosti s Cenou alebo Poplatkom za výkon a ďalšie poplatky sa zrealizujú na nasledujúci bankový účet postupcu (pokiaľ postupca nezmení svoje platobné pokyny skôr, ako postupník uskutoční príslušnú platbu, formou písomného oznámenia, pričom sa v takom prípade platby uskutočnia na bankový účet uvedený v takom oznámení):}\par
+
+    \begin{tabu}{XX[2]}
+        Názov príjemcu: 	& 	{{.FABankAcc.BeneficiaryName}} 	\\
+        Názov banky a adresa:  	& 	{{.FABankAcc.BankNameAddress}} 	\\
+        IBAN:			& 	{{.FABankAcc.IBAN}} 		\\
+        SWIFT:			& 	{{.FABankAcc.SWIFT}} 		\\
+    \end{tabu}
+
+    \item{Postupník uhradí všetky splatné faktúry do 30 pracovných dní.}
+    \item{Postupník vystaví faktúru každý rok po meraní a overovaní, ako je uvedené v zmluve o energetickej efektívnosti podľa článku 5.5.}
+    \item{Platby v súvislosti s porušením Garantovanej spotreby energie sa zrealizujú na nasledujúci bankový účet postupníka (pokiaľ postupník nezmení svoje platobné pokyny skôr, ako postupca uskutoční príslušnú platbu, písomným oznámením, pričom sa v takom prípade platby uskutočnia na bankový účet uvedený v takom oznámení):}
+    
+
+    \begin{tabu}{XX[2]}
+        Názov príjemcu: 	& 	{{.FABankAcc.BeneficiaryName}} 	\\
+        Názov banky a adresa:  	& 	{{.FABankAcc.BankNameAddress}} 	\\
+        IBAN:			& 	{{.FABankAcc.IBAN}} 		\\
+        SWIFT:			& 	{{.FABankAcc.SWIFT}} 		\\
+    \end{tabu}
+
+\end{enumerate}
+
+{{template "sign.tex"}}
+
+\section{VŠEOBECNÉ PODMIENKY TEJTO ZMLUVY}
+
+\begin{multicols}{2}
+
+  \subsection{POTREBNÉ DOKUMENTY A ĎALŠIE ZÁRUKY A PODMIENKY}
+
+  \begin{enumerate}
+    \item{	Pred podpísaním tejto zmluvy postupca odovzdal zmluvu o energetickej efektívnosti a všetky dokumenty preukazujúce prevádzané Pohľadávky, a všetky informácie potrebné na výber postupovaných Pohľadávok voči klientovi postupcu a/alebo voči každému vlastníkovi Bytu a je povinný poskytnúť všetky informácie potrebné pre uplatnenie všetkých nárokov vyplývajúcich zo zmluvy o energetickej efektívnosti. Postupca potvrdí, že dokumenty a informácie poskytnuté postupníkovi v súvislosti s prevádzanými Pohľadávkami predstavujú všetky dokumenty a informácie, ktoré sa týkajú prevádzaných Pohľadávok alebo, ak to nepotvrdí, odovzdá všetky ďalšie dokumenty a informácie pre nápravu akéhokoľvek opomenutia. Postupca je povinný bezodkladne písomne informovať postupníka o všetkých okolnostiach, ktoré by naznačovali zhoršenie úverového ratingu alebo úverovej bonity klienta postupcu.}
+    \item{	Postupca samostatne kedykoľvek poskytne postupníkovi informácie o svojej finančnej situácii, pričom poskytne dokumentáciu, ako je výkaz ziskov a strát, konečná súvaha, prevádzková súvaha.}
+    \item{	Postupca je povinný bezodkladne písomne informovať postupníka o akomkoľvek spore, odvolaní, reklamácii zo záruky, zrušení, uplatnení nárokov zo záruky zo strany klienta postupcu alebo o neplnení jeho záväzkov, a zároveň bezodkladne vyhovie akémukoľvek oprávneného nároku klienta postupcu voči postupcovi na výmenu, zlepšenie alebo doplnenie akýchkoľvek chýbajúcich zariadení alebo služby alebo na nápravu prípadného neplnenia. Bez toho, aby bola dotknutá všeobecnosť vyššie uvedeného, vyššie uvedené bude zahŕňať bez obmedzenia všetky nároky zo záruky alebo nároky akejkoľvek inej povahy vyplývajúce zo zmluvy o energetickej efektívnosti, nielen akékoľvek nároky vyplývajúce z chýb alebo nedostatkov Opatrení na zlepšenie energetickej efektívnosti zavedených postupcom v Budove.}
+    \item{	Postupca je samostatne povinný na požiadanie poskytnúť uspokojivé dôkazy o pravosti akýchkoľvek dokumentov, ktoré preukazujú prevádzané Pohľadávky a preukázať, že tieto dokumenty predstavujú právne, platné, záväzné a vykonateľné povinnosti, a to bez akejkoľvek povinnosti voči postupníkovi. Postupník preskúma dokumenty doručené od postupcu do 10 pracovných dní od ich prijatia a nemusí zohľadniť a môže vrátiť postupcovi akýkoľvek doručený dokument, ktorý nespĺňa kritériá na preukázanie platnej, záväznej a vykonateľnej povinnosti, a môže ho požiadať, aby boli riadne a promptne predložené dokumenty spĺňajúce tieto požiadavky.}
+    \item{	Postupca zaručuje postupníkovi, že:}
+    \begin{enumerate}
+        \item{je riadne založený, platne existujúci a v dobrom stave podľa zákonov svojej jurisdikcie organizácie alebo registrácie a je v plnej miere oprávnený vykonať, odovzdať a splniť si svoje záväzky podľa tejto zmluvy;}
+        \item{uzavretie, odovzdanie a plnenie tejto zmluvy zo strany postupcu nevedie k porušeniu niektorého ustanovenia (i) jeho zakladajúcich dokumentov, (ii) akéhokoľvek právneho predpisu, zákona alebo nariadenia štátneho orgánu, ktoré sa na neho vzťahujú, (iii) akéhokoľvek rozsudku alebo súdneho príkazu, ktorý sa na neho vzťahuje;}
+        \item{uzavretie, odovzdanie a plnenie tejto zmluvy v jeho mene bolo riadne a platne schválené a táto zmluva po jej podpísaní bude predstavovať jeho zákonné, platné a záväzné povinnosti, ktoré sú voči nemu vymáhateľné v súlade s príslušnými podmienkami; s výnimkou toho, čo sa uvádza v tejto zmluve, žiadne iné oznámenie okrem oznámenia klientovi postupcu, ktorým sa oznamuje prevod Pohľadávok podľa tejto zmluvy, registrácia, súhlas alebo schválenie alebo akýkoľvek iný úkon zo strany akéhokoľvek príslušného štátneho orgánu alebo akejkoľvek inej osoby, nie je ani nebude potrebné pre vykonanie, odovzdanie a splnenie svojich povinností stanovených v tejto zmluve;}
+        \item{je riadne oprávnený postúpiť prevádzané Pohľadávky;}
+        \item{prevádzané Pohľadávky sú v celom rozsahu alebo čiastočne zákonnými, platnými a záväznými záväzkami klienta postupcu a sú voči klientovi postupcu vymáhateľné v súlade s ich príslušnými podmienkami;}
+        \item{prevádzané Pohľadávky neboli inak postúpené, predané, zaťažené hypotékou, založené ani zaťažené iným spôsobom ani zaťažené akýmkoľvek právom akejkoľvek tretej osoby, a žiadna z prevádzaných Pohľadávok nebola ani nie je predmetom vzájomného započítania, ani nebola a nie je započítaná voči akýmkoľvek pohľadávkam, ktoré je postupca povinný zaplatiť klientovi postupcu; a}
+        \item{žiadne konanie (i) neprebieha voči postupcovi, alebo (ii) podľa najlepšieho vedomia postupcu, nehrozí žiadne konanie voči postupcovi pred akýmkoľvek príslušným štátnym orgánom, súdom alebo rozhodcovským súdom, ktoré by, či už jednotlivo alebo ako celok, pravdepodobne podstatne a nepriaznivo ovplyvnilo (i) akékoľvek minulé alebo budúce konanie postupcu podľa tejto zmluvy, alebo (ii) prevádzané Pohľadávky. }
+    \end{enumerate}
+\end{enumerate}
+
+\subsection{PRÁVA A POVINNOSTI POSTUPCU}
+\begin{enumerate}
+    \item{Postupca je zodpovedný voči postupníkovi, ak neposkytol v deň nadobudnutia účinnosti alebo pred dátumom účinnosti forfaitingovej zmluvy existenciu akéhokoľvek platobného nároku alebo iného záväzku, ktorý môže ovplyvniť výšku alebo platnosť Pohľadávok prevádzaných podľa tejto zmluvy. Vyššie uvedeným nie je dotknutá skutočnosť, že postupca nenesie zodpovednosť, či už spoločne alebo nerozdielne s klientom postupcu, za riadne a včasné zaplatenie alebo výber ktorejkoľvek z Pohľadávok a cenných papierov, ktoré boli zriadené v súvislosti s prevodom podľa tejto zmluvy postupníkovi. Bez ohľadu na akékoľvek protichodné ustanovenie, postupca je naďalej zodpovedný za pravosť a vymáhateľnosť prevádzaných Pohľadávok a príslušných cenných papierov.}
+    \item{Postupca spolu s postupníkom budú spoločne informovať klienta postupcu prostredníctvom jedného oznámenia o postúpení a prevode Pohľadávok na základe tejto zmluvy, pričom toto oznámenie bude vo formáte stanovenom v prílohe č. 1.}
+    \item{Postupca zaručuje sumu Garantovanej úspory energie uvedenú v zmluve o energetickej efektívnosti a zaväzuje sa udržiavať jej úroveň po celú dobu platnosti zmluvy o energetickej efektívnosti, pričom sa zaväzuje vykonať všetky ďalšie kroky potrebné na zachovanie Garantovanej úspory energie bez potreby vzniku ďalších výdavkov. }
+    \item{Postupca zabezpečí, aby všetky verejnoprospešné  služby z a do samostatných bytov Budovy, z ktorých vznikli Pohľadávky, neboli odpojené alebo prerušené bez predchádzajúceho súhlasu klienta postupcu (vrátane prípadov, keď je tento súhlas vyjadrený ústne, písomne alebo oznámený prostredníctvom elektronickej pošty   správcovi) a boli promptne obnovené v prípade ich dočasnej nefunkčnosti z dôvodu pravidelných kontrol akejkoľvek povahy alebo opravy alebo výmeny v prípade poruchy alebo zlyhania. Táto záruka sa nevzťahuje na prípady, keď sú takéto narušenia mimo kontroly postupcu a/alebo sú dôsledkom konania alebo opomenutia priamych dodávateľov, postupníka alebo akýchkoľvek tretích strán.}
+    \item{Postupca podpísaním forfaitingovej zmluvy s postupníkom zaručuje, že všetky Renovačné práce boli vykonané a zrealizované s náležitou odbornou starostlivosťou a s prevedením a materiálmi vysokej kvality a boli vykonané so všetkými potrebnými nástrojmi, materiálmi a vybavením vhodnej povahy, kvality a množstva a sú bez nedostatkov a chýb počas celej doby platnosti zmluvy (s výnimkou bežného opotrebovania). Bez ohľadu na vyššie uvedené je postupca povinný udržiavať a zabezpečovať Renovačné práce po celú dobu trvania zmluvy o energetickej efektívnosti. }
+    \item{Postupca zaručuje, že všetky Renovačné práce boli realizované v súlade s Finančnými a technickými pravidlami a pokynmi pre Opatrenia energetickej efektívnosti SKBEEF. Postupca ďalej zaručuje, že všetky Renovačné práce boli realizované s prihliadnutím na európske a národné osvedčené postupy v súlade s Protokolmi projektu Investor Confidence Project Europe (ICPEU - http://europe.eeperformance.org/) pre projekty vývoja, dokumentácie, implementácie a merania, ako aj všetky právne požiadavky v súlade s platnými zákonmi a predpismi Slovenskej republiky. Samotný postupca prísne dodržiava a je viazaný ustanoveniami Európskeho etického kódexu pre uzatváranie zmlúv o energetickej efektívnosti, ktorý sa nachádza na webovej stránke www.transparense.eu v čase podpísania zmluvy o energetickej efektívnosti, a prísne dodržiava aj právne požiadavky v súlade so zákonom č. 321/2014 Z. z. o energetickej efektívnosti a ďalšie zákony a predpisy platné v Slovenskej republike a zabezpečí ich riadne plnenie počas doby platnosti tejto zmluvy.}
+    \item{Postupca súhlasí s tým, že bude naďalej zodpovedný za všetky svoje povinnosti a záväzky vyplývajúce zo zmluvy o energetickej efektívnosti a zaväzuje sa ich plniť, ktoré sú priamo spojené s konaním alebo záväzkami postupcu podľa zmluvy o energetickej efektívnosti. Vyššie uvedené platí bez toho, aby bola dotknutá povinnosť postupcu v prípade akejkoľvek chyby alebo nedostatku realizovaných Renovačných prác alebo prác, ktoré budú vykonané počas doby platnosti tejto zmluvy, opraviť a/alebo ich nahradiť na vlastné náklady, a to v primeranom časovom období podľa platných odvetvových noriem. Nedodržanie vyššie uvedených povinností zo strany postupcu v primeranej lehote, najdlhšie však do 20 pracovných dní, oprávňuje postupníka vykonať práce na náklady postupcu a získať náhradu do 20 dní od prijatia príslušnej faktúry zaslanej postupcovi (ktorá môže byť zaslaná e-mailom).}
+    \item{Postupca bezodkladne, hneď ako sa to dozvie, oznámi postupníkovi akékoľvek poškodenia alebo zmeny vykonané bez jeho vedomia alebo súhlasu postupcu, na akomkoľvek zariadení nainštalovanom postupcom, alebo oznámi akékoľvek okolnosti, ktoré majú a/alebo môžu mať negatívny vplyv na úroveň Spotreby energie (jednotlivo alebo spoločne v ktoromkoľvek období) o päť percent (5 \%) alebo viac zo Spotreby energie očakávanej postupcom v danom období.}
+    \item{Postupca týmto súhlasí, že na základe tejto zmluvy je postupník náležite poverený a oprávnený zhromažďovať, spracúvať, uchovávať, používať a prenášať osobné údaje poskytnuté zo strany klienta postupcu podľa zmluvy o energetickej efektívnosti a previesť ich akejkoľvek tretej strane, ktorej boli udelené práva alebo povinnosti postupníka vyplývajúce z tejto zmluvy, okrem iného, akejkoľvek osobe zodpovednej za vývoj, implementáciu, prevádzku a údržbu online platformy, ktorá sleduje výkon realizovaných Renovačných prác. Údaje by mal postupník používať pre iné účely len po získaní súhlasu od klienta postupcu. Aby sa predišlo pochybnostiam a bez ohľadu na vyššie uvedené, akékoľvek osobné údaje alebo údaje týkajúce sa Budovy alebo Zariadení zostávajú majetkom klienta postupcu bez toho, aby bolo dotknuté právo postupníka zhromažďovať, spracúvať, uchovávať, používať a prevádzať ich a budú vrátené klientovi postupcu (alebo podľa rozhodnutia klienta postupcu, budú natrvalo odstránené) v plnej miere po ukončení platnosti tejto zmluvy.}
+    \item{Postupník berie na vedomie a súhlasí s tým, že postupca alebo akákoľvek tretia strana, ktorej postupca udelil práva a/alebo povinnosti podľa tejto zmluvy, bude používať akékoľvek anonymné údaje a informácie týkajúce sa spotreby energie Budovy, či už poskytnuté klientom postupcu alebo získané postupcom, a to na účely porovnávania a zostavenia celoštátnej, regionálnej alebo celoeurópskej databázy alebo na účely použitia postupcom ako referencie alebo na akékoľvek interné účely, ktoré schválil klient postupcu.}
+\end{enumerate}
+
+\subsection{PRÁVA A POVINNOSTI POSTUPNÍKA}
+\begin{enumerate}
+    \item{Postupník musí po prijatí náležitých dokumentov od postupcu tieto preskúmať, aby určil, či sú to požadované dokumenty, a promptne, najneskôr však do 10 (desiatich) pracovných dní, vráti postupcovi akýkoľvek dokument, ktorý sa nejaví ako uspokojivý z hľadiska svojej pravosti a/alebo nepredstavuje platný, zákonný, záväzný alebo vykonateľný záväzok. Ak na základe vyššie uvedených faktorov postupník zistí, že doručené dokumenty nie sú uspokojivé alebo sú potrebné ďalšie dokumenty, postupník to písomne oznámi postupcovi a uvedie svoje pochybnosti. Ak postupca nesúhlasí s pochybnosťami, ktoré vzniesol postupník, o spore rozhodne renomovaný odborník s dostatočnými medzinárodnými skúsenosťami a dostatočnými znalosťami v oblasti financií, ktorého spoločne určia zmluvné strany a ktorého rozhodnutie bude okamžite konečné, záväzné a platné. Ak sa zmluvné strany nedohodnú na odborníkovi pre vyriešenie sporu, každá zmluvná strana je oprávnená poveriť jedného odborníka a obaja títo odborníci si spoločne zvolia tretieho odborníka, ktorý bude predsedať skupine. Rozhodnutie tejto skupiny bude záväzné a zmluvné strany si rozdelia náklady na zorganizovanie uvedeného postupu.}
+    \item{Okrem toho, čo je uvedené nižšie a v čl. 10  Všeobecných podmienok, postupník nebude mať žiadne nároky voči postupcovi za nezaplatenie Pohľadávok, pokiaľ: }
+    \begin{enumerate}
+        \item{nedošlo k porušeniu akýchkoľvek povinností postupcu podľa zmluvy o energetickej efektívnosti; a/alebo}
+        \item{konanie alebo nekonanie nespadá do rozsahu povinností postupcu prijatých na základe zmluvy o energetickej efektívnosti v súvislosti s realizáciou Renovačných prác a údržby.}
+    \end{enumerate}
+    \item{Vyššie uvedené platí bez toho, aby bolo dotknuté právo postupníka uplatniť vymáhanie a výber akýchkoľvek Pohľadávok prevádzaných touto zmluvou pomocou najvhodnejších postupov podľa vlastného uváženia na účely súdneho a mimosúdneho konania proti klientovi postupcu, vrátane, ale nie výlučne, každého vlastníka Bytu. Postupca poskytne všetku potrebnú pomoc v súvislosti s takýmto vymáhaním. }
+    \item{Postupca odškodní postupníka a zbaví ho zodpovednosti za akýkoľvek záväzok a/alebo nárok, ktorý vznikne postupníkovi v dôsledku alebo v súvislosti so závažným porušením niektorého z vyhlásení, záruk alebo záväzkov postupcu, ktoré vyplývajú z tejto zmluvy alebo zo zmluvy o energetickej efektívnosti.}
+    \item{Postupník odškodní postupcu a zbaví ho zodpovednosti za akýkoľvek záväzok a/alebo nárok, ktorý vznikne postupcovi v dôsledku alebo v súvislosti so závažným porušením niektorého z vyhlásení, záruk alebo záväzkov postupníka, ktoré vyplývajú z tejto zmluvy, avšak za predpokladu, že súhrnná suma, ktorú je postupník povinný zaplatiť postupcovi, bude obmedzená na zostatok platieb splatných podľa Osobitných podmienok tejto zmluvy . }
+    \item{Podľa čl. 3.3. a čl. 3.4. vyššie uvedených Všeobecných podmienok, ak akákoľvek tretia strana iniciuje akékoľvek konanie alebo vznesie akýkoľvek nárok voči postupcovi alebo postupníkovi (každý ďalej len „strana“), za ktoré má takáto strana („odškodňovaná strana“) nárok na odškodnenie podľa tejto zmluvy, takáto odškodňovaná  strana bezodkladne písomne informuje druhú stranu („odškodňujúca strana“) o takomto konaní alebo požiadavke. Strana, ktorá sa ujala obhajoby v takomto konaní, poskytne druhej zmluvnej strane kópie všetkých oznámení, podaní a iných písomností podaných alebo doručených v rámci konania. Žiadna zo strán nevykoná žiadne vyrovnanie ani zmeny bez súhlasu druhej strany, ktorý: (i) v prípade odškodňujúcej strany nebude bezdôvodne odmietnutý, ak je vyrovnanie alebo zmena obmedzené na peňažnú náhradu škody; (ii) v prípade odškodňovanej strany, súhlas môže byť odmietnutý z akéhokoľvek dôvodu, ak si vyrovnanie alebo zmena vyžaduje plnenie alebo prevzatie zodpovednosti odškodňovanou stranou.}
+    \item{Každá náhrada škody v tejto zmluve je pretrvávajúcim záväzkom, samostatným a nezávislým od ostatných zmluvných záväzkov zmluvných strán a zostáva v platnosti po ukončení platnosti tejto zmluvy, a nie je potrebné, aby niektorá zmluvná strana vynaložila  výdavky alebo zrealizovala platbu pred uplatnením práva na náhradu škody vyplývajúceho z tejto zmluvy. }
+    \item{Postupník je oprávnený požadovať a prijať od postupcu riadne a včasné plnenie všetkých povinností a záväzkov postupcu podľa zmluvy o energetickej efektívnosti, ktoré sú priamo spojené s konaním alebo záväzkami postupcu v rámci jeho funkcie dodávateľa podľa zmluvy o energetickej efektívnosti a/alebo sú priamo spojené s udržiavaním Opatrení na zlepšenie energetickej efektívnosti. Vyššie uvedené platí bez toho, aby bolo dotknuté právo postupníka požadovať a získať nováciu niektorých povinností postupcu podľa zmluvy o energetickej efektívnosti okamžite, najneskôr však do piatich pracovných dní od prijatia príslušného oznámenia od postupcu, právo získať v dostatočnom časovom predstihu všetky projektové dokumenty a/alebo ďalšie vysvetlenia a objasnenia týkajúce sa Budovy podľa potreby.}
+    \item{Postupník ako osoba, ktorej sú postupované Pohľadávky, má právo iniciovať akékoľvek súdne alebo mimosúdne konania, ktoré sú potrebné na výber, vymáhanie a získanie Pohľadávok. Ak postupník bude musieť vykonať svoje práva, bude o tom informovať postupcu a postupca bude s ním primerane spolupracovať. Postupník odovzdá postupcovi akékoľvek písomné vyhlásenie o zámere alebo písomné vyhlásenia, ktoré podporujú alebo sú potrebné pre výkon práv a postupca prijme také kroky, ktoré sú potrebné na uskutočnenie navrhovaného výkonu práv.}
+\end{enumerate}
+
+\subsection{SPRÁVCA A ÚDRŽBA BUDOVY}
+\begin{enumerate}
+    \item{Postupca zabezpečí, aby postupník mal vždy vo forme a spôsobom, ktoré vyhovujú postupníkovi:}
+    \begin{enumerate}
+        \item{zmluvu medzi osobou, ktorá koná ako správca (na získanie peňažných prostriedkov od klienta postupcu, na kontakt medzi postupcom a klientom postupcu a priebežné informovanie postupníka o všetkých záležitostiach týkajúcich sa Pohľadávok) (ďalej len „správca“), postupcom a klientom postupcu („zmluva o výkone správy“); a}
+        \item{dohodu medzi postupcom, postupníkom a správcom („trojstranná dohoda“).}
+    \end{enumerate}
+\end{enumerate}
+
+\subsection{DOBA PLATNOSTI ZMLUVY}
+    \begin{enumerate}
+    \item	Postúpenie Pohľadávok podľa tejto zmluvy a všetky povinnosti zmluvných strán podľa tejto zmluvy sú podmienené splnením všetkých odkladacích podmienok, čo sa preukáže podpísaním protokolu „Podmienky splnené,“ ktorý sa uvádza v Osobitných podmienkach tejto zmluvy.
+    \item	Všetky úpravy, doplnenia a zmeny tejto zmluvy sa uskutočnia písomne po vzájomnej dohode všetkých zmluvných strán a budú pripojené k tejto zmluve vo forme príloh a nadobudnú účinnosť až po ich podpísaní zmluvnými stranami.
+    \item	Postupca jednostranne vypovie túto zmluvu a bude o tom informovať postupníka a správcu v písomnej forme najmenej 30 (tridsať) dní vopred, ak klient postupcu vypovedal zmluvu o energetickej efektívnosti, bez ohľadu na dôvody výpovede. V takom prípade postupník má nárok na náhradu škody od postupcu v hodnote rovnajúcej sa súčtu: 
+    \begin{enumerate}
+    \item{všetkých zostávajúcich budúcich platieb od dátumu ukončenia zmluvy o energetickej efektívnosti plus zákonných úrokov, ktoré by z nich vznikli od dátumu zaplatenia postupcovi; plus}
+    \item{všetkých investičných nákladov postupníka a jeho kapitálových nákladov, vrátane, ale nie výlučne, akýchkoľvek poplatkov za záväzky, úrokových sadzieb a ďalších príplatkov, ktoré mohli postupníkovi vzniknúť, a plánovanej výšky príjmu, ktorý by postupník získal, ak by zmluva o energetickej efektívnosti nebola vypovedaná, ale bez dvojitého započítania.}
+    \end{enumerate}
+\item	Zmluvu nie je možné vypovedať pred ukončením zmluvy o energetickej efektívnosti, pokiaľ sa postupca a postupník písomne nedohodnú na iných podmienkach, alebo pokiaľ táto zmluva neustanovuje inak.  
+\item	Ukončenie tejto zmluvy nezbavuje zmluvné strany povinnosti splniť si svoje príslušné záväzky stanovené v tejto zmluve, ktoré sa stali splatnými pred ukončením platnosti tejto zmluvy, pokiaľ sa zmluvné strany písomne nedohodli na iných ustanoveniach, alebo pokiaľ táto zmluva neustanovuje inak. 
+\item	Ak dôjde k predčasnému ukončeniu zmluvy o energetickej efektívnosti z dôvodu akýchkoľvek okolností a ak postupníkovi nebude poskytnutá náhrada v súlade s ustanoveniami tejto zmluvy (najmä čl. 5.3 Všeobecných podmienok):
+\begin{enumerate}
+    \item	postupník oprávnený dostať akúkoľvek sumu, ktorú má klient postupcu zaplatiť podľa podmienok zmluvy o energetickej efektívnosti v dôsledku takejto výpovede (a tieto sumy budú súčasťou Pohľadávok); 
+    \item	podľa podmienok zmluvy o energetickej efektívnosti, ak na Budove nevzniknú žiadne materiálne škody z dôvodu demontáže alebo kvôli tomu, že v nej nie je niektoré zo zariadení inštalovaných postupcom, postupník je oprávnený demontovať zariadenia v Budove, ktorú vlastní postupca a odstrániť ich z Budovy bez ich zaplatenia klientovi postupcu za predpokladu, že: (i) je takáto demontáž technicky možná bez toho, aby došlo k závažnému poškodeniu Budovy; a (ii) klient postupcu na základe zmluvy o energetickej efektívnosti zaplatil sumu, ktorá je nižšia ako súčet (x) nákladov na poskytovanie služieb v oblasti tepla a údržby predpokladaných v zmluve o energetickej efektívnosti a (y) 80 % sumy celkových nákladov na investíciu postupcu do Renovačných prác; a/alebo
+    \item	v prípade, že dôvodom predčasnej výpovede je neplnenie zo strany postupcu, v tom prípade postupca zaplatí postupníkovi sumu v takej výške, ktorá sa bude spolu s ostatnými čiastkami prijatými podľa tohto článku. 5.6 rovnať sume, ktorú by postupník mal právo dostať podľa čl. 5.3, ak by bol postupca vypovedal túto zmluvu. Vyššie uvedené platí bez toho, aby bola dotknutá povinnosť postupcu obnoviť na žiadosť postupníka voči tretej osobe poverenej postupníkom, akékoľvek alebo všetky jej povinnosti podľa zmluvy o energetickej efektívnosti, ktoré sú vykonateľné pre prevodcu, a to na základe písomného oznámenia zaslaného päť pracovných dní  vopred. 
+\end{enumerate}
+    \item	Okrem ustanovení tejto zmluvy môžu zmluvné strany túto zmluvu kedykoľvek vypovedať na základe vzájomnej dohody o podmienkach ukončenia tejto zmluvy. Dohoda o ukončení uvedená v tomto článku bude uzavretá písomne a nadobudne platnosť po jej podpísaní všetkými zmluvnými stranami.
+\end{enumerate}
+\subsection{POISTENIE}
+\begin{enumerate}
+    \item Počas doby platnosti zmluvy o energetickej efektívnosti a na náklady Vlastníkov bytov je postupca povinný nepretržite udržiavať v platnosti poistnú zmluvu Budovy s minimálnym poistným krytím a poistením proti požiaru, zemetraseniu, povodni, poškodeniu vodou, iným prírodným katastrofám, ktoré majú dopad na Budovu, škodám konštrukcie spôsobeným klesaním pôdy a popadanými stromami, a to v minimálnej výške sumy na obnovenie Budovy. Poistná zmluva by mala byť uzavretá za podmienok, ktoré zahŕňajú príslušné ustanovenia odvetvových noriem a mala by byť uzavretá v poisťovni s hodnotením minimálne A+ podľa príslušných hodnotení renomovaných ratingových agentúr platných pre Slovenskú republiku. Postupca doručí postupníkovi originál takejto poistnej zmluvy alebo predloží overenú kópiu poistnej zmluvy alebo iné rozhodujúce doklady potvrdzujúce menu a zaplatenie poistného. Akákoľvek poistná zmluva, v ktorej sa v rámci poistného krytia uvádza postupca ako oprávnený príjemca, bude príslušným a právne záväzným spôsobom náležite prevedená na postupníka, čím sa tento stane podľa poistnej zmluvy konečným oprávneným príjemcom.
+    \item Bez ohľadu na akékoľvek protichodné ustanovenie, postupník je oprávnený na svoje vlastné náklady dodatočne poistiť Budovu, Opatrenia na zlepšenie energetickej efektívnosti, výber  Pohľadávok vyplývajúcich zo zmluvy o energetickej efektívnosti a  ich vymáhanie  alebo akýkoľvek iný majetok, ktorý sa považuje za dôležitý pre prípad postupníka bez toho, aby o tom musel informovať alebo získať súhlas postupcu alebo jeho klienta.
+\end{enumerate}
+\subsection{POSTÚPENIE NÁROKOV }
+\begin{enumerate}
+\item	Postupník môže slobodne postúpiť, založiť, zaťažiť bremenom alebo previesť na tretie osoby svoje práva a/alebo nároky podľa tejto zmluvy (bez ohľadu na to, či k tomu dôjde v čase postúpenia alebo existencie akýchkoľvek budúcich nárokov) v súvislosti s ktoroukoľvek z Pohľadávok prevádzaných postupcom (pričom tieto môžu byť prevedené alebo postúpené v niekoľkých postúpeniach, každé v súvislosti s Pohľadávkami týkajúcimi sa jedného alebo viacerých Vlastníkov bytov) a takýto prevod môže mať formu postúpenia Pohľadávok postupovaných podľa tejto zmluvy akejkoľvek tretej strane. 
+\item	Postupca nesmie postúpiť Pohľadávky inak ako na základe tejto zmluvy. Postupca nesmie postúpiť žiadne zo svojich práv na prijímanie platieb za Služby.
+\end{enumerate}
+\subsection{VLASTNÍCKE PRÁVO K ZARIADENIAM}
+\begin{enumerate}
+\item Touto zmluvou nie sú dotknuté žiadne ustanovenia [článok 16] Všeobecných podmienok zmluvy o energetickej efektívnosti a vlastnícke právo postupcu na zariadenia inštalované v Budove na účely vykonania Renovačných prác, ktoré je možné oddeliť od Budovy bez spôsobenia materiálnych škôd na Budove.
+\item V závislosti na vyššie uvedených ustanoveniach a ako zábezpeku za záväzky postupcu vyplývajúce z tejto zmluvy, postupník zriadi vo svoj prospech alebo vo výlučný prospech tretích strán osobitné záložné právo k zariadeniam inštalovaným v Budove, a to najneskôr do 10 pracovných dní od podpísania príslušného preberacieho protokolu k Zariadeniam (všetky sú definované v zmluve o energetickej efektívnosti). V uvedenej lehote sa postupca zaväzuje vykonať všetky náležité právne a skutkové úkony potrebné na vykonanie záložného práva, a to aj riadnou registráciou v registri záložných práv Slovenskej republiky, po podpísaní všetkých náležitých právnych dokumentov a dodatočných dohôd v ich požadovanej právnej forme.
+\end{enumerate}
+\subsection{ZODPOVEDNOSŤ}
+\begin{enumerate}
+\item Postupca nenesie zodpovednosť za žiadne nároky spojené s postúpením Pohľadávok, okrem nasledujúcich prípadov: 
+\begin{enumerate}
+\item postupca poruší ktorúkoľvek zo svojich povinností vyplývajúcich zo zmluvy o energetickej efektívnosti, čo vedie k tomu, že postupníkovi vznikla strata, a takéto porušenie je buď písomne potvrdené postupcom, alebo je zistené v priebehu riešenia sporu podľa zmluvy o energetickej efektívnosti; a/alebo
+\item odškodnenie postupcu, v každom prípade tak, ako je výslovne uvedené v tejto zmluve.  
+\end{enumerate} 
+\item Postupca odškodní postupníka a zbaví ho zodpovednosti za akýkoľvek záväzok a/alebo nárok, ktorý vznikne postupníkovi v dôsledku alebo v súvislosti so závažným porušením niektorého z vyhlásení, záruk alebo záväzkov postupcu, ktoré vyplývajú z tejto zmluvy alebo zo zmluvy o energetickej efektívnosti, avšak za predpokladu, že súhrnná suma, ktorú je postupca povinný zaplatiť postupníkovi, bude obmedzená na neuhradenú sumu Pohľadávok, ktoré budú splatné a ktoré postupník zatiaľ nevymohol, a to až do skončenia platnosti zmluvy o energetickej efektívnosti.
+\item Postupník odškodní postupcu a zbaví ho zodpovednosti za akýkoľvek záväzok a/alebo nárok, ktorý vznikne postupcovi v dôsledku alebo v súvislosti so závažným porušením niektorého z vyhlásení, záruk alebo záväzkov postupníka, ktoré vyplývajú z tejto zmluvy, avšak za predpokladu, že súhrnná suma, ktorú je postupník povinný zaplatiť postupcovi, bude obmedzená na sto percent (100 %) z celkovej hodnoty Pohľadávok, ktoré sú predmetom ich prevodu podľa tejto zmluvy.
+\item Postupník je oprávnený odstúpiť od tejto zmluvy a s okamžitou platnosťou vykonať práva „zásahu“ (step-in rights) z ktoréhokoľvek z nasledujúcich dôležitých dôvodov: 
+\begin{enumerate}
+\item postupca sa dostal do úpadku alebo likvidácie, alebo do správy súdu, má pozastavené obchodnú činnosť, je predmetom konania o týchto veciach alebo sú v analogickej situácii, ktorá vyplýva z podobného postupu stanoveného vo vnútroštátnych právnych predpisoch alebo predpisoch;
+\item postupca bol právoplatne odsúdený za trestný čin týkajúci sa profesionálnej etiky na základe rozsudku, ktorý má účinok res judicata
+\item postupca si nesplnil povinnosti týkajúce sa platenia príspevkov na sociálne zabezpečenie alebo platenia daní v súlade s právnymi predpismi krajiny jeho registrácie, alebo s právnymi predpismi krajiny obstarávateľa alebo právnymi predpismi krajiny, v ktorej sa má zmluva plniť;
+\item postupcovi bol vydaný rozsudok, ktorý má účinok res judicata za podvod, korupciu, účasť v zločineckej organizácii alebo akúkoľvek inú nezákonnú činnosť, ktorá poškodzuje finančné záujmy postupníka;
+\item postupca neposkytne informácie a dokumenty potrebné na výber postupovaných Pohľadávok do 14 dní od akejkoľvek písomnej žiadosti;
+\item postupca porušil akékoľvek podstatné zmluvné záväzky tejto zmluvy a príslušnej zmluvy o energetickej efektívnosti, čím spôsobil stratu postupníkovi;
+\item postupca zatajil skutočnosti, ktoré mu boli známe, čo zabraňuje úspešnému výberu postupovaných Pohľadávok;    
+\end{enumerate} 
+\item S výnimkou toho, čo sa uvádza v čl. 5.3 a 5.6 týchto Všeobecných podmienok, pokiaľ postupník odstúpi od tejto zmluvy, v súvislosti so všetkými alebo časťou postupovaných Pohľadávok, postupca musí splatiť akúkoľvek sumu zaplatenú v súvislosti s príslušnými Pohľadávkami podľa čl. IV. Osobitných podmienok (po odpočítaní akýchkoľvek súm, ktoré už postupník dostal v súvislosti s týmito Pohľadávkami) a stráca nárok na ďalšie platby od postupníka podľa týchto článkov v súvislosti s príslušnými Pohľadávkami. Táto suma je splatná do 14 dní od odstúpenia od zmluvy. Postupník prevedie na náklady postupcu späť na postupcu príslušné Pohľadávky a sumy (ak existujú) prijaté v súvislosti s Pohľadávkami, po odpočítaní nákladov a výdavkov. 	
+Po ukončení platnosti tejto zmluvy je postupník oprávnený požadovať od postupcu všetky náklady podľa zákona, ktoré sú potrebné na vymáhanie nesplatených pohľadávok, alebo zadržať všetky neuhradené platby, kým nedôjde k urovnaniu tohto konfliktu.
+\end{enumerate}
+
+\subsection{VYŠŠIA MOC}
+\begin{enumerate}
+    \item Akákoľvek mimoriadna situácia alebo udalosť, ktorá sa nedá vopred predvídať a ktorá sa vyznačuje všetkými nižšie uvedenými príznakmi, sa definuje ako vyššia moc:
+    \begin{enumerate}
+        \item zmluvné strany ju nie sú schopné predvídať a ovplyvniť;
+        \item zasahuje do plnenia povinností zmluvných strán;
+        \item nemôže byť považovaná za pochybenie alebo nedbanlivosť alebo čin niektorej zo zmluvných strán; 
+        \item dá sa preukázať alebo považovať za neprekonateľnú, aj keď zmluvná strana (strany) vyvinula (-li) primerané úsilie, aby jej zabránila.
+    \end{enumerate}
+    \item Medzi udalosti vyššej moci patria okrem iného vojna, pandémia, živelná pohroma a právne akty štátnej správy.
+    \item Medzi udalosti vyššej moci NEPATRIA: poruchy Zariadení, Služby, ktoré nemajú dohodnutú kvalitu alebo množstvo, použité vybavenie alebo materiály, poskytnuté alebo nainštalované postupcom, alebo oneskorenie s ich prevádzkou (ak nie je spôsobené udalosťami vyššej moci), spory postupcu, spory klienta postupníka, štrajky, finančné problémy alebo iné podobné problémy týkajúce sa zmluvnej strany, ktorá sa odvoláva na udalosť vyššej moci.
+    \item Zmluvné strany nebudú zodpovedné za úplné alebo čiastočné neplnenie záväzkov vyplývajúcich z tejto zmluvy, ak dôjde k udalostiam vyššej moci. Zmluvná strana, ktorá sa odvoláva na udalosť vyššej moci, poskytne o tom dôkaz druhej zmluvnej strane.
+    \item Zmluvná strana („Dotknutá zmluvná strana“), ktorá si nemohla plniť svoje povinnosti podľa tejto zmluvy, bezodkladne oznámi druhej zmluvnej strane existenciu udalosti vyššej moci, najneskôr však do 3 (troch) pracovných dní od momentu, kedy ju Dotknutá zmluvná strana predpokladala alebo sa o nej dozvedela, s uvedením popisu udalosti, ktorá nastane alebo nastala, možného trvania, očakávaných dôsledkov a prípadného riešenia.
+    \item Zmluvné strany vykonajú spoločne alebo nerozdielne všetky činnosti potrebné na zmiernenie dopadu udalosti vyššej moci a prijmú primerané kroky na zmiernenie spôsobených škôd. 
+    \item Ak udalosť vyššej moci trvá nepretržite viac ako 6 (šesť) mesiacov a neočakáva sa jej skončenie počas ďalších 3 (troch) mesiacov, postupca aj postupník má právo jednostranne vypovedať zmluvu a dostať náhradu ustanovenú v čl. 5.3. Všeobecných podmienok vyššie.
+\end{enumerate}
+\subsection{DÔVERNOSŤ A OCHRANA OSOBNÝCH ÚDAJOV}
+\begin{enumerate}
+    \item Zmluvné strany sa zaväzujú, že neposkytnú Dôverné informácie (kde „Dôverné informácie“ znamenajú, podľa čl. 11.5 a čl. 11.6, informácie, ktoré spadajú do kategórií uvedených v čl. 11.3 a 11.4) iných osôb tretím stranám, ako aj neposkytnú údaje iných osôb, ktoré by mohli byť použité na účely hospodárskej súťaže zo strany konkurencie alebo na nezákonné činnosti, a to počas doby platnosti zmluvy, ako aj počas troch rokov po jej ukončení.
+    \item Postupca nebude požadovať ani radiť žiadnemu zákazníkovi, potenciálnemu zákazníkovi alebo obchodnému kontaktu postupníka a/alebo žiadnym subjektom, o ktorých postupca vie, že postupník si chce s nimi vybudovať vzťah, aby obmedzil, zrušil, odvolal, znížil alebo inak obmedzil svoje obchodné činnosti s postupníkom.
+    \item Informácie získané počas uzavretia tejto zmluvy alebo počas jej plnenia, ktoré nie sú všeobecne dostupné tretím stranám a o ktorých prijímajúca osoba vie alebo by mala vedieť, že ich poskytnutie môže poškodiť zákonné práva alebo záujmy poskytujúcej osoby, sa považujú za dôverné.
+    \item Okrem ustanovení čl. 11.3 dôverné informácie predstavujú:
+    \begin{enumerate}
+    \item akékoľvek informácie s obmedzeným prístupom o zmluvných stranách tejto zmluvy, ich zákazníkoch alebo obchodných partneroch, okrem iného vrátane akýchkoľvek informácií, ktoré majú status obchodného tajomstva ktorejkoľvek zo zmluvných strán tejto zmluvy;
+    \item akékoľvek informácie o organizácii práce, inventári, zariadení a technológiách používaných ktoroukoľvek zo zmluvných strán tejto zmluvy.
+    \end{enumerate}
+    \item Zoznam Dôverných informácií poskytnutý v článku 11.4 zmluvy nie je vyčerpávajúci a akékoľvek informácie dôverného charakteru, napriek tomu, že sú zverejnené, sa považujú za spadajúce pod definíciu Dôverných informácií.
+    \item Informácie, ktoré sa stali verejnými prostredníctvom tretích strán bez toho, aby ktorákoľvek zo zmluvných strán porušila ustanovenia tejto zmluvy, sa nebudú považovať za Dôverné informácie.
+    \item Zmluvné strany tejto zmluvy môžu poskytnúť Dôverné informácie svojim poradcom za predpokladu, že budú niesť zodpovednosť za to, že tretie osoby nezákonne použijú prijaté Dôverné informácie alebo nebudú dodržiavať povinnosti mlčanlivosti stanovené v tejto zmluve.
+    \item Ak je zmluvná strana tejto zmluvy, ktorá dostala Dôverné informácie, povinná poskytnúť tieto Dôverné informácie v súlade s právnymi predpismi alebo rozhodnutiami platnými v Slovenskej republike (alebo s akýmikoľvek zákonmi, ktorými je viazaná), v tom prípade: (i) je takáto zmluvná strana oprávnená informácie poskytnúť; a (ii) bezodkladne poskytne oznámenie o tejto skutočnosti zmluvnej strane, ktorá informácie poskytla, pokiaľ zákony a iné právne predpisy neustanovujú inak. 
+    \item Postupca a postupník sú na účely reklamy oprávnení zverejniť všeobecné informácie o vzájomnej spolupráci vrátane, ale nie výlučne, poskytnutia informácií, ktoré už sú verejne dostupné, o zmluvných stranách, povahe spolupráce, dosiahnutej Úspore energie a načasovaní procesu podľa tejto zmluvy, pokiaľ sa tým neporušujú oprávnené nároky a záujmy ostatných strán týkajúce sa ochrany dôverných informácií. Ak bude mať zmluvná strana tejto zmluvy pochybnosti o povahe konkrétnych informácií, ich poskytnutie schváli tá zmluvná strana (strany), ktorej oprávnené nároky a záujmy môžu byť porušené, a ak sa takáto zmluvná strana domnieva, že tieto informácie sú v súlade s povinnosťou mlčanlivosti podľa zmluvy.
+  	\item Vyššie uvedené ustanovenie platí bez toho, aby bolo dotknuté právo postupníka zhromažďovať, spracúvať, uchovávať, prenášať a rozširovať všetky zhromaždené údaje od postupcu za účelom zlepšenia kvality jeho služieb a rozvoja, prevádzky a údržby systému online platformy EPC, ktorá podporuje všetky fázy a zúčastnené strany v projekte EPC.
+   	\item Bez toho, aby bol dotknutý čl. 2.10, postupca týmto súhlasí s tým, že postupník je oprávnený zhromažďovať, spracúvať, uchovávať, používať a prenášať osobné údaje, ktoré poskytol postupca podľa tejto zmluvy, pri plnení svojich zákonných povinností, na účely poskytovania svojich služieb, a previesť osobné údaje akejkoľvek tretej strane, ktorej môžu byť udelené práva alebo povinnosti vyplývajúce z tejto zmluvy, vrátane, ale nie výlučne, akejkoľvek osoby zodpovednej za vývoj, realizáciu, prevádzku a údržbu online Platformy na sledovanie výkonu realizovaných Renovačných prác. Používanie údajov postupníkom na iné účely by sa malo realizovať po získaní súhlasu postupcu alebo prípadne klienta postupcu. Bez ohľadu na vyššie uvedené, všetky osobné údaje alebo údaje týkajúce sa Budovy alebo Zariadení zostávajú majetkom klienta postupcu.
+   	\item Postupca berie na vedomie a súhlasí s tým, že postupník alebo akákoľvek osoba, ktorej sú pridelené práva postupníka podľa tejto zmluvy, bude používať akékoľvek údaje a informácie týkajúce sa spotreby energie Budovy, či už poskytnuté postupcom alebo získané postupníkom, a to na účely porovnávania a zostavenia celoštátnej, regionálnej alebo celoeurópskej databázy alebo na účely použitia klientom postupcu ako referencie alebo na akékoľvek interné účely, ktoré schválil klient.
+\end{enumerate}
+\subsection{ZASTUPOVANIE ZMLUVNÝCH STRÁN}
+\begin{enumerate}
+    \item Vo všetkých otázkach týkajúcich sa tejto zmluvy budú každú zmluvnú stranu zastupovať oprávnení zástupcovia (pre právnické osoby) alebo osoby riadne a platne splnomocnené na zastupovanie, ktoré sú oprávnené zaviazať príslušnú stranu tejto zmluvy k plneniu povinností.
+    \item Splnomocnení zástupcovia zmluvných strán sú oprávnení zastupovať príslušnú zmluvnú stranu pri riešení všetkých právnych záležitostí podľa tejto zmluvy, a to podľa zákonov a iných právnych predpisov platných v Slovenskej republike, alebo v prípade zmluvnej strany založenej mimo Slovenskej republiky, v krajine, v ktorej je takáto zmluvná strana zapísaná do obchodného registra.  
+    \item Zmluvné strany sú oprávnené kedykoľvek odvolať splnomocnenie svojich oprávnených zástupcov písomným oznámením ostatným zmluvným stranám a následným splnomocnením iného zástupcu, ktorého písomné splnomocnenie na zastupovanie príslušnej zmluvnej strany sa doručí ostatným zmluvným stranám. V prípade náhrady svojho zástupcu zmluvná strana zabezpečí, aby bola druhá zmluvná strana informovaná o náhradnom zástupcovi najneskôr v deň zastupovania. Uvedené oznámenie sa stáva súčasťou tejto zmluvy. 
+    \item Okrem vyššie uvedeného je postupca oprávnený, za podmienok stanovených v zmluve o energetickej efektívnosti, prijať akúkoľvek tretiu stranu, aby sa stala jeho subdodávateľom alebo obchodným partnerom pre vykonávanie určitých prác alebo realizáciu služieb za účelom splnenia povinností stanovených v tejto zmluve alebo v zmluve o energetickej efektívnosti, a to zaslaním písomného oznámenia klientovi postupcu vopred, vrátane e-mailu.
+\end{enumerate}
+\subsection{POSTUP RIEŠENIA SPOROV}
+\begin{enumerate}
+    \item Zmluvné strany budú riešiť nezhody týkajúce sa tejto zmluvy prostredníctvom vzájomných rokovaní a vyvinú maximálne úsilie na urovnanie nezhôd. Za týmto účelom zmluvné strany včas písomne odpovedia na všetky listy od ostatných zmluvných strán týkajúce sa nezhôd a budú venovať primeraný čas v možnom rozsahu na osobné vyriešenie príslušnej nezhody.
+    \item Ak zmluvné strany nedosiahnu vzájomnú dohodu a dôjde medzi nimi k sporu, nezhodám alebo nárokom, ktoré vyplynú alebo sa budú týkať tejto zmluvy, jej pozastavenia, ukončenia alebo neplatnosti, vec bude vyriešená v procese mediácie podľa webovej stránky http://sunshineplatform.eu/ 
+    \item Ak zmluvné strany nedosiahnu vzájomnú dohodu po procese mediácie a/alebo zisťovaní skutočností, bude spor vyriešený na súde Slovenskej republiky so všeobecnou právomocou v súlade s platnými zákonmi a predpismi  Slovenskej republiky. Návrh sa podáva na súde podľa krajiny miesta pobytu alebo sídla odporcu; ak však nie je na Slovensku, mal by to byť Okresný súd Bratislava I podľa Občianskeho súdneho poriadku Slovenskej republiky.
+\end{enumerate}
+\subsection{ĎALŠIE USTANOVENIA}
+\begin{enumerate}
+    \item Akékoľvek písomné oznámenie týkajúce sa tejto zmluvy sa považuje za doručené na 7. (siedmy) deň po dátume jeho odoslania, ak sa zasiela doporučene na adresu, ktorú naposledy poskytol splnomocnený zástupca zmluvnej strany, ktorej je určená. Dátum odoslania oznámenia je deň, kedy je oznámenie podané na pošte a podanie je potvrdené pečiatkou pošty. Oznámenia zaslané e-mailom s elektronickým podpisom na e-mailovú adresu uvedenú alebo poskytnutú zmluvnými stranami sa považujú za písomné oznámenia so všetkými dôsledkami z nich plynúcimi a považujú sa za prijaté od chvíle, kedy vojdú do operačného systému príjemcu, a to bez ohľadu na to, či boli prečítané, alebo nie.
+    \item Táto zmluva je zostavená a práva a povinnosti, ktoré z nej vyplývajú, ako aj kroky zmluvných strán sa budú vykladať podľa platných právnych predpisov Slovenskej republiky.
+    \item Názvy častí ustanovení tejto zmluvy sa nepoužijú na interpretáciu tejto zmluvy.
+    \item Táto zmluva obsahuje všetky ustanovenia, sľuby, podmienky a vyhlásenia zámerov medzi zmluvnými stranami a zmluvné strany zaručujú, že neexistujú žiadne ústne ustanovenia, sľuby, dohody, podmienky a vyhlásenia zámerov okrem tých, ktoré sú uvedené v tejto zmluve. 
+    \item Ak počas doby platnosti tejto zmluvy nadobudnú účinnosť zmeny a doplnenia zákonov a právnych predpisov Slovenskej republiky, kvôli ktorým sa celkom alebo čiastočne znemožní plnenie akýchkoľvek povinností podľa tejto zmluvy, alebo sa zmenia podmienky pre plnenie povinností ktoroukoľvek zo zmluvných strán, neovplyvní to platnosť zostávajúcich povinností podľa tejto zmluvy a zmluvné strany zavedú potrebné zmeny a doplnenia tejto zmluvy, ktoré budú čo najlepšie odrážať pôvodný zámer a účel a ekonomický dosah tejto zmluvy.  
+    \item Reorganizácia zmluvných strán, ako aj zmena akcionárov (vlastníkov) alebo členov riadiacich orgánov (spoločníkov) zmluvných strán alebo klienta postupcu (Vlastníci bytov v Budove, ktorí prevedú vlastnícke práva k Bytom alebo ich krátkodobo alebo dlhodobo prenajmú) nebudú dôvodom na ukončenie tejto zmluvy alebo na neplnenie povinností obsiahnutých v tejto zmluve. Ak dôjde k akejkoľvek fúzii alebo akvizícii ktorejkoľvek zo zmluvných strán, ak sa ktorákoľvek zmluvná strana dostane do likvidácie alebo do konkurzného konania alebo dôjde k zmene Vlastníka bytu v Budove, táto zmluva zostáva v platnosti a jej ustanovenia sú záväzné pre právnych nástupcov príslušnej zmluvnej strany. Každá zmluvná strana bude bezodkladne a najneskôr do 5 (piatich) dní od vykonania zmeny informovať ostatné zmluvné strany o zmene adresy zmluvnej strany uvedenej v tejto zmluve, alebo o ďalších zmenách jej právneho postavenia a riadenia.
+    \item Táto zmluva je vyhotovená a podpísaná v 2 (dvoch) rovnopisoch v [anglickom] a [slovenskom] jazyku. V prípade rozporov medzi anglickou a slovenskou verziou je rozhodujúca slovenská verzia. Všetky rovnopisy majú rovnaký právny účinok. Každá zmluvná strana si ponechá 1 (jeden) rovnopis tejto zmluvy. Zmluvné strany svojím podpisom potvrdzujú, že rozumejú obsahu, významu a dôsledkom tejto zmluvy; potvrdzujú, že táto zmluva je správna, vzájomne prospešná a že ju chcú dobrovoľne uzavrieť. 
+\end{enumerate}
+\subsection{PRÍLOHY}
+
+\begin{enumerate}
+\item V čase podpísania tejto zmluvy sú k tejto zmluve pripojené nasledujúce prílohy: 
+\begin{itemize}
+    \item PRÍLOHA 1 OZNÁMENIE O POSTÚPENÍ POHĽADÁVOK
+    \item PRÍLOHA 2 KLIENT/ZÁKAZNÍK POSTUPCU
+    \item PRÍLOHA 3 ZMLUVA O ENERGETICKEJ EFEKTÍVNOSTI
+    \item PRÍLOHA 4 OPRÁVNENÍ ZÁSTUPCOVIA
+    \item PRÍLOHA 5 DEFINÍCIE
+\end{itemize}
+\item Všetky prílohy sa považujú za neoddeliteľnú súčasť tejto zmluvy a sú pre zmluvné strany záväzné. V prípade rozporu medzi podmienkami tejto zmluvy a ktorejkoľvek z príloh majú prednosť ustanovenia tejto zmluvy, s výnimkou príloh podpísaných po podpísaní tejto zmluvy. Prílohy podpísané po podpísaní tejto zmluvy majú prednosť pred ustanoveniami tejto zmluvy.
+\item Podpísaním tejto zmluvy sa vyhlasuje, že zmluvné strany v minulosti rokovali o ustanoveniach zmluvy a jej príloh a tieto sú jasné a zrozumiteľné pre všetky zmluvné strany.
+scussed provisions of the Agreement and the
+  \end{enumerate}
+
+\end{multicols}
+
+\vspace{5mm}
+
+{{template "sign.tex"}}
+
+\begin{center}
+  \section{PRÍLOHY}
+\end{center}
+
+\vspace{1cm}
+
+\subsection{PRÍLOHA 1 – OZNÁMENIE O POSTÚPENÍ POHĽADÁVOK}
+
+\vspace{2mm}
+
+\begin{tabu}{|X|} \tabucline{}
+
+  Pre: {{.Contract.Fields.client_name}} \par
+
+  \begin{flushright}
+    {{index .Contract.Agreement "place-of-forfaiting-agreement"}}, {{index .Contract.Agreement "date-of-forfaiting-agreement"}}
+  \end{flushright}
+
+  \begin{alltt}  Transfer of accounts receivables
+
+    Vážený pán/vážená pani,
+
+
+    s poukazom na zmluvu o energetickej efektívnosti podpísanú medzi Vami a nami zo 
+    dňa {{.Contract.Fields.date}} Vás týmto informujeme, že na základe forfaitingovej zmluvy zo dňa 
+    {{.Contract.Agreement.front_page_date}} sme 
+    [previedli] 
+    [postúpili] všetky pohľadávky zo zmluvy o energetickej efektívnosti, vrátane vypočítaných a splatných Poplatkov, ako sú definované v prílohe č. 5 zmluvy o energetickej efektívnosti, na postupníka, 
+    {{index .Contract.Fields "client_name"}},  {{index .Contract.Fields "client_id"}} („postupník”). Všetky platby Poplatku plus úroky a pokuty a ďalšie sumy, ktoré sú uvedené v zmluve o energetickej efektívnosti, musíte ďalej platiť postupníkovi, aby ste si splnili svoje povinnosti zo zmluvy o energetickej efektívnosti. Postupník poveril Vášho doterajšieho 
+    správcu,  {{index .Contract.Agreement "manager-name"}} („správca“), aby v jeho mene inkasoval všetky splatné sumy. 
+
+
+  \end{alltt}
+
+  \vspace{5mm}
+
+  Žiadame Vás, aby ste vzali na vedomie forfaitingovú zmluvu a súvisiaci predaj pohľadávok a aby ste informovali postupníka, že vec beriete na vedomie, a to pomocou priloženého vzoru.
+
+
+  \vspace{1cm}
+
+  S pozdravom,,
+
+  \vspace{1cm}
+
+   {{.ESCo.Name}}, postupca
+
+  \vspace{1cm} \\\tabucline{}
+
+\end{tabu}
+
+\pagebreak
+
+\begin{tabu}{|X|} \tabucline{}
+
+  Pre:  {{.ESCo.Name}} \par
+
+  \begin{flushright}
+     {{index .Contract.Agreement "place-of-forfaiting-agreement"}},  {{index .Contract.Agreement "date-of-forfaiting-agreement"}} \par
+  \end{flushright}
+
+\begin{alltt}
+ Vážený pán/vážená pani,
+
+
+my, {{index .Contract.Agreement "assignors-client-name"}}, 
+s odvolaním sa na vyššie uvedené oznámenie, ktorým sme boli informovaní ako klient spoločnosti 
+{{index .Contract.Agreement "assignor-name"}} („postupca”), že postupca previedol na 
+{{index .Contract.Agreement "forfaiting-assignee"}} („postupník”) svoje právo na pohľadávky voči nám v súvislosti so zmluvou o energetickej efektívnosti medzi nami a postupcom zo dňa 
+{{index .Contract.Agreement "date-of-energy-contract"}} („zmluva o energetickej efektívnosti”) (prevod sa realizoval na základe forfaitingovej zmluvy zo dňa 
+{{index .Contract.Agreement "date-of-forfaiting-agreement"}} medzi postupcom a postupníkom. Podpísaním tohto oznámenia potvrdzujeme postupcovi a postupníkovi, že sme boli riadne informovaní o vyššie uvedenom prevode a postúpení Poplatku] a uznávame postupníka ako veriteľa Poplatku a všetkých ďalších pohľadávok, ktoré máme zaplatiť podľa ustanovení zmluvy o energetickej efektívnosti. Do doby, kým nedostaneme od postupníka iné informácie, budeme platiť všetky tieto 
+sumy {{index .Contract.Agreement "manager-name"}} („správcovi“) alebo takej inej osobe, ktorú nám oznámi postupník. 
+\end{alltt}
+
+  \vspace{2mm}
+
+  Berieme tiež na vedomie, že postupník môže na základe zmluvy o energetickej efektívnosti vykonať právo postupcu vymenovať nového dodávateľa pre postupcu.
+
+  \vspace{2cm}
+
+  \begin{flushright}
+    {\_\_\_\_\_\_\_\_\_\_\_\_\_\_} \par
+    Meno: \par
+    Oprávnenie: \par
+  \end{flushright}
+
+  \vspace{1cm} \\\tabucline{}
+
+\end{tabu}
+
+{{template "sign.tex"}}
+
+\subsection{PRÍLOHA 2 – KLIENT / ZÁKAZNÍK POSTUPCU}
+
+\iffalse input forfaitingFields.annex2_tarea value="{{.Contract.Agreement.annex2_tarea}}" type="textarea" \fi {{.Contract.Agreement.annex2_tarea}}
+
+\pagebreak
+
+\subsection{PRÍLOHA 3 – ZMLUVA O ENERGETICKEJ EFEKTÍVNOSTI}
+
+\url{ {{.Attachments.signed_epc }} }
+
+\iffalse attachment value="signed epc" \fi
+
+\pagebreak
+
+\subsection{PRÍLOHA 4 – OPRÁVNENÍ ZÁSTUPCOVIA}
+
+\iffalse input forfaitingFields.annex4_tarea value="{{.Contract.Agreement.annex4_tarea}}" type="textarea" \fi {{.Contract.Agreement.annex4_tarea}}
+
+\pagebreak
+
+\subsection{PRÍLOHA 5 – DEFINÍCIE}
+
+
+\renewcommand*{\theenumi}{\roman{enumi}}
+
+Zmluvné strany sa na účely tejto zmluvy dohodli, že nasledujúce definície majú nasledujúci význam: \par
+
+\begin{longtabu}{|X|X[2]|} \tabucline{}
+
+  % Include `\hline` after every row to be sure that
+  % if this is the last row of the page, to ensure upper and lower
+  % bold line and remove the "empty" boxes
+
+  Zmluva & Táto forfaitingová zmluva uzavretá medzi postupcom a postupníkom \\\tabucline{}
+   \hline
+
+   Byt & Každý byt, ktorý sa nachádza v Budove podľa zákonov a právnych predpisov. \\\tabucline{}
+
+   \hline
+
+   Vlastník bytur & Fyzická alebo právnická osoba, na meno ktorej je Byt zapísaný v katastri nehnuteľností, alebo iná osoba, ktorá podľa zákonov a iných právnych predpisov má vlastnícke právo k príslušnému Bytu alebo na ktorú sa prevedie vlastnícke právo príslušného vlastníka Bytu, či už podľa ustanovení zákona alebo na základe zmluvných dojednaní. \\\tabucline{}
+
+   \hline
+
+   Klient postupcu &  {{index .Contract.Fields "client_name"}} ďalej tiež ako „zákazník,“ vo všeobecnosti v súvislosti s Budovou, v ktorej postupca realizoval Renovačné práce na základe zmluvy o energetickej efektívnosti, ktorej pohľadávky sú predmetom tejto forfaitingovej zmluvy.\\\tabucline{}
+
+   \hline
+
+   Základný scenár & Základný scenár predstavuje podmienky Budovy pred realizáciou Renovačných prác a zahŕňa namerané energetické údaje v základnom roku a podmienky budovy v základnom roku.  \\\tabucline{}
+
+   \hline
+
+   Energetické údaje v základnom roku & Nameraná spotreba energie v priebehu rokov zvolených pre základný scenár, ktorá predstavuje energetickú efektívnosť budovy pred realizáciou Renovačných prác. \\\tabucline{}
+
+   \hline
+
+   Podmienky v základnom roku & Súbor podmienok, ktoré spôsobili spotrebu/dopyt po energii základného roku, najmä vnútorná teplota vzduchu, vonkajšia teplota vzduchu, dĺžka vykurovacích sezón. \\\tabucline{}
+
+   \hline
+
+   Budova & Bytový dom na adrese  {{index .Contract.Fields "client_address"}}. \\\tabucline{}
+
+   \hline
+
+   Pracovný deň & Oficiálny pracovný deň, ktorý nie je vyhlásený ako oficiálny sviatok alebo oficiálny deň pracovného pokoja v zmysle zákonov Slovenskej republiky. \\\tabucline{}
+
+   \hline
+
+   Štandardy komfortu & Požadovaná minimálna úroveň komfortu uvedená v prílohe č. 2 („Štandardy komfortu“) k zmluve o energetickej efektívnosti \\\tabucline{}
+
+   \hline
+
+   Dôverné informácie& Termín „Dôverné informácie“, ktorý sa používa v tejto zmluve, zahŕňa všetky údaje alebo informácie, či už v hmotnej alebo nehmotnej podobe, ktoré sú vo vlastníctve niektorej zo zmluvných strán („Poskytujúca zmluvná strana”), alebo boli získané alebo poskytnuté tretími stranami (či už podľa dohody o mlčanlivosti alebo inak) a boli kedykoľvek a akokoľvek oznámené druhej zmluvnej strane („Prijímajúca zmluvná strana“), okrem iného vrátane: 
+   \begin{enumerate}
+       \item akýchkoľvek marketingových stratégií, plánov, finančných informácií, obchodných plánov a výsledkov výkonu súvisiacich s minulými, súčasnými alebo budúcimi obchodnými činnosťami Poskytujúcej zmluvnej strany, jej klientov, partnerských organizácií, jej pridružených spoločností, dcérskych spoločností alebo inak pridružených subjektov;
+       \item plánov výrobkov alebo služieb a zoznamov dodávateľov; 
+       \item 	akýchkoľvek vedeckých alebo technických informácií, vynálezov, výtvorov, procesov, postupov, vzorcov, vylepšení, technológií alebo metód poskytnutých Poskytujúcou zmluvnou stranou bez ohľadu na to, či k nim Poskytujúca zmluvná strana alebo  jej partnerské organizácie majú vlastnícke právo alebo nie v rámci Projektu; 
+       \item akýchkoľvek konceptov, správ, údajov, know-how, nedokončenej výroby, návrhov, vývojových nástrojov, výkresov, špecifikácií, vývojových diagramov, databáz, vynálezov, patentov a obchodných tajomstiev; a
+       \item akýchkoľvek iných informácií, ktoré by sa mali primerane považovať za dôverné informácie Poskytujúcej zmluvnej strany, jej partnerských organizácií, spoločností združených na účely tejto zmluvy, dcérskych spoločností, pridružených spoločností alebo inak prepojených spoločností, vrátane informácií osobnej povahy alebo informácií týkajúcich sa súkromného života ktoréhokoľvek z Vlastníkov bytov. 
+    \end{enumerate}
+   Dôverné informácie nemusia byť nové, jedinečné, patentovateľné, podliehajúce ochrane na základe autorských práv ani nemusia predstavovať obchodné tajomstvo, aby mohli byť označené ako Dôverné informácie. 
+   
+
+ \\\tabucline{}
+
+   \hline
+
+   Odovzdanie a prevzatie Zariadení & Po ukončení realizácie Renovačných prác v Budove dohodnutých podľa tejto zmluvy bude zástupca klienta vyzvaný k dodaniu a prevzatiu Zariadení. Zástupcovia klienta a dodávateľa podpíšu bilaterálny protokol, ktorým sa potvrdia vykonané práce s podrobným opisom (vrátane fotografického materiálu) podmienok, za ktorých sa Zariadenia odovzdávajú do vlastníctva Klienta. 
+   Pokiaľ klient neposkytol zástupcovi príslušné plnomocenstvo v lehote 5 (piatich) dní od prijatia príslušného oznámenia od dodávateľa, bude sa mať za to, že klientovi boli odovzdané a tento prevzal Zariadenia spôsobom opísaným v protokole podpísanom samotným dodávateľom. 
+   Akékoľvek nároky alebo reklamácie ohľadom kvality alebo spôsobu vykonania akejkoľvek časti prác dodávateľa sa považujú za odmietnuté, pokiaľ nebudú podané e-mailom do 5 (piatich) pracovných dní od podpísania bilaterálneho protokolu preukazujúceho prevod vlastníctva Zariadení na klienta.
+   \\\tabucline{}
+
+   \hline
+
+   Energia & Energia znamená všetky formy energetických produktov, horľavé palivá, teplo, obnoviteľnú energiu, elektrinu alebo akékoľvek iné formy energie potrebnej na vykurovanie Budovy a ohrev teplej úžitkovej vody, ktoré boli spotrebované na účely dosiahnutia Štandardov komfortu stanovených v zmluve.\\\tabucline{}
+
+   \hline
+
+   Energetická efektívnosť & Znamená pomer medzi výstupom výkonu, služby, tovaru alebo energie a energetickým vstupom.\\\tabucline{}
+
+   \hline
+
+   Úspory energie &Znamená množstvo ušetrenej energie určené meraním a/alebo odhadom spotreby pred a po realizácii Renovačných prác pri súčasnom zabezpečení normalizácie vonkajších podmienok ovplyvňujúcich spotrebu energie. \\\tabucline{}
+
+   \hline
+
+   Tarifa energie & Poplatok za jednotku energie účtovanej v MWh, ktorý je stanovený dodávateľom energie v mieste budovy, ktorý je platný počas určitého časového obdobia a je schválený príslušným regulačným orgánom/zmluvou.\\\tabucline{}
+
+   \hline
+
+   Garantovaná spotreba energie & Garantované množstvo {{index .Contract.Agreement "energy-saving-amount"}}  MWh energie, ktoré sa má spotrebovať po vykonaní Renovačných prác, čo predstavuje {{index .Contract.Agreement "energy-efficient-performance"}}\% zvýšenie energetickej efektívnosti Budovy v porovnaní s jej základným scenárom. Aby sa predišlo pochybnostiam, dodávateľ zaručuje, že upravená spotreba energie Budovy po Renovačných prácach nebude vyššia ako jej garantovaná spotreba energie, a osobitne sa zaväzuje vynaložiť ďalšie úsilie primerané v oblasti nákladov na ďalšie zníženie spotreby energie počas celej doby platnosti tejto zmluvy. \\\tabucline{}
+
+   \hline
+
+   Garantovaná úspora energie &Znamená minimálnu výšku Úspory energie určenú Meraním a overovaním, ktorá je garantovaná v zmluve o energetickej efektívnosti po vykonaní Renovačných prác.\\\tabucline{}
+
+   \hline
+
+   Zariadenia& Materiál, zariadenie, systémy, príslušenstvo a iné opatrenia namontované dodávateľom alebo inak investované do Budovy ako súčasť Renovačných prác alebo na Meranie a overovanie, údržbu a opravy Budovy v súlade so zmluvou.  \\\tabucline{}
+
+   \hline
+
+   Poplatok & Opakujúci sa poplatok, ktorý platí klient dodávateľovi za poskytovanie služieb uvedených v zmluve po dobu poskytovania služby, ktorý zahŕňa Poplatok za energie, Poplatok za renováciu a Poplatok za prevádzku a údržbu, spolu s prípadnými splatnými daňami (ako napr. DPH) pri dodaní služby a sumu splatnú za spotrebu teplej úžitkovej vody.\\\tabucline{}
+
+   \hline
+
+   Dodávka tepla & Dodávka tepelnej energie do Budovy alebo Bytu pre potreby vykurovania priestorov alebo prípravy teplej úžitkovej vody.\\\tabucline{}
+
+   \hline
+
+   Vykurovacia sezóna & Obdobie v roku, v ktorom dodávateľ zabezpečuje prevádzku vykurovacieho systému (dodávka tepla) v Bytoch Budovy a zaručuje Štandardy komfortu stanovené v zmluve.\\\tabucline{}
+
+   \hline
+
+   SKBEEF & znamená Energetická efektívnosť, pôsobí ako akciová spoločnosť riadne zapísaná v Obchodnom registri Slovenskej republiky pod číslom.\\\tabucline{}
+
+   \hline
+
+   Správca & Fyzická alebo právnická osoba, ktorá v súlade s platnými zákonmi Slovenskej republiky a na základe zmluvy o výkone správy vykonáva správcovské činnosti postúpené zo strany klienta v súvislosti s Budovou, ako aj povinnosti stanovené v zmluve. Zmluva o výkone správy, na základe ktorej správca poskytuje svoje služby, je pripojená k tejto zmluve na referenčné účely.\\\tabucline{}
+
+   \hline
+
+   Zmluvné strany & Postupca a postupník, každý z nich jednotlivo.\\\tabucline{}
+
+   \hline
+
+   Zmluvná strana & Postupca a postupník spoločne.\\\tabucline{}
+
+   \hline
+
+   Platobné obdobie &  12-mesačné obdobie od 1. júla každého roka do 30. júna nasledujúceho roka. Prvé platobné obdobie je stanovené odo dňa začatia poskytovania Služieb do 30. júna príslušného roka. \\\tabucline{}
+
+   \hline
+
+   Regulačný orgán & Komisia pre verejné služby alebo iný príslušný orgán ustanovený v zákonoch a predpisoch platných v Slovenskej republike, ktorý schvaľuje tarify pre obchodovanie s tepelnou energiou v príslušnej miestnej samospráve, v ktorej sa Budova nachádza.\\\tabucline{}
+
+   \hline
+
+   Renovačné práce & Činnosti uvedené v zmluve, ktorých výsledkom je dosiahnutie overiteľných a merateľných alebo úspor energie, ktoré je možné odhadnúť. Tieto činnosti zahŕňajú návrh, obstaranie, dodávku, inštaláciu, spustenie a uvedenie do prevádzky v súvislosti s renováciou budovy. Všetky činnosti realizuje dodávateľ na základe ustanovení zmluvy.\\\tabucline{}
+
+   \hline
+
+   Doba poskytovania služby& Doba, počas ktorej je postupca povinný poskytovať Služby klientovi podľa zmluvy o energetickej efektívnosti.\\\tabucline{}
+
+   \hline
+
+   Služby & Renovačné práce, dodávka energie a prevádzka a údržba Zariadení, ktoré vykoná postupca podľa zmluvy o energetickej efektívnosti.\\\tabucline{}
+
+   \hline
+
+   DPH & Daň z pridanej hodnoty splatná v súlade so zákonmi a právnymi predpismi platnými v Slovenskej republike a ustanoveniami zmluvy.\\\tabucline{}
+
+ \end{longtabu}
+
+ \vspace{5mm}
+
+ Pokiaľ z kontextu nevyplýva niečo iné, ako je použité v tejto zmluve, jednotné číslo zahŕňa aj množné číslo a množné číslo môže zahŕňať jednotné číslo. Označenia jedného gramatického rodu zahŕňajú všetky rody. Pokiaľ nie je uvedené inak, odkazy na články, odseky alebo pododseky sú odkazmi na články, odseky a pododseky v tejto zmluve. Pokiaľ z kontextu nevyplýva niečo iné, termín „vrátane“ znamená „ vrátane, ale nie výlučne“. \par
+
+\vspace{5mm}
+
+{{ template "sign.tex"}}
+
+\end{document}

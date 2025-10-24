@@ -1,0 +1,36 @@
+kind: Service
+apiVersion: v1
+metadata:
+  name: sunshine-react
+spec:
+  type: NodePort
+  ports:
+  - port: 80
+    targetPort: 80
+    protocol: TCP
+  selector:
+    app: sunshine-react
+---
+kind: Deployment
+apiVersion: apps/v1
+metadata:
+  name: sunshine-react
+spec:
+  replicas: 2
+  selector:
+    matchLabels:
+      app: sunshine-react
+  template:
+    metadata:
+      labels:
+        app: sunshine-react
+    spec:
+      containers:
+      - name: sunshine-react
+        image: registry.gitlab.com/stage-ai/sunshine/sunshine-react:latest
+        imagePullPolicy: Always
+        ports:
+        - containerPort: 80
+      restartPolicy: Always
+      imagePullSecrets:
+      - name: gitlab-registry

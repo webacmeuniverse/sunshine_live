@@ -1,0 +1,232 @@
+import React, { useCallback, useState } from 'react';
+import { connect, useDispatch } from 'react-redux';
+import { useLocation } from 'react-router-dom';
+import { useTranslation } from 'react-i18next';
+import { Helmet } from 'react-helmet';
+import {
+  Grid,
+  makeStyles,
+} from '@material-ui/core';
+
+import { countries } from '../../../constants/countries';
+import { legalForms } from '../../../constants/legalStatusTypes';
+import { countriesMap } from '../../../constants/countries';
+import {
+  getAllOrganizations as getAllOrganizationsAction,
+  getMyOrganizations as getMyOrganizationsAction,
+} from '../../../actions/organizations';
+import { parseQuery } from '../../../utils/url';
+import useFetching from '../../../utils/useFetching';
+import NavContainer from '../../smartcomponents/navcontainer';
+import SnackbarNotification from '../../smartcomponents/SnackbarNotification';
+import SearchAndFilter from '../../smartcomponents/SearchAndFilter';
+import MarkdownText from '../../../components/utils/MarkdownText';
+import SeparatorMenu from '../../../components/utils/SeparatorMenu';
+import UserTooltip from '../../../components/utils/UserTooltip';
+import Pagination from '../../../components/utils/Pagination/Pagination';
+import OrganizationEditor from '../../../components/organization/OrganizationEditor/OrganizationEditor';
+import RegisterOrganizationCard from '../../../components/organization/OrganizationCard/RegisterOrganizationCard';
+import OrganizationCard from '../../../components/organization/OrganizationCard/OrganizationCard';
+import Loader from '../../../components/utils/Loader';
+
+const useStyles = makeStyles({
+  gridRoot: {
+    marginLeft: 30,
+    marginTop: 30,
+  },
+});
+
+const tabs = [
+  {
+    labelKey: 'translations:organizations.myOrganizations',
+    hash: '#private',
+    perPage: 11,
+    withCreateButton: true,
+    getNodes: (state) => {
+      if (state.myOrganizations?.length > 0) {
+        return { nodes: state.myOrganizations, count: parseInt(state.myOrganizationsNumber, 10) || 0 };
+      }
+      return { nodes: [], count: 0 };
+    },
+  },
+  {
+    labelKey: 'translations:organizations.allOrganizations',
+    hash: '#all',
+    perPage: 12,
+    getNodes: (state) => {
+      if (state.allOrganizations?.length > 0) {
+        return { nodes: state.allOrganizations, count: parseInt(state.allOrganizationsNumber, 10) || 0 };
+      }
+      return { nodes: [], count: 0 };
+    },
+  },
+];
+
+function OrganizationsPage(props) {
+  const {
+    alerts,
+    user,
+    organization,
+  } = props;
+  const userID = user.profileInfo?._id;
+
+  const classes = useStyles();
+  const { t } = useTranslation('translations');
+  const dispatch = useDispatch();
+  const { hash } = useLocation();
+
+  const [state, setState] = useState({
+    page: parseQuery(window.location.search).page || 1,
+    activeTabIDX: hash === '#all' ? 1 : 0,
+  });
+  const { page, activeTabIDX } = state;
+
+  const onTabChange = useCallback((idx) => {
+    window.location.hash = tabs[idx].hash;
+    setState({ activeTabIDX: idx, page: 1 });
+  }, [setState]);
+  const onPageChange = useCallback((p) => {
+    setState({ activeTabIDX, page: p });
+  }, [setState, activeTabIDX]);
+  const { nodes: activeNodes, count } = tabs[activeTabIDX].getNodes(organization);
+  const perPage = tabs[activeTabIDX].perPage;
+  const offset = (page - 1) * perPage;
+
+  const userOrganizationsFetcher = useCallback((params) => {
+    if (!userID) {
+      return null;
+    }
+    return getMyOrganizationsAction(userID, true, { ...params, offset, limit: perPage });
+  }, [userID, offset, perPage]);
+  const allOrganizationsFetcher = useCallback((params) => {
+    return getAllOrganizationsAction({ ...params, offset, limit: perPage });
+  }, [offset, perPage]);
+
+  useFetching(allOrganizationsFetcher);
+  useFetching(userOrganizationsFetcher);
+
+  const fetchFn = useCallback(() => {
+    if (activeTabIDX > 0) {
+      return allOrganizationsFetcher;
+    }
+    return userOrganizationsFetcher;
+  }, [activeTabIDX, userOrganizationsFetcher, allOrganizationsFetcher]);
+
+  const onFilterChange = useCallback((params) => {
+    if (params?.country) {
+      params.country = encodeURIComponent(countriesMap[params.country]);
+    }
+    dispatch(fetchFn(params));
+  }, [dispatch, fetchFn]);
+
+  const loading = organization.isFetchingList || organization.isFetchingMine;
+
+  return (
+    <React.Fragment>
+      {alerts && alerts.map((msg, index) => (
+        <SnackbarNotification open alert={msg} key={index}/>
+      ))}
+      <Helmet title="Energy Service Companies | SUNShINE" />
+      <NavContainer />
+      <SearchAndFilter
+        onChange={onFilterChange}
+        filters={[
+          { label: t('assets.country'), name: 'country', options: countries },
+          { label: t('organizations.legalForm'), name: 'legal_form', options: legalForms(t, true) },
+        ]}
+        tooltip={<MarkdownText text={t('tooltips:organizations.info', { returnObjects: true })} />}
+        searchInfoTooltip={
+          <MarkdownText
+            text={t('tooltips:organizations.publicSearchHint', { returnObjects: true })} gutterBottom={false}
+          />
+        }
+        searchPlaceholder={t('utils.searchOrganizationName')}
+      />
+      <SeparatorMenu
+        items={tabs.map(({ labelKey }) => t(labelKey))}
+        active={activeTabIDX}
+        onChange={onTabChange}
+      />
+      <div className={classes.gridRoot}>
+        <OrganizationsGrid
+          loading={loading}
+          nodes={activeNodes}
+          withCreateButton={tabs[activeTabIDX].withCreateButton && userID}
+          page={page}
+          perPage={tabs[activeTabIDX].perPage}
+          count={count}
+          onChangePage={onPageChange}
+        />
+      </div>
+    </React.Fragment>
+  );
+}
+
+function OrganizationsGrid(props) {
+  const {
+    loading,
+    nodes,
+    withCreateButton,
+    page,
+    perPage,
+    count,
+    onChangePage,
+  } = props;
+
+  const { t } = useTranslation('translations');
+  const [editorOpen, setEditorOpen] = useState(false);
+  const toggleEditorOpen = useCallback(() => {
+    setEditorOpen(!editorOpen);
+  }, [editorOpen, setEditorOpen]);
+
+  if (loading) {
+    return <Loader />;
+  }
+
+  return (
+    <Grid container item xs={12} spacing={4}>
+      {withCreateButton && (
+        <Grid item xl={3} lg={4} sm={6} xs={12}>
+          <OrganizationEditor
+            open={editorOpen}
+            handleClose={toggleEditorOpen}
+            title={t('organizations.registerNewOrganization')}
+          />
+          <UserTooltip
+            html
+            title={t('tooltips:organizations.register')}
+          >
+            <RegisterOrganizationCard
+              onClick={toggleEditorOpen}
+            />
+          </UserTooltip>
+        </Grid>
+      )}
+      {nodes.map((node) => {
+        return (
+          <Grid item xl={3} lg={4} sm={6} xs={12} key={node._id}>
+            <OrganizationCard data={node} />
+          </Grid>
+        );
+      })}
+      {count > perPage && (
+        <Grid item xs={12} align="center">
+          <Pagination
+            activePage={page}
+            itemsCountPerPage={perPage}
+            totalItemsCount={count}
+            onChange={onChangePage}
+          />
+        </Grid>
+      )}
+    </Grid>
+  );
+}
+
+export default connect(
+  (state) => ({
+    alerts: state.alerts.pending,
+    user: state.user,
+    organization: state.organization,
+  }),
+)(OrganizationsPage);

@@ -1,0 +1,145 @@
+{{template "preamble.tex"}} % chktex 18
+\begin{document}
+
+\begin{center}
+	\begin{tabu}{|X[2]|X|}\tabucline{}
+		Zmluva č.  \iffalse input fields.contract_id value="{{.Contract.Fields.contract_id}}" \fi {{.Contract.Fields.contract_id}} & Dátum: \iffalse input fields.date value="{{.Contract.Fields.date}}" type="date" \fi {{.Contract.Fields.date}} \\\tabucline{} %chktex 26
+	\end{tabu}
+\end{center}
+
+\section{ZMLUVA O ENERGETICKEJ EFEKTÍVNOSTI}
+
+The \textbf{Klient}:
+
+\begin{center}
+	\begin{tabu}{|X|X[2]|}\tabucline{}
+		Názov/krstné meno, priezvisko 			& \iffalse input fields.client_name value="{{.Contract.Fields.client_name}}" \fi {{.Contract.Fields.client_name}} 		\\\tabucline{}
+		IČO/rodné číslo 						& \iffalse input fields.client_id value="{{.Contract.Fields.client_id}}" \fi {{.Contract.Fields.client_id}}			\\\tabucline{}
+		Adresa 									& \iffalse input fields.client_address value="{{.Contract.Fields.client_address}}" \fi {{.Contract.Fields.client_address}}	\\\tabucline{}
+	\end{tabu}
+\end{center}
+
+The \textbf{Dodávateľ}:
+
+\begin{center}
+	\begin{tabu}{|X|X[2]|}\tabucline{}
+		Názov                 	& {{.ESCo.Name}} \\\tabucline{}
+		IČO  	& {{.ESCo.RegistrationNumber}} \\\tabucline{}
+		IČ DPH  		& {{.ESCo.VAT}} \\\tabucline{}
+		Adresa sídla        	& {{.ESCo.Address}} \\\tabucline{}
+		Právny zástupca	& \iffalse input fields.contractor_representative_name value="{{.Contract.Fields.contractor_representative_name}}" \fi {{.Contract.Fields.contractor_representative_name}} \\\tabucline{}
+	\end{tabu}
+\end{center}
+
+uzatvárajú túto zmluvu o energetickej efektívnosti, ďalej len zmluva.
+
+\section{OSOBITNÉ PODMIENKY}
+\subsection{PREDMET ZMLUVY}
+\begin{enumerate}
+	\item	Predmetom zmluvy je realizácia Renovačných prác a poskytovanie služieb energetickej efektívnosti, ktorých výsledkom je úspora energie v Budove nachádzajúcej sa na tejto adrese:  {{asset_address .Asset.Address}} s číslom katastra  {{.Asset.Cadastre}}.
+	\item	Predmet tejto zmluvy pre Budovu a jej stav pred Renovačnými prácami sú popísané v prílohe č. 1 zmluvy.
+	\item	Podrobný rozsah Renovačných  prác, výška investícií v prípade rekonštrukcie, prevádzky alebo údržby a súvisiace opatrenia sú popísané v  prílohe č. 2 zmluvy. 
+\end{enumerate}
+
+\subsection{POSKYTOVANÉ SLUŽBY}
+\begin{enumerate}
+	\item   Dodávateľ sa zaväzuje pre realizáciu opatrení v Budove zabezpečiť návrh, obstaranie, dodávku, inštaláciu, spustenie, uvedenie do prevádzky a financovanie v súvislosti s Renovačnými prácami.
+	\item	Dodávateľ po dobu platnosti zmluvy zaručuje Štandardy komfortu popísané v prílohe č. 3 zmluvy.
+  \item	Dodávateľ po dobu poskytovania služby podľa zmluvy poskytuje Záruku úspory energie vo výške  {{.Project.GuaranteedSavings}}\%, čo zodpovedá  {{.Contract.Fields.calculations_qietg}}MWh v porovnaní so základným scenárom podľa.
+	\item	Dodávateľ po dobu poskytovania služby podľa zmluvy prevádzkuje a udržiava Stavbu v súlade s ustanovením podrobne uvedeným v prílohe č. 5 zmluvy.
+\end{enumerate}
+
+\subsection{DOBA TRVANIA ZMLUVY }
+\begin{enumerate}
+	\item Obdobie výstavby je {{date_diff .Project.ConstructionFrom .Project.ConstructionTo}} dní a je dohodnuté s nasledujúcimi orientačnými dátumami, ktoré podliehajú Oznámeniu:
+	\begin{enumerate}
+		\item	Dátum začiatku:    \iffalse input project.construction_from value="{{.Project.ConstructionFrom}}" type="date" \fi {{.Project.ConstructionFrom}}
+		\item	Dátum uvedenia do prevádzky:	   \iffalse input project.construction_to value="{{.Project.ConstructionTo}}" type="date" \fi {{.Project.ConstructionTo}}
+	\end{enumerate}
+
+	\item Doba poskytovania služby podľa zmluvy je {{mul 12 .Project.ContractTerm}} mesiacov odo Dňa uvedenia opatrení do prevádzky.
+	\item	Platobné podmienky klienta zodpovedajú Dobe poskytovania služby podľa zmluvy.
+\end{enumerate}
+
+\subsection{ODMENA}
+\begin{enumerate}
+	\item	Dodávateľ bude klientovi účtovať počas Doby poskytovania služby podľa zmluvy mesačné Poplatky, ktoré zahŕňajú:
+	\begin{enumerate}
+		\item   Poplatok za tepelnú energiu a Poplatok za teplú úžitkovú vodu vypočítaný podľa prílohy č. 6; 
+		\item	Poplatok za renováciu vypočítaný a indexovaný podľa prílohy č. 7;
+		\item	Poplatok za prevádzku a údržbu vypočítaný a indexovaný podľa prílohy č. 8;
+		\item	Všetky dane splatné (napríklad DPH) pri poskytovaní Služieb.
+	\end{enumerate}
+	\item	Mesačný Poplatok za renováciu a Poplatok za prevádzku a údržbu za prvý mesiac Doby poskytovania služby sú dohodnuté ako:
+\begin{center}
+	\begin{tabu}{|X|X|X|X|}\tabucline{}\rowfont[c]\bfseries
+	{{with translate "sk" .Contract.Tables.summary}} %chktex 26
+	{{.Columns | column}} \\\tabucline{}
+	{{range .Rows}} %chktex 26
+	{{.|row}} \\\tabucline{}
+	{{end}}
+	\bfseries {{total .}} \\\tabucline{} %chktex 26
+	{{end}}
+	\end{tabu}
+\end{center}
+
+\item Správcovi klienta budú posielané faktúry na mesačnej báze. Faktúry predložené dodávateľom správcovi klienta sú splatné do \iffalse input fields.invoiced_days value="{{.Contract.Fields.invoiced_days}}" type="number" \fi {{.Contract.Fields.invoiced_days}}  dní od ich prijatia.
+\end{enumerate}
+
+\subsection{ĎALŠIE USTANOVENIA}
+\begin{enumerate}
+	\item Zmluva obsahuje Všeobecné podmienky, Osobitné podmienky a prílohy k Osobitným podmienkam, ktoré sú neoddeliteľnou súčasťou tejto zmluvy.
+	\item Podpísaním týchto Osobitných podmienok zmluvné strany potvrdzujú, že si prečítali, porozumeli a súhlasia s týmito Osobitnými podmienkami, s prílohami Osobitných podmienok a so Všeobecnými podmienkami tejto zmluvy.
+\end{enumerate}
+{{template "sign.tex" .}} % chktex 18
+
+{{template "annex1.tex" .}} % chktex 18 chktex 26
+{{template "sign.tex" .}} % chktex 18
+
+{{template "annex2.tex" .}} % chktex 18 chktex 26
+{{template "sign.tex" .}} % chktex 18
+
+{{template "annex3.tex" .}} % chktex 18 chktex 26
+{{template "sign.tex" .}} % chktex 18
+
+{{template "annex4.tex" .}} % chktex 18 chktex 26
+{{template "sign.tex" .}} % chktex 18
+
+{{template "annex5.tex" .Contract.Tables}} % chktex 18 chktex 26
+{{template "sign.tex" .}} % chktex 18
+
+{{template "annex6.tex" .}} % chktex 18 chktex 26
+{{template "sign.tex" .}} % chktex 18
+
+{{template "annex7.tex" .}} % chktex 18 chktex 26
+{{template "sign.tex" .}} % chktex 18
+
+{{template "annex8.tex" .}} % chktex 18 chktex 26
+{{template "sign.tex" .}} % chktex 18
+
+{{template "annex9.tex" .Contract.Fields}} % chktex 18 chktex 26
+{{template "sign.tex" .}} % chktex 18
+
+\pagebreak
+\section{PRÍLOHA č. 10 {–} ZÁPISNICE VALNÝCH ZHROMAŽDENÍ VLASTNÍKOV BYTOV V BUDOVE}
+
+\begin{center}
+\begin{tabu}{ |X|X| }
+ \hline
+ Záväzok technickej dokumentácie & \url{ {{.Attachments.acquisition_meeting }} } \iffalse attachment value="acquisition meeting" \fi \\
+ \hline
+ Záväzok pred EPC & \url{ {{.Attachments.commitment_meeting }} } \iffalse attachment value="commitment protocol meeting" \fi \\
+ \hline
+ Záväzok EPC & \url{ {{.Attachments.kickoff_meeting }} } \iffalse attachment value="kickoff protocol meeting" \fi \\
+ \hline
+\end{tabu}
+\end{center}
+
+{{read .Markdown}} % chktex 26
+{{template "sign.tex"}} % chktex 18
+\FloatBarrier{}\mbox{}\vfill\pagebreak % make sure no floats (e.g. images) go past here.
+
+{{template "terms.tex"}} % chktex 18
+{{template "sign.tex"}} % chktex 18
+\end{document}
+$u

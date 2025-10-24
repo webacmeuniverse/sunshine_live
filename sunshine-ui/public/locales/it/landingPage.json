@@ -1,0 +1,238 @@
+{
+  "slider": {
+    "mainTitle": "BENVENUTO NEL PROGETTO EUROPA",
+    "subTitle": "Noti squilibri di temperatura? È tempo di rendere la tua casa sana, confortevole, sicura e più efficiente dal punto di vista energetico.",
+    "learnMore": "Scopri di più",
+    "imageTitle": "Vorresti ristrutturare il tuo edificio?",
+    "imageTitle1": "Compila il questionario"
+    
+  },
+  "menu": {
+    "RESIDENTS": "Residenti",
+    "HOWITWORKS": "Come funziona",
+    "FindMyPartner": "Trova il mio partner",
+    "EESCALCULATOR": "Calcolatore dei costi di ristrutturazione",
+    "SERVICESPROVIDER": "Operatori del settore",
+    "MATCHMAKING": "Trova il mio partner",
+    "RESOURCES": "Risorse",
+    "Assisttomyproject": "Vai al mio progetto",
+    "SIMULATIONTOOL":"Strumento di simulazione",
+    "EESCHECKLIST":"EES checklist",
+    "BUILDINGCALCULATOR":"analisi dell’edificio",
+    "EESREFINANCEABILITYCHECKLIST":"checklist sulla rifinanziabilità dell’EES",
+    "Login": "Login",
+    "MyDashboard": "La mia dashboard"
+
+    
+  },
+  "mainTitle": {
+    "title1": "Rinnovare più semplicemente, meglio, insieme."
+    
+    
+  },
+  "individualPrivate":{
+    "title": "Per i privati",
+    "title1": "Forniamo supporto digitale e assistenza per garantire un percorso di ristrutturazione agevole e semplice.",
+    "title2": "Rispondi al quiz per scoprire se operiamo nella tua regione.",
+    "LetStart": "Cominciamo",
+    "box1": "Stai pensando di ristrutturare la tua abitazione? Inizia qui con il nostro questionario!",
+    "box2": "Cerchi un operatore del settore per la ristrutturazione? Dai un'occhiata a 'Trova il mio partner' per scoprire chi opera nella tua regione.",
+    "box3": "La tua abitazione è già stata ristrutturata?"
+
+  },
+
+  "howItWorks":{
+    "mainTitle": "Come funziona",
+    "subTitle": "Sette semplici passi per ristrutturare il tuo edificio",
+    "title1": "Questionario introduttivo ",
+    "description1": "Rispondi al nostro rapido questionario per vedere se operiamo nella tua regione! ",
+    "title2": "Chiamata telefonica",
+    "description2": "Il tuo Sportello Energia - One-Stop-Shop ti contatterà per saperne di più. Se non ci sono Sportelli Energia nella tua regione, non preoccuparti! Ti contatteremo comunque per darti un supporto. ",
+    "title3": "Audit Energetico/Analisi del Profilo",
+    "description3": "Utilizzando gli strumenti di simulazione disponibili, è possibile stimare il risparmio energetico di un intervento e i suoi costi.",
+    "title4": "Trovare una soluzione ",
+    "description4": "Lavorando insieme al tuo Sportello Energia, troverai la soluzione giusta per te.",
+    "title5": "Segui la tua ristrutturazione edilizia su SUNshINE",
+    "description5": "La ristrutturazione degli edifici varia in base al contesto, ma puoi seguire l'intero processo – firma del contratto, lavori di ristrutturazione e monitoraggio – tutto attraverso la piattaforma SUNShINE.",
+    "title6": "Lavori di ristrutturazione ",
+    "description6": "Dopo aver trovato la soluzione giusta e firmato il contratto, comincia la vera e propria ristrutturazione del tuo edificio!",
+    "title7": "Monitoraggio ",
+    "description7": "Monitora le prestazioni e i consumi del tuo edificio sulla piattaforma SUNshINE!"
+  
+
+  },"howMuchRenovationCost":{
+    "title1": "Quanto costerà la ristrutturazione della tua abitazione?",
+    "title2": "Prova il nostro Calcolatore ESS: avrai un’idea di quanto costerà il tuo progetto di ristrutturazione in base a differenti criteri.",
+    "title3": "Calcola adesso"
+
+  },
+  "SUBSCRIBE":{
+    "title1": "ISCRIVITI ALLA NOSTRA NEWSLETTER",
+    "Email": "Email",
+    "Send":"Invia"
+  },
+  "GetInTouch":{
+    "title1": "Entra subito in contatto con lo Sportello Energia più vicino!",
+    "ContactUs": "Contattaci",
+    "title2":"Chi fa parte del progetto EUROPA?"
+	},
+	"Footer":{
+    "Partners": "Partners",
+    "About": "Cosa facciamo",
+    "Support":"Supporto",
+    "FAQ":"FAQ",
+    "Contact":"Contatti",
+    "GoToMyProject":"Vai al mio progetto",
+    "Privacy":"Privacy",
+    "Terms":"Informativa",
+    "Sitemap":"Mappa del sito",
+    "Chatwithus":"Comunica con noi",
+    "Title":"© 2022 EUROPA. Tutti i diritti riservati."
+  },
+  "EESRefinanceabilitychecklist": {
+    "Description": "checklist sulla rifinanziabilità dell’EES",
+
+    "Description1": "Being a checklist, it does not contain all relevant information in detail. More details and additional explanations on the required contract stipulations for the EES as well as for the Refinancing Contracts can be found in the Guideline “Standardised Contract Stipulations for Refinancing of Energy Efficiency Services” which is accessible by following this link."
+  
+    
+  }, "FindMyPartner": {
+    "Discover": "Scopri",
+    "More":"Di più",
+    "FilterSort": "Filtro & Ordina",
+    "TypeofOrganization":"Tipo di organizzazione",
+    "TypesofServices":"Tipologie di servizi",
+    "OSSApproved":"Sportello Energia approvato",
+    "Sort":"Ordina",
+    "Nearme":"Vicino a me",
+    "Services":"Servizi",
+    "Backtothelist":"Torna alla lista",
+    "Address":"Indirizzo",
+    "Phone":"Telefono",
+    "title":"Pronto a rinnovare il tuo edificio?",
+    "title1":"Punteggio dell'organizzazione",
+    "TotalScore":"Punteggio totale",
+    "QualityofServices":"Qualità del punteggio",
+    "SpeedofServices":"Velocità del servizio",
+    "Communication":"Communication",
+    "Rating":"Valutazione",
+    "AddRating":"Aggiungi valutazione"
+    
+  }
+  , "Resources": {
+    "Learnmore": "Scopri di più",
+    "title1":"Il manuale utente",
+    "title2":"Il quadro generale dell'Abbonamento Efficienza Energetica",
+    "title3":"Infografica per la consapevolezza delle parti interessate",
+    "title4":"Il manuale SUNShINE sulla ristrutturazione edilizia profonda",
+    "Resources":"Risorse"
+
+  
+    
+  }, "MyProjectStatus": {
+    "MyprojectstatusTitle": "Lo stato del mio progetto",
+    "title": "Scegli l'opzione appropriata per accedere al tuo account",
+    "NewUser": "Nuovo utente",
+    "Signinwithotp":"Accedi con OTP",
+    "Login":"Login",
+    "title1":"Inserisci il tuo indirizzo email",
+    "Welcome":"Benvenuto",
+    "Submit":"Invia",
+    "Back":"Indietro",
+    "CodeValidation":"Convalida del codice!",
+    "title2":"Il codice è stato inviato alla tua email. Controlla la tua email e inserisci il codice di verifica.",
+    "Seeyourprojectstatus":"Visualizza lo stato del tuo progetto"
+    
+
+  
+    
+  },"faqList": {
+    "mainTitle": "Ciao, come possiamo aiutarti??",
+    "subTitle": "Informazioni sulla piattaforma SUNShINE potenziata da EUROPA",
+      "titles1": {
+            "questionTitle":"",
+            "questionList": {
+              "question1": "Cosa fornisce la piattaforma SUNShINE potenziata da EUROPA?",
+              "question2": "Per chi è stata realizzata la piattaforma SUNShINE potenziata da EUROPA?",
+              "question3": "Quanto costa utilizzare la piattaforma SUNshINE potenziata da EUROPA? ",
+              "question4": "Cos’è il Protocollo di Efficienza Energetica (Energy Efficiency Subscription - EES)?",
+              "question5": "Come posso calcolare i costi della mia ristrutturazione edilizia?"
+            },
+            "answerList":{
+              "answer1": "La piattaforma SUNhINE potenziata da EUROPA fornisce a tutte le parti interessate ad una riqualificazione energetica l'aiuto necessario in tutte le fasi di progetto: dall'idea di rinnovare l'edificio fino al monitoraggio dei risultati delle attività.",
+              "answer2": "La piattaforma è pensata per privati, amministratori condominiali, operatori del settore, enti pubblici e altre parti interessate.",
+              "answer2Sub1": "Clicca sul pulsante 'Possiamo aiutarti?' per scoprire i contenuti che possono aiutarti nella tua attività.",
+              "answer3": "La piattaforma è gratuita. Questa importante decisione consentirà l'utilizzo della piattaforma ad un pubblico più ampio. ",
+              "answer4": "Il Protocollo di Efficienza Energetica (EES) è un’offerta di servizi di efficientamento energetico per gli edifici utilizzabile come modello nei contratti, in modo da semplificare i pagamenti e creare le condizioni per una comprensione reciproca delle fasi dell’intero processo, evitando i fraintendimenti.",
+              "answer5": "Il costo e il piano dei pagamenti della ristrutturazione possono essere calcolati con il Calcolatore dei Costi di Riqualificazione, uno strumento sviluppato sulla piattaforma per calcolare i costi totali e redigere un piano annuale dei pagamenti per l'edificio.",
+              "answer5Sub1":"Vai alla pagina “Proprietari di immobile” per scoprire quanto costerà la ristrutturazione del tuo edificio!"
+            }
+          },
+          "titles2": {
+            "questionTitle":"PROPRIETARI DI IMMOBILE",
+            "questionList": {
+              "question1": "Che tipo di informazioni verranno richieste dalla piattaforma? ",
+              "question2": "Cosa succede se non conosco alcune delle informazioni richieste sulla mia abitazione o se le domande non si adattano al mio edificio? ",
+              "question3": "E se nella mia regione non esiste un OSS?",
+              "question4": "Ho difficoltà tecniche. Con chi devo mettermi in contatto? ",
+              "question5": "Come posso saperne di più sul mio progetto? ",
+              "question6": "Dove posso trovare i diversi  fornitori di servizi che operano nella mia regione? "
+            },
+            "answerList":{
+              "answer1": "Per utilizzare la piattaforma, dovrai fornire: ",
+              "answer1Sub1": "Nome",
+              "answer1Sub2": "Cognome",
+              "answer1Sub3": "E-mai",
+              "answer1Sub4": "Numero di telefono",
+              "answer1Sub5": "Città ",
+              "answer1Sub6": "Nazione",
+              "answer2": "Non è un problema! Il tuo Sportello Energia ti aiuterà a inserire il resto delle informazioni dopo la tua prima chiamata programmata.",
+              "answer3": "Se nella vostra regione non è stato istituito alcun OSS, dovrete compilare i questionari di onboarding predefiniti e il team di gestione della piattaforma si metterà in contatto con voi.",
+              "answer4": "Si prega di mettersi in contatto con il team che gestisce la piattaforma tramite EMAIL",
+              "answer5": "Clicca sul pulsante “Il mio progetto” e inserisci tutte le informazioni necessarie per accedere alle informazioni sul tuo progetto.",
+              "answer6": "Puoi trovare tutte le informazioni necessarie sui fornitori di servizi nella pagina “Trova il mio partner”. In questa pagina puoi scorrere l'elenco di tutti gli operatori di servizi della tua regione o visionarli sulla mappa."
+            }
+          },
+          "titles3": {
+            "questionTitle":"AMMINISTRATORI CONDOMINIALI",
+            "questionList": {
+              "question1": "I residenti dell'edificio che gestisco sono interessati a ristrutturare il loro edificio e voglio fornire loro le corrette informazioni. Cosa dovrei fare?",
+              "question2": "Ho bisogno di un Operatore del settore, cosa devo fare?"              
+            },
+            "answerList":{
+              "answer1": "Puoi trovare tutti i materiali informativi nella pagina “Risorse” e condividerli con i residenti!",
+              "answer2": "Puoi trovare tutte le informazioni necessarie sui fornitori di servizi nella pagina “Trova il mio partner”. In questa pagina puoi scorrere l'elenco di tutti gli Operatori della tua regione o visualizzarli sulla mappa."             
+            }
+          },
+          "titles4": {
+            "questionTitle":"Operatori del settore",
+            "questionList": {
+              "question1": "Sono un operatore del settore e sarei interessato ad essere inserito nell’elenco visualizzabile tramite “Trova il mio partner”. E’ possibile? ",
+              "question2": "Ho avuto dei problemi durante la procedura prevista per gli Operatori, cosa devo fare? ",
+              "question3": "Perché devo fornire i miei certificati?",
+              "question4": "Che cos'è la checklist per il Protocollo di Efficienza Energetica? ",
+              "question5": "Che cos'è la checklist sulla rifinanziabilità? "
+            },
+            "answerList":{
+              "answer1": "Per essere visibile nella sezione “Trova il mio Partner” è necessario seguire la procedura prevista per gli Operatori e rispettare i requisiti fissati dagli Sportello Energia. Dopo l'approvazione da parte del OSS, il profilo pubblico della tua azienda verrà aggiunto alla pagina “Trova il mio partner”!",
+              "answer2": "Si prega di mettersi in contatto con il gestore della piattaforma all’indirizzo EMAIL",
+              "answer3": "I certificati supportano le tue risposte al questionario iniziale e aiutano lo Sportello Energia locale a valutare la tua possibilità di fornire i servizi dichiarati.",
+              "answer4": "Un insieme di requisiti stabiliti dallo Sportello Energia che devono essere soddisfatti da un progetto e da un operatore. L'obiettivo è garantire la qualità ai proprietari degli edifici e agli utenti finali lungo l'intero processo di elevata riqualificazione energetica degli edifici residenziali. I contenuti sono stati definiti dal progetto Horizon2020 EUROPA.",
+              "answer5": "Il Calcolatore della rifinanziabilità è stato sviluppato per garantire la finanziabilità di un progetto valutando determinati standard relativi a tutte le fasi del progetto. I contenuti sono stati definiti dal progetto Horizon 2020 REFINE. <a href='https://refineproject.eu/'>REFINE</a> project."
+            }
+          },
+          "titles5": {
+            "questionTitle":"Sportello Energia/One-Stop-Shop",
+            "questionList": {
+              "question1": "Sono uno Sportello Energia/One-Stop-Shop e sono interessato ad utilizzare la piattaforma, cosa devo fare? ",
+              "question2": "Perché dovrei scegliere la piattaforma SUNshINE potenziata da EUROPA per digitalizzare il nostro lavoro come Sportello Energia? ",
+              "question3": "In caso di contestazione: "
+            },
+            "answerList":{
+              "answer1": "Devi compilare il questionario per gli operatori indicando di essere uno Sportello Energia. Dopodiché il team di gestione della piattaforma si metterà in contatto con te!",
+              "answer2": "La piattaforma SUNshINE potenziata da EUROPA è nata per essere digitale: le diverse parti interessate possono utilizzare gli strumenti sviluppati. A causa della specificità di ciascuno Sportello Energia, gli strumenti possono essere personalizzati per adattarsi al contesto regionale. Nel complesso, la piattaforma SUNshINE potenziata da EUROPA, offre una metodologia completa per organizzare tutto il lavoro dello Sportello Energia",
+              "answer3": "Consigliamo vivamente di contattare il team di gestione della piattaforma all'indirizzo EMAIL"
+              
+            }
+          }
+    }
+}

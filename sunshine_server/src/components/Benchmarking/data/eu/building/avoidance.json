@@ -1,0 +1,52 @@
+[
+  {
+     "category":"Building Fabric Measures",
+     "open":6.26,
+     "high":12.23,
+     "medianFormatted": 2.86,
+     "low": 1.0,
+     "close": 1.64,
+     "observations": 2142,
+     "totalobservations": 6348
+  },
+  {
+     "category":"HVAC Plant",
+     "open": 7.49,
+     "high": 18.48,
+     "medianFormatted": 2.89,
+     "low": 0.4,
+     "close": 1.04,
+     "observations": 2059,
+     "totalobservations": 6348
+  },
+  {
+     "category":"Lighting",
+     "open": 5.84,
+     "high": 12.37,
+     "medianFormatted": 3.19,
+     "low": 0.87,
+     "close": 1.6,
+     "observations": 868,
+     "totalobservations": 6348
+  },
+  {
+     "category":"Integrated Renovation",
+     "open": 6.96,
+     "high": 12.82,
+     "medianFormatted": 4.31,
+     "low": 1.47,
+     "close": 2.68,
+     "observations": 1265,
+     "totalobservations": 6348
+  },
+  {
+     "category":"Other",
+     "open": 21.95,
+     "high": 25.8,
+     "medianFormatted": 14.75,
+     "low": 4.94,
+     "close": 12.46,
+     "observations": 14,
+     "totalobservations": 6348
+  }
+]

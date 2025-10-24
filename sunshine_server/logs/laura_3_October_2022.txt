@@ -1,0 +1,40 @@
+
+
+
+####################################################################################################
+
+REQUEST TYPE: 	GET
+
+Tables Queried: 	[step_item_backup]
+
+****************************************************************************************************
+
+Loggedin ID: 	laura@spinka.biz
+
+Date & Time: 	2022-10-03 16:14:11.768309172 +0300 EAT m=+55.478378692
+
+Session ID: 	78d59f3e-0c50-4bd4-b8ec-146805b558f2
+
+Session DocID: 	3f92960c-cd25-46a8-bdf5-e1f4f516eba1
+
+Is Admin User: 	false
+
+Is Superuser: 	true
+
+Is Platform Manager: 	false
+
+Is Admin NW Manager: 	false
+
+Menu Type: 	N/A
+
+Error: 	nil
+
+Origin Path: 	/
+
+Origin Domain: 	
+
+Origin SameSite: 	0
+
+
+
+

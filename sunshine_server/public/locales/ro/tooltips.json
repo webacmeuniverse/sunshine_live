@@ -1,0 +1,161 @@
+{
+  "organizations": {
+    "register": "Dacă nu găsiți organizația dvs. o puteți înregistra acuma.",
+    "publicSearchHint": "Căutați aici organizația dvs.",
+    "info": [
+      "Primul pas când accesați platforma este să deveniți membru al organizației de care aparțineți.",
+      "**De ce trebuie să știm cărei organizații aparțineți?**",
+      "Pentru a ne asigura că aveți acces la informațiile din platformă.",
+      "In the **\"My Organizations\"** you see the Organizations you are part of. You can click on each Organization to see its detailed information. In the **\"All Organizations\"** page you will see all the Organizations that are registered in the platform. However, you will not be able to open the the Organization for which you do not have permission.",
+      "If you should be part of an Organization, click on **\"Request Membership\"**.",
+      "If you can’t find your Organization, you can register it yourself.",
+      "Watch Training Videos [**here**](https://www.youtube.com/watch?v=hkpNvWQK7TA&list=PL8IdmZDX5yMC-UOPQ5TUdI8YwSKWfnp33)"
+    ],
+    "roles": [
+      "Click on the arrow to expand and see who is assigned to each of the roles. If you have permission, this is where you will assign roles to this Organization.",
+      "*Definirea rolurilor:**",
+      "**Reprezentant desemnat de entitatea juridică (LEAR):** Persoană desemnată de o organizație pentru a-și gestiona datele în platformă. Trebuie să păstreze datele persoanei juridice la zi. Must keep legal entity data up to date. O organizație poate să aibă un singur **LEAR**.",
+      "**Administratorul contului entității juridice (LEAA):** Asistă LEAR în sarcinile sale. Nu se pot atribui altor administratori de cont. Poate atribui roluri legate de proiect. Fiecare organizație poate avea mai multe **LEAA**-uri.",
+      "**Semnătură legală (LSIGN):** Persoană dintr-o organizație cu personalitate juridică autorizată să semneze (în numele organizației) in a legal entity organization authorized to sign (on behalf of the organization) angajamente legale pentru proiecte (de exemplu contracte, acorduri, amendamente). Se poate suprapune cu **LEAR** sau cu o altă persoană din organizație. Fiecare organizație poate avea mai multe **LSIGN**-uri.",
+      "**Membru al organizației (ORME):** face parte din organizație. Nu își poate modifica datele, dar poate crea active și proiecte pentru organizație."
+    ],
+    "lear": [
+      "**Sfat pentru LEAR**",
+      "Nu puteți stabili noul LEAR aici așa cum faceți cu celelalte roluri, deoarece acest rol necesită unele aprobări suplimentare.",
+      "Noul LEAR trebuie să solicite să devină LEAR al organizației dumneavoastră pe profilul său personal, unde va furniza și documentele necesare. Veți primi apoi o notificare pentru a confirma că sunteți de acord că el/ea poate deveni noul LEAR. Aprobarea finală este de la superutilizatorul din țara dumneavoastră, care va verifica dacă documentația furnizată dovedește că noua persoană poate fi LEAR.",
+      "Odată ce noul LEAR este aprobat, nu veți mai fi LEAR deoarece fiecare organizație poate avea doar un LEAR. În cazul în care ar trebui să rămâneți în organizație cu un rol diferit, asigurați-vă că vă atribuiți acest rol înainte de a acorda aprobarea, astfel încât să nu pierdeți accesul la organizației ți la activele și proiectele aferente acesteia."
+    ]
+  },
+  "assets": {
+    "register": [
+      "**Nu vă vedeți activul? Înregistrați-l aici.**",
+      "Pentru a vă putea înregistra, trebuie să vă asigurați că:",
+      "1) Aveți un document care arată informațiile activului (număr de cadastru, zonă încălzită, număr case de scări etc.).",
+      "2) Faceți parte dintr-o organizație: deoarece toate activle trebuie să *\"aparțină\"* unei organizații și puteți crea un activ doar pentru o organizație din care faceți parte.",
+      "Dacă nu aveți una sau toate cele de mai sus, dar doriți totuși să adăugați bunul dvs. pentru renovare, contactați-ne la **sunshinehelp@ekubirojs.lv** și vă vom ghida prin următorii pași.."
+    ],
+    "publicSearchHint": "Prea multe active? Caută-l pe al tău aici. Când căutați o adresă, scrieți-o așa cum ați proceda în limba dvs. Acest câmp acceptă toate caracterele.",
+    "info": [
+      "În pagina **\"Activele mele\"** puteți vedea activele în care locuiți sau cele care aparțin organizațiilor în care aveți un rol. Puteți da click pe ficare din activele dvs. pentru a vedea informațiile detaliate aale acestuia.",
+      "În pagina **\"Toate activele\"** veți vedea toate activele pe platformă. Cu toate acestea, nu veți putea deschide un activ dacă nu aveți permisiunea.",
+      "Dacă vă găsiți casa, faceți click pe butonul **\"Locuiesc aici!\"** pentru a solicits să vedeți informațiile despre bun. Vi se va cere să încărcați orice document care dovedește că sunteți rezident.",
+      "Watch Training Videos [**here**](https://www.youtube.com/watch?v=Q6DlptPaebo&list=PL8IdmZDX5yMDzJoyiRK1tYdfsePVUK7M1)"
+    ],
+    "assetInformation": {
+      "totalArea": "Suprafața totală a unei clădiri rezidențiale se determină prin însumarea suprafeței tuturor etajelor clădirii (inclusiv a subsolului și a mansardei) dintre suprafețele interioare ale pereților exteriori, precum și a suprafeței spațiilor exterioare - balcoane, loggii și terase. Mansarda (mansarda tehnică) și suprefețele tehnice ale subsolului nu sunt incluse în suprafața totală a unei clădiri rezidențiale.",
+      "heatedArea": "Suprafața încălzită a unei clădiri se determină prin însumarea suprafeței tuturor apartamentelor și a oricăror case de scări sau alte încăperi auxiliare care sunt și ele încălzite.",
+      "billingArea": "Suprafața de facturare sau suprafața utilă a unei clădiri se determină prin însumarea suprafeței totale a apartamentelor dintr-o clădire rezidențială, a suprafeței totale a spațiilor nerezidențiale și a suprafeței totale a spațiilor publice, dacă există."
+    },
+    "assetFields": {
+      "cadastre": "Numărul de identificare al clădirii, definit de municipalitatea locală sau de țară.",
+      "owner": [
+        "Ar trebui să puteți crea active pentru toate organizațiile aprobate în care aveți un rol alocat. Dacă nu puteți vedea o organizație în această listă, s-ar putea să fie din cauza faptului că organizația așteaptă aprobarea de la superutilizator.",
+        "Aceasta înseamnă că fie organizație a fost creată și nu a fost încă aprobată, fie că informațiile cheie au fost actualizate și nu au fost încă aprobate.",
+        "Puteți vedea starea organizației dvs. deschizând **Pagina organizației**."
+      ],
+      "residentsCommunity": "Pentru a fi siguri că rezidenții pot avea acces la informațiile despre clădire, trebuie creată o comunitate de rezidenți. Acest câmp rămâne acum necompletat, iar odată ce organizația este creată, acesta va fi completat automat de către sistem.",
+      "totalArea": "Suprafața totală a unei clădiri rezidențiale se determină prin însumarea suprafeței tuturor etajelor clădirii (inclusiv a subsolului și a mansardei) dintre suprafețele interioare ale pereților exteriori, precum și a suprafeței spațiilor exterioare - balcoane, loggii și terase. Mansarda (mansarda tehnică) și suprefețele tehnice ale subsolului nu sunt incluse în suprafața totală a unei clădiri rezidențiale.",
+      "billingArea": "Suprafața de facturare sau suprafața utilă a unei clădiri se determină prin însumarea suprafeței totale a apartamentelor dintr-o clădire rezidențială, a suprafeței totale a spațiilor nerezidențiale și a suprafeței totale a spațiilor publice, dacă există.",
+      "heatedArea": "Suprafața încălzită a unei clădiri se determină prin însumarea suprafeței tuturor apartamentelor și a oricăror case de scări sau alte încăperi auxiliare care sunt și ele încălzite.",
+      "districtHeating": "Încălzirea furnizată de alți furnizori, cum ar fi oraș, municipalitate sau alte entități.",
+      "buildingHeating": "Clădirea are propriile mijloace de asigurare a încălzirii."
+    }
+  },
+  "projects": {
+    "info": [
+      "În această pagină puteți accesa toate proiectele dvs. pentru a vedea valorile clădirii, progresul curent, părțile implicate, echipa de proiect și multe altele.",
+      "Puteți vedea doar proiectele în care aveți un rol alocat. Dacă nu vedeți niciunul dintre proiectele dvs., contactați managerul de proiect.",
+      "Watch Training Videos [**here**](https://www.youtube.com/watch?v=3zAPF1NOK18&list=PL8IdmZDX5yMCOPGV_WSlheZZV6tGLD1a1)"
+    ],
+    "overview": [
+      "**Prezentarea generală a proiectului** vă va arăta cum decurge proiectul.",
+      "Secțiunea **Contractul EPC & acordul de cesiune** vă va permite să completați și să tipăriți o versiune finală a acestor contracte.",
+      "Deschizând **Fazele proiectului**, veți vedea defalcarea fiecărei faze, activitățile de realizat și jaloanele care trebuie atinse. Aici este gestionat proiectul."
+    ],
+    "guaranteedMetrics": "Acestea sunt valori calculate care sunt garantate pentru clădire după finalizarea renovării. Acestea sunt valabile odată ce EPC a fost semnat.",
+    "roles": [
+      "Faceți click pe săgeată pentru a extinde și a a vedea cine este atribuit acestor roluri. Dacă aveți permisiunea, aici veți atribui roluri acestui proiect.",
+      "**Definirea rolurilor:**",
+      "**Manager de proiect (PM):** gestionează proiectul. Are drepturi complete de vizualizare și editare. Poate gestiona roluri de proiect și poate finaliza etapele de referință pentru a deschide fazele proiectului.",
+      "Trebuie să existe un PM per proiect.",
+      "**Semnătură legală a proiectului (PLSIGN):** Persoană autorizată să semneze angajamente legale pentru un anumit proiect. Pe un proiect trebuie să existe un PLSIGN pentru fiecare organizație implicată.",
+      "**Manager de sarcină (TAME):** Persoană care poate efectua diverse acțiuni pentru gestionarea unei anumite sarcini a unui proiect.",
+      "**Membru al echipei (TEME):** Persoană care are numai drepturi de citire pentru un anumit proiect."
+    ],
+    "epc": {
+      "generalTerms": "**Termenii generali ai contractului EPC ** sunt prima parte a contractului și sunt standardizate. În această pagină este disponibil textul integral.",
+      "annexesInfo": [
+        "Faceți click pe titlurile din dreapta pentru a deschide diferitele anexe. Pe fiecare pagină, puteți completa tabelele și câmpurile pentru a finaliza contractul.",
+        "Este fundamental să aveți **toate informațiile din contracte corecte**, deoarece acestea sunt preluate de alte secțiuni ale proiectului.",
+        "Puteți să **descărcați** contractul pentru a vedea versiunea curentă în PDF. Odată semnată versiunea finală, aceasta trebuie încărcată în faza de proiect respectivă."
+      ],
+      "annexesExtraPage": [
+        "Aceată pagină suplimentară poate fi folosită pentru a adăuga alte informații necesare la semnarea contractului și pentru a tipări **anexe suplimentare** odată ce contractul a fost semnat, dar necesită modificări.",
+        "In case of **amendments**, this page must be printed in separate and saved together with the **EPC contract**."
+      ],
+      "forfaitingAgreement": "You will have to prepare this agreement in case your project has been approved for forfaiting. This can only happen once the building has been commissioned and the measurements from an entire heating season have been recorded.",
+      "assetAcquisition": [
+        "Această fază este constituită din **etapa de referință secvențială**.",
+        "Aici puteți să vedeți în ce etapă de referință se află proiectul.",
+        "Fiecare pagină este deblocată de îndată ce **Managerul de proiect** a finalizat o etapă de referință."
+      ],
+      "assetAcquisitionCompleteMilestone": "Odată ce toate cerințele necesare au fost îndeplinite, managerul de proiect ar trebui să confirme că etapa de referință este finalizată. Aceasta va bloca aceasta pagină și va debocla următoarea etapă.",
+      "commissioningDateDisclamer": "Tabelele de ani și luni ale monitorizării rezultatelor vor fi actualizate în funcție de data la care finalizați acest pas. Prima lună care trebuie monitorizată este luna următoare după ce ați finalizat acest pas.",
+      "worksPhase": [
+        "Această fază este constituită din **etape de referință concurente**.",
+        "Făcând click pe fiecare, puteți vedea în ce etapă se află proiectul.",
+        "Punerea în funcțiune a clădirii va debloca etapele de referință anterioare."
+      ],
+      "monitoringPhase": [
+        "Această fază este constituită din **etape de referință concurente**.",
+        "Făcând click pe fiecare, puteți vedea în ce etapă de referință se află proiectul.",
+        "Punerea în funcțiune a clădirii va bloca etapele anterioare."
+      ]
+    },
+    "registerProject": [
+      "Aici puteți înregistra un proiect pentru o organizație în care aveți un rol alocat.",
+      "Veți putea înregistra un proiect doar pentru un activ care a fost deja aprobat."
+    ],
+    "requestPermission": [
+      "În cazul în care trebuie să creați un proiect pentru un activ care nu aparține nici unei organizații, o puteți face aici.",
+      "Veți soicita permisiunea organizației sub care este înregistrat activul. Odată ce permisiunea este acordată, puteți crea proiectul."
+    ]
+  },
+  "users": {
+    "applyLEAR": "Dacă sunteți LEAR a unei organizații, puteți aplica pentru acest rol aici. Selectați organizația și furnizați documentația justificativă care arată că aveți dreptul de a fi LEAR. Vei fi anunțat când rolul tău este confirmat."
+  },
+  "reports": {
+    "info": "În aceste pagini veți vedea doar date legate de roluri pe care le aveți. Selectați coloanele dorite și efectuați exportul."
+  },
+  "admin": {
+    "platformRoles": [
+      "Fiecare click pe un panou de roluri din lista de mai jos pentru a gestiona utilizatorii alocați rolului platformei pentru țara selectată.",
+      "**Fiecare țară are următoarele roluri:**",
+      "**Director de portofoliu:** A avut acces la rapoarte specifice pentru țara sa și proiecte și organizațiile sale cu scopul de a obține investiții, de a invita părți interesate la platformă și de a le susține.",
+      "Vede toate proiectele si activele în țara sa.",
+      "**Ofițer de protecție a datelor:** Răspunde la întrebările referitoare la GDPR.",
+      "**Super utilizator:** Oferă suport utilizatorilor din țara sa.",
+      "Lucrează împreună cu alți super utilizatori pentru a îmbunătăți platforma.",
+      "Aprobă activele și organizațiile pentru țara sa. Aprobă LEAR-urile pentru organizații.",
+      "Vede toți utilizatorii, activele, organizațiile și proiectele din țara sa pentru a putea sprijina utilizatorii.",
+      "**Manager de fond:** Aprobă finanțarea pentru proiect în țara sa. Vede toate proiectele în țara lui.",
+      "**Investitor:** are acces la paginile aplicației de cediune pentru proiectul din țara lor."
+    ],
+    "rolePFM": [
+      "**Manager de platformă:** Vede toate datele din platformă.",
+      "Atribuie alte roluri la nivl de platformă și țară."
+    ],
+    "roleNWM": [
+      "**Super utilizator manager d rețea:** acesta este un rol la nivel de platformă.",
+      "Poate îndeplini aceleași sarcini ca și super utilizatorii, dar pentru toate platformele (adică toate țările).",
+      "Îndeplinește sarcini de super utilizatori pentru utilizatorii, activele și organizațiile care aparțin unei țări care nu are super utilizatori. În plus, poate atribui și revoca rolul de super utilizator."
+    ]
+  },
+  "maintenanceTableNotReady": "Primii 3 ani ai planului de întreținere (mentenanță) a activelor trebuie completați.",
+  "home": {
+    "info": [
+      "Here is info tooltip for the home page",
+      "Watch Training Videos [**here**](https://www.youtube.com/watch?v=J4-x7uN8ec0&list=PL8IdmZDX5yMCqp8AZhpD2FARTrm1RdXgj)"
+    ]
+  }
+}

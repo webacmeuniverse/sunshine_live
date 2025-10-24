@@ -1,0 +1,7 @@
+{
+  "auth": {
+    "Invalid Credentials": "Nederīgi akreditācijas dati!",
+    "This email is already taken.": "Šis e-pasts jau ir aizņemts.",
+    "You have successfully signed up!": "Jūs esat veiksmīgi reģistrējies!"
+  }
+}

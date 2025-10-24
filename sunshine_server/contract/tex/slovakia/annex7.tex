@@ -1,0 +1,53 @@
+\section{PRÍLOHA č. 7 {-} POPLATOK ZA RENOVÁCIU}
+\begin{center}
+	[Vyplní sa iba v prípade finančného príspevku dodávateľa]
+\end{center}
+\begin{enumerate}[label=\arabic*.]
+	\item Klient súhlasí s Finančným príspevkom dodávateľa, pretože je to potrebná a nevyhnutná služba súvisiaca s:
+	\begin{enumerate}
+		\item úspešnou implementáciou a zavedením Opatrení;
+		\item vykonaním Záruky úspory energie dodávateľa;
+		\item kvalitatívnym zabezpečením dohodnutých služieb energetickej efektívnosti.
+	\end{enumerate}
+
+	\item Dodávateľ sa zaväzuje poskytnúť klientovi Finančný príspevok, ktorý sa použije výlučne na účely tejto zmluvy.
+
+	\item Klient uhradí dodávateľovi Finančný príspevok vyplatený podľa tejto zmluvy, a to zaplatením Poplatku za renováciu na základe nasledujúcich podmienok:
+	  \begin{enumerate}
+		\item Finančný príspevok dodávateľa (s DPH): \iffalse input fields.contractor_fin_contribution value="{{.Contract.Fields.contractor_fin_contribution}}" \fi {{.Contract.Fields.contractor_fin_contribution}} EUR
+		\item Pohyblivá úroková sadzba:
+			\begin{itemize}
+				\item ktorá pozostáva z fixnej časti: \iffalse input fields.interest_rate_percent value="{{.Contract.Fields.interest_rate_percent}}" \fi {{.Contract.Fields.interest_rate_percent}} \% {-} offered by \iffalse input fields.interest_rate_offerter value="{{.Contract.Fields.interest_rate_offerter}}" \fi {{.Contract.Fields.interest_rate_offerter}}
+				\item a z pohyblivej časti:	 \iffalse input fields.floating_part value="{{.Contract.Fields.floating_part}}" \fi {{.Contract.Fields.floating_part}} month EURIBOR
+			\end{itemize}
+		\item Podmienky splácania zodpovedajúce Dobe poskytovania služby:{{mul 12 .Project.ContractTerm}} mesiacov
+	\end{enumerate}
+
+	\item Jednotná sadzba je fixná úroková sadzba vyjadrená v ročnej percentuálnej sadzbe, na ktorej sa zmluvné strany dohodli.
+	\item Pohyblivá sadzba je pohyblivá úroková sadzba, ktorá pozostáva z fixnej časti a pohyblivej časti:
+	\begin{enumerate}
+		\item Fixná časť je súčasťou Úrokovej sadzby, ktorá je vyjadrená v ročnej percentuálnej sadzbe, na ktorej sa zmluvné strany dohodli, ktorú je možné zmeniť a doplniť písomnou dohodou medzi zmluvnými stranami
+		\item Pohyblivá časť je pohyblivý parameter a na jeho určenie sa použije EURIBOR príslušného obdobia. Sadzba EURIBOR je priemerná úroková sadzba bánk eurozóny za príslušné obdobie, ktorú vypočítala spoločnosť Thomson Reuters k dátumu vyrovnania EUR, ktorá je k dispozícií na webovom sídle http://www.euribor-ebf.eu
+	\end{enumerate}
+	\item Pohyblivú časť Úrokovej sadzby pre prvé obdobie stanoví dodávateľ v Deň dokončenia služby uplatnením sadzby zverejnenej v predchádzajúci Bankový deň. 
+	\item Pohyblivú časť Úrokovej sadzby pre nasledujúce obdobie stanoví dodávateľ v jeden z nasledujúcich dní (podľa toho, ktorý je najďalej od Dátumu dokončenia služby, za predpokladu, že to nebude neskôr ako 6 alebo 12 mesiacov po Dátume dokončenia služby): 15. januára alebo 15. apríla, alebo 15. júla alebo 15. októbra, pomocou kurzu zverejneného v predchádzajúci Bankový deň. 
+	\item Pohyblivú časť Úrokovej sadzby pre nasledujúce obdobie stanoví dodávateľ dňa 15. januára a/alebo 15. apríla a/alebo 15. júla a/alebo 15. októbra vzhľadom na dobu Pohyblivej úrokovej sadzby.
+	\item V prípade, že má pohyblivá časť Úrokovej sadzby zápornú hodnotu, potom sa výška pohyblivej Úrokovej sadzby rovná fixnej časti úrokovej sadzby.
+	\item Ak dátum zmeny pohyblivej časti Úrokovej sadzby pripadne na iný deň ako Bankový deň, potom bude príslušným dátumom zmeny pohyblivej časti Úrokovej sadzby nasledujúci Bankový deň. Po určení novej pohyblivej časti Úrokovej sadzby dodávateľ zašle správcovi klienta oznámenie o zmenách v Rozvrhu platieb spolu s aktuálnou faktúrou. Úrokové sadzby pre nasledujúce obdobie a Rozvrh platieb  sa považujú za zmenené od prvého dňa nového obdobia bez toho, aby došlo k uzavretiu zmluvy.
+	\item Výpočet úroku sa začína na začiatku Doby poskytovania služby podpísaním vyhlásenia o prenose/prevode. 
+	\item Podľa ustanovení zmluvy sa Úroky počítajú každý kalendárny deň s predpokladom, že rok sa skladá z 360 dní.
+	\item Rozvrh platieb  pre Poplatok za renováciu na základe Finančného príspevku dodávateľa a na základe podmienok platných v čase podpísania tejto zmluvy je:
+	
+	% table: project_measurements_table
+
+\begin{center}
+\begin{longtabu}{|X|X|X|X|X|} \tabucline{}
+{{with $t := translate "sk" .Contract.Tables.project_measurements_table}}
+	{{.Columns | column}} \\\tabucline{}
+	{{range .Rows}} {{rowf $t .}} \\\tabucline{} {{end}} %chktex 26
+{{end}}
+\end{longtabu}
+\end{center}
+	\item Dodávateľ bude informovať správcu klienta a poskytne aktualizovaný Rozvrh platieb v prípade zmien pohyblivej časti Pohyblivej úrokovej sadzby.
+	\item Dodávateľ bude fakturovať správcovi klienta na mesačnej báze mesačný Poplatok za renováciu vypočítaný podľa Rozvrhu platieb. Správca bude fakturovať každému jednotlivému vlastníkovi Bytu cenu za meter štvorcový na pomernom základe.
+\end{enumerate}

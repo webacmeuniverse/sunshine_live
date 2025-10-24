@@ -1,0 +1,40 @@
+
+
+
+####################################################################################################
+
+REQUEST TYPE: 	GET
+
+Tables Queried: 	[step_item_backup]
+
+****************************************************************************************************
+
+Loggedin ID: 	ossadmin@gmail.com
+
+Date & Time: 	2022-10-05 16:45:03.13775152 +0300 EAT m=+35.979378028
+
+Session ID: 	22a05b25-8247-4856-ac86-b52401008dfb
+
+Session DocID: 	c8dd07cf-e669-4df2-a79e-ca43ca229b73
+
+Is Admin User: 	true
+
+Is Superuser: 	false
+
+Is Platform Manager: 	false
+
+Is Admin NW Manager: 	false
+
+Menu Type: 	N/A
+
+Error: 	nil
+
+Origin Path: 	/
+
+Origin Domain: 	
+
+Origin SameSite: 	0
+
+
+
+

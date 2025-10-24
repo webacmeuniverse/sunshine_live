@@ -1,0 +1,40 @@
+
+
+
+####################################################################################################
+
+REQUEST TYPE: 	GET
+
+Tables Queried: 	[step_item_backup]
+
+****************************************************************************************************
+
+Loggedin ID: 	colt@fadel.com
+
+Date & Time: 	2022-10-04 16:51:10.555817524 +0300 EAT m=+30.756172568
+
+Session ID: 	989eba9c-75d3-41a3-9899-232855fcd98c
+
+Session DocID: 	ef793c4a-b1b2-4a05-8d2e-3b9fc7bd9a87
+
+Is Admin User: 	false
+
+Is Superuser: 	true
+
+Is Platform Manager: 	false
+
+Is Admin NW Manager: 	false
+
+Menu Type: 	N/A
+
+Error: 	nil
+
+Origin Path: 	/
+
+Origin Domain: 	
+
+Origin SameSite: 	0
+
+
+
+
